@@ -10,9 +10,10 @@ class Deck:
     cards=[]
     
     def __init__(self):
-        for suit in range(0,4):
-            for faceValue in range(0,13):
+        for suit in Card.suits:
+            for faceValue in Card.faceValues:
                 self.cards.append(Card(faceValue, suit))
+
                 
     def dealRandomCard(self):
         card=random.sample(self.cards,  1)[0]
@@ -27,11 +28,19 @@ class Deck:
     #card must not be in the deck
     def putBack(self, Card):
         self.cards.append(Card)
+        
+    def getCards(self):
+        return self.cards
+      
       
 class Card:
+    suits = ['h','c','s','d']
+    faceValues = ['2','3','4','5','6','7','8','9','T','J','Q','K','A']
+    
     def __init__(self, faceValue, suit):
         self.faceValue=faceValue
         self.suit = suit
     def __str__(self):
-        return "face value: " + str(self.faceValue) + ", suit: " + str(self.suit)
-        
+        return self.faceValue + self.suit
+    def __eq__(self,other):
+        return self.faceValue==other.faceValue and self.suit==other.suit
