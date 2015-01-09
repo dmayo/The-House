@@ -1,12 +1,20 @@
 class Player:
     
-    def __init__(self, name):
+    def __init__(self, name, stackSize):
         self.name = name
         self.matchHistory = []
+        self.stackSize = stackSize
     
     def getName(self):
         return self.name
+        
+    def getStackSize(self):
+        return self.stackSize
     
+    def setStackSize(self, newSize):
+        self.stackSize = newSize
+    
+    # reset the match history when the match is over
     def resetMatchHistory(self):
         self.matchHistory = {}
     
@@ -27,4 +35,5 @@ class Player:
     def getActionsOfStreet(self, street):
         return self.mathcHistory[street]
         
+                    
     
