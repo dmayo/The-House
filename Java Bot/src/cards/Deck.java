@@ -2,16 +2,23 @@ package cards;
 
 import java.util.*;
 
+import cards.Card.Rank;
+import cards.Card.Suit;
+
 public class Deck {
     
     private final List<Card> cards;
     private final Random generator;
+    private static final Rank ranks[] = {Rank.TWO,Rank.THREE,Rank.FOUR,Rank.FIVE,Rank.SIX,Rank.SEVEN,
+                                Rank.EIGHT,Rank.NINE,Rank.TEN,Rank.JACK,Rank.QUEEN,Rank.KING,Rank.ACE};
+    private static final Suit suits [] = {Suit.CLUB,Suit.DIAMOND,Suit.SPADE,Suit.HEART};
     
     public Deck(){
         generator = new Random();
+        
         cards = new ArrayList<Card>();
-        for(char suit : Card.getSuits()){
-            for(char rank: Card.getRanks()){
+        for(Suit suit :suits){
+            for(Rank rank: ranks){
                 cards.add(new Card(rank,suit));
             }
         }

@@ -1,71 +1,198 @@
 package cards;
 
+
+/**
+ * An immutable poker card.
+ * @version 2006Dec05.0
+ * @author Steve Brecher
+ *
+ */
+
+/*
+  Added method: public int ordinal(), implementation same as hashcode()
+ */
+
 public class Card {
-    private final char rank;
-    private final char suit;
     
     /**
-     * 
-     * @param rank the rank of the card. Must be '1'-'9','T','J','Q','K','A'
-     * @param suit suit of the card. Must be 'h','s','d','c'
+     * The card ranks, from two (deuce) to ace.
      */
-    public Card(char rank, char suit){
+    public static enum Rank {
+        TWO, THREE, FOUR, FIVE, SIX, SEVEN,
+        EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE;
+        
+        /**
+         * @return the character in {@link #RANK_CHARS} denoting this rank.
+         */
+        public char toChar() {
+            return RANK_CHARS.charAt(this.ordinal());
+        }
+        
+        /**
+         * @param c a character present in {@link #RANK_CHARS} (case insensitive)
+         * @return the Rank denoted by character.
+         * @throws IllegalArgumentException if c not in {@link #RANK_CHARS}
+         */
+        public static Rank fromChar(char c) {
+            
+            int i = RANK_CHARS.indexOf(Character.toUpperCase(c));
+            if (i >= 0)
+                return  Rank.values()[i];
+            throw new IllegalArgumentException("'" + c + "'");
+        }
+    
+        /**
+         * @return the pip value of this Rank, ranging from 2 for
+         *          a <code>TWO</code> (deuce) to 14 for an <code>ACE</code>.
+         */
+        public int pipValue() {
+            return this.ordinal() + 2;
+        }
+        
+        public static final String RANK_CHARS = "23456789TJQKA";
+    }
+
+    /**
+     * The card suits, from club to spade.
+     */
+    public static enum Suit {CLUB, DIAMOND, HEART, SPADE;
+        
+        /**
+         * @return the character in {@link #SUIT_CHARS} denoting this suit.
+         */
+        public char toChar() {
+            return SUIT_CHARS.charAt(this.ordinal());
+        }
+        
+        /**
+         * @param c a character present in {@link #SUIT_CHARS} (case insensitive)
+         * @return the Suit denoted by the character.
+         * @throws IllegalArgumentException if c not in {@link #SUIT_CHARS}
+         */
+        public static Suit fromChar(char c) {
+            
+            int i = SUIT_CHARS.indexOf(Character.toLowerCase(c));
+            if (i >= 0)
+                return  Suit.values()[i];
+            throw new IllegalArgumentException("'" + c + "'");
+        }
+
+        public static final String SUIT_CHARS = "cdhs";
+    }
+
+    /**
+     * Constructs a card of the specified rank and suit.
+     * @param rank a {@link Rank}
+     * @param suit a {@link Suit}
+     * @see #getInstance(com.stevebrecher.poker.Card.Rank, com.stevebrecher.poker.Card.Suit)
+     */
+    public Card(Rank rank, Suit suit) {
         this.rank = rank;
         this.suit = suit;
     }
-    
+
+    /**
+     * Constructs a card of the specified rank and suit.
+     * @param rs a {@link String} of length 2, where the first character is in {@link Card.Rank#RANK_CHARS} and
+     *           the second is in {@link Card.Suit#SUIT_CHARS} (case insensitive).
+     * @throws IllegalArgumentException on the first character in rs which is not found in the respective string.
+     * @see #getInstance(String)
+     */
+    public Card(String rs) {
+
+        if (rs.length() != 2)
+            throw new IllegalArgumentException('"' + rs + "\".length != 2");
+        try {
+            this.rank = Rank.fromChar(rs.charAt(0));
+            this.suit = Suit.fromChar(rs.charAt(1));
+        } catch (IllegalArgumentException e) {
+            throw e;    // indicates the first erroneous character
+        }
+    }
+
+    private final static Card[] theCards = new Card[52];
+    static {
+        int i = 0;
+        for (Suit s : Suit.values())
+            for (Rank r : Rank.values())
+                theCards[i++] = new Card(r, s);
+    }
+        
+    /**
+     * Returns a pre-existing instance of {@link Card} of the specified rank and suit.
+     * @param rank a {@link Rank}
+     * @param suit a {@link Suit}
+     * @return an instance of {@link Card} of the specified rank and suit.
+     */
+    public static Card getInstance(Rank rank, Suit suit) {
+        return theCards[suit.ordinal()*13 + rank.ordinal()];
+    }
+
+    /**
+     * Returns a pre-existing instance of {@link Card} of the specified rank and suit.
+     * @param rs a {@link String} of length 2, where the first character is in {@link Card.Rank#RANK_CHARS} and
+     *           the second is in {@link Card.Suit#SUIT_CHARS} (case insensitive).
+     * @return an instance of {@link Card} of the specified rank and suit.
+     * @throws IllegalArgumentException on the first character in rs which is not found in the respective string.
+     */
+    public static Card getInstance(String rs) {
+        if (rs.length() != 2)
+            throw new IllegalArgumentException('"' + rs + "\".length != 2");
+        try {
+            Rank rank = Rank.fromChar(rs.charAt(0));
+            Suit suit = Suit.fromChar(rs.charAt(1));
+            return theCards[suit.ordinal()*13 + rank.ordinal()];
+        } catch (IllegalArgumentException e) {
+            throw e;    // indicates the first erroneous character
+        }
+    }
+
+    /**
+     * Returns a {@link String} of length 2 denoting the rank and suit of this card.
+     * @return a {@link String} of length 2 containing a character in {@link Card.Rank#RANK_CHARS} denoting this
+     *          card&#39;s rank followed by a character in {@link Card.Suit#SUIT_CHARS} denoting this
+     *          card&#39;s suit.
+     */
+    @Override public String toString() {
+        return String.format("%c%c", rank.toChar(), suit.toChar());
+    }
     
     /**
-     * @return the rank of the card : '1'-'9','T','J','Q','K','A'
+     * Returns the {@link Rank} of this card.
+     * @return the {@link Rank} of this card.
      */
-    public char getRank(){
+    public Rank rankOf() {
         return rank;
     }
     
-    
     /**
-     * @return the suit of the card : 'h','s','d','c'
+     * Returns the {@link Suit} of this card.
+     * @return the {@link Suit} of this card.
      */
-    public char getSuit(){
+    public Suit suitOf() {
         return suit;
     }
-    
-    
+
     /**
-     * @return a char array of all of the possible card ranks
+     * Compares the parameter to this card.
+     * @return <code>true</code> if the parameter is a {@link Card} of the same rank and suit
+     *          as this card; <code>false</code> otherwise.
      */
-    public static char[] getRanks(){
-        return new char[]{'1','2','3','4','5','6','7','8','9','T','J','Q','K','A'};
+    @Override public boolean equals (Object that) {
+        if (!(that instanceof Card)) return false;
+        return this.rank == ((Card)that).rank && this.suit == ((Card)that).suit;
     }
     
-    
-    /**
-     * @return a char array of all of the possible card suits
-     */
-    public static char[] getSuits(){
-        return new char[]{'h','s','d','c'};
+    /* Because we override equals */
+    @Override public int hashCode() {
+        return rank.ordinal()*4 + suit.ordinal();
     }
-    
-    
-    @Override
-    public String toString(){
-        return Character.toString(rank)+Character.toString(suit);
+
+    public int ordinal() {
+        return rank.ordinal()*4 + suit.ordinal();
     }
-    
-    
-    @Override
-    public boolean equals(Object other){
-        if(!(other instanceof Card)){
-            return false;
-        }
-        
-        Card _other = (Card)other;
-        return (rank == _other.getRank() && suit == _other.getSuit());
-    }
-    
-    
-    @Override
-    public int hashCode(){
-        return rank*suit;
-    }
+
+  private final Rank    rank;
+    private final Suit  suit;
 }
+

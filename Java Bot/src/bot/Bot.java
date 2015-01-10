@@ -16,4 +16,6 @@ public class Bot {
     public String getAction(String[] actionMessage){
         return "CHECK";
     }
+    
+
 }
