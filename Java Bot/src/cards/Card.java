@@ -1,22 +1,22 @@
 package cards;
 
-public class Cards {
+public class Card {
     private final char rank;
     private final char suit;
     
     /**
      * 
-     * @param rank the rank of the card. Must be '1'-'9','T','J','Q','K'
+     * @param rank the rank of the card. Must be '1'-'9','T','J','Q','K','A'
      * @param suit suit of the card. Must be 'h','s','d','c'
      */
-    public Cards(char rank, char suit){
+    public Card(char rank, char suit){
         this.rank = rank;
         this.suit = suit;
     }
     
     
     /**
-     * @return the rank of the card : '1'-'9','T','J','Q','K'
+     * @return the rank of the card : '1'-'9','T','J','Q','K','A'
      */
     public char getRank(){
         return rank;
@@ -31,6 +31,22 @@ public class Cards {
     }
     
     
+    /**
+     * @return a char array of all of the possible card ranks
+     */
+    public static char[] getRanks(){
+        return new char[]{'1','2','3','4','5','6','7','8','9','T','J','Q','K','A'};
+    }
+    
+    
+    /**
+     * @return a char array of all of the possible card suits
+     */
+    public static char[] getSuits(){
+        return new char[]{'h','s','d','c'};
+    }
+    
+    
     @Override
     public String toString(){
         return Character.toString(rank)+Character.toString(suit);
@@ -39,11 +55,11 @@ public class Cards {
     
     @Override
     public boolean equals(Object other){
-        if(!(other instanceof Cards)){
+        if(!(other instanceof Card)){
             return false;
         }
         
-        Cards _other = (Cards)other;
+        Card _other = (Card)other;
         return (rank == _other.getRank() && suit == _other.getSuit());
     }
     
