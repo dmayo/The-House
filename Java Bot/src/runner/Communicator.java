@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import bot.Bot;
+
 /**
  * Simple example pokerbot, written in Java.
  * 
@@ -26,6 +28,7 @@ public class Communicator {
     public void run() {
         String input;
         try {
+            Bot bot = new Bot();
             // Block until engine sends us a packet; read it into input.
             while ((input = inStream.readLine()) != null) {
 
@@ -33,14 +36,16 @@ public class Communicator {
                 // from the engine and act on it.
                 System.out.println(input);
                 
-                String word = input.split(" ")[0];
+                String inputWords[] = input.split(" ");
+                String word = inputWords[0];
                 if ("GETACTION".compareToIgnoreCase(word) == 0) {
                     // When appropriate, reply to the engine with a legal
                     // action.
                     // The engine will ignore all spurious packets you send.
                     // The engine will also check/fold for you if you return an
                     // illegal action.
-                    outStream.println("CHECK");
+                    String action = bot.getAction(inputWords);
+                    outStream.println(action);
                 } else if ("REQUESTKEYVALUES".compareToIgnoreCase(word) == 0) {
                     // At the end, engine will allow bot to send key/value pairs to store.
                     // FINISH indicates no more to store.
