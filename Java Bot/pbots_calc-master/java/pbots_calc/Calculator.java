@@ -16,9 +16,10 @@
  * pbots_calc in a file in teh toplevel directory called "GPLv3".  If not, see
  * <http://www.gnu.org/licenses/>.
  */
-package pbots_calc;
 
 import org.bridj.Pointer;
+
+import Pbots_calcResults;
 
 /**
  * Simple command line tool for equity calculations. Demonstrates how to use the

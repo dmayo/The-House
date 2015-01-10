@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>pbots_calc</name>
+			<type>2</type>
+			<location>/Users/patrickmccabe/Documents/pokerbots/The-House/Java Bot/pbots_calc-master/java/pbots_calc</location>
+		</link>
+	</linkedResources>
 </projectDescription>
