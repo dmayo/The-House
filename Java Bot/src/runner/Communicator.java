@@ -145,10 +145,10 @@ public class Communicator {
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
                     Map<String,String> parsed = parseNewGame(inputWords);
                     
-                } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
+                } else if ("NEWHAND".compareToIgnoreCase(word) == 0) {
                     Map<String,String> parsed = parseNewHand(inputWords);
                     
-                } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
+                } else if ("HANDOVER".compareToIgnoreCase(word) == 0) {
                     Map<String,String> parsed = parseHandOver(inputWords);
                     
                 }
