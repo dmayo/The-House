@@ -167,6 +167,9 @@ void drawControlButtons(){
   else{
     text("play",420,685);
   }
+  
+  fill(0);
+  textSize(30);
 }
 
 

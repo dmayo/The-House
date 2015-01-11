@@ -35,7 +35,7 @@ class Match{
     }
     textSize(30);
     fill(0,0,0);
-    text("match #" + matchNumber,x,y+600);
+    text("match #" + matchNumber + " of " +matches.size(),x,y+600);
     textSize(70);
     fill(0,200,0);
     text("Pot: $" + pot,x+300,y+560);
@@ -138,7 +138,7 @@ class Match{
   
   private void clearPlayerActions(){
     for(Player player: players){
-      if(!player.getAction().clearable()){
+      if(player.getAction().clearable()){
         player.setAction(new Action("",0));
       }
     }
