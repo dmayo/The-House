@@ -54,6 +54,7 @@ public class Communicator {
         
         arg.put("timebank", actionMessage[i++]);
         
+        
         return arg;
     }
     
@@ -135,7 +136,6 @@ public class Communicator {
                     // illegal action.
                     
                     Map<String,String> parsed = parseGetAction(inputWords);
-                    
                     String action = bot.getAction(parsed);
                     outStream.println(action);
                 } else if ("REQUESTKEYVALUES".compareToIgnoreCase(word) == 0) {
