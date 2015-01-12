@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 import cards.Card;
+import cards.Hand;
 import stats.Player;
 import bot.Bot;
 
@@ -124,8 +125,8 @@ public class Communicator {
     public void run() {
         String input;
         try {
-            Bot bot =  new Bot("none", 0,0,0, new ArrayList<Player>());
-            List<Player> players;
+            Bot bot =  new Bot("none", 0,0,0,20, new ArrayList<Player>());
+            List<Player> players = new ArrayList<Player>();
             // Block until engine sends us a packet; read it into input.
             while ((input = inStream.readLine()) != null) {
 
@@ -160,8 +161,8 @@ public class Communicator {
                     String botName = parsed.get("yourName");
                     int numHands = new Integer(parsed.get("numHands"));
                     int bigBlind = new Integer(parsed.get("bigBlind"));
-                    
-                    bot = new Bot(botName, stackSize, bigBlind, numHands, players);
+                    double timeBank = new Double(parsed.get("timeBank"));
+                    bot = new Bot(botName, stackSize, bigBlind, numHands, timeBank, players);
                     
                 } else if ("NEWHAND".compareToIgnoreCase(word) == 0) {
                     Map<String,String> parsed = parseNewHand(inputWords);
@@ -171,7 +172,31 @@ public class Communicator {
                     Card holeCard1 = new Card(parsed.get("holeCard1"));
                     Card holeCard2 = new Card(parsed.get("holeCard2"));
                     double timeBank = new Double(parsed.get("timeBank"));
+                    int numActivePlayers = new Integer(parsed.get("numActivePlayers"));
                     
+                    bot.setHandId(handId);
+                    bot.setSeat(seat);
+                    bot.setHand(new Hand(holeCard1, holeCard2));
+                    bot.setTimeBank(timeBank);
+                    bot.setNumActivePlayers(numActivePlayers);
+                    
+                    String[] stackSizes = parsed.get("stackSizes").split(" ");
+                    String[] playerNames = parsed.get("playerNames").split(" ");
+                    String[] activePlayers = parsed.get("activePlayers").split(" ");
+                    
+                    for(int i=0; i < playerNames.length; i++){
+                        String name = playerNames[i];
+                        for(Player player : players){
+                            if(name.equals(player.getName())){
+                                player.setSeat(i+1);
+                                player.setActive(new Boolean(activePlayers[i]));
+                                player.setStackSize(new Integer(stackSizes[i]));
+                            }
+                        }
+                        if(name.equals(bot.getName())){
+                            bot.setStackSize(new Integer(stackSizes[i]));
+                        }
+                    }
                     
                 } else if ("HANDOVER".compareToIgnoreCase(word) == 0) {
                     Map<String,String> parsed = parseHandOver(inputWords);
