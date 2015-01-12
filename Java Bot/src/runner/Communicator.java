@@ -9,10 +9,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cards.BoardCards;
 import cards.Card;
 import cards.Hand;
 import stats.Player;
 import stats.StatsCalculator;
+import actions.Street;
 import bot.Bot;
 
 /**
@@ -155,9 +157,17 @@ public class Communicator {
                     int potSize = new Integer(parsed.get("potSize"));
                     double timeBank = new Double(parsed.get("timeBank"));
                     int numBoardCards = new Integer(parsed.get("numBoardCards"));
-                    String[] boardCards = parsed.get("boardCards").split(" ");
+                    String[] boardCardsStringArray = parsed.get("boardCards").split(" ");
                     String[] stackSizes = parsed.get("stackSizes").split(" ");
                     String[] activePlayers = parsed.get("activePlayers").split(" ");
+                    String[] legalActions = parsed.get("legalActions").split(" ");
+                    
+                    
+                    List<Card> boardCardsList = new ArrayList<Card>();
+                    for(String card: boardCardsStringArray){
+                        boardCardsList.add(new Card(card));
+                    }
+                    
                     
                     for(int i=0; i < stackSizes.length; i++){
                         for(Player player : players){
@@ -173,7 +183,8 @@ public class Communicator {
                     
                     bot.setPotSize(potSize);
                     bot.setTimeBank(timeBank);
-                    String action = bot.getAction(parsed);
+                    bot.setBoardCards(new BoardCards(Street.fromInt(numBoardCards), boardCardsList));
+                    String action = bot.getAction(legalActions);
                     outStream.println(action);
                 } else if ("REQUESTKEYVALUES".compareToIgnoreCase(word) == 0) {
                     // At the end, engine will allow bot to send key/value pairs to store.

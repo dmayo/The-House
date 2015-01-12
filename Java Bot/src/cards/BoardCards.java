@@ -6,23 +6,12 @@ import actions.Street;
 
 public class BoardCards {
     
-    private List<Card> cards;
-    private Street street;
-    
-    public BoardCards(){
-        this.cards = new ArrayList<Card>();
-        this.street = Street.PREFLOP;
-    }
+    private final List<Card> cards;
+    private final Street street;
     
     public BoardCards(Street street, List<Card> cards){
         this.cards = new ArrayList<Card>(cards);
         this.street = street;
-    }
-    
-
-    public void setCards(Street newStreet, List<Card> newCards){
-        this.cards = new ArrayList<Card>(cards);
-        this.street = newStreet;
     }
     
     public List<Card> getCards(){

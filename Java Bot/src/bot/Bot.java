@@ -7,6 +7,7 @@ import java.util.Map;
 import stats.Player;
 import actions.LegalAction;
 import actions.LegalActionType;
+import cards.BoardCards;
 import cards.Card;
 import cards.Hand;
 
@@ -22,6 +23,7 @@ public class Bot {
     private int seat;
     private int numActivePlayers = 3;
     private int potSize = 0;
+    private BoardCards boardCards;
     
     public Bot(String name, int stackSize, int bigBlind, int numHands, double timeBank, List<Player> otherPlayers){
         this.otherPlayers = new ArrayList<Player>(otherPlayers);
@@ -30,6 +32,10 @@ public class Bot {
         this.bigBlind = bigBlind;
         this.numHands = numHands;
         this.timeBank = timeBank;
+    }
+    
+    public void setBoardCards(BoardCards newBoardCards){
+        this.boardCards = newBoardCards;
     }
     
     public void setHand(Hand newHand){
@@ -64,8 +70,8 @@ public class Bot {
         return name;
     }
     
-    public String getAction(Map<String, String> getAction){
-        List<LegalAction> legalActions = determineLegalActions(getAction);
+    public String getAction(String legalActionsArray[]){
+        List<LegalAction> legalActions = determineLegalActions(legalActionsArray);
         
         return "CHECK";
     }
@@ -82,12 +88,11 @@ public class Bot {
      * @param getAction 
      * @return a list of legal actions that the bot can make
      */
-    private List<LegalAction> determineLegalActions(Map<String, String> getAction){
+    private List<LegalAction> determineLegalActions(String legalActionsArray[]){
         
         final List<LegalAction> legalActions = new ArrayList<LegalAction>();
-        final String legalActionString = getAction.get("legalActions");
         
-        for(String action : legalActionString.split(" ")){
+        for(String action : legalActionsArray){
             if(action.contains(LegalActionType.BET.toString())){
                 final String actionSplit[] = action.split(":");
                 final int min = new Integer(actionSplit[1]);
