@@ -1,5 +1,6 @@
 package stats;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
 import cards.Card;
@@ -9,13 +10,13 @@ import actions.*;
 
 public class Stats {
    
-    private Map<Street, Integer> numStreetsSeen;
-    private Map<Street, Integer> totalStreets;
-    private Map<PerformedActionType, Integer> numActionsDone;
+    private Map<Street, Integer> numStreetsSeen = new HashMap<Street, Integer>();
+    private Map<Street, Integer> totalStreets = new HashMap<Street, Integer>();
+    private Map<PerformedActionType, Integer> numActionsDone  = new HashMap<PerformedActionType, Integer>();
     private int actionOpportunities = 0;
     private int potsWon = 0;
     private int numEligibleMatches = 0;
-    private Map<Hand, Double> handProbs;
+    private Map<Hand, Double> handProbs = new HashMap<Hand, Double>();
     
     public Stats(){
         //creates uniform probability distribution of every possible hand
