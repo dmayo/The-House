@@ -4,15 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import stats.Player;
 import actions.LegalAction;
 import actions.LegalActionType;
 import cards.Card;
 
 public class Bot {
     private Card hand[];
+    private final List<Player> otherPlayers;
+    private final String name;
+    private int stackSize;
     
-    public Bot(){
-        
+    public Bot(String name, int stackSize, List<Player> otherPlayers){
+        this.otherPlayers = new ArrayList<Player>(otherPlayers);
+        this.name = name;
+        this.stackSize = stackSize;
     }
     
     public void setHand(Card hole1, Card hole2){

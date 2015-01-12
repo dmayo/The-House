@@ -3,9 +3,13 @@ package runner;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import stats.Player;
 import bot.Bot;
 
 /**
@@ -63,7 +67,7 @@ public class Communicator {
         Map<String, String> arg = new HashMap<String, String>();
         int i=1;
         arg.put("yourName", message[i++]);
-        arg.put("opp1Names", message[i++]);
+        arg.put("opp1Name", message[i++]);
         arg.put("opp2Name", message[i++]);
         arg.put("stackSize", message[i++]);
         arg.put("bb", message[i++]);
@@ -118,7 +122,7 @@ public class Communicator {
     public void run() {
         String input;
         try {
-            Bot bot = new Bot();
+            Bot bot =  new Bot("none", 0, new ArrayList<Player>());
             // Block until engine sends us a packet; read it into input.
             while ((input = inStream.readLine()) != null) {
 
@@ -144,6 +148,12 @@ public class Communicator {
                     outStream.println("FINISH");
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
                     Map<String,String> parsed = parseNewGame(inputWords);
+                    int stackSize = new Integer(parsed.get("stackSize"));
+                    Player player1 = new Player(parsed.get("opp1Name"), stackSize);
+                    Player player2 = new Player(parsed.get("opp2Name"), stackSize);
+                    List<Player> players = Arrays.asList(new Player[]{player1,player2});
+                    String botName = parsed.get("yourName");
+                    bot = new Bot(botName, stackSize, players);
                     
                 } else if ("NEWHAND".compareToIgnoreCase(word) == 0) {
                     Map<String,String> parsed = parseNewHand(inputWords);

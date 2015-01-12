@@ -12,13 +12,22 @@ import actions.Street;
 
 public class StatsCalculator {
     
-    public StatsCalculator(){
-        
+    private final List<Player> players;
+    
+    public StatsCalculator(List<Player> players){
+        this.players = new ArrayList<Player>(players);
     }
     
     
     public void processActions(Map<String, String> getAction){
         List<PerformedAction> actions = determinePerformedActions(getAction);
+        for(PerformedAction action : actions){
+            for(Player player : players){
+                if(player.getName().equals(action.getActor())){
+                    player.processAction(action);
+                }
+            }
+        }
     }
     
     private List<PerformedAction> determinePerformedActions(Map<String, String> getAction){
