@@ -21,6 +21,7 @@ public class Bot {
     private  int handId;
     private int seat;
     private int numActivePlayers = 3;
+    private int potSize = 0;
     
     public Bot(String name, int stackSize, int bigBlind, int numHands, double timeBank, List<Player> otherPlayers){
         this.otherPlayers = new ArrayList<Player>(otherPlayers);
@@ -51,6 +52,10 @@ public class Bot {
         seat = newSeat;
     }
     
+    public int getSeat(){
+        return seat;
+    }
+    
     public void setNumActivePlayers(int newNumActivePlayers){
         numActivePlayers = newNumActivePlayers;
     }
@@ -63,6 +68,10 @@ public class Bot {
         List<LegalAction> legalActions = determineLegalActions(getAction);
         
         return "CHECK";
+    }
+    
+    public void setPotSize(int newPotSize){
+        potSize = newPotSize;
     }
    
     

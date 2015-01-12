@@ -12,6 +12,7 @@ import java.util.Map;
 import cards.Card;
 import cards.Hand;
 import stats.Player;
+import stats.StatsCalculator;
 import bot.Bot;
 
 /**
@@ -42,6 +43,11 @@ public class Communicator {
         for (int x=0;x<Integer.parseInt(arg.get("numBoardCards"));x++){
             arg.merge("boardCards", actionMessage[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
         }
+        
+        for (int x=0;x<3;x++){
+            arg.merge("stackSizes", actionMessage[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+        }
+        
         //not sure if numActivePlayers is actually the number of actualPlayers parameters
         arg.put("numActivePlayers", actionMessage[i++]);
         for (int x=0;x<3;x++){
@@ -53,12 +59,12 @@ public class Communicator {
             arg.merge("lastActions", actionMessage[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
         }
         
-        arg.put("numLegalActionss", actionMessage[i++]);
+        arg.put("numLegalActions", actionMessage[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numLegalActions"));x++){
             arg.merge("legalActions", actionMessage[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
         }
         
-        arg.put("timebank", actionMessage[i++]);
+        arg.put("timeBank", actionMessage[i++]);
         
         
         return arg;
@@ -115,7 +121,7 @@ public class Communicator {
         }
         arg.put("numLastActions", message[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numLastActions"));x++){
-            arg.merge("lastActions", message[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            arg.merge("performedActions", message[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
         }
         arg.put("timeBank", message[i++]);
 
@@ -125,6 +131,7 @@ public class Communicator {
     public void run() {
         String input;
         try {
+            StatsCalculator statsCalc = new StatsCalculator();
             Bot bot =  new Bot("none", 0,0,0,20, new ArrayList<Player>());
             List<Player> players = new ArrayList<Player>();
             // Block until engine sends us a packet; read it into input.
@@ -144,6 +151,28 @@ public class Communicator {
                     // illegal action.
                    
                     Map<String,String> parsed = parseGetAction(inputWords);
+                    //GETACTION potSize numBoardCards [boardCards] [stackSizes] numActivePlayers [activePlayers] numLastActions [lastActions] numLegalActions [legalActions] timebank
+                    int potSize = new Integer(parsed.get("potSize"));
+                    double timeBank = new Double(parsed.get("timeBank"));
+                    int numBoardCards = new Integer(parsed.get("numBoardCards"));
+                    String[] boardCards = parsed.get("boardCards").split(" ");
+                    String[] stackSizes = parsed.get("stackSizes").split(" ");
+                    String[] activePlayers = parsed.get("activePlayers").split(" ");
+                    
+                    for(int i=0; i < stackSizes.length; i++){
+                        for(Player player : players){
+                            if(player.getSeat() == i+1){
+                                player.setActive(new Boolean(activePlayers[i]));
+                                player.setStackSize(new Integer(stackSizes[i]));
+                            }
+                        }
+                        if(bot.getSeat() == i+1){
+                            bot.setStackSize(new Integer(stackSizes[i]));
+                        }
+                    }
+                    
+                    bot.setPotSize(potSize);
+                    bot.setTimeBank(timeBank);
                     String action = bot.getAction(parsed);
                     outStream.println(action);
                 } else if ("REQUESTKEYVALUES".compareToIgnoreCase(word) == 0) {
@@ -160,11 +189,14 @@ public class Communicator {
                     
                     String botName = parsed.get("yourName");
                     int numHands = new Integer(parsed.get("numHands"));
-                    int bigBlind = new Integer(parsed.get("bigBlind"));
+                    int bigBlind = new Integer(parsed.get("bb"));
                     double timeBank = new Double(parsed.get("timeBank"));
+                    
+                    statsCalc.setPlayers(players);
                     bot = new Bot(botName, stackSize, bigBlind, numHands, timeBank, players);
                     
                 } else if ("NEWHAND".compareToIgnoreCase(word) == 0) {
+                    //NEWHAND handId seat holeCard1 holeCard2 [stackSizes] [playerNames] numActivePlayers [activePlayers] timeBank
                     Map<String,String> parsed = parseNewHand(inputWords);
                     
                     int handId = new Integer(parsed.get("handId"));
@@ -199,8 +231,28 @@ public class Communicator {
                     }
                     
                 } else if ("HANDOVER".compareToIgnoreCase(word) == 0) {
+                    //HANDOVER [stackSizes] numBoardCards [boardCards] numLastActions [lastActions] timeBank
                     Map<String,String> parsed = parseHandOver(inputWords);
                     
+                    String stackSizes[] = parsed.get("stackSize").split(" ");
+                    int numBoardCards = new Integer(parsed.get("numBoardCards"));
+                    String boardCards[] = parsed.get("boardCards").split(" ");
+                    int numLastActions = new Integer(parsed.get("numLastActions"));
+                    String lastActions[] = parsed.get("lastActions").split(" ");
+                    double timeBank = new Double(parsed.get("timeBank"));
+                    
+                    for(int i=0; i < stackSizes.length; i++){
+                        for(Player player : players){
+                            if(player.getSeat() == i+1){
+                                player.setStackSize(new Integer(stackSizes[i]));
+                            }
+                        }
+                        if(bot.getSeat() == i+1){
+                            bot.setStackSize(new Integer(stackSizes[i]));
+                        }
+                    }
+                    bot.setTimeBank(timeBank);       
+                    statsCalc.processActions(lastActions);
                 }
             }
         } catch (IOException e) {

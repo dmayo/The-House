@@ -12,15 +12,18 @@ import actions.Street;
 
 public class StatsCalculator {
     
-    private final List<Player> players;
+    private List<Player> players;
     
-    public StatsCalculator(List<Player> players){
+    public StatsCalculator(){
+    }
+    
+    public void setPlayers(List<Player> players){
         this.players = new ArrayList<Player>(players);
     }
     
     
-    public void processActions(Map<String, String> getAction){
-        List<PerformedAction> actions = determinePerformedActions(getAction);
+    public void processActions(String[] performedActions){
+        List<PerformedAction> actions = determinePerformedActions(performedActions);
         for(PerformedAction action : actions){
             for(Player player : players){
                 if(player.getName().equals(action.getActor())){
@@ -30,12 +33,11 @@ public class StatsCalculator {
         }
     }
     
-    private List<PerformedAction> determinePerformedActions(Map<String, String> getAction){
+    private List<PerformedAction> determinePerformedActions(String[] actions){
         
         final List<PerformedAction> performedActions = new ArrayList<PerformedAction>();
-        final String performedActionString = getAction.get("performedActions");
         
-        for(String action : performedActionString.split(" ")){
+        for(String action : actions){
             if(action.contains(PerformedActionType.BET.toString()) || action.contains(PerformedActionType.CALL.toString()) ||
                action.contains(PerformedActionType.POST.toString()) || action.contains(PerformedActionType.RAISE.toString()) ||
                action.contains(PerformedActionType.REFUND.toString()) || action.contains(PerformedActionType.TIE.toString()) ||

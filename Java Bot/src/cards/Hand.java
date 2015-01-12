@@ -10,6 +10,14 @@ public class Hand {
     }
     
     
+    /**
+     * @return true if cards are same suit, false otherwise
+     */
+    public boolean isSuited(){
+        return (card1.suitOf() == card2.suitOf());
+    }
+    
+    
     @Override
     public boolean equals(Object other){
         if(!(other instanceof Hand)){
