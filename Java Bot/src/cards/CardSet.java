@@ -144,10 +144,6 @@ public final class CardSet implements Set<Card> {
     public <T> T[] toArray(T[] a) {
         return cards.toArray(a);
     }
-    
-    public ArrayList<Card> toList(){
-        return (ArrayList<Card>) cards.clone();
-    }
 
     /**
      * Returns a {@link String} containing a comma-space-separated list of cards.

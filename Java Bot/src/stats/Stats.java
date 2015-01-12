@@ -1,4 +1,5 @@
 package stats;
+import java.util.Arrays;
 import java.util.Map;
 
 import cards.Card;
@@ -18,7 +19,7 @@ public class Stats {
     
     public Stats(){
         //creates uniform probability distribution of every possible hand
-        CombinationIterator comb = new CombinationIterator(CardSet.freshDeck().toList(),2);
+        CombinationIterator comb = new CombinationIterator(Arrays.asList(CardSet.freshDeck().toArray()),2);
         while(comb.hasNext()) {
             handProbs.put(new Hand((Card)comb.next().get(0), (Card) comb.next().get(1)), 1.0/1326);
          }
