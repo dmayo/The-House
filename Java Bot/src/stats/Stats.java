@@ -110,4 +110,16 @@ public class Stats {
     public void wonPot(){
         potsWon++;
     }
+    
+    /**
+     * Aggression factor = (NumberBets + NumberRaises)/NumberCalls
+     * Aggression factor > 1 means the player is aggressive
+     * Aggression factor < 1 means the player is passive
+     * @return aggression factor
+     */
+    public double getAggressionFactor(){
+        double AF = (double)(numActionsDone.get(PerformedActionType.BET) + numActionsDone.get(PerformedActionType.RAISE))  / numActionsDone.get(PerformedActionType.CALL);
+        return AF;
+    }
+    
 }
