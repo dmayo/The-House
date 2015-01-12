@@ -1,5 +1,9 @@
 package stats;
 import java.util.Map;
+
+import cards.Card;
+import cards.CardSet;
+import cards.Hand;
 import actions.*;
 
 public class Stats {
@@ -10,10 +14,18 @@ public class Stats {
     private int actionOpportunities = 0;
     private int potsWon = 0;
     private int numEligibleMatches = 0;
-    
+    private Map<Hand, Double> handProbs;
     
     public Stats(){
-       
+        //creates uniform probability distribution of every possible hand
+        CombinationIterator comb = new CombinationIterator(CardSet.freshDeck().toList(),2);
+        while(comb.hasNext()) {
+            handProbs.put(new Hand((Card)comb.next().get(0), (Card) comb.next().get(1)), 1.0/1326);
+         }
+    }
+    
+    public double getHandProbability(Hand hand){
+        return handProbs.get(hand);
     }
     
     
