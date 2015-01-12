@@ -8,22 +8,42 @@ import stats.Player;
 import actions.LegalAction;
 import actions.LegalActionType;
 import cards.Card;
+import cards.Hand;
 
 public class Bot {
-    private Card hand[];
+    private Hand hand;
     private final List<Player> otherPlayers;
     private final String name;
     private int stackSize;
+    private double timeBank;
+    private final int bigBlind;
+    private final int numHands;
+    private  int handId = 1;
     
-    public Bot(String name, int stackSize, List<Player> otherPlayers){
+    public Bot(String name, int stackSize, int bigBlind, int numHands, List<Player> otherPlayers){
         this.otherPlayers = new ArrayList<Player>(otherPlayers);
         this.name = name;
         this.stackSize = stackSize;
+        this.bigBlind = bigBlind;
+        this.numHands = numHands;
     }
     
-    public void setHand(Card hole1, Card hole2){
-        hand = new Card[]{hole1,hole2};
+    public void setHand(Hand newHand){
+        hand = newHand;
     }
+    
+    public void setTimeBank(double timeBank){
+        this.timeBank = timeBank;
+    }
+    
+    public void setStackSize(int stackSize){
+        this.stackSize = stackSize;
+    }
+    
+    public void setHandId(int newHandId){
+        this.handId = newHandId;
+    }
+    
     
     
     public String getAction(Map<String, String> getAction){
@@ -31,6 +51,7 @@ public class Bot {
         
         return "CHECK";
     }
+   
     
     
     

@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cards.Card;
 import stats.Player;
 import bot.Bot;
 
@@ -84,6 +85,7 @@ public class Communicator {
         arg.put("handId", message[i++]);
         arg.put("seat", message[i++]);
         arg.put("holeCard1", message[i++]);
+        arg.put("holeCard2", message[i++]);
         for (int x=0;x<3;x++){
             arg.merge("stackSizes", message[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
         }
@@ -122,7 +124,7 @@ public class Communicator {
     public void run() {
         String input;
         try {
-            Bot bot =  new Bot("none", 0, new ArrayList<Player>());
+            Bot bot =  new Bot("none", 0,0,0, new ArrayList<Player>());
             List<Player> players;
             // Block until engine sends us a packet; read it into input.
             while ((input = inStream.readLine()) != null) {
@@ -149,15 +151,27 @@ public class Communicator {
                     outStream.println("FINISH");
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
                     Map<String,String> parsed = parseNewGame(inputWords);
+                    
                     int stackSize = new Integer(parsed.get("stackSize"));
                     Player player1 = new Player(parsed.get("opp1Name"), stackSize,0); // dummy seat values must be updated in NEWHAND
                     Player player2 = new Player(parsed.get("opp2Name"), stackSize,0); // dummy seat values must be updated in NEWHAND
                     players = Arrays.asList(new Player[]{player1,player2});
+                    
                     String botName = parsed.get("yourName");
-                    bot = new Bot(botName, stackSize, players);
+                    int numHands = new Integer(parsed.get("numHands"));
+                    int bigBlind = new Integer(parsed.get("bigBlind"));
+                    
+                    bot = new Bot(botName, stackSize, bigBlind, numHands, players);
                     
                 } else if ("NEWHAND".compareToIgnoreCase(word) == 0) {
                     Map<String,String> parsed = parseNewHand(inputWords);
+                    
+                    int handId = new Integer(parsed.get("handId"));
+                    int seat = new Integer(parsed.get("seat"));
+                    Card holeCard1 = new Card(parsed.get("holeCard1"));
+                    Card holeCard2 = new Card(parsed.get("holeCard2"));
+                    double timeBank = new Double(parsed.get("timeBank"));
+                    
                     
                 } else if ("HANDOVER".compareToIgnoreCase(word) == 0) {
                     Map<String,String> parsed = parseHandOver(inputWords);
