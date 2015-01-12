@@ -68,7 +68,6 @@ public class Communicator {
         
         arg.put("timeBank", actionMessage[i++]);
         
-        
         return arg;
     }
     
