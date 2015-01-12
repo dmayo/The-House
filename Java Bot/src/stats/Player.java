@@ -1,6 +1,11 @@
 package stats;
 
+import java.util.ArrayList;
+
+import cards.BoardCards;
+import cards.Card;
 import actions.PerformedAction;
+import actions.Street;
 
 public class Player {
     
@@ -9,7 +14,7 @@ public class Player {
     private int stackSize;
     private boolean isActive;
     private int seat;
-    
+    private BoardCards boardCards;
     
     public Player(String name, int stackSize, int seat){
         this.name = name;
@@ -17,6 +22,12 @@ public class Player {
         this.stackSize = stackSize;
         this.isActive = true;
         this.seat = seat;
+        this.boardCards = new BoardCards(Street.PREFLOP, new ArrayList<Card>());
+    }
+    
+    
+    public void setBoardCards(BoardCards newBoardCards){
+        this.boardCards = newBoardCards;
     }
     
     

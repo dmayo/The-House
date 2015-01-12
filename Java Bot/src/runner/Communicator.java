@@ -162,18 +162,17 @@ public class Communicator {
                     String[] activePlayers = parsed.get("activePlayers").split(" ");
                     String[] legalActions = parsed.get("legalActions").split(" ");
                     
-                    
                     List<Card> boardCardsList = new ArrayList<Card>();
                     for(String card: boardCardsStringArray){
                         boardCardsList.add(new Card(card));
                     }
-                    
-                    
+                                        
                     for(int i=0; i < stackSizes.length; i++){
                         for(Player player : players){
                             if(player.getSeat() == i+1){
                                 player.setActive(new Boolean(activePlayers[i]));
                                 player.setStackSize(new Integer(stackSizes[i]));
+                                player.setBoardCards(new BoardCards(Street.fromInt(numBoardCards), boardCardsList));
                             }
                         }
                         if(bot.getSeat() == i+1){
@@ -191,6 +190,7 @@ public class Communicator {
                     // FINISH indicates no more to store.
                     outStream.println("FINISH");
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
+                    //NEWGAME yourName opp1Name opp2Name stackSize bb numHands timeBank
                     Map<String,String> parsed = parseNewGame(inputWords);
                     
                     int stackSize = new Integer(parsed.get("stackSize"));
@@ -222,6 +222,7 @@ public class Communicator {
                     bot.setHand(new Hand(holeCard1, holeCard2));
                     bot.setTimeBank(timeBank);
                     bot.setNumActivePlayers(numActivePlayers);
+                    bot.setBoardCards(new BoardCards(Street.PREFLOP, new ArrayList<Card>()));
                     
                     String[] stackSizes = parsed.get("stackSizes").split(" ");
                     String[] playerNames = parsed.get("playerNames").split(" ");

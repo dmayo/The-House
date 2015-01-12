@@ -7,6 +7,7 @@ import java.util.Map;
 import stats.Player;
 import actions.LegalAction;
 import actions.LegalActionType;
+import actions.Street;
 import cards.BoardCards;
 import cards.Card;
 import cards.Hand;
@@ -21,7 +22,7 @@ public class Bot {
     private final int numHands;
     private  int handId;
     private int seat;
-    private int numActivePlayers = 3;
+    private int numActivePlayers;
     private int potSize = 0;
     private BoardCards boardCards;
     
@@ -32,6 +33,9 @@ public class Bot {
         this.bigBlind = bigBlind;
         this.numHands = numHands;
         this.timeBank = timeBank;
+        this.boardCards = new BoardCards(Street.PREFLOP, new ArrayList<Card>());
+        this.handId = 1;
+        this.numActivePlayers = 3;
     }
     
     public void setBoardCards(BoardCards newBoardCards){
