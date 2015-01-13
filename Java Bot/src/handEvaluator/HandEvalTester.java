@@ -17,5 +17,7 @@ public class HandEvalTester {
         long encoded7 = HandEval.encode(cards);
         int rank = HandEval.hand7Eval(encoded7);
         System.out.println("Royal Flush Rank: " + rank);
+        
+        
     }
 }

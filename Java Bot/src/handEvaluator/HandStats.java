@@ -19,34 +19,47 @@ public class HandStats {
         int tied = 0;
         int behind = 0;
         
-        Card allCards[] = combineCardsAndBoard(hole1,hole2,board); 
-        int ourRank = rankHand(allCards);
+        long startTime1 = System.nanoTime();
+        long encode = HandEval.encode(new Card[]{hole1,hole2,board[0],board[1],board[2]});
+        HandEval.hand5Eval(encode);
+        long timeDiff1 = System.nanoTime()-startTime1;
+        System.out.println("Time to encode: " + timeDiff1);
         
-        CardSet cardSet = CardSet.freshDeck();
-        cardSet.removeAll(Arrays.asList(allCards));
-        
-        for(Card oppHole1 : cardSet){
-            for(Card oppHole2 : cardSet){
-                if(oppHole1.equals(oppHole2)){
-                    break;
-                }
-                                
-                Card oppHand[] = combineCardsAndBoard(oppHole1,oppHole2,board);  
-                int oppRank = rankHand(oppHand);
-                
-                if (ourRank > oppRank){
-                    ahead++;
-                }
-                else if(ourRank < oppRank){
-                    behind++;
-                }
-                else{
-                    tied ++;
-                }
-              
-            }
-        }
-        return (ahead+(tied/2.0)) / (ahead+tied+behind);
+        int n = 0;
+        int[] hand = new int[7];
+        int[] reshand = new int[6];
+        Card c = new Card("Th");
+        System.out.println("should be 34: " + c.ordinal());
+        int[] cards = new int[7];
+        //for (int i = 0; i < 7; i++) cards[i] = new pokerai.game.eval.stevebrecher.Card("AsAh");
+        //pokerai.game.eval.spears.Card[] deck = pokerai.game.eval.spears.Card.values();
+        //CardSet cs = new CardSet();
+        long key = 0;
+        long time = System.currentTimeMillis();
+        long sum = 0;
+        for (int h1 = 0; h1 < 13; h1++)
+          for (int h2 = 0; h2 < 13; h2++) {
+//            System.out.println(h1 + " " + h2);
+            for (int h3 = 0; h3 < 13; h3++)
+              for (int h4 = 0; h4 < 13; h4++)
+                for (int h5 = 0; h5 < 13; h5++)  if (h5 != h2)
+                  for (int h6 = 0; h6 < 13; h6++) if (h6 != h3)
+                    for (int h7 = 0; h7 < 13; h7++) if (h7 != h4) {
+                //pokerai.game.eval.spears.Hand h = new pokerai.game.eval.spears.Hand();
+                      key = 0;
+                      key |= (0x1L << (h1));
+                      key |= (0x1L << (13+h2));
+                      key |= (0x1L << (26+h3));
+                      key |= (0x1L << (39+h4));
+                      key |= (0x1L << (13+h5));
+                      key |= (0x1L << (26+h6));
+                      key |= (0x1L << (39+h7));
+                      n++;
+                      sum += HandEval.hand7Eval(key);
+                      //System.out.println(sum);
+                    }
+          }
+        return n;//(ahead+(tied/2.0)) / (ahead+tied+behind);
     }
     
     
@@ -205,6 +218,7 @@ public class HandStats {
         int rank = 0;
         
         if(cards.length == 5){
+            System.out.println("length five");
             rank = HandEval.hand5Eval(handLong);
         }
         else if(cards.length==6){
