@@ -169,7 +169,7 @@ public class HandStats {
     static public double monteCarloEquity(int iterations, Card hole1, Card hole2, Card board[]){
         int ahead = 0;
         int tied = 0;
-        int behind = 0;
+        
         long ourHandLong = HandEval.encode(hole1) | HandEval.encode(hole2);
         long boardLong = HandEval.encode(board);
         long originalUsed = ourHandLong | boardLong;
@@ -179,32 +179,29 @@ public class HandStats {
             long oppHandLong = addNewRandomCard(2,0,used);
             used |= oppHandLong;
             
-            long rollOutBoard = addNewRandomCard(5-board.length, boardLong,used);
+            long rollOutBoard = addNewRandomCard(5-board.length, boardLong, used);
             int ourRank = HandEval.hand7Eval(rollOutBoard | ourHandLong);
             int oppRank = HandEval.hand7Eval(rollOutBoard | oppHandLong);
             
             if (ourRank > oppRank){
                 ahead++;
             }
-            else if(ourRank < oppRank){
-                behind++;
-            }
-            else{
-                tied ++;
+            else if(ourRank == oppRank){
+                tied++;
             }
         }
         
-        return (ahead+(tied/2.0)) / (double)(ahead+tied+behind);
+        return (ahead+(tied/2.0)) / (double)(iterations);
     }
     
     
     
     static private long addNewRandomCard(int num, long addTo, long used){
-        final long one = 0x01L;
+        final long one = 0x1L;
         for(int i=0; i<num; i++){
             int card = rnd.nextInt(52);
-            while(((one << card) & used) == 1){
-                card = (card+1)%52;
+            while(((one << card) & used) != 0){
+                card = (card+1) % 52;
             }
             long cardLong = one << card;         
             addTo |=  cardLong;

@@ -7,14 +7,19 @@ public class HandStatsTest {
         long startTime;
         long endTime;
         long timeDiff;
-        Card hole1 = new Card("Ah");
-        Card hole2 = new Card("Kh");
-        Card board1 = new Card("Qh");
-        Card board2 = new Card("Jh");
-        Card board3 = new Card("Ts");
+        
+        Card hole1 = new Card("Ac");
+        Card hole2 = new Card("Kc");
+        
+        Card board1 = new Card("Qc");
+        Card board2 = new Card("7c");
+        Card board3 = new Card("Tc");
+        //Card board4 = new Card("Qc");
         
         Card board[] = new Card[]{board1,board2,board3};
+        
         double strength = HandStats.handStrength(hole1, hole2, board);
+        /*
         startTime = System.currentTimeMillis();
         int iterations = 10000;
         for(int i=0; i<iterations; i++){
@@ -25,13 +30,13 @@ public class HandStatsTest {
         timeDiff = endTime-startTime;
         System.out.println("time diff: " + timeDiff/1000.0);
         System.out.println("Hand strength of hole: Tc,Jc board:2d,Ts,Kh - strength: "+ strength + " time: " + (timeDiff/1000.0)/iterations);
-
+*/
       
         startTime = System.currentTimeMillis();
-        double equity = HandStats.monteCarloEquity(5000,hole1, hole2, new Card[]{});
+        double equity = HandStats.monteCarloEquity(10000,hole1, hole2, board);
         endTime = System.currentTimeMillis();
         timeDiff = endTime-startTime;
-        System.out.println("Hand potential of hole: Tc,Jc board:2d,Ts,Kh - equity: "+ equity + " time: " + timeDiff);
+        System.out.println("equity: "+ equity + " time: " + timeDiff);
         
         
         /*
