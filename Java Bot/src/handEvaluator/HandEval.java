@@ -781,6 +781,7 @@ public static enum HandCategory { NO_PAIR, PAIR, TWO_PAIR, THREE_OF_A_KIND, STRA
       for (mask = 0x1F00/* A..T */; mask >= 0x001F/* 6..2 */; mask >>= 1)
           setStraight(mask);
       setStraight(WHEEL); /* A,5..2 */
+      System.out.println("init ------- init ----");
   }
 
   private static void setStraight(int ts) {
