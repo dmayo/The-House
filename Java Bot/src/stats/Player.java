@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import cards.BoardCards;
 import cards.Card;
 import actions.PerformedAction;
+import actions.PerformedActionType;
 import actions.Street;
 
 public class Player {
@@ -15,6 +16,7 @@ public class Player {
     private boolean isActive;
     private int seat;
     private BoardCards boardCards;
+    private PerformedAction lastAction;
     
     public Player(String name, int stackSize, int seat){
         this.name = name;
@@ -82,6 +84,19 @@ public class Player {
      * @param action
      */
     public void processAction(PerformedAction action){
-        
+        this.lastAction = action;
+    }
+    
+    
+    public PerformedAction getLastAction(){
+        return this.lastAction;
+    }
+    
+    public boolean limped(){
+        return (lastAction.getType() == PerformedActionType.CALL) & isActive;
+    }
+    
+    public boolean raised(){
+        return (lastAction.getType() == PerformedActionType.RAISE) & isActive;
     }
 }
