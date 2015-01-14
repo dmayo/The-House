@@ -193,10 +193,12 @@ public class Communicator {
                     String[] legalActions = parsed.get("legalActions").split(" ");
                     
                     List<Card> boardCardsList = new ArrayList<Card>();
-                    for(String card: boardCardsStringArray){
-                        boardCardsList.add(new Card(card));
+                    if(numBoardCards > 0){
+                        for(String card: boardCardsStringArray){
+                            boardCardsList.add(new Card(card));
+                        }
                     }
-                                        
+
                     for(int i=0; i < stackSizes.length; i++){
                         for(Player player : players){
                             if(player.getSeat() == i+1){
@@ -276,11 +278,11 @@ public class Communicator {
                     //HANDOVER [stackSizes] numBoardCards [boardCards] numLastActions [lastActions] timeBank
                     Map<String,String> parsed = parseHandOver(inputWords);
                     
-                    String stackSizes[] = parsed.get("stackSize").split(" ");
+                    String stackSizes[] = parsed.get("stackSizes").split(" ");
                     int numBoardCards = new Integer(parsed.get("numBoardCards"));
                     String boardCards[] = parsed.get("boardCards").split(" ");
                     int numLastActions = new Integer(parsed.get("numLastActions"));
-                    String lastActions[] = parsed.get("lastActions").split(" ");
+                    String lastActions[] = parsed.get("performedActions").split(" ");
                     double timeBank = new Double(parsed.get("timeBank"));
                     
                     for(int i=0; i < stackSizes.length; i++){

@@ -1,4 +1,5 @@
 package actions;
+import java.util.Random;
 
 public class ActionProbability {
     private final double probFold;
@@ -6,6 +7,7 @@ public class ActionProbability {
     private final double probRaise;
     private final double probBet;
     private final double probCheck;
+    private final static Random rnd = new Random();
     
     public ActionProbability(double probFold, double probCall, double probRaise, double probBet, double probCheck){
         this.probFold = probFold;
@@ -32,6 +34,12 @@ public class ActionProbability {
         } else{
             return probCheck;
         }
+    }
+    
+    
+    public LegalActionType randomlyChooseAction(){
+        double prob = rnd.nextDouble();
+        
     }
     
     
