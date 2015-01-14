@@ -28,7 +28,7 @@ public class ActionProbability {
     
     public LegalActionType randomlyChooseAction(){
         double p = rnd.nextDouble();
-        double cumulativeProbability = 0;;
+        double cumulativeProbability = 0;
         for(LegalActionType action : probabilityMap.keySet()){
             cumulativeProbability += probabilityMap.get(action);
             if(p <= cumulativeProbability){

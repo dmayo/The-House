@@ -85,7 +85,9 @@ public class Bot {
         
         if(boardCards.getStreet() == Street.PREFLOP){
             ActionProbability actionProb = preFlopStrategy();
+            
             LegalActionType actionToPerform = actionProb.randomlyChooseAction();
+            System.out.println("action to perform: " + actionToPerform);
             for(LegalAction legalAction : legalActions){
                 if(legalAction.getType() == actionToPerform){
                     int amount = Math.max(legalAction.getAmount(), legalAction.getMax());
@@ -101,6 +103,7 @@ public class Bot {
         else{            
             ActionProbability actionProb = postFlopStrategy(legalActions);
             LegalActionType actionToPerform = actionProb.randomlyChooseAction();
+            System.out.println("action to perform: " + actionToPerform);
             for(LegalAction legalAction : legalActions){
                 if(legalAction.getType() == actionToPerform){
                     int amount = Math.max(legalAction.getAmount(), legalAction.getMax());
@@ -112,7 +115,8 @@ public class Bot {
                 }
             }
         }
-        
+        System.out.println("Street: "+ boardCards.getStreet());
+        System.out.println("------------------------------------------------");
         return "CHECK";
     }
     
@@ -133,6 +137,7 @@ public class Bot {
         final List<LegalAction> legalActions = new ArrayList<LegalAction>();
         
         for(String action : legalActionsArray){
+            System.out.println("legal action: " + action);
             if(action.contains(LegalActionType.BET.toString())){
                 final String actionSplit[] = action.split(":");
                 final int min = new Integer(actionSplit[1]);
@@ -142,14 +147,14 @@ public class Bot {
             if(action.contains(LegalActionType.CALL.toString())){
                 final String actionSplit[] = action.split(":");
                 final int amount = new Integer(actionSplit[1]);
-                legalActions.add(new LegalAction(LegalActionType.BET,0,0,amount));
+                legalActions.add(new LegalAction(LegalActionType.CALL,0,0,amount));
             }
             if(action.contains(LegalActionType.CHECK.toString())){
                 legalActions.add(new LegalAction(LegalActionType.CHECK,0,0,0));
             }
-            if(action.contains(LegalActionType.FOLD.toString())){
-                legalActions.add(new LegalAction(LegalActionType.FOLD,0,0,0));
-            }
+           // if(action.contains(LegalActionType.FOLD.toString())){
+           //     legalActions.add(new LegalAction(LegalActionType.FOLD,0,0,0));
+          //  }
             if(action.contains(LegalActionType.RAISE.toString())){
                 final String actionSplit[] = action.split(":");
                 final int min = new Integer(actionSplit[1]);
@@ -157,6 +162,8 @@ public class Bot {
                 legalActions.add(new LegalAction(LegalActionType.RAISE,min,max,0));
             }
         }
+        
+        legalActions.add(new LegalAction(LegalActionType.FOLD,0,0,0));
         
         return legalActions;
         
@@ -169,46 +176,46 @@ public class Bot {
         // we are first to act and everyone is still playing
         // play upto KQ
         if(seat == 1){
-            if(EquitySquaredRanking.getRank(hand) <= 20){
+            if(EquitySquaredRanking.getRank(hand) <= 30){
                 return new ActionProbability(0, 0.1, 0.9, 0, 0);
             } else{
-                return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
+                return new ActionProbability(0.7, 0.2, 0.1, 0, 0);
             }
         }
         
         // we are the second to act with small blind
         else if(seat == 2 && numActivePlayers == 3){
             if(potSize == initialPot){ // we are the first to act - button folds
-                if(EquitySquaredRanking.getRank(hand) <= 20){
+                if(EquitySquaredRanking.getRank(hand) <= 30){
                     return new ActionProbability(0, 0.1, 0.9, 0, 0);
                 } else{
                     return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
                 }
             } else if(potSize ==  initialPot + bigBlind){ // button limped in
-                if(EquitySquaredRanking.getRank(hand) <= 20){
+                if(EquitySquaredRanking.getRank(hand) <= 30){
                     return new ActionProbability(0, 0.1, 0.9, 0, 0);
-                } else if(EquitySquaredRanking.getRank(hand) <= 40){
+                } else if(EquitySquaredRanking.getRank(hand) <= 50){
                     return new ActionProbability(0.1, 0.7, 0.2, 0, 0);
                 } else{
-                    return new ActionProbability(0.9, 0.1, 0.1, 0, 0);
+                    return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
                 }
             } else{ // button raised
-                if(EquitySquaredRanking.getRank(hand) <= 10){
+                if(EquitySquaredRanking.getRank(hand) <= 20){
                     return new ActionProbability(0, 0.1, 0.9, 0, 0);
                 }
-                else if(EquitySquaredRanking.getRank(hand) <=  20){
+                else if(EquitySquaredRanking.getRank(hand) <=  40){
                     return new ActionProbability(0, 0.8, 0.2, 0, 0);
                 } else{
-                    return new ActionProbability(0.9, 0.1, 0.1, 0, 0);
+                    return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
                 }
             }
         }
         
         // we are the first to act with small blind
         else if(seat == 2 && numActivePlayers == 2){
-            if(EquitySquaredRanking.getRank(hand) <= 20){
+            if(EquitySquaredRanking.getRank(hand) <= 30){
                 return new ActionProbability(0, 0.1, 0.9, 0, 0);
-            } else if(EquitySquaredRanking.getRank(hand) <= 40){
+            } else if(EquitySquaredRanking.getRank(hand) <= 50){
                 return new ActionProbability(0.2, 0.3, 0.5, 0, 0);
             } else{
                 return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
@@ -219,22 +226,22 @@ public class Bot {
         else if(seat == 3 && numActivePlayers == 3){
             
             if(otherPlayers.get(0).limped() && otherPlayers.get(1).limped()){ // button limped and small blind limped in
-                if(EquitySquaredRanking.getRank(hand) <= 25){
+                if(EquitySquaredRanking.getRank(hand) <= 30){
                     return new ActionProbability(0, 0, 0.9, 0, 0.1);
-                } else if(EquitySquaredRanking.getRank(hand) <= 40){
+                } else if(EquitySquaredRanking.getRank(hand) <= 45){
                     return new ActionProbability(0.1, 0, 0.3, 0, 0.6);
                 } else{
                     return new ActionProbability(0.8, 0, 0.1, 0, 0.1);
                 }
             } else{ // someone raised
-                if(EquitySquaredRanking.getRank(hand) <= 10){
+                if(EquitySquaredRanking.getRank(hand) <= 20){
                     return new ActionProbability(0, 0.1, 0.9, 0, 0);
-                } else if(EquitySquaredRanking.getRank(hand) <=  20){
+                } else if(EquitySquaredRanking.getRank(hand) <=  30){
                     return new ActionProbability(0, 0.8, 0.2, 0, 0);
-                } else if(EquitySquaredRanking.getRank(hand) <=  40){
+                } else if(EquitySquaredRanking.getRank(hand) <=  50){
                     return new ActionProbability(0.4, 0.6, 0, 0, 0);
                 } else{
-                    return new ActionProbability(0.9, 0.1,0, 0, 0);
+                    return new ActionProbability(0.8, 0.2, 0, 0, 0);
                 }
             }
         }
@@ -243,7 +250,7 @@ public class Bot {
         else if(seat == 3 && numActivePlayers == 2){
             
             if(otherPlayers.get(0).limped() || otherPlayers.get(1).limped()){ // other player limped
-                if(EquitySquaredRanking.getRank(hand) <= 30){
+                if(EquitySquaredRanking.getRank(hand) <= 40){
                     return new ActionProbability(0, 0, 0.9, 0, 0.1);
                 } else if(EquitySquaredRanking.getRank(hand) <= 50){
                     return new ActionProbability(0.1, 0, 0.3, 0, 0.6);
@@ -251,14 +258,14 @@ public class Bot {
                     return new ActionProbability(0.8, 0, 0.1, 0, 0.1);
                 }
             } else{ // someone raised
-                if(EquitySquaredRanking.getRank(hand) <= 10){
+                if(EquitySquaredRanking.getRank(hand) <= 20){
                     return new ActionProbability(0, 0.1, 0.9, 0, 0);
-                } else if(EquitySquaredRanking.getRank(hand) <=  30){
+                } else if(EquitySquaredRanking.getRank(hand) <=  40){
                     return new ActionProbability(0, 0.8, 0.2, 0, 0);
-                } else if(EquitySquaredRanking.getRank(hand) <=  50){
+                } else if(EquitySquaredRanking.getRank(hand) <=  55){
                     return new ActionProbability(0.4, 0.6, 0, 0, 0);
                 } else{
-                    return new ActionProbability(0.9, 0.1,0, 0, 0);
+                    return new ActionProbability(0.8, 0.2,0, 0, 0);
                 }
             }
         }
