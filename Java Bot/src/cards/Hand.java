@@ -10,6 +10,11 @@ public class Hand {
     }
     
     
+    public Hand(String card1, String card2){
+        this.card1 = new Card(card1);
+        this.card2 = new Card(card2);
+    }
+    
     /**
      * @return true if cards are same suit, false otherwise
      */

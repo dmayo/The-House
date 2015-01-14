@@ -128,7 +128,11 @@ public class Bot {
     
     
     private void preFlopStrategy(){
-        
+        // we are first to act and everyone is still playing
+        //
+        if(seat == 1 && numActivePlayers == 3){
+            
+        }
     }
     
 

@@ -2,6 +2,6 @@ f = open('hands.txt','r')
 for line in f:
     
     if line[0] == '(':
-        print "new Hand(new Card(\"" + line[1] + "h\"), new Card(\"" + line[2] +"d\")),"
+        print "new Hand(\"" + line[1] + "h\",\"" + line[2] +"h\"),"
     else:
-        print "new Hand(new Card(\"" + line[0] + "h\"), new Card(\"" + line[1] +"h\")),"
+        print "new Hand(\"" + line[0] + "h\",\"" + line[1] +"d\"),"
