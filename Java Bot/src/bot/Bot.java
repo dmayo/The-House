@@ -126,5 +126,10 @@ public class Bot {
         
     }
     
+    
+    private void preFlopStrategy(){
+        
+    }
+    
 
 }

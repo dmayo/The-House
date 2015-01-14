@@ -33,4 +33,14 @@ public class Hand {
     public int hashCode(){
         return card1.hashCode()*card2.hashCode();
     }
+    
+    
+    /**
+     * @param other Hand to compare to
+     * @return return true if ranks of hands are equal, otherwise false.
+     */
+    public boolean isEqualIgnoringSuit(Hand other){
+        return ((card1.rankOf() == other.card1.rankOf() && card2.rankOf() == other.card2.rankOf()) ||
+                (card1.rankOf() == other.card2.rankOf() && card2.rankOf() == other.card1.rankOf()));
+    }
 }
