@@ -1,5 +1,7 @@
 package bot;
 
+import handEvaluator.HandStats;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -92,13 +94,23 @@ public class Bot {
                     } else{
                         return actionToPerform.toString();
                     }
-                     
                 }
             }
             
         }
-        else{
-            
+        else{            
+            ActionProbability actionProb = postFlopStrategy(legalActions);
+            LegalActionType actionToPerform = actionProb.randomlyChooseAction();
+            for(LegalAction legalAction : legalActions){
+                if(legalAction.getType() == actionToPerform){
+                    int amount = Math.max(legalAction.getAmount(), legalAction.getMax());
+                    if(amount != 0){
+                        return actionToPerform.toString() + ":" + amount;
+                    } else{
+                        return actionToPerform.toString();
+                    }
+                }
+            }
         }
         
         return "CHECK";
@@ -257,5 +269,26 @@ public class Bot {
 
     }
     
+    private ActionProbability postFlopStrategy(List<LegalAction> legalActions){
+        //get the call amount, call amount is 0 if call is not a legal action
+        int callAmount = 0;
+        for(LegalAction action : legalActions){
+            if(action.getType()==LegalActionType.CALL){
+                callAmount=action.getAmount();
+            }
+        }
+        
+        double potOdds = callAmount/(callAmount+potSize); //pot odds = call/(call+pot)
+        double equity =  HandStats.monteCarloEquity(5000, hand, boardCards);
+        //If pot odds are better than your pot equity, call or raise
+        //If pot odds are worse, fold
+        if(potOdds>equity){
+            //fold, call, raise, bet, check
+            return new ActionProbability(0, 0.7, .3, 0, 0);
+        }
+        else{
+            return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
+        }
+    }
 
 }
