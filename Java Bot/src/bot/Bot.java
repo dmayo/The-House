@@ -3,6 +3,7 @@ package bot;
 import handEvaluator.HandStats;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -81,37 +82,37 @@ public class Bot {
     }
     
     public String getAction(String legalActionsArray[]){
-        List<LegalAction> legalActions = determineLegalActions(legalActionsArray);
+        Map<LegalActionType, LegalAction> legalActions = determineLegalActions(legalActionsArray);
         
         if(boardCards.getStreet() == Street.PREFLOP){
             ActionProbability actionProb = preFlopStrategy();
-            
-            LegalActionType actionToPerform = actionProb.randomlyChooseAction();
-            System.out.println("action to perform: " + actionToPerform);
-            for(LegalAction legalAction : legalActions){
-                if(legalAction.getType() == actionToPerform){
-                    int amount = Math.max(legalAction.getAmount(), legalAction.getMax());
-                    if(amount != 0){
-                        return actionToPerform.toString() + ":" + amount;
-                    } else{
-                        return actionToPerform.toString();
-                    }
+            LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
+            System.out.println("action to perform: " + actionTypeToPerform);
+          
+            if(legalActions.containsKey(actionTypeToPerform)){
+                LegalAction legalAction = legalActions.get(actionTypeToPerform);
+                int amount = Math.max(legalAction.getAmount(), legalAction.getMax());
+                if(amount != 0){
+                    return actionTypeToPerform.toString() + ":" + amount;
+                } else{
+                    return actionTypeToPerform.toString();
                 }
             }
+            
             
         }
         else{            
             ActionProbability actionProb = postFlopStrategy(legalActions);
-            LegalActionType actionToPerform = actionProb.randomlyChooseAction();
-            System.out.println("action to perform: " + actionToPerform);
-            for(LegalAction legalAction : legalActions){
-                if(legalAction.getType() == actionToPerform){
-                    int amount = Math.max(legalAction.getAmount(), legalAction.getMax());
-                    if(amount != 0){
-                        return actionToPerform.toString() + ":" + amount;
-                    } else{
-                        return actionToPerform.toString();
-                    }
+            LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
+            System.out.println("action to perform: " + actionTypeToPerform);
+          
+            if(legalActions.containsKey(actionTypeToPerform)){
+                LegalAction legalAction = legalActions.get(actionTypeToPerform);
+                int amount = Math.max(legalAction.getAmount(), legalAction.getMax());
+                if(amount != 0){
+                    return actionTypeToPerform.toString() + ":" + amount;
+                } else{
+                    return actionTypeToPerform.toString();
                 }
             }
         }
@@ -132,39 +133,29 @@ public class Bot {
      * @param getAction 
      * @return a list of legal actions that the bot can make
      */
-    private List<LegalAction> determineLegalActions(String legalActionsArray[]){
+    private Map<LegalActionType, LegalAction> determineLegalActions(String legalActionsArray[]){
         
-        final List<LegalAction> legalActions = new ArrayList<LegalAction>();
+        final Map<LegalActionType, LegalAction> legalActions = new HashMap<LegalActionType, LegalAction>();
         
         for(String action : legalActionsArray){
             System.out.println("legal action: " + action);
-            if(action.contains(LegalActionType.BET.toString())){
-                final String actionSplit[] = action.split(":");
+            final String actionSplit[] = action.split(":");
+            LegalActionType actionType = LegalActionType.valueOf(actionSplit[0]);
+            
+            if(actionType == LegalActionType.BET || actionType == LegalActionType.RAISE){    
                 final int min = new Integer(actionSplit[1]);
                 final int max = new Integer(actionSplit[2]);
-                legalActions.add(new LegalAction(LegalActionType.BET,min,max,0));
+                legalActions.put(actionType, new LegalAction(LegalActionType.BET,min,max,0));
             }
-            if(action.contains(LegalActionType.CALL.toString())){
-                final String actionSplit[] = action.split(":");
+            if(actionType == LegalActionType.CALL){
                 final int amount = new Integer(actionSplit[1]);
-                legalActions.add(new LegalAction(LegalActionType.CALL,0,0,amount));
+                legalActions.put(actionType, new LegalAction(LegalActionType.CALL,0,0,amount));
             }
-            if(action.contains(LegalActionType.CHECK.toString())){
-                legalActions.add(new LegalAction(LegalActionType.CHECK,0,0,0));
-            }
-           // if(action.contains(LegalActionType.FOLD.toString())){
-           //     legalActions.add(new LegalAction(LegalActionType.FOLD,0,0,0));
-          //  }
-            if(action.contains(LegalActionType.RAISE.toString())){
-                final String actionSplit[] = action.split(":");
-                final int min = new Integer(actionSplit[1]);
-                final int max = new Integer(actionSplit[2]);
-                legalActions.add(new LegalAction(LegalActionType.RAISE,min,max,0));
-            }
+            if(actionType == LegalActionType.CHECK || actionType == LegalActionType.FOLD){
+                legalActions.put(actionType, new LegalAction(LegalActionType.CHECK,0,0,0));
+            }     
         }
-        
-        legalActions.add(new LegalAction(LegalActionType.FOLD,0,0,0));
-        
+              
         return legalActions;
         
     }
@@ -276,14 +267,13 @@ public class Bot {
 
     }
     
-    private ActionProbability postFlopStrategy(List<LegalAction> legalActions){
+    private ActionProbability postFlopStrategy(Map<LegalActionType, LegalAction> legalActions){
         //get the call amount, call amount is 0 if call is not a legal action
         int callAmount = 0;
-        for(LegalAction action : legalActions){
-            if(action.getType()==LegalActionType.CALL){
-                callAmount=action.getAmount();
-            }
+        if(legalActions.containsKey(LegalActionType.CALL)){
+            callAmount=legalActions.get(LegalActionType.CALL).getAmount();
         }
+        
         
         double potOdds = callAmount/(callAmount+potSize); //pot odds = call/(call+pot)
         double equity =  HandStats.monteCarloEquity(5000, hand, boardCards);
