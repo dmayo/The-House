@@ -1,7 +1,7 @@
 package handEvaluator;
 
 import cards.Card;
-import cards.EquitySquaredRanking;
+
 
 public class HandStatsTest {
     public static void main(String args[]){
@@ -39,7 +39,6 @@ public class HandStatsTest {
         timeDiff = endTime-startTime;
         System.out.println("equity: "+ equity + " time: " + timeDiff);
         
-        System.out.println(EquitySquaredRanking.getRank(new Hand(new Card("Ac"),new Card("Ac"))));
         /*
         for(int i=0; i<100; i++){
             long startTime1 = System.nanoTime();

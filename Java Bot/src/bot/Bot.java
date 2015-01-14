@@ -5,11 +5,14 @@ import java.util.List;
 import java.util.Map;
 
 import stats.Player;
+import actions.ActionProbability;
 import actions.LegalAction;
 import actions.LegalActionType;
+import actions.PerformedActionType;
 import actions.Street;
 import cards.BoardCards;
 import cards.Card;
+import cards.EquitySquaredRanking;
 import cards.Hand;
 
 public class Bot {
@@ -77,6 +80,10 @@ public class Bot {
     public String getAction(String legalActionsArray[]){
         List<LegalAction> legalActions = determineLegalActions(legalActionsArray);
         
+        if(boardCards.getStreet() == Street.PREFLOP){
+            ActionProbability actionProb = preFlopStrategy();
+        }
+        
         return "CHECK";
     }
     
@@ -127,12 +134,112 @@ public class Bot {
     }
     
     
-    private void preFlopStrategy(){
+    private ActionProbability preFlopStrategy(){
+        final int initialPot = bigBlind + bigBlind/2;
+        //public ActionProbability(double probFold, double probCall, double probRaise, double probBet, double probCheck)
         // we are first to act and everyone is still playing
-        //
-        if(seat == 1 && numActivePlayers == 3){
-            
+        // play upto KQ
+        if(seat == 1){
+            if(EquitySquaredRanking.getRank(hand) <= 20){
+                return new ActionProbability(0, 0.1, 0.9, 0, 0);
+            } else{
+                return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
+            }
         }
+        
+        // we are the second to act with small blind
+        else if(seat == 2 && numActivePlayers == 3){
+            if(potSize == initialPot){ // we are the first to act - button folds
+                if(EquitySquaredRanking.getRank(hand) <= 20){
+                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                } else{
+                    return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
+                }
+            } else if(potSize ==  initialPot + bigBlind){ // button limped in
+                if(EquitySquaredRanking.getRank(hand) <= 20){
+                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                } else if(EquitySquaredRanking.getRank(hand) <= 40){
+                    return new ActionProbability(0.1, 0.7, 0.2, 0, 0);
+                } else{
+                    return new ActionProbability(0.9, 0.1, 0.1, 0, 0);
+                }
+            } else{ // button raised
+                if(EquitySquaredRanking.getRank(hand) <= 10){
+                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                }
+                else if(EquitySquaredRanking.getRank(hand) <=  20){
+                    return new ActionProbability(0, 0.8, 0.2, 0, 0);
+                } else{
+                    return new ActionProbability(0.9, 0.1, 0.1, 0, 0);
+                }
+            }
+        }
+        
+        // we are the first to act with small blind
+        else if(seat == 2 && numActivePlayers == 2){
+            if(EquitySquaredRanking.getRank(hand) <= 20){
+                return new ActionProbability(0, 0.1, 0.9, 0, 0);
+            } else if(EquitySquaredRanking.getRank(hand) <= 40){
+                return new ActionProbability(0.2, 0.3, 0.5, 0, 0);
+            } else{
+                return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
+            }
+        }
+        
+       // we are the last to act with big blind
+        else if(seat == 3 && numActivePlayers == 3){
+            
+            if(otherPlayers.get(0).limped() && otherPlayers.get(1).limped()){ // button limped and small blind limped in
+                if(EquitySquaredRanking.getRank(hand) <= 25){
+                    return new ActionProbability(0, 0, 0.9, 0, 0.1);
+                } else if(EquitySquaredRanking.getRank(hand) <= 40){
+                    return new ActionProbability(0.1, 0, 0.3, 0, 0.6);
+                } else{
+                    return new ActionProbability(0.8, 0, 0.1, 0, 0.1);
+                }
+            } else{ // someone raised
+                if(EquitySquaredRanking.getRank(hand) <= 10){
+                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                } else if(EquitySquaredRanking.getRank(hand) <=  20){
+                    return new ActionProbability(0, 0.8, 0.2, 0, 0);
+                } else if(EquitySquaredRanking.getRank(hand) <=  40){
+                    return new ActionProbability(0.4, 0.6, 0, 0, 0);
+                } else{
+                    return new ActionProbability(0.9, 0.1,0, 0, 0);
+                }
+            }
+        }
+        
+        // we are the last to act with big blind
+        else if(seat == 3 && numActivePlayers == 2){
+            
+            if(otherPlayers.get(0).limped() || otherPlayers.get(1).limped()){ // other player limped
+                if(EquitySquaredRanking.getRank(hand) <= 30){
+                    return new ActionProbability(0, 0, 0.9, 0, 0.1);
+                } else if(EquitySquaredRanking.getRank(hand) <= 50){
+                    return new ActionProbability(0.1, 0, 0.3, 0, 0.6);
+                } else{
+                    return new ActionProbability(0.8, 0, 0.1, 0, 0.1);
+                }
+            } else{ // someone raised
+                if(EquitySquaredRanking.getRank(hand) <= 10){
+                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                } else if(EquitySquaredRanking.getRank(hand) <=  30){
+                    return new ActionProbability(0, 0.8, 0.2, 0, 0);
+                } else if(EquitySquaredRanking.getRank(hand) <=  50){
+                    return new ActionProbability(0.4, 0.6, 0, 0, 0);
+                } else{
+                    return new ActionProbability(0.9, 0.1,0, 0, 0);
+                }
+            }
+        }
+        
+        else{
+            return new ActionProbability(0.9, 0.1,0, 0, 0);
+        }
+        
+        
+        
     }
     
 

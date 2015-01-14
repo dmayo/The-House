@@ -48,4 +48,9 @@ public class Hand {
         return ((card1.rankOf() == other.card1.rankOf() && card2.rankOf() == other.card2.rankOf()) ||
                 (card1.rankOf() == other.card2.rankOf() && card2.rankOf() == other.card1.rankOf()));
     }
+    
+    
+    public boolean isPocketPair(){
+        return card1.rankOf() == card2.rankOf();
+    }
 }
