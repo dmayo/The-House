@@ -2,6 +2,5 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/Users/patrickmccabe/Documents/pokerbots/The-House/Java Bot/bridj-0.7-20141231.010908-73.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

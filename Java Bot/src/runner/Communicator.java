@@ -40,32 +40,43 @@ public class Communicator {
         //GETACTION potSize numBoardCards [boardCards] [stackSizes] numActivePlayers [activePlayers] numLastActions [lastActions] numLegalActions [legalActions] timebank
         Map<String, String> arg = new HashMap<String, String>();
         int i=1;
+        String concatTemp = "";
         arg.put("potSize", actionMessage[i++]);
         arg.put("numBoardCards", actionMessage[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numBoardCards"));x++){
-            arg.merge("boardCards", actionMessage[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(actionMessage[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("boardCards", concatTemp);
+        concatTemp="";
         for (int x=0;x<3;x++){
-            arg.merge("stackSizes", actionMessage[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(actionMessage[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("stackSizes", concatTemp);
+        concatTemp="";
         //not sure if numActivePlayers is actually the number of actualPlayers parameters
         arg.put("numActivePlayers", actionMessage[i++]);
         for (int x=0;x<3;x++){
-            arg.merge("activePlayers", actionMessage[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(actionMessage[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("activePlayers", concatTemp);
+        concatTemp="";
         arg.put("numLastActions", actionMessage[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numLastActions"));x++){
-            arg.merge("lastActions", actionMessage[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(actionMessage[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("lastActions", concatTemp);
+        concatTemp="";
         arg.put("numLegalActions", actionMessage[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numLegalActions"));x++){
-            arg.merge("legalActions", actionMessage[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(actionMessage[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("legalActions", concatTemp);
+        concatTemp="";
         arg.put("timeBank", actionMessage[i++]);
         
         return arg;
@@ -90,20 +101,30 @@ public class Communicator {
         //NEWHAND handId seat holeCard1 holeCard2 [stackSizes] [playerNames] numActivePlayers [activePlayers] timeBank
         Map<String, String> arg = new HashMap<String, String>();
         int i=1;
+        String concatTemp = "";
         arg.put("handId", message[i++]);
         arg.put("seat", message[i++]);
         arg.put("holeCard1", message[i++]);
         arg.put("holeCard2", message[i++]);
         for (int x=0;x<3;x++){
-            arg.merge("stackSizes", message[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("stackSizes", concatTemp);
+        concatTemp="";
         for (int x=0;x<3;x++){
-            arg.merge("playerNames", message[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("playerNames", concatTemp);
+        concatTemp="";
         arg.put("numActivePlayers", message[i++]);
         for (int x=0;x<3;x++){
-            arg.merge("activePlayers", message[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("activePlayers", concatTemp);
+        concatTemp="";
         arg.put("timeBank", message[i++]);
 
         return arg;
@@ -113,17 +134,27 @@ public class Communicator {
         //HANDOVER [stackSizes] numBoardCards [boardCards] numLastActions [lastActions] timeBank
         Map<String, String> arg = new HashMap<String, String>();
         int i=1;
+        String concatTemp="";
         for (int x=0;x<3;x++){
-            arg.merge("stackSizes", message[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("stackSizes", concatTemp);
+        concatTemp="";
         arg.put("numBoardCards", message[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numBoardCards"));x++){
-            arg.merge("boardCards", message[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("boardCards", concatTemp);
+        concatTemp="";
         arg.put("numLastActions", message[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numLastActions"));x++){
-            arg.merge("performedActions", message[i++], (value, newValue) -> value.concat(" ".concat(newValue)));
+            concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
+        concatTemp = concatTemp.substring(0, concatTemp.length()-1);
+        arg.put("performedActions", concatTemp);
+        concatTemp="";
         arg.put("timeBank", message[i++]);
 
         return arg;
