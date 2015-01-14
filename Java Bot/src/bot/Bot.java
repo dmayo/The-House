@@ -83,7 +83,19 @@ public class Bot {
         
         if(boardCards.getStreet() == Street.PREFLOP){
             ActionProbability actionProb = preFlopStrategy();
-            return actionProb.randomlyChooseAction().toString();
+            LegalActionType actionToPerform = actionProb.randomlyChooseAction();
+            for(LegalAction legalAction : legalActions){
+                if(legalAction.getType() == actionToPerform){
+                    int amount = Math.max(legalAction.getAmount(), legalAction.getMax());
+                    if(amount != 0){
+                        return actionToPerform.toString() + ":" + amount;
+                    } else{
+                        return actionToPerform.toString();
+                    }
+                     
+                }
+            }
+            
         }
         else{
             
