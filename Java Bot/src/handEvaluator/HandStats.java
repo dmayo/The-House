@@ -4,6 +4,7 @@ import java.util.*;
 
 import cards.Card;
 import cards.CardSet;
+import cards.Hand;
 
 public class HandStats {
     private static final Random rnd = new Random();
@@ -166,11 +167,12 @@ public class HandStats {
     
     
     
-    static public double monteCarloEquity(int iterations, Card hole1, Card hole2, Card board[]){
+    static public double monteCarloEquity(int iterations, Hand hand, Card board[]){
         int ahead = 0;
         int tied = 0;
         
-        long ourHandLong = HandEval.encode(hole1) | HandEval.encode(hole2);
+        Card[] handCards = hand.getCards();
+        long ourHandLong = HandEval.encode(handCards[0]) | HandEval.encode(handCards[1]);
         long boardLong = HandEval.encode(board);
         long originalUsed = ourHandLong | boardLong;
         

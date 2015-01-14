@@ -191,6 +191,7 @@ public class Communicator {
                     String[] stackSizes = parsed.get("stackSizes").split(" ");
                     String[] activePlayers = parsed.get("activePlayers").split(" ");
                     String[] legalActions = parsed.get("legalActions").split(" ");
+                    String lastActions[] = parsed.get("lastActions").split(" ");
                     
                     List<Card> boardCardsList = new ArrayList<Card>();
                     if(numBoardCards > 0){
@@ -215,6 +216,7 @@ public class Communicator {
                     bot.setPotSize(potSize);
                     bot.setTimeBank(timeBank);
                     bot.setBoardCards(new BoardCards(Street.fromInt(numBoardCards), boardCardsList));
+                    statsCalc.processActions(lastActions);
                     String action = bot.getAction(legalActions);
                     outStream.println(action);
                 } else if ("REQUESTKEYVALUES".compareToIgnoreCase(word) == 0) {

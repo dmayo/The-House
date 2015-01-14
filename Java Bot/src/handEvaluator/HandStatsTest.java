@@ -33,10 +33,10 @@ public class HandStatsTest {
 */
       
         startTime = System.currentTimeMillis();
-        double equity = HandStats.monteCarloEquity(10000,hole1, hole2, board);
+        //double equity = HandStats.monteCarloEquity(10000,hole1, hole2, board);
         endTime = System.currentTimeMillis();
         timeDiff = endTime-startTime;
-        System.out.println("equity: "+ equity + " time: " + timeDiff);
+        //System.out.println("equity: "+ equity + " time: " + timeDiff);
         
         /*
         for(int i=0; i<100; i++){

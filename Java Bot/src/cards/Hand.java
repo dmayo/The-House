@@ -53,4 +53,8 @@ public class Hand {
     public boolean isPocketPair(){
         return card1.rankOf() == card2.rankOf();
     }
+    
+    public Card[] getCards(){
+        return new Card[]{card1,card2};
+    }
 }
