@@ -3,6 +3,7 @@ package bot;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 import stats.Player;
 import actions.ActionProbability;
@@ -82,6 +83,9 @@ public class Bot {
         
         if(boardCards.getStreet() == Street.PREFLOP){
             ActionProbability actionProb = preFlopStrategy();
+            return actionProb.randomlyChooseAction().toString();
+        }
+        else{
             
         }
         
@@ -238,9 +242,7 @@ public class Bot {
         else{
             return new ActionProbability(0.9, 0.1,0, 0, 0);
         }
-        
-        
-        
+
     }
     
 
