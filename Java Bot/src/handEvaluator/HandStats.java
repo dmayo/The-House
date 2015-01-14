@@ -171,7 +171,10 @@ public class HandStats {
     static public double monteCarloEquity(int iterations, Hand hand, BoardCards boardCards){
         int ahead = 0;
         int tied = 0;
-        Card[] board = (Card[]) boardCards.getCards().toArray();
+        
+        List<Card> boardCardsList = boardCards.getCards();
+        Card[] board =  boardCardsList.toArray(new Card[boardCardsList.size()]);
+        
         Card[] handCards = hand.getCards();
         long ourHandLong = HandEval.encode(handCards[0]) | HandEval.encode(handCards[1]);
         long boardLong = HandEval.encode(board);
