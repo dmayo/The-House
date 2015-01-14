@@ -1,6 +1,11 @@
 package handEvaluator;
 
+import java.util.Arrays;
+
+import actions.Street;
+import cards.BoardCards;
 import cards.Card;
+import cards.Hand;
 
 public class HandStatsTest {
     public static void main(String args[]){
@@ -33,10 +38,10 @@ public class HandStatsTest {
 */
       
         startTime = System.currentTimeMillis();
-        //double equity = HandStats.monteCarloEquity(10000,hole1, hole2, board);
+        double equity = HandStats.monteCarloEquity(5000,new Hand(hole1,hole2), new BoardCards(Street.NONE, Arrays.asList(board)));
         endTime = System.currentTimeMillis();
         timeDiff = endTime-startTime;
-        //System.out.println("equity: "+ equity + " time: " + timeDiff);
+        System.out.println("equity: "+ equity + " time: " + timeDiff);
         
         /*
         for(int i=0; i<100; i++){
