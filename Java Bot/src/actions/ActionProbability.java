@@ -38,8 +38,10 @@ public class ActionProbability {
     
     
     public LegalActionType randomlyChooseAction(){
-        double prob = rnd.nextDouble();
+        double p = rnd.nextDouble();
+        double cumulativeProbability = 0;;
         
+        return LegalActionType.BET;
     }
     
     
