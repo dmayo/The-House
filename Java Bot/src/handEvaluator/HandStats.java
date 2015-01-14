@@ -2,6 +2,7 @@ package handEvaluator;
 
 import java.util.*;
 
+import cards.BoardCards;
 import cards.Card;
 import cards.CardSet;
 import cards.Hand;
@@ -167,10 +168,10 @@ public class HandStats {
     
     
     
-    static public double monteCarloEquity(int iterations, Hand hand, Card board[]){
+    static public double monteCarloEquity(int iterations, Hand hand, BoardCards boardCards){
         int ahead = 0;
         int tied = 0;
-        
+        Card[] board = (Card[]) boardCards.getCards().toArray();
         Card[] handCards = hand.getCards();
         long ourHandLong = HandEval.encode(handCards[0]) | HandEval.encode(handCards[1]);
         long boardLong = HandEval.encode(board);
