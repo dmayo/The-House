@@ -92,6 +92,10 @@ public class Player {
         return this.lastAction;
     }
     
+    public void setLastAction(PerformedAction action){
+        this.lastAction = action;
+    }
+    
     public boolean limped(){
         return (lastAction.getType() == PerformedActionType.CALL) & isActive;
     }

@@ -14,6 +14,8 @@ import cards.Card;
 import cards.Hand;
 import stats.Player;
 import stats.StatsCalculator;
+import actions.PerformedAction;
+import actions.PerformedActionType;
 import actions.Street;
 import bot.Bot;
 
@@ -269,12 +271,15 @@ public class Communicator {
                                 player.setSeat(i+1);
                                 player.setActive(new Boolean(activePlayers[i]));
                                 player.setStackSize(new Integer(stackSizes[i]));
+                                player.setLastAction(new PerformedAction(player.getName(), PerformedActionType.NONE, 0, new ArrayList<Card>(), Street.PREFLOP));
                             }
                         }
                         if(name.equals(bot.getName())){
                             bot.setStackSize(new Integer(stackSizes[i]));
                         }
                     }
+                    
+                    
                     
                 } else if ("HANDOVER".compareToIgnoreCase(word) == 0) {
                     //HANDOVER [stackSizes] numBoardCards [boardCards] numLastActions [lastActions] timeBank
