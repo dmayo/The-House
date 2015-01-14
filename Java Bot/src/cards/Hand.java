@@ -10,6 +10,11 @@ public class Hand {
     }
     
     
+    public Hand(String card1, String card2){
+        this.card1 = new Card(card1);
+        this.card2 = new Card(card2);
+    }
+    
     /**
      * @return true if cards are same suit, false otherwise
      */
@@ -32,5 +37,15 @@ public class Hand {
     @Override
     public int hashCode(){
         return card1.hashCode()*card2.hashCode();
+    }
+    
+    
+    /**
+     * @param other Hand to compare to
+     * @return return true if ranks of hands are equal, otherwise false.
+     */
+    public boolean isEqualIgnoringSuit(Hand other){
+        return ((card1.rankOf() == other.card1.rankOf() && card2.rankOf() == other.card2.rankOf()) ||
+                (card1.rankOf() == other.card2.rankOf() && card2.rankOf() == other.card1.rankOf()));
     }
 }
