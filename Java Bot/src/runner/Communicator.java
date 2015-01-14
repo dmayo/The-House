@@ -46,13 +46,13 @@ public class Communicator {
         for (int x=0;x<Integer.parseInt(arg.get("numBoardCards"));x++){
             concatTemp = concatTemp.concat(actionMessage[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("boardCards", concatTemp);
         concatTemp="";
         for (int x=0;x<3;x++){
             concatTemp = concatTemp.concat(actionMessage[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("stackSizes", concatTemp);
         concatTemp="";
         //not sure if numActivePlayers is actually the number of actualPlayers parameters
@@ -60,21 +60,21 @@ public class Communicator {
         for (int x=0;x<3;x++){
             concatTemp = concatTemp.concat(actionMessage[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("activePlayers", concatTemp);
         concatTemp="";
         arg.put("numLastActions", actionMessage[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numLastActions"));x++){
             concatTemp = concatTemp.concat(actionMessage[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("lastActions", concatTemp);
         concatTemp="";
         arg.put("numLegalActions", actionMessage[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numLegalActions"));x++){
             concatTemp = concatTemp.concat(actionMessage[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("legalActions", concatTemp);
         concatTemp="";
         arg.put("timeBank", actionMessage[i++]);
@@ -109,20 +109,20 @@ public class Communicator {
         for (int x=0;x<3;x++){
             concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("stackSizes", concatTemp);
         concatTemp="";
         for (int x=0;x<3;x++){
             concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("playerNames", concatTemp);
         concatTemp="";
         arg.put("numActivePlayers", message[i++]);
         for (int x=0;x<3;x++){
             concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("activePlayers", concatTemp);
         concatTemp="";
         arg.put("timeBank", message[i++]);
@@ -138,21 +138,21 @@ public class Communicator {
         for (int x=0;x<3;x++){
             concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("stackSizes", concatTemp);
         concatTemp="";
         arg.put("numBoardCards", message[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numBoardCards"));x++){
             concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("boardCards", concatTemp);
         concatTemp="";
         arg.put("numLastActions", message[i++]);
         for (int x=0;x<Integer.parseInt(arg.get("numLastActions"));x++){
             concatTemp = concatTemp.concat(message[i++].concat(" "));
         }
-        
+        concatTemp = concatTemp.trim();
         arg.put("performedActions", concatTemp);
         concatTemp="";
         arg.put("timeBank", message[i++]);
