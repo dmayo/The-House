@@ -2,6 +2,7 @@ package handEvaluator;
 
 import cards.Card;
 import cards.EquitySquaredRanking;
+import cards.Hand;
 
 public class HandStatsTest {
     public static void main(String args[]){
