@@ -87,9 +87,11 @@ public class PatBot {
 
         if(boardCards.getStreet() == Street.PREFLOP){
             ActionProbability actionProb = preFlopStrategy();
+            System.out.println(hand.toString());
+            System.out.println(actionProb.toString());
             LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
             LegalAction actionToPerform = nextBest(legalActions, actionTypeToPerform);
-            System.out.println("action to perform: " + actionTypeToPerform);
+            //System.out.println("action to perform: " + actionTypeToPerform);
 
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
@@ -107,7 +109,7 @@ public class PatBot {
             ActionProbability actionProb = postFlopStrategy(legalActions, equity);
             LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
             LegalAction actionToPerform = nextBest(legalActions, actionTypeToPerform);
-            System.out.println("action to perform: " + actionTypeToPerform);
+            //System.out.println("action to perform: " + actionTypeToPerform);
           
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
@@ -186,7 +188,7 @@ public class PatBot {
         final Map<LegalActionType, LegalAction> legalActions = new HashMap<LegalActionType, LegalAction>();
         
         for(String action : legalActionsArray){
-            System.out.println("legal action: " + action);
+            //System.out.println("legal action: " + action);
             final String actionSplit[] = action.split(":");
             LegalActionType actionType = LegalActionType.valueOf(actionSplit[0]);
             
@@ -341,11 +343,11 @@ public class PatBot {
         //get the call amount, call amount is 0 if call is not a legal action
         int callAmount = 0;
         //double equitySquared = equity*equity;
-        System.out.println("equity: " + equity + " ***************************************************************");
+       // System.out.println("equity: " + equity + " ***************************************************************");
         if(legalActions.containsKey(LegalActionType.CALL)){
             callAmount=legalActions.get(LegalActionType.CALL).getAmount();
             double potOdds = callAmount/(double)(callAmount+potSize); //pot odds = call/(call+pot)
-            System.out.println("potOdds: " + potOdds);
+            //System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
             //If pot odds are worse, fold
             if(potOdds*1.4 < equity){
@@ -356,7 +358,7 @@ public class PatBot {
                 return new ActionProbability(0.7, 0.1, 0.2, 0, 0);
             }
         } else{
-            System.out.println("can't call");
+            //System.out.println("can't call");
             return new ActionProbability(1.0-equity, 0, 0, equity, 0);
         }
         

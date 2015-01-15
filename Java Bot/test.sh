@@ -1,8 +1,9 @@
+scons
 max=100
 function pause(){
    read -p "$*"
 }
-sleep 5
+sleep 2
 say "starting poker simulation"
 say "simulating $max games"
 for i in `seq 1 $max`

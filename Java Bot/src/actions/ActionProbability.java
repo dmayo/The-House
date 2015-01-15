@@ -39,5 +39,13 @@ public class ActionProbability {
         return LegalActionType.CHECK;
     }
     
+    @Override
+    public String toString(){
+        String out = "";
+        for(LegalActionType action : probabilityMap.keySet()){
+            out += action.name() + ": " + Double.toString(probabilityMap.get(action)) + ", ";
+        }
+        return out;
+    }
     
 }

@@ -62,7 +62,7 @@ public class HandStats {
         
         Card allCards[] = combineCardsAndBoard(hole1,hole2,board); 
         int ourRank = rankHand(allCards);
-        System.out.println("ourrank: " + ourRank);
+        //System.out.println("ourrank: " + ourRank);
         
         CardSet cardSet = CardSet.freshDeck();
         cardSet.removeAll(Arrays.asList(allCards));

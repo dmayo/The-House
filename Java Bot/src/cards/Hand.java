@@ -39,6 +39,10 @@ public class Hand {
         return card1.hashCode()*card2.hashCode();
     }
     
+    @Override 
+    public String toString() {
+        return card1.toString() + " " + card2.toString();
+    }
     
     /**
      * @param other Hand to compare to
