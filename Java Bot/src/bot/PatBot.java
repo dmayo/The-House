@@ -88,10 +88,14 @@ public class PatBot {
         if(boardCards.getStreet() == Street.PREFLOP){
             ActionProbability actionProb = preFlopStrategy();
             System.out.println(hand.toString());
+            System.out.println("seat: " + getSeat());
+            System.out.println("equity: " + equity);
+            System.out.println("equity squared ranking: " + EquitySquaredRanking.getRank(hand));
+            
             System.out.println(actionProb.toString());
             LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
             LegalAction actionToPerform = nextBest(legalActions, actionTypeToPerform);
-            //System.out.println("action to perform: " + actionTypeToPerform);
+            System.out.println("action to perform: " + actionTypeToPerform);
 
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
