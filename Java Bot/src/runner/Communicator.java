@@ -17,7 +17,6 @@ import stats.StatsCalculator;
 import actions.PerformedAction;
 import actions.PerformedActionType;
 import actions.Street;
-import bot.Bot;
 import bot.PatBot;
 
 /**
