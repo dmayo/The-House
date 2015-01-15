@@ -92,10 +92,14 @@ public class PatBot {
             System.out.println("action to perform: " + actionTypeToPerform);
 
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
+            if(actionToPerform.getMax() != 0){
+                amount = (int) (actionToPerform.getMin() + equity*(actionToPerform.getMax() - actionToPerform.getMin()));
+            }
+            
             if(amount != 0){
-                return actionTypeToPerform.toString() + ":" + amount;
+                return actionToPerform.getType().toString() + ":" + amount;
             } else{
-                return actionTypeToPerform.toString();
+                return actionToPerform.getType().toString();
             }
         }
             
@@ -111,9 +115,9 @@ public class PatBot {
             }
 
             if(amount != 0){
-                return actionTypeToPerform.toString() + ":" + amount;
+                return actionToPerform.getType().toString() + ":" + amount;
             } else{
-                return actionTypeToPerform.toString();
+                return actionToPerform.getType().toString();
             }
         }
         
@@ -189,14 +193,14 @@ public class PatBot {
             if(actionType == LegalActionType.BET || actionType == LegalActionType.RAISE){    
                 final int min = new Integer(actionSplit[1]);
                 final int max = new Integer(actionSplit[2]);
-                legalActions.put(actionType, new LegalAction(LegalActionType.BET,min,max,0));
+                legalActions.put(actionType, new LegalAction(actionType,min,max,0));
             }
             if(actionType == LegalActionType.CALL){
                 final int amount = new Integer(actionSplit[1]);
                 legalActions.put(actionType, new LegalAction(LegalActionType.CALL,0,0,amount));
             }
             if(actionType == LegalActionType.CHECK || actionType == LegalActionType.FOLD){
-                legalActions.put(actionType, new LegalAction(LegalActionType.CHECK,0,0,0));
+                legalActions.put(actionType, new LegalAction(actionType,0,0,0));
             }     
         }
               
@@ -259,7 +263,7 @@ public class PatBot {
             }
         }
         
-        // we are the first to act with small blind
+        // we are the first to act with big blind
         else if(seat == 2 && numActivePlayers == 2){
             if(EquitySquaredRanking.getRank(hand) <= 10){
                 return new ActionProbability(0, 0.2, 0.8, 0, 0);
@@ -344,7 +348,7 @@ public class PatBot {
             System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
             //If pot odds are worse, fold
-            if(potOdds*1.4<equity){
+            if(potOdds*1.4 < equity){
                 //fold, call, raise, bet, check
                 return new ActionProbability(0, 0.8, 0.2, 0, 0);
             }
@@ -352,7 +356,8 @@ public class PatBot {
                 return new ActionProbability(0.7, 0.1, 0.2, 0, 0);
             }
         } else{
-            return new ActionProbability(1-equity, 0, 0, equity, 0);
+            System.out.println("can't call");
+            return new ActionProbability(1.0-equity, 0, 0, equity, 0);
         }
         
         
