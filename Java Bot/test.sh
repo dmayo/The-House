@@ -3,10 +3,14 @@ function pause(){
    read -p "$*"
 }
 sleep 5
+say "starting poker simulation"
+say "simulating $max games"
 for i in `seq 1 $max`
 do
 	echo $i
-    sh pokerbot.sh 3004
+	say $i
+    sh pokerbot.sh $1
 	#pause 'Press [Enter] key to continue...'
-	sleep 3
+	sleep 2
 done
+say "simulation complete"
