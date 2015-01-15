@@ -13,13 +13,13 @@ public class HandStatsTest {
         long endTime;
         long timeDiff;
         
-        Card hole1 = new Card("7h");
+        Card hole1 = new Card("Ac");
         Card hole2 = new Card("Ad");
         
-        Card board1 = new Card("3s");
-        Card board2 = new Card("4h");
-        Card board3 = new Card("7c");
-        Card board4 = new Card("7s");
+        Card board1 = new Card("6s");
+        Card board2 = new Card("7s");
+        Card board3 = new Card("8s");
+        Card board4 = new Card("9s");
         
         Card board[] = new Card[]{board1,board2,board3,board4};
         
@@ -38,7 +38,7 @@ public class HandStatsTest {
 */
       
         startTime = System.currentTimeMillis();
-        double equity = HandStats.monteCarloEquity(5000,new Hand(hole1,hole2), new BoardCards(Street.NONE, Arrays.asList(board)));
+        double equity = HandStats.monteCarloEquity3(100000,new Hand(hole1,hole2), new BoardCards(Street.NONE, Arrays.asList(board)));
         endTime = System.currentTimeMillis();
         timeDiff = endTime-startTime;
         System.out.println("equity: "+ equity + " time: " + timeDiff);

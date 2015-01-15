@@ -84,6 +84,8 @@ public class PatBot {
     public String getAction(String legalActionsArray[]){
         Map<LegalActionType, LegalAction> legalActions = determineLegalActions(legalActionsArray);
         double equity =  HandStats.monteCarloEquity(5000, hand, boardCards);
+        equity = numActivePlayers == 3 ? equity*equity : equity;
+        System.out.println("equity " + equity);
 
         if(boardCards.getStreet() == Street.PREFLOP){
             ActionProbability actionProb = preFlopStrategy();
@@ -95,7 +97,9 @@ public class PatBot {
             System.out.println(actionProb.toString());
             LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
             LegalAction actionToPerform = nextBest(legalActions, actionTypeToPerform);
-            System.out.println("action to perform: " + actionTypeToPerform);
+
+            System.out.println("action to perform: " + actionToPerform.getType());
+
 
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
@@ -109,11 +113,13 @@ public class PatBot {
             }
         }
             
-        else{            
+        else{    
             ActionProbability actionProb = postFlopStrategy(legalActions, equity);
+            System.out.println(hand.toString());
+            System.out.println(actionProb.toString());
             LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
             LegalAction actionToPerform = nextBest(legalActions, actionTypeToPerform);
-            //System.out.println("action to perform: " + actionTypeToPerform);
+            System.out.println("action to perform: " + actionToPerform.getType());
           
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
@@ -220,48 +226,50 @@ public class PatBot {
         //public ActionProbability(double probFold, double probCall, double probRaise, double probBet, double probCheck)
         // we are first to act and everyone is still playing
         // play upto KQ
+        int rank = EquitySquaredRanking.getRank(hand);
+        System.out.println("rank: " + rank);
         if(seat == 1){
-            if(EquitySquaredRanking.getRank(hand) <= 10){
-                return new ActionProbability(0, 0.2, 0.8, 0, 0);
+            if(rank <= 10){
+                return new ActionProbability(0, 0.3, 0.7, 0, 0);
             }
-            if(EquitySquaredRanking.getRank(hand) <= 30){
+            if(rank <= 30){
                 return new ActionProbability(0, 0.4, 0.6, 0, 0);
             }
             else{
-                return new ActionProbability(0.7, 0, 0.3, 0, 0);
+                return new ActionProbability(0.8, 0, 0.2, 0, 0);
             }
         }
         
         // we are the second to act with small blind
         else if(seat == 2 && numActivePlayers == 3){
             if(potSize == initialPot){ // we are the first to act - button folds
-                if(EquitySquaredRanking.getRank(hand) <= 10){
+                if(rank <= 10){
                     return new ActionProbability(0, 0.2, 0.8, 0, 0);
                 }
-                else if(EquitySquaredRanking.getRank(hand) <= 30){
+                else if(rank <= 30){
                     return new ActionProbability(0, 0.4, 0.6, 0, 0);
                 } else{
                     return new ActionProbability(0.7, 0.15, 0.15, 0, 0);
                 }
             } else if(potSize ==  initialPot + bigBlind){ // button limped in
-                if(EquitySquaredRanking.getRank(hand) <= 10){
+                if(rank <= 10){
                     return new ActionProbability(0, 0.2, 0.8, 0, 0);
                 }
-                else if(EquitySquaredRanking.getRank(hand) <= 30){
+                else if(rank <= 30){
                     return new ActionProbability(0, 0.4, 0.6, 0, 0);
-                } else if(EquitySquaredRanking.getRank(hand) <= 50){
+                } else if(rank <= 50){
                     return new ActionProbability(0.1, 0.7, 0.2, 0, 0);
                 } else{
                     return new ActionProbability(0.7, 0.15, 0.15, 0, 0);
                 }
             } else{ // button raised
-                if(EquitySquaredRanking.getRank(hand) <= 10){
-                    return new ActionProbability(0, 0.2, 0.8, 0, 0);
+                if(rank <= 10){
+                    return new ActionProbability(0, 0.3, 0.7, 0, 0);
                 }
-                else if(EquitySquaredRanking.getRank(hand) <= 20){
+                else if(rank <= 20){
                     return new ActionProbability(0, 0.4, 0.6, 0, 0);
                 }
-                else if(EquitySquaredRanking.getRank(hand) <=  40){
+                else if(rank <=  40){
                     return new ActionProbability(0, 0.8, 0.2, 0, 0);
                 } else{
                     return new ActionProbability(0.7, 0.15, 0.15, 0, 0);
@@ -271,13 +279,13 @@ public class PatBot {
         
         // we are the first to act with big blind
         else if(seat == 2 && numActivePlayers == 2){
-            if(EquitySquaredRanking.getRank(hand) <= 10){
+            if(rank <= 10){
                 return new ActionProbability(0, 0.2, 0.8, 0, 0);
             }
-            else if(EquitySquaredRanking.getRank(hand) <= 30){
+            else if(rank <= 30){
                 return new ActionProbability(0, 0.4, 0.6, 0, 0);
-            } else if(EquitySquaredRanking.getRank(hand) <= 50){
-                return new ActionProbability(0.2, 0.3, 0.5, 0, 0);
+            } else if(rank <= 50){
+                return new ActionProbability(0.2, 0.4, 0.4, 0, 0);
             } else{
                 return new ActionProbability(0.7, 0.15, 0.15, 0, 0);
             }
@@ -287,25 +295,25 @@ public class PatBot {
         else if(seat == 3 && numActivePlayers == 3){
             
             if(otherPlayers.get(0).limped() && otherPlayers.get(1).limped()){ // button limped and small blind limped in
-                if(EquitySquaredRanking.getRank(hand) <= 10){
+                if(rank <= 10){
                     return new ActionProbability(0, 0, 0.9, 0, 0.1);
                 }
-                else if(EquitySquaredRanking.getRank(hand) <= 30){
+                else if(rank <= 30){
                     return new ActionProbability(0, 0, 0.7, 0, 0.3);
-                } else if(EquitySquaredRanking.getRank(hand) <= 45){
+                } else if(rank <= 45){
                     return new ActionProbability(0.1, 0, 0.3, 0, 0.6);
                 } else{
-                    return new ActionProbability(0.7, 0, 0.15, 0, 0.15);
+                    return new ActionProbability(0, 0, 0.1, 0, 0.9);
                 }
             } else{ // someone raised
-                if(EquitySquaredRanking.getRank(hand) <= 20){
-                    return new ActionProbability(0, 0.2, 0.8, 0, 0);
-                } else if(EquitySquaredRanking.getRank(hand) <=  30){
+                if(rank <= 20){
+                    return new ActionProbability(0, 0.4, 0.6, 0, 0);
+                } else if(rank <=  30){
                     return new ActionProbability(0, 0.8, 0.2, 0, 0);
-                } else if(EquitySquaredRanking.getRank(hand) <=  50){
+                } else if(rank <=  50){
                     return new ActionProbability(0.4, 0.6, 0, 0, 0);
                 } else{
-                    return new ActionProbability(0.7, 0.3, 0, 0, 0);
+                    return new ActionProbability(0.8, 0.2, 0, 0, 0);
                 }
             }
         }
@@ -314,25 +322,25 @@ public class PatBot {
         else if(seat == 3 && numActivePlayers == 2){
             
             if(otherPlayers.get(0).limped() || otherPlayers.get(1).limped()){ // other player limped
-                if(EquitySquaredRanking.getRank(hand) <= 20){
+                if(rank <= 20){
                     return new ActionProbability(0, 0, 0.8, 0, 0.2);
                 }
-                else if(EquitySquaredRanking.getRank(hand) <= 40){
+                else if(rank <= 40){
                     return new ActionProbability(0, 0, 0.6, 0, 0.4);
-                } else if(EquitySquaredRanking.getRank(hand) <= 50){
+                } else if(rank <= 50){
                     return new ActionProbability(0.1, 0, 0.3, 0, 0.6);
                 } else{
                     return new ActionProbability(0.7, 0, 0.15, 0, 0.15);
                 }
             } else{ // someone raised
-                if(EquitySquaredRanking.getRank(hand) <= 20){
+                if(rank <= 20){
                     return new ActionProbability(0, 0.4, 0.6, 0, 0);
-                } else if(EquitySquaredRanking.getRank(hand) <=  40){
+                } else if(rank <=  40){
                     return new ActionProbability(0, 0.8, 0.2, 0, 0);
-                } else if(EquitySquaredRanking.getRank(hand) <=  55){
+                } else if(rank <=  55){
                     return new ActionProbability(0.4, 0.6, 0, 0, 0);
                 } else{
-                    return new ActionProbability(0.7, 0.3,0, 0, 0);
+                    return new ActionProbability(0.8, 0.2,0, 0, 0);
                 }
             }
         }
@@ -346,12 +354,10 @@ public class PatBot {
     private ActionProbability postFlopStrategy(Map<LegalActionType, LegalAction> legalActions, double equity){
         //get the call amount, call amount is 0 if call is not a legal action
         int callAmount = 0;
-        //double equitySquared = equity*equity;
-       // System.out.println("equity: " + equity + " ***************************************************************");
         if(legalActions.containsKey(LegalActionType.CALL)){
             callAmount=legalActions.get(LegalActionType.CALL).getAmount();
             double potOdds = callAmount/(double)(callAmount+potSize); //pot odds = call/(call+pot)
-            //System.out.println("potOdds: " + potOdds);
+            System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
             //If pot odds are worse, fold
             if(potOdds*1.4 < equity){
@@ -362,7 +368,6 @@ public class PatBot {
                 return new ActionProbability(0.7, 0.1, 0.2, 0, 0);
             }
         } else{
-            //System.out.println("can't call");
             return new ActionProbability(1.0-equity, 0, 0, equity, 0);
         }
         
