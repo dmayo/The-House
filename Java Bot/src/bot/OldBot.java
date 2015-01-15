@@ -19,7 +19,7 @@ import cards.Card;
 import cards.EquitySquaredRanking;
 import cards.Hand;
 
-public class PatBot {
+public class OldBot {
     private Hand hand;
     private final List<Player> otherPlayers;
     private final String name;
@@ -33,7 +33,7 @@ public class PatBot {
     private int potSize = 0;
     private BoardCards boardCards;
     
-    public PatBot(String name, int stackSize, int bigBlind, int numHands, double timeBank, List<Player> otherPlayers){
+    public OldBot(String name, int stackSize, int bigBlind, int numHands, double timeBank, List<Player> otherPlayers){
         this.otherPlayers = new ArrayList<Player>(otherPlayers);
         this.name = name;
         this.stackSize = stackSize;
@@ -109,22 +109,11 @@ public class PatBot {
             if(legalActions.containsKey(actionTypeToPerform)){
                 LegalAction legalAction = legalActions.get(actionTypeToPerform);
                 int amount = Math.max(legalAction.getAmount(), legalAction.getMax());
-                if(actionTypeToPerform == LegalActionType.RAISE || actionTypeToPerform == LegalActionType.BET){
-                    int maxBet = legalActions.get(actionTypeToPerform).getMax();
-                    int minBet = legalActions.get(actionTypeToPerform).getMin();
-                    return actionTypeToPerform.toString() + ":" + (minBet + (maxBet-minBet)*HandStats.monteCarloEquity(5000, hand, boardCards));
-                }
-                else if(amount != 0){
+                if(amount != 0){
                     return actionTypeToPerform.toString() + ":" + amount;
                 } else{
                     return actionTypeToPerform.toString();
                 }
-            } else if(actionTypeToPerform == LegalActionType.RAISE && legalActions.containsKey(LegalActionType.BET)){
-                int maxBet = legalActions.get(LegalActionType.BET).getMax();
-                int minBet = legalActions.get(LegalActionType.BET).getMin();
-                return "BET:" + (minBet + (maxBet-minBet)*HandStats.monteCarloEquity(5000, hand, boardCards));
-            } else if(actionTypeToPerform == LegalActionType.FOLD){
-                return "CHECK";
             }
         }
         System.out.println("Street: "+ boardCards.getStreet());
@@ -178,14 +167,10 @@ public class PatBot {
         // we are first to act and everyone is still playing
         // play upto KQ
         if(seat == 1){
-            if(EquitySquaredRanking.getRank(hand) <= 10){
-                return new ActionProbability(0, 0.05, 0.95, 0, 0);
-            }
             if(EquitySquaredRanking.getRank(hand) <= 30){
                 return new ActionProbability(0, 0.1, 0.9, 0, 0);
-            }
-            else{
-                return new ActionProbability(0.7, 0, 0.3, 0, 0);
+            } else{
+                return new ActionProbability(0.7, 0.2, 0.1, 0, 0);
             }
         }
         
@@ -195,7 +180,7 @@ public class PatBot {
                 if(EquitySquaredRanking.getRank(hand) <= 30){
                     return new ActionProbability(0, 0.1, 0.9, 0, 0);
                 } else{
-                    return new ActionProbability(0.7, 0.15, 0.15, 0, 0);
+                    return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
                 }
             } else if(potSize ==  initialPot + bigBlind){ // button limped in
                 if(EquitySquaredRanking.getRank(hand) <= 30){
@@ -203,7 +188,7 @@ public class PatBot {
                 } else if(EquitySquaredRanking.getRank(hand) <= 50){
                     return new ActionProbability(0.1, 0.7, 0.2, 0, 0);
                 } else{
-                    return new ActionProbability(0.7, 0.15, 0.15, 0, 0);
+                    return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
                 }
             } else{ // button raised
                 if(EquitySquaredRanking.getRank(hand) <= 20){
@@ -212,7 +197,7 @@ public class PatBot {
                 else if(EquitySquaredRanking.getRank(hand) <=  40){
                     return new ActionProbability(0, 0.8, 0.2, 0, 0);
                 } else{
-                    return new ActionProbability(0.7, 0.15, 0.15, 0, 0);
+                    return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
                 }
             }
         }
@@ -224,7 +209,7 @@ public class PatBot {
             } else if(EquitySquaredRanking.getRank(hand) <= 50){
                 return new ActionProbability(0.2, 0.3, 0.5, 0, 0);
             } else{
-                return new ActionProbability(0.7, 0.15, 0.15, 0, 0);
+                return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
             }
         }
         
@@ -237,7 +222,7 @@ public class PatBot {
                 } else if(EquitySquaredRanking.getRank(hand) <= 45){
                     return new ActionProbability(0.1, 0, 0.3, 0, 0.6);
                 } else{
-                    return new ActionProbability(0.7, 0, 0.15, 0, 0.15);
+                    return new ActionProbability(0.8, 0, 0.1, 0, 0.1);
                 }
             } else{ // someone raised
                 if(EquitySquaredRanking.getRank(hand) <= 20){
@@ -247,7 +232,7 @@ public class PatBot {
                 } else if(EquitySquaredRanking.getRank(hand) <=  50){
                     return new ActionProbability(0.4, 0.6, 0, 0, 0);
                 } else{
-                    return new ActionProbability(0.7, 0.3, 0, 0, 0);
+                    return new ActionProbability(0.8, 0.2, 0, 0, 0);
                 }
             }
         }
@@ -261,7 +246,7 @@ public class PatBot {
                 } else if(EquitySquaredRanking.getRank(hand) <= 50){
                     return new ActionProbability(0.1, 0, 0.3, 0, 0.6);
                 } else{
-                    return new ActionProbability(0.7, 0, 0.15, 0, 0.15);
+                    return new ActionProbability(0.8, 0, 0.1, 0, 0.1);
                 }
             } else{ // someone raised
                 if(EquitySquaredRanking.getRank(hand) <= 20){
@@ -271,7 +256,7 @@ public class PatBot {
                 } else if(EquitySquaredRanking.getRank(hand) <=  55){
                     return new ActionProbability(0.4, 0.6, 0, 0, 0);
                 } else{
-                    return new ActionProbability(0.7, 0.3,0, 0, 0);
+                    return new ActionProbability(0.8, 0.2,0, 0, 0);
                 }
             }
         }
@@ -285,27 +270,22 @@ public class PatBot {
     private ActionProbability postFlopStrategy(Map<LegalActionType, LegalAction> legalActions){
         //get the call amount, call amount is 0 if call is not a legal action
         int callAmount = 0;
-        double equity =  HandStats.monteCarloEquity(5000, hand, boardCards);
-        double equitySquared = equity*equity;
-        System.out.println("equity: " + equity + " ***************************************************************");
         if(legalActions.containsKey(LegalActionType.CALL)){
             callAmount=legalActions.get(LegalActionType.CALL).getAmount();
-            double potOdds = callAmount/(callAmount+potSize); //pot odds = call/(call+pot)
-            //If pot odds are better than your pot equity, call or raise
-            //If pot odds are worse, fold
-            if(potOdds<equitySquared){
-                //fold, call, raise, bet, check
-                return new ActionProbability(0, 0.7, 0.3, 0, 0);
-            }
-            else{
-                return new ActionProbability(0.7, 0.1, 0.2, 0, 0);
-            }
-        } else{
-            return new ActionProbability(1-equity, 0, 0, equity, 0);
         }
         
         
-        
+        double potOdds = callAmount/(callAmount+potSize); //pot odds = call/(call+pot)
+        double equity =  HandStats.monteCarloEquity(5000, hand, boardCards);
+        //If pot odds are better than your pot equity, call or raise
+        //If pot odds are worse, fold
+        if(potOdds<equity){
+            //fold, call, raise, bet, check
+            return new ActionProbability(0, 0.7, .3, 0, 0);
+        }
+        else{
+            return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
+        }
     }
 
 }
