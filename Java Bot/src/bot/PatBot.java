@@ -19,7 +19,7 @@ import cards.Card;
 import cards.EquitySquaredRanking;
 import cards.Hand;
 
-public class Bot {
+public class PatBot {
     private Hand hand;
     private final List<Player> otherPlayers;
     private final String name;
@@ -33,7 +33,7 @@ public class Bot {
     private int potSize = 0;
     private BoardCards boardCards;
     
-    public Bot(String name, int stackSize, int bigBlind, int numHands, double timeBank, List<Player> otherPlayers){
+    public PatBot(String name, int stackSize, int bigBlind, int numHands, double timeBank, List<Player> otherPlayers){
         this.otherPlayers = new ArrayList<Player>(otherPlayers);
         this.name = name;
         this.stackSize = stackSize;
@@ -114,6 +114,10 @@ public class Bot {
                 } else{
                     return actionTypeToPerform.toString();
                 }
+            } else if(actionTypeToPerform == LegalActionType.RAISE){
+                return "BET:" + legalActions.get(LegalActionType.BET).getMin();
+            } else if(actionTypeToPerform == LegalActionType.FOLD){
+                return "CHECK";
             }
         }
         System.out.println("Street: "+ boardCards.getStreet());
@@ -170,7 +174,7 @@ public class Bot {
             if(EquitySquaredRanking.getRank(hand) <= 30){
                 return new ActionProbability(0, 0.1, 0.9, 0, 0);
             } else{
-                return new ActionProbability(0.7, 0.2, 0.1, 0, 0);
+                return new ActionProbability(0.7, 0, 0.3, 0, 0);
             }
         }
         
@@ -270,22 +274,27 @@ public class Bot {
     private ActionProbability postFlopStrategy(Map<LegalActionType, LegalAction> legalActions){
         //get the call amount, call amount is 0 if call is not a legal action
         int callAmount = 0;
+        double equity =  HandStats.monteCarloEquity(5000, hand, boardCards);
+        double equitySquared = equity*equity;
+        System.out.println("equity: " + equity + " ***************************************************************");
         if(legalActions.containsKey(LegalActionType.CALL)){
             callAmount=legalActions.get(LegalActionType.CALL).getAmount();
+            double potOdds = callAmount/(callAmount+potSize); //pot odds = call/(call+pot)
+            //If pot odds are better than your pot equity, call or raise
+            //If pot odds are worse, fold
+            if(potOdds<equitySquared){
+                //fold, call, raise, bet, check
+                return new ActionProbability(0, 0.7, .3, 0, 0);
+            }
+            else{
+                return new ActionProbability(0.7, 0.1, 0.2, 0, 0);
+            }
+        } else{
+            return new ActionProbability(1-equity, 0, 0, equity, 0);
         }
         
         
-        double potOdds = callAmount/(callAmount+potSize); //pot odds = call/(call+pot)
-        double equity =  HandStats.monteCarloEquity(5000, hand, boardCards);
-        //If pot odds are better than your pot equity, call or raise
-        //If pot odds are worse, fold
-        if(potOdds<equity){
-            //fold, call, raise, bet, check
-            return new ActionProbability(0, 0.7, .3, 0, 0);
-        }
-        else{
-            return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
-        }
+        
     }
 
 }

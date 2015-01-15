@@ -1,0 +1,223 @@
+6.176 MIT Pokerbots - BOT vs P2 vs P3 (stack=200, bb=2)
+Hand #1, BOT (200), P2 (200), P3 (200)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to BOT [9c Kd]
+Dealt to P2 [6c Td]
+Dealt to P3 [7h 9s]
+BOT folds
+P2 raises to 4
+P3 raises to 11
+P2 folds
+P3 wins the pot (15)
+
+Hand #2, P3 (204), BOT (200), P2 (196)
+BOT posts the blind of 1
+P2 posts the blind of 2
+Dealt to P3 [2d 6s]
+Dealt to BOT [3d Ac]
+Dealt to P2 [Jh Tc]
+P3 folds
+BOT raises to 6
+P2 raises to 12
+BOT folds
+P2 wins the pot (18)
+
+Hand #3, P2 (202), P3 (204), BOT (194)
+P3 posts the blind of 1
+BOT posts the blind of 2
+Dealt to P2 [Kc Ts]
+Dealt to P3 [Ac 4c]
+Dealt to BOT [2s 6s]
+P2 folds
+P3 raises to 5
+BOT folds
+P3 wins the pot (7)
+
+Hand #4, BOT (192), P2 (202), P3 (206)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to BOT [Ad 2h]
+Dealt to P2 [Tc 7h]
+Dealt to P3 [8h 4s]
+BOT folds
+P2 raises to 5
+P3 folds
+P2 wins the pot (7)
+
+Hand #5, P3 (204), BOT (192), P2 (204)
+BOT posts the blind of 1
+P2 posts the blind of 2
+Dealt to P3 [4h 8h]
+Dealt to BOT [3d 5c]
+Dealt to P2 [Kh 6h]
+P3 raises to 6
+BOT folds
+P2 calls 6
+*** FLOP *** (13) [2c 8d Ks]
+P2 bets 8
+P3 calls 8
+*** TURN *** (29) [2c 8d Ks] [Js]
+P2 bets 24
+P3 raises to 82
+P2 calls 82
+*** RIVER *** (193) [2c 8d Ks Js] [3c]
+P2 bets 24
+P3 folds
+P2 wins the pot (217)
+
+Hand #6, P2 (301), P3 (108), BOT (191)
+P3 posts the blind of 1
+BOT posts the blind of 2
+Dealt to P2 [7s 4s]
+Dealt to P3 [Kc 8d]
+Dealt to BOT [Kh Qc]
+P2 folds
+P3 raises to 5
+BOT calls 5
+*** FLOP *** (10) [3s 3d 4d]
+P3 checks
+BOT checks
+*** TURN *** (10) [3s 3d 4d] [7d]
+P3 bets 9
+BOT calls 9
+*** RIVER *** (28) [3s 3d 4d 7d] [8h]
+P3 bets 18
+BOT calls 18
+P3 shows [Kc 8d]
+BOT shows [Kh Qc]
+P3 wins the pot (64)
+
+Hand #7, BOT (159), P2 (301), P3 (140)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to BOT [2h 6c]
+Dealt to P2 [6d 8d]
+Dealt to P3 [9s 2s]
+BOT folds
+P2 calls 2
+P3 raises to 4
+P2 folds
+P3 wins the pot (6)
+
+Hand #8, P3 (142), BOT (159), P2 (299)
+BOT posts the blind of 1
+P2 posts the blind of 2
+Dealt to P3 [3c 9c]
+Dealt to BOT [2c 5d]
+Dealt to P2 [9s 7s]
+P3 calls 2
+BOT folds
+P2 checks
+*** FLOP *** (5) [Kh 6h 4s]
+P2 checks
+P3 bets 4
+P2 raises to 16
+P3 folds
+P2 wins the pot (25)
+
+Hand #9, P2 (306), P3 (136), BOT (158)
+P3 posts the blind of 1
+BOT posts the blind of 2
+Dealt to P2 [8h 4h]
+Dealt to P3 [Kh 7c]
+Dealt to BOT [Qc 7s]
+P2 raises to 6
+P3 raises to 19
+BOT folds
+P2 calls 19
+*** FLOP *** (40) [2c 3s 3c]
+P3 bets 35
+P2 folds
+P3 wins the pot (75)
+
+Hand #10, BOT (156), P2 (287), P3 (157)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to BOT [7c 8c]
+Dealt to P2 [5c Tc]
+Dealt to P3 [Th 2h]
+BOT folds
+P2 folds
+P3 wins the pot (3)
+
+Hand #11, P3 (158), BOT (156), P2 (286)
+BOT posts the blind of 1
+P2 posts the blind of 2
+Dealt to P3 [Kh 8c]
+Dealt to BOT [9d 2s]
+Dealt to P2 [4c Qd]
+P3 calls 2
+BOT calls 2
+P2 checks
+*** FLOP *** (6) [7d 2h Ac]
+BOT checks
+P2 bets 2
+P3 folds
+BOT calls 2
+*** TURN *** (10) [7d 2h Ac] [Th]
+BOT checks
+P2 checks
+*** RIVER *** (10) [7d 2h Ac Th] [5c]
+BOT checks
+P2 checks
+BOT shows [9d 2s]
+P2 shows [4c Qd]
+BOT wins the pot (10)
+
+Hand #12, P2 (282), P3 (156), BOT (162)
+P3 posts the blind of 1
+BOT posts the blind of 2
+Dealt to P2 [3c 7c]
+Dealt to P3 [Qs 6s]
+Dealt to BOT [9s 5d]
+P2 calls 2
+P3 calls 2
+BOT raises to 8
+P2 folds
+P3 raises to 15
+BOT folds
+P3 wins the pot (25)
+
+Hand #13, BOT (154), P2 (280), P3 (166)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to BOT [Tc 7d]
+Dealt to P2 [3s 7h]
+Dealt to P3 [Qd 5s]
+BOT folds
+P2 folds
+P3 wins the pot (3)
+
+Hand #14, P3 (167), BOT (154), P2 (279)
+BOT posts the blind of 1
+P2 posts the blind of 2
+Dealt to P3 [Qd 3s]
+Dealt to BOT [Ah 9c]
+Dealt to P2 [3c 5c]
+P3 raises to 4
+BOT calls 4
+P2 raises to 6
+P3 calls 6
+BOT raises to 24
+P2 calls 24
+P3 calls 24
+*** FLOP *** (72) [5d 5h As]
+BOT checks
+P2 checks
+P3 bets 57
+BOT calls 57
+P2 calls 57
+*** TURN *** (243) [5d 5h As] [4s]
+BOT checks
+P2 checks
+P3 bets 74
+BOT calls 73
+P2 raises to 86
+P3 calls 86
+*** RIVER *** (488) [5d 5h As 4s] [Kh]
+P3 shows [Qd 3s]
+BOT shows [Ah 9c]
+P2 shows [3c 5c]
+P2 wins the pot (488)
+

@@ -1,0 +1,151 @@
+6.176 MIT Pokerbots - BOT vs P2 vs P3 (stack=200, bb=2)
+Hand #1, BOT (200), P2 (200), P3 (200)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to BOT [6c 5h]
+Dealt to P2 [9h 7c]
+Dealt to P3 [Jc 5c]
+BOT raises to 7
+P2 calls 7
+P3 raises to 13
+BOT folds
+P2 folds
+P3 wins the pot (27)
+
+Hand #2, P3 (214), BOT (193), P2 (193)
+BOT posts the blind of 1
+P2 posts the blind of 2
+Dealt to P3 [Js 4s]
+Dealt to BOT [8d Kh]
+Dealt to P2 [7h 7c]
+P3 raises to 6
+BOT folds
+P2 folds
+P3 wins the pot (9)
+
+Hand #3, P2 (191), P3 (217), BOT (192)
+P3 posts the blind of 1
+BOT posts the blind of 2
+Dealt to P2 [6d Qh]
+Dealt to P3 [3d 6h]
+Dealt to BOT [3h 5d]
+P2 raises to 5
+P3 calls 5
+BOT folds
+*** FLOP *** (12) [4c 7h Js]
+P3 bets 10
+P2 calls 10
+*** TURN *** (32) [4c 7h Js] [4d]
+P3 bets 4
+P2 raises to 36
+P3 folds
+P2 wins the pot (72)
+
+Hand #4, BOT (190), P2 (212), P3 (198)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to BOT [7h 7d]
+Dealt to P2 [Qc 6c]
+Dealt to P3 [Ah Qs]
+BOT raises to 7
+P2 raises to 15
+P3 raises to 24
+BOT raises to 87
+P2 raises to 173
+P3 calls 173
+BOT raises to 190
+P2 raises to 198
+P3 calls 198
+*** FLOP *** (586) [Jd 9s 8c]
+*** TURN *** (586) [Jd 9s 8c] [Jh]
+*** RIVER *** (586) [Jd 9s 8c Jh] [9d]
+BOT shows [7h 7d]
+P2 shows [Qc 6c]
+P3 shows [Ah Qs]
+P3 wins the pot (586)
+
+Hand #5, P2 (14), P3 (586), BOT (0)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to P3 [5s 4s]
+Dealt to BOT [Qd Qc]
+Dealt to P2 [4h 8s]
+P2 calls 2
+P3 raises to 5
+P2 folds
+P3 wins the pot (7)
+
+Hand #6, P3 (588), P2 (12), BOT (0)
+P3 posts the blind of 1
+P2 posts the blind of 2
+Dealt to P2 [Qh 7d]
+Dealt to P3 [As Qd]
+Dealt to BOT [9c Jc]
+P3 raises to 5
+P2 calls 5
+*** FLOP *** (10) [7h 2d 5h]
+P2 bets 3
+P3 folds
+P2 wins the pot (13)
+
+Hand #7, P2 (17), P3 (583), BOT (0)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to BOT [4h Ah]
+Dealt to P2 [9c 4c]
+Dealt to P3 [Jd 6s]
+P2 raises to 4
+P3 calls 4
+*** FLOP *** (8) [8d 5d Qs]
+P3 checks
+P2 bets 2
+P3 raises to 10
+P2 calls 10
+*** TURN *** (28) [8d 5d Qs] [5s]
+P3 checks
+P2 checks
+*** RIVER *** (28) [8d 5d Qs 5s] [As]
+P3 checks
+P2 checks
+P2 shows [9c 4c]
+P3 shows [Jd 6s]
+P3 wins the pot (28)
+
+Hand #8, P3 (597), P2 (3), BOT (0)
+P3 posts the blind of 1
+P2 posts the blind of 2
+Dealt to P3 [6d Td]
+Dealt to BOT [Ks Js]
+Dealt to P2 [Ac 6c]
+P3 raises to 3
+P2 folds
+P3 wins the pot (5)
+
+Hand #9, P2 (1), P3 (599), BOT (0)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to P2 [2d Kh]
+Dealt to P3 [8h Kc]
+Dealt to BOT [Jh 6c]
+Uncalled bet of 1 returned to P3
+*** FLOP *** (2) [2s 9s 3s]
+*** TURN *** (2) [2s 9s 3s] [4d]
+*** RIVER *** (2) [2s 9s 3s 4d] [As]
+P2 shows [2d Kh]
+P3 shows [8h Kc]
+P2 wins the pot (2)
+
+Hand #10, P3 (598), P2 (2), BOT (0)
+P3 posts the blind of 1
+P2 posts the blind of 2
+Dealt to BOT [Ks 9h]
+Dealt to P2 [Ah Th]
+Dealt to P3 [2s 5c]
+P3 calls 2
+*** FLOP *** (4) [3c 4d 9s]
+*** TURN *** (4) [3c 4d 9s] [9d]
+*** RIVER *** (4) [3c 4d 9s 9d] [6h]
+P2 shows [Ah Th]
+P3 shows [2s 5c]
+P3 wins the pot (4)
+

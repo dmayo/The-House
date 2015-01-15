@@ -1,0 +1,61 @@
+6.176 MIT Pokerbots - BOT vs P2 vs P3 (stack=200, bb=2)
+Hand #1, BOT (200), P2 (200), P3 (200)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to BOT [7h 2d]
+Dealt to P2 [3c Qc]
+Dealt to P3 [9d 7c]
+BOT folds
+P2 calls 2
+P3 checks
+*** FLOP *** (4) [6h Jd 2s]
+P2 bets 3
+P3 folds
+P2 wins the pot (7)
+
+Hand #2, P3 (198), BOT (200), P2 (202)
+BOT posts the blind of 1
+P2 posts the blind of 2
+Dealt to P3 [9h Jd]
+Dealt to BOT [9d Ad]
+Dealt to P2 [5h 2c]
+P3 calls 2
+BOT calls 2
+P2 checks
+*** FLOP *** (6) [Jc Qh 8s]
+BOT checks
+P2 checks
+P3 bets 3
+BOT calls 3
+P2 calls 3
+*** TURN *** (15) [Jc Qh 8s] [8c]
+BOT checks
+P2 bets 8
+P3 calls 8
+BOT raises to 47
+P2 calls 47
+P3 raises to 129
+BOT raises to 195
+P2 calls 195
+P3 raises to 193
+*** RIVER *** (598) [Jc Qh 8s 8c] [4c]
+P3 shows [9h Jd]
+BOT shows [9d Ad]
+P2 shows [5h 2c]
+P3 wins the pot (598)
+
+Hand #3, P2 (2), P3 (598), BOT (0)
+P2 posts the blind of 1
+P3 posts the blind of 2
+Dealt to P2 [2h 3h]
+Dealt to P3 [5s 8s]
+Dealt to BOT [7d 4h]
+P2 raises to 2
+P3 calls 2
+*** FLOP *** (4) [4d Kc Th]
+*** TURN *** (4) [4d Kc Th] [Td]
+*** RIVER *** (4) [4d Kc Th Td] [Tc]
+P2 shows [2h 3h]
+P3 shows [5s 8s]
+P3 wins the pot (4)
+

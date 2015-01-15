@@ -13,15 +13,15 @@ public class HandStatsTest {
         long endTime;
         long timeDiff;
         
-        Card hole1 = new Card("Ac");
-        Card hole2 = new Card("Kc");
+        Card hole1 = new Card("7h");
+        Card hole2 = new Card("Ad");
         
-        Card board1 = new Card("Qc");
-        Card board2 = new Card("7c");
-        Card board3 = new Card("Tc");
-        //Card board4 = new Card("Qc");
+        Card board1 = new Card("3s");
+        Card board2 = new Card("4h");
+        Card board3 = new Card("7c");
+        Card board4 = new Card("7s");
         
-        Card board[] = new Card[]{board1,board2,board3};
+        Card board[] = new Card[]{board1,board2,board3,board4};
         
         double strength = HandStats.handStrength(hole1, hole2, board);
         /*
