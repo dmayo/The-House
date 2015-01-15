@@ -1,4 +1,4 @@
-max=10
+max=100
 function pause(){
    read -p "$*"
 }
