@@ -158,7 +158,7 @@ public class Communicator {
         arg.put("performedActions", concatTemp);
         concatTemp="";
         arg.put("timeBank", message[i++]);
-
+        
         return arg;
     }
     
@@ -173,7 +173,7 @@ public class Communicator {
 
                 // Here is where you should implement code to parse the packets
                 // from the engine and act on it.
-                //System.out.println(input);
+                System.out.println(input);
                 
                 String inputWords[] = input.split(" ");
                 String word = inputWords[0];
@@ -304,6 +304,8 @@ public class Communicator {
                     }
                     bot.setTimeBank(timeBank);       
                     statsCalc.processActions(lastActions);
+                    System.out.println("");
+                    System.out.println("");
                 }
             }
         } catch (IOException e) {
