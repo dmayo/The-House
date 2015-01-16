@@ -1,5 +1,5 @@
 scons
-max=30
+max=100
 function pause(){
    read -p "$*"
 }
