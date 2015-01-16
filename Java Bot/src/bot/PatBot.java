@@ -105,7 +105,7 @@ public class PatBot {
 
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
-                amount = (int) (actionToPerform.getMin() + equity*(actionToPerform.getMax() - actionToPerform.getMin()));
+                amount = (int) (actionToPerform.getMin() + 0.7*equity*(actionToPerform.getMax() - actionToPerform.getMin()));
             }
             
             if(amount != 0){
@@ -125,7 +125,7 @@ public class PatBot {
           
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
-                amount = (int) (actionToPerform.getMin() + equity*(actionToPerform.getMax() - actionToPerform.getMin()));
+                amount = (int) (actionToPerform.getMin() + 0.7*equity*(actionToPerform.getMax() - actionToPerform.getMin()));
             }
 
             if(amount != 0){
@@ -306,7 +306,7 @@ public class PatBot {
                 else if(rank <= 30){
                     return new ActionProbability(0, 0, 0.7, 0, 0.3);
                 } else if(rank <= 45){
-                    return new ActionProbability(0.1, 0, 0.3, 0, 0.6);
+                    return new ActionProbability(0.1, 0, 0.2, 0, 0.7);
                 } else{
                     return new ActionProbability(0, 0, 0.1, 0, 0.9);
                 }
@@ -365,15 +365,15 @@ public class PatBot {
             //System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
             //If pot odds are worse, fold
-            if(potOdds*1.4 < equity){
+            if(potOdds*1.6 < equity){
                 //fold, call, raise, bet, check
                 return new ActionProbability(0, 0.8, 0.2, 0, 0);
             }
             else{
-                return new ActionProbability(0.7, 0.1, 0.2, 0, 0);
+                return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
             }
         } else{
-            return new ActionProbability(1.0-equity, 0, 0, equity, 0);
+            return new ActionProbability(1.0-(equity*equity), 0, 0, equity*equity, 0);
         }
         
         
