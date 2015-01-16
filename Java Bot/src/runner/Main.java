@@ -70,7 +70,7 @@ public class Main {
             
             socket.close();
         } catch (IOException e) {
-            //System.err.println(e.getMessage());
+            System.err.println(e.getMessage());
             System.exit(1);
         }
     }

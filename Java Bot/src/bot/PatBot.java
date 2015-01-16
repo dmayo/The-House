@@ -27,7 +27,7 @@ public class PatBot {
     private double timeBank;
     private final int bigBlind;
     private final int numHands;
-    private  int handId;
+    private int handId;
     private int seat;
     private int numActivePlayers;
     private int potSize = 0;
@@ -50,6 +50,7 @@ public class PatBot {
     }
     
     public void setHand(Hand newHand){
+        System.out.println("New Hand -----");
         hand = newHand;
     }
     
@@ -85,9 +86,10 @@ public class PatBot {
         Map<LegalActionType, LegalAction> legalActions = determineLegalActions(legalActionsArray);
         double equity =  HandStats.monteCarloEquity(5000, hand, boardCards);
         equity = numActivePlayers == 3 ? equity*equity : equity;
-        System.out.println("equity " + equity);
-
+        //System.out.println("equity " + equity);
+        
         if(boardCards.getStreet() == Street.PREFLOP){
+            
             ActionProbability actionProb = preFlopStrategy();
             System.out.println(hand.toString());
             System.out.println("seat: " + getSeat());
@@ -115,11 +117,11 @@ public class PatBot {
             
         else{    
             ActionProbability actionProb = postFlopStrategy(legalActions, equity);
-            System.out.println(hand.toString());
-            System.out.println(actionProb.toString());
+            //System.out.println(hand.toString());
+            //System.out.println(actionProb.toString());
             LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
             LegalAction actionToPerform = nextBest(legalActions, actionTypeToPerform);
-            System.out.println("action to perform: " + actionToPerform.getType());
+            //System.out.println("action to perform: " + actionToPerform.getType());
           
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
@@ -227,11 +229,14 @@ public class PatBot {
         // we are first to act and everyone is still playing
         // play upto KQ
         int rank = EquitySquaredRanking.getRank(hand);
-        System.out.println("rank: " + rank);
+        //System.out.println("rank: " + rank);
+        //1 is the best ranking
         if(seat == 1){
+            //better than AK which is rank 10, equity: 0.43599609
             if(rank <= 10){
                 return new ActionProbability(0, 0.3, 0.7, 0, 0);
             }
+            //better than JT same suit which is rank 30
             if(rank <= 30){
                 return new ActionProbability(0, 0.4, 0.6, 0, 0);
             }
@@ -357,7 +362,7 @@ public class PatBot {
         if(legalActions.containsKey(LegalActionType.CALL)){
             callAmount=legalActions.get(LegalActionType.CALL).getAmount();
             double potOdds = callAmount/(double)(callAmount+potSize); //pot odds = call/(call+pot)
-            System.out.println("potOdds: " + potOdds);
+            //System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
             //If pot odds are worse, fold
             if(potOdds*1.4 < equity){

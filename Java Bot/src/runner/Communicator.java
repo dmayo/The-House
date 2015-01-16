@@ -173,7 +173,7 @@ public class Communicator {
 
                 // Here is where you should implement code to parse the packets
                 // from the engine and act on it.
-                System.out.println(input);
+                //System.out.println(input);
                 
                 String inputWords[] = input.split(" ");
                 String word = inputWords[0];
@@ -183,7 +183,7 @@ public class Communicator {
                     // The engine will ignore all spurious packets you send.
                     // The engine will also check/fold for you if you return an
                     // illegal action.
-                   
+                   System.out.print(input);
                     Map<String,String> parsed = parseGetAction(inputWords);
                     //GETACTION potSize numBoardCards [boardCards] [stackSizes] numActivePlayers [activePlayers] numLastActions [lastActions] numLegalActions [legalActions] timebank
                     int potSize = new Integer(parsed.get("potSize"));
@@ -304,8 +304,8 @@ public class Communicator {
                     }
                     bot.setTimeBank(timeBank);       
                     statsCalc.processActions(lastActions);
-                    System.out.println("");
-                    System.out.println("");
+                    //System.out.println("");
+                    //System.out.println("");
                 }
             }
         } catch (IOException e) {
