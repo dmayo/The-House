@@ -233,10 +233,7 @@ public class TruthBot {
         //1 is the best ranking
         if(seat == 1){
             //better than AK which is rank 10, equity: 0.43599609
-            if(rank <= 5){
-                return new ActionProbability(0, .05 , .95, 0, 0);
-            }
-            else if(rank <= 10){
+            if(rank <= 10){
                 return new ActionProbability(0, 0.3, 0.7, 0, 0);
             }
             //better than JT same suit which is rank 30

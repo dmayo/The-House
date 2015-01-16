@@ -17,7 +17,7 @@ import stats.StatsCalculator;
 import actions.PerformedAction;
 import actions.PerformedActionType;
 import actions.Street;
-import bot.PatBot;
+import bot.TruthBot;
 
 /**
  * Simple example pokerbot, written in Java.
@@ -166,7 +166,7 @@ public class Communicator {
         String input;
         try {
             StatsCalculator statsCalc = new StatsCalculator();
-            PatBot bot =  new PatBot("none", 0,0,0,20, new ArrayList<Player>());
+            TruthBot bot =  new TruthBot("none", 0,0,0,20, new ArrayList<Player>());
             List<Player> players = new ArrayList<Player>();
             // Block until engine sends us a packet; read it into input.
             while ((input = inStream.readLine()) != null) {
@@ -240,7 +240,7 @@ public class Communicator {
                     double timeBank = new Double(parsed.get("timeBank"));
                     
                     statsCalc.setPlayers(players);
-                    bot = new PatBot(botName, stackSize, bigBlind, numHands, timeBank, players);
+                    bot = new TruthBot(botName, stackSize, bigBlind, numHands, timeBank, players);
                     
                 } else if ("NEWHAND".compareToIgnoreCase(word) == 0) {
                     //NEWHAND handId seat holeCard1 holeCard2 [stackSizes] [playerNames] numActivePlayers [activePlayers] timeBank

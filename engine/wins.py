@@ -1,6 +1,6 @@
 import glob
 import os
-#os.chdir("/mydir")
+os.chdir("games")
 winners={}
 for file in glob.glob("*.txt"):
     if(file!="config.txt"):
