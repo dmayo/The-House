@@ -20,6 +20,7 @@ public class Player {
     private boolean setVPIP;
     private boolean setPreFlopRaise;
     private boolean madePreFlopAction;
+    private boolean cardsShown;
     
     public Player(String name, int stackSize, int seat){
         this.name = name;
@@ -32,6 +33,7 @@ public class Player {
         setVPIP = false;
         setPreFlopRaise = false;
         madePreFlopAction = false;
+        cardsShown = false;
     }
     
     public Stats getStats(){
@@ -91,6 +93,7 @@ public class Player {
         setVPIP = false;
         setPreFlopRaise = false;
         madePreFlopAction = false;
+        cardsShown = false;
         if(isActive){
             stats.incrementEligibleMatches();
         }
@@ -107,6 +110,9 @@ public class Player {
         
         if(type == PerformedActionType.DEAL){
             street = action.getStreet();   
+            if(lastAction.getType() != PerformedActionType.FOLD){
+                stats.sawStreet(street);
+            }
         }
         if((type == PerformedActionType.CALL || type == PerformedActionType.RAISE || type == PerformedActionType.BET) 
                 && street == Street.PREFLOP && !setVPIP){
@@ -120,6 +126,16 @@ public class Player {
         if(type == PerformedActionType.RAISE && street == Street.PREFLOP && !setPreFlopRaise){
             stats.PFR();
             setPreFlopRaise = true;
+        }
+        if(type.isAPlayerAction()){
+            stats.preformedAction(type);
+        }
+        if(type == PerformedActionType.SHOW){
+            stats.WTSD();
+            cardsShown = true;
+        }
+        if((type == PerformedActionType.WIN || type == PerformedActionType.TIE) && cardsShown){
+            stats.W$SD();
         }
     }
         

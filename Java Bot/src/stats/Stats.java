@@ -15,6 +15,8 @@ public class Stats {
     private int numVPIP = 0;
     private int numPFR = 0;
     private int numCouldDoActionPreFlop = 0;
+    private int numWTSD = 0;
+    private int numW$SD = 0;
     
     public Stats(){
     
@@ -121,13 +123,6 @@ public class Stats {
     }
     
     
-    /**
-     * Call when player wins a pot
-     */
-    public void wonPot(){
-        potsWon++;
-    }
-    
     
     /**
      * Call whenever the player voluntarily puts money in the pot on the preflop. 
@@ -155,6 +150,35 @@ public class Stats {
     
     
     /**
+     * Call whenever a player goes to showdown
+     */
+    public void WTSD(){
+        numWTSD++;
+    }
+    
+    
+    /**
+     * Call whenever a player wins money at a showdown
+     */
+    public void W$SD(){
+        numW$SD++;
+    }
+    
+    /**
+     * @return the percentage of hands a player goes to showdown with after seeing the flop
+     */
+    public double getWTSD(){
+        return numWTSD / (double) numStreetsSeen.get(Street.FLOP);
+    }
+    
+    /**
+     * @return the percentage of hands a player wins money with when going to showdown
+     */
+    public double getW$SD(){
+        return numW$SD / (double) numWTSD;
+    }
+    
+    /**
      * Call whenever a player has the opportunity to do an action preflop
      */
     public void numCouldDoActionPreFlop(){
@@ -175,7 +199,7 @@ public class Stats {
      * Aggression factor < 1 means the player is passive
      * @return aggression factor
      */
-    public double getAggressionFactor(){
+    public double getAF(){
         double AF = (double)(numActionsDone.get(PerformedActionType.BET) + numActionsDone.get(PerformedActionType.RAISE))  / numActionsDone.get(PerformedActionType.CALL);
         return AF;
     }
@@ -184,7 +208,10 @@ public class Stats {
     @Override
     public String toString(){
         return "VPIP: " + getVPIP() + "\n" + 
-               "PFR: " + getPFR() + "\n";               
+               "PFR: " + getPFR() + "\n" + 
+               "AF: " + getAF() + "\n" +
+               "WTSD: " + getWTSD() + "\n"+
+               "W$SD: " + getW$SD() + "\n";
     }
     
 }
