@@ -25,13 +25,25 @@ public class Player {
         this.isActive = true;
         this.seat = seat;
         this.boardCards = new BoardCards(Street.PREFLOP, new ArrayList<Card>());
+        this.lastAction = new PerformedAction(name, PerformedActionType.NONE, 0, new ArrayList<Card>(), Street.PREFLOP);
+    }
+    
+    public Stats getStats(){
+        return stats;
     }
     
     
     public void setBoardCards(BoardCards newBoardCards){
         this.boardCards = newBoardCards;
+        if(isActive){
+            stats.incrementStreetCount(boardCards.getStreet());
+            if(lastAction.getType() != PerformedActionType.FOLD){
+                stats.sawStreet(boardCards.getStreet());
+            }
+        }
+
     }
-    
+       
     
     public String getName(){
         return name;
@@ -72,10 +84,14 @@ public class Player {
     
     /**
      * Sets whether or not the player is playing the current hand.
+     * Makes sure to update boardCards first.
      * @param active 
      */
     public void setActive(boolean active){
         isActive = active;
+        if(isActive){
+            stats.incrementEligibleMatches();
+        }
     }
     
     
@@ -85,8 +101,24 @@ public class Player {
      */
     public void processAction(PerformedAction action){
         this.lastAction = action;
+        PerformedActionType type = action.getType();
+        
+        if(type.isAPlayerAction()){
+            stats.preformedAction(type);
+            stats.incrementActionOpportunities();
+        } else if(type  == PerformedActionType.WIN || type == PerformedActionType.TIE){
+            stats.wonPot();
+        } else if(type == PerformedActionType.DEAL && isActive){
+            stats.incrementStreetCount(action.getStreet());
+            if(lastAction.getType() != PerformedActionType.FOLD){
+                stats.sawStreet(action.getStreet());
+            }
+        }
+            
     }
     
+    
+
     
     public PerformedAction getLastAction(){
         return this.lastAction;

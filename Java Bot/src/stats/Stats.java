@@ -10,9 +10,9 @@ import actions.*;
 
 public class Stats {
    
-    private Map<Street, Integer> numStreetsSeen = new HashMap<Street, Integer>();
-    private Map<Street, Integer> totalStreets = new HashMap<Street, Integer>();
-    private Map<PerformedActionType, Integer> numActionsDone  = new HashMap<PerformedActionType, Integer>();
+    private final Map<Street, Integer> numStreetsSeen;
+    private final Map<Street, Integer> totalStreets;
+    private final Map<PerformedActionType, Integer> numActionsDone  = new HashMap<PerformedActionType, Integer>();
     private int actionOpportunities = 0;
     private int potsWon = 0;
     private int numEligibleMatches = 0;
@@ -24,6 +24,19 @@ public class Stats {
         while(comb.hasNext()) {
             handProbs.put(new Hand((Card)comb.next().get(0), (Card) comb.next().get(1)), 1.0/1326);
          }
+        
+        Map<Street, Integer> initial = new HashMap<Street,Integer>();
+        initial.put(Street.PREFLOP, 0);
+        initial.put(Street.FLOP, 0);
+        initial.put(Street.TURN, 0);
+        initial.put(Street.RIVER, 0);
+        numStreetsSeen = new HashMap<Street, Integer>(initial);
+        totalStreets = new HashMap<Street, Integer>(initial);
+        numActionsDone.put(PerformedActionType.BET, 0);
+        numActionsDone.put(PerformedActionType.CALL, 0);
+        numActionsDone.put(PerformedActionType.CHECK, 0);
+        numActionsDone.put(PerformedActionType.RAISE, 0);
+        numActionsDone.put(PerformedActionType.FOLD, 0);
     }
     
     public double getHandProbability(Hand hand){
@@ -94,7 +107,7 @@ public class Stats {
      * @param action needs to be fold, call, bet, or raise
      * @return
      */
-    public double perecentActionDone(PerformedActionType action){
+    public double percentActionDone(PerformedActionType action){
         return numActionsDone.get(action) / (double) actionOpportunities;
     }
     
@@ -134,6 +147,24 @@ public class Stats {
     public double getAggressionFactor(){
         double AF = (double)(numActionsDone.get(PerformedActionType.BET) + numActionsDone.get(PerformedActionType.RAISE))  / numActionsDone.get(PerformedActionType.CALL);
         return AF;
+    }
+    
+    
+    @Override
+    public String toString(){
+        return "ACTIONS: \n" + "fold : " + percentActionDone(PerformedActionType.FOLD) + " \n" + 
+                               "check : " + percentActionDone(PerformedActionType.CHECK) + " \n" +
+                               "call : " + percentActionDone(PerformedActionType.CALL) + " \n" +
+                               "bet : " + percentActionDone(PerformedActionType.BET) + " \n" +
+                               "raise : " + percentActionDone(PerformedActionType.RAISE) + " \n" +
+              "STREETS SEEN: \n" + "preflop: " + percentStreetSeen(Street.PREFLOP) + " \n" +
+                                    "flop: " + percentStreetSeen(Street.FLOP) + " \n" +
+                                    "turn: " + percentStreetSeen(Street.PREFLOP) + " \n" +
+                                    "river: " + percentStreetSeen(Street.PREFLOP) + " \n"+ 
+              "POTS WON: " + percentPotsWon() + "\n" + 
+               "AF :" + getAggressionFactor() + "\n";
+        
+                              
     }
     
 }

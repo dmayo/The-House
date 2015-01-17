@@ -173,7 +173,7 @@ public class Communicator {
 
                 // Here is where you should implement code to parse the packets
                 // from the engine and act on it.
-                //System.out.println(input);
+                System.out.println(input);
                 
                 String inputWords[] = input.split(" ");
                 String word = inputWords[0];
@@ -183,7 +183,6 @@ public class Communicator {
                     // The engine will ignore all spurious packets you send.
                     // The engine will also check/fold for you if you return an
                     // illegal action.
-                   System.out.print(input);
                     Map<String,String> parsed = parseGetAction(inputWords);
                     //GETACTION potSize numBoardCards [boardCards] [stackSizes] numActivePlayers [activePlayers] numLastActions [lastActions] numLegalActions [legalActions] timebank
                     int potSize = new Integer(parsed.get("potSize"));
@@ -205,9 +204,9 @@ public class Communicator {
                     for(int i=0; i < stackSizes.length; i++){
                         for(Player player : players){
                             if(player.getSeat() == i+1){
-                                player.setActive(new Boolean(activePlayers[i]));
-                                player.setStackSize(new Integer(stackSizes[i]));
                                 player.setBoardCards(new BoardCards(Street.fromInt(numBoardCards), boardCardsList));
+                                //player.setActive(new Boolean(activePlayers[i]));
+                                player.setStackSize(new Integer(stackSizes[i])); 
                             }
                         }
                         if(bot.getSeat() == i+1){
@@ -268,10 +267,11 @@ public class Communicator {
                         String name = playerNames[i];
                         for(Player player : players){
                             if(name.equals(player.getName())){
+                                player.setLastAction(new PerformedAction(player.getName(), PerformedActionType.NONE, 0, new ArrayList<Card>(), Street.PREFLOP));
+                                player.setBoardCards(new BoardCards(Street.PREFLOP, new ArrayList<Card>()));
                                 player.setSeat(i+1);
                                 player.setActive(new Boolean(activePlayers[i]));
-                                player.setStackSize(new Integer(stackSizes[i]));
-                                player.setLastAction(new PerformedAction(player.getName(), PerformedActionType.NONE, 0, new ArrayList<Card>(), Street.PREFLOP));
+                                player.setStackSize(new Integer(stackSizes[i]));         
                             }
                         }
                         if(name.equals(bot.getName())){
@@ -306,6 +306,10 @@ public class Communicator {
                     statsCalc.processActions(lastActions);
                     //System.out.println("");
                     //System.out.println("");
+                    for(Player player : players){
+                        System.out.println(player.getName());
+                        System.out.println(player.getStats());
+                    }
                 }
             }
         } catch (IOException e) {
