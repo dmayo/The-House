@@ -1,11 +1,7 @@
 package stats;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import cards.Card;
-import cards.CardSet;
-import cards.Hand;
 import actions.*;
 
 public class Stats {
@@ -16,17 +12,12 @@ public class Stats {
     private int actionOpportunities = 0;
     private int potsWon = 0;
     private int numEligibleMatches = 0;
-    private Map<Hand, Double> handProbs = new HashMap<Hand, Double>();
     private int numVPIP = 0;
-    private int numPreFlopRaise = 0;
+    private int numPFR = 0;
+    private int numCouldDoActionPreFlop = 0;
     
     public Stats(){
-        //creates uniform probability distribution of every possible hand
-        CombinationIterator comb = new CombinationIterator(Arrays.asList(CardSet.freshDeck().toArray()),2);
-        while(comb.hasNext()) {
-            handProbs.put(new Hand((Card)comb.next().get(0), (Card) comb.next().get(1)), 1.0/1326);
-         }
-        
+    
         Map<Street, Integer> initial = new HashMap<Street,Integer>();
         initial.put(Street.PREFLOP, 0);
         initial.put(Street.FLOP, 0);
@@ -41,9 +32,6 @@ public class Stats {
         numActionsDone.put(PerformedActionType.FOLD, 0);
     }
     
-    public double getHandProbability(Hand hand){
-        return handProbs.get(hand);
-    }
     
     
     /**
@@ -154,22 +142,30 @@ public class Stats {
      * @return the percentage of preflops the player voluntarily put money in the pot.
      */
     public double getVPIP(){
-        return numVPIP / (double) numEligibleMatches;
+        return numVPIP / (double) numCouldDoActionPreFlop;
     }
     
     
     /**
      * Call whenever a player raises on preflop
      */
-    public void preFlopRaise(){
-        numPreFlopRaise++;
+    public void PFR(){
+        numPFR++;
+    }
+    
+    
+    /**
+     * Call whenever a player has the opportunity to do an action preflop
+     */
+    public void numCouldDoActionPreFlop(){
+        numCouldDoActionPreFlop++;
     }
     
     /**
      * @return the percentage of times a player raise on preflop
      */
-    public double getPreFlopRaise(){
-        return numPreFlopRaise / (double) numEligibleMatches;
+    public double getPFR(){
+        return numPFR / (double) numCouldDoActionPreFlop;
     }
     
     
@@ -187,21 +183,8 @@ public class Stats {
     
     @Override
     public String toString(){
-        return "VPIP: " + getVPIP();
-        /*
-        return "ACTIONS: \n" + "fold : " + percentActionDone(PerformedActionType.FOLD) + " \n" + 
-                               "check : " + percentActionDone(PerformedActionType.CHECK) + " \n" +
-                               "call : " + percentActionDone(PerformedActionType.CALL) + " \n" +
-                               "bet : " + percentActionDone(PerformedActionType.BET) + " \n" +
-                               "raise : " + percentActionDone(PerformedActionType.RAISE) + " \n" +
-              "STREETS SEEN: \n" + "preflop: " + percentStreetSeen(Street.PREFLOP) + " \n" +
-                                    "flop: " + percentStreetSeen(Street.FLOP) + " \n" +
-                                    "turn: " + percentStreetSeen(Street.PREFLOP) + " \n" +
-                                    "river: " + percentStreetSeen(Street.PREFLOP) + " \n"+ 
-              "POTS WON: " + percentPotsWon() + "\n" + 
-               "AF :" + getAggressionFactor() + "\n";
-        */
-                              
+        return "VPIP: " + getVPIP() + "\n" + 
+               "PFR: " + getPFR() + "\n";               
     }
     
 }

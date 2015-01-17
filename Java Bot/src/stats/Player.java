@@ -18,6 +18,8 @@ public class Player {
     private Street street;
     private PerformedAction lastAction;
     private boolean setVPIP;
+    private boolean setPreFlopRaise;
+    private boolean madePreFlopAction;
     
     public Player(String name, int stackSize, int seat){
         this.name = name;
@@ -28,6 +30,8 @@ public class Player {
         this.street = Street.PREFLOP;
         this.lastAction = new PerformedAction(name, PerformedActionType.NONE, 0, new ArrayList<Card>(), Street.PREFLOP);
         setVPIP = false;
+        setPreFlopRaise = false;
+        madePreFlopAction = false;
     }
     
     public Stats getStats(){
@@ -79,12 +83,14 @@ public class Player {
     
     /**
      * Sets whether or not the player is playing the current hand.
-     * Makes sure to update boardCards first.
+     *  Call when NEWHAND message is received.
      * @param active 
      */
     public void setActive(boolean active){
         isActive = active;
         setVPIP = false;
+        setPreFlopRaise = false;
+        madePreFlopAction = false;
         if(isActive){
             stats.incrementEligibleMatches();
         }
@@ -102,13 +108,18 @@ public class Player {
         if(type == PerformedActionType.DEAL){
             street = action.getStreet();   
         }
-        if(type.isAPlayerAction() && street == Street.PREFLOP){
-            //preFlopStat.addAction(seat, type);
-        }
         if((type == PerformedActionType.CALL || type == PerformedActionType.RAISE || type == PerformedActionType.BET) 
                 && street == Street.PREFLOP && !setVPIP){
             stats.VPIP();
             setVPIP = true;
+        }
+        if(type.isAPlayerAction() && street == Street.PREFLOP && !madePreFlopAction){
+            stats.numCouldDoActionPreFlop();
+            madePreFlopAction = true;
+        }
+        if(type == PerformedActionType.RAISE && street == Street.PREFLOP && !setPreFlopRaise){
+            stats.PFR();
+            setPreFlopRaise = true;
         }
     }
         
