@@ -26,7 +26,7 @@ public class StatsCalculator {
         List<PerformedAction> actions = determinePerformedActions(performedActions);
         for(PerformedAction action : actions){
             for(Player player : players){
-                if(player.getName().equals(action.getActor()) || action.getType() == PerformedActionType.DEAL){
+                if((player.getName().equals(action.getActor()) || action.getType() == PerformedActionType.DEAL) && player.isActive()){
                     player.processAction(action);
                 }
             }

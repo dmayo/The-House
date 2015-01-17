@@ -204,7 +204,7 @@ public class Communicator {
                     for(int i=0; i < stackSizes.length; i++){
                         for(Player player : players){
                             if(player.getSeat() == i+1){
-                                player.setBoardCards(new BoardCards(Street.fromInt(numBoardCards), boardCardsList));
+                                //player.setBoardCards(new BoardCards(Street.fromInt(numBoardCards), boardCardsList));
                                 //player.setActive(new Boolean(activePlayers[i]));
                                 player.setStackSize(new Integer(stackSizes[i])); 
                             }
@@ -268,7 +268,7 @@ public class Communicator {
                         for(Player player : players){
                             if(name.equals(player.getName())){
                                 player.setLastAction(new PerformedAction(player.getName(), PerformedActionType.NONE, 0, new ArrayList<Card>(), Street.PREFLOP));
-                                player.setBoardCards(new BoardCards(Street.PREFLOP, new ArrayList<Card>()));
+                                player.setStreet(Street.PREFLOP);
                                 player.setSeat(i+1);
                                 player.setActive(new Boolean(activePlayers[i]));
                                 player.setStackSize(new Integer(stackSizes[i]));         
@@ -304,12 +304,13 @@ public class Communicator {
                     }
                     bot.setTimeBank(timeBank);       
                     statsCalc.processActions(lastActions);
-                    //System.out.println("");
-                    //System.out.println("");
+                    
                     for(Player player : players){
                         System.out.println(player.getName());
                         System.out.println(player.getStats());
                     }
+                    System.out.println("");
+                    System.out.println("");
                 }
             }
         } catch (IOException e) {

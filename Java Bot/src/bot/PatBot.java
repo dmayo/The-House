@@ -50,7 +50,6 @@ public class PatBot {
     }
     
     public void setHand(Hand newHand){
-        System.out.println("New Hand -----");
         hand = newHand;
     }
     
@@ -86,14 +85,13 @@ public class PatBot {
         Map<LegalActionType, LegalAction> legalActions = determineLegalActions(legalActionsArray);
         double equity =  HandStats.monteCarloEquity(5000, hand, boardCards);
         equity = numActivePlayers == 3 ? equity*equity : equity;
-        //System.out.println("equity " + equity);
+        System.out.println("equity " + equity);
         
         if(boardCards.getStreet() == Street.PREFLOP){
             
             ActionProbability actionProb = preFlopStrategy();
             System.out.println(hand.toString());
             System.out.println("seat: " + getSeat());
-            System.out.println("equity: " + equity);
             System.out.println("equity squared ranking: " + EquitySquaredRanking.getRank(hand));
             
             System.out.println(actionProb.toString());
@@ -117,11 +115,11 @@ public class PatBot {
             
         else{    
             ActionProbability actionProb = postFlopStrategy(legalActions, equity);
-            //System.out.println(hand.toString());
-            //System.out.println(actionProb.toString());
+            System.out.println(hand.toString());
+            System.out.println(actionProb.toString());
             LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
             LegalAction actionToPerform = nextBest(legalActions, actionTypeToPerform);
-            //System.out.println("action to perform: " + actionToPerform.getType());
+            System.out.println("action to perform: " + actionToPerform.getType());
           
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
@@ -390,7 +388,7 @@ public class PatBot {
         if(legalActions.containsKey(LegalActionType.CALL)){
             callAmount=legalActions.get(LegalActionType.CALL).getAmount();
             double potOdds = callAmount/(double)(callAmount+potSize); //pot odds = call/(call+pot)
-            //System.out.println("potOdds: " + potOdds);
+            System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
             //If pot odds are worse, fold
             if(potOdds*1.6 < equity){

@@ -15,8 +15,9 @@ public class Player {
     private int stackSize;
     private boolean isActive;
     private int seat;
-    private BoardCards boardCards;
+    private Street street;
     private PerformedAction lastAction;
+    private boolean setVPIP;
     
     public Player(String name, int stackSize, int seat){
         this.name = name;
@@ -24,24 +25,18 @@ public class Player {
         this.stackSize = stackSize;
         this.isActive = true;
         this.seat = seat;
-        this.boardCards = new BoardCards(Street.PREFLOP, new ArrayList<Card>());
+        this.street = Street.PREFLOP;
         this.lastAction = new PerformedAction(name, PerformedActionType.NONE, 0, new ArrayList<Card>(), Street.PREFLOP);
+        setVPIP = false;
     }
     
     public Stats getStats(){
         return stats;
     }
+   
     
-    
-    public void setBoardCards(BoardCards newBoardCards){
-        this.boardCards = newBoardCards;
-        if(isActive){
-            stats.incrementStreetCount(boardCards.getStreet());
-            if(lastAction.getType() != PerformedActionType.FOLD){
-                stats.sawStreet(boardCards.getStreet());
-            }
-        }
-
+    public void setStreet(Street street){
+        this.street = street;
     }
        
     
@@ -89,6 +84,7 @@ public class Player {
      */
     public void setActive(boolean active){
         isActive = active;
+        setVPIP = false;
         if(isActive){
             stats.incrementEligibleMatches();
         }
@@ -103,21 +99,19 @@ public class Player {
         this.lastAction = action;
         PerformedActionType type = action.getType();
         
-        if(type.isAPlayerAction()){
-            stats.preformedAction(type);
-            stats.incrementActionOpportunities();
-        } else if(type  == PerformedActionType.WIN || type == PerformedActionType.TIE){
-            stats.wonPot();
-        } else if(type == PerformedActionType.DEAL && isActive){
-            stats.incrementStreetCount(action.getStreet());
-            if(lastAction.getType() != PerformedActionType.FOLD){
-                stats.sawStreet(action.getStreet());
-            }
+        if(type == PerformedActionType.DEAL){
+            street = action.getStreet();   
         }
-            
+        if(type.isAPlayerAction() && street == Street.PREFLOP){
+            //preFlopStat.addAction(seat, type);
+        }
+        if((type == PerformedActionType.CALL || type == PerformedActionType.RAISE || type == PerformedActionType.BET) 
+                && street == Street.PREFLOP && !setVPIP){
+            stats.VPIP();
+            setVPIP = true;
+        }
     }
-    
-    
+        
 
     
     public PerformedAction getLastAction(){

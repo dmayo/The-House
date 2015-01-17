@@ -17,6 +17,8 @@ public class Stats {
     private int potsWon = 0;
     private int numEligibleMatches = 0;
     private Map<Hand, Double> handProbs = new HashMap<Hand, Double>();
+    private int numVPIP = 0;
+    private int numPreFlopRaise = 0;
     
     public Stats(){
         //creates uniform probability distribution of every possible hand
@@ -138,6 +140,39 @@ public class Stats {
         potsWon++;
     }
     
+    
+    /**
+     * Call whenever the player voluntarily puts money in the pot on the preflop. 
+     * (i.e. blinds do not count) So call when the player bets, calls, or raises preflop.
+     */
+    public void VPIP(){
+        numVPIP++;
+    }
+    
+    
+    /**
+     * @return the percentage of preflops the player voluntarily put money in the pot.
+     */
+    public double getVPIP(){
+        return numVPIP / (double) numEligibleMatches;
+    }
+    
+    
+    /**
+     * Call whenever a player raises on preflop
+     */
+    public void preFlopRaise(){
+        numPreFlopRaise++;
+    }
+    
+    /**
+     * @return the percentage of times a player raise on preflop
+     */
+    public double getPreFlopRaise(){
+        return numPreFlopRaise / (double) numEligibleMatches;
+    }
+    
+    
     /**
      * Aggression factor = (NumberBets + NumberRaises)/NumberCalls
      * Aggression factor > 1 means the player is aggressive
@@ -152,6 +187,8 @@ public class Stats {
     
     @Override
     public String toString(){
+        return "VPIP: " + getVPIP();
+        /*
         return "ACTIONS: \n" + "fold : " + percentActionDone(PerformedActionType.FOLD) + " \n" + 
                                "check : " + percentActionDone(PerformedActionType.CHECK) + " \n" +
                                "call : " + percentActionDone(PerformedActionType.CALL) + " \n" +
@@ -163,7 +200,7 @@ public class Stats {
                                     "river: " + percentStreetSeen(Street.PREFLOP) + " \n"+ 
               "POTS WON: " + percentPotsWon() + "\n" + 
                "AF :" + getAggressionFactor() + "\n";
-        
+        */
                               
     }
     
