@@ -12,26 +12,34 @@ public class Stats {
     private int actionOpportunities = 0;
     private int potsWon = 0;
     private int numEligibleMatches = 0;
-    private int numVPIP = 0;
-    private int numPFR = 0;
-    private int numCouldDoActionPreFlop = 0;
+    private final Map<Position, Integer> numVPIP;
+    private final Map<Position, Integer> numPFR;
+    private final Map<Position, Integer> numCouldDoActionPreFlop;
     private int numWTSD = 0;
     private int numW$SD = 0;
     
     public Stats(){
     
-        Map<Street, Integer> initial = new HashMap<Street,Integer>();
-        initial.put(Street.PREFLOP, 0);
-        initial.put(Street.FLOP, 0);
-        initial.put(Street.TURN, 0);
-        initial.put(Street.RIVER, 0);
-        numStreetsSeen = new HashMap<Street, Integer>(initial);
-        totalStreets = new HashMap<Street, Integer>(initial);
+        Map<Street, Integer> initialStreetCounts = new HashMap<Street,Integer>();
+        initialStreetCounts.put(Street.PREFLOP, 0);
+        initialStreetCounts.put(Street.FLOP, 0);
+        initialStreetCounts.put(Street.TURN, 0);
+        initialStreetCounts.put(Street.RIVER, 0);
+        numStreetsSeen = new HashMap<Street, Integer>(initialStreetCounts);
+        totalStreets = new HashMap<Street, Integer>(initialStreetCounts);
         numActionsDone.put(PerformedActionType.BET, 0);
         numActionsDone.put(PerformedActionType.CALL, 0);
         numActionsDone.put(PerformedActionType.CHECK, 0);
         numActionsDone.put(PerformedActionType.RAISE, 0);
         numActionsDone.put(PerformedActionType.FOLD, 0);
+        
+        Map<Position, Integer> initialStats = new HashMap<Position, Integer>();
+        initialStats.put(Position.FIRST, 0);
+        initialStats.put(Position.MIDDLE, 0);
+        initialStats.put(Position.LAST, 0);
+        numVPIP = new HashMap<Position, Integer>(initialStats);
+        numPFR = new HashMap<Position, Integer>(initialStats);
+        numCouldDoActionPreFlop = new HashMap<Position, Integer>(initialStats);
     }
     
     
@@ -128,25 +136,74 @@ public class Stats {
      * Call whenever the player voluntarily puts money in the pot on the preflop. 
      * (i.e. blinds do not count) So call when the player bets, calls, or raises preflop.
      */
-    public void VPIP(){
-        numVPIP++;
+    public void VPIP(Position position){
+        numVPIP.put(position, numVPIP.get(position)+1);
     }
     
     
     /**
-     * @return the percentage of preflops the player voluntarily put money in the pot.
+     * @return the percentage of preflops the player voluntarily put money in the pot from given position
+     */
+    public double getVPIP(Position position){
+        return numVPIP.get(position) / (double) numCouldDoActionPreFlop.get(position);
+    }
+
+   
+    /**
+     * @return the percentage of preflops the player voluntarily put money in the pot
      */
     public double getVPIP(){
-        return numVPIP / (double) numCouldDoActionPreFlop;
+        int totalVPIP = 0;
+        int totalCouldDoActionPreFlop = 0;
+        for(Position position : Position.values()){
+           totalVPIP += numVPIP.get(position);
+           totalCouldDoActionPreFlop += numCouldDoActionPreFlop.get(position);
+        }
+        
+        return totalVPIP / (double) totalCouldDoActionPreFlop;
     }
     
     
     /**
      * Call whenever a player raises on preflop
      */
-    public void PFR(){
-        numPFR++;
+    public void PFR(Position position){
+        numPFR.put(position, numPFR.get(position)+1);
+
     }
+    
+    
+    /**
+     * @return the percentage of times a player raise on preflop from given position
+     * @param position the position of the player
+     */
+    public double getPFR(Position position){
+        return numPFR.get(position) / (double) numCouldDoActionPreFlop.get(position);
+    }
+    
+    
+    /**
+     * @return the percentage of times a player raise on preflop
+     */
+    public double getPFR(){
+        int totalPFR = 0;
+        int totalCouldDoActionPreFlop = 0;
+        for(Position position : Position.values()){
+           totalPFR += numPFR.get(position);
+           totalCouldDoActionPreFlop += numCouldDoActionPreFlop.get(position);
+        }
+        
+        return totalPFR / (double) totalCouldDoActionPreFlop;
+    }
+    
+    
+    /**
+     * Call whenever a player has the opportunity to do an action preflop from given position
+     */
+    public void numCouldDoActionPreFlop(Position position){
+        numCouldDoActionPreFlop.put(position, numCouldDoActionPreFlop.get(position)+1);
+    }
+    
     
     
     /**
@@ -178,20 +235,9 @@ public class Stats {
         return numW$SD / (double) numWTSD;
     }
     
-    /**
-     * Call whenever a player has the opportunity to do an action preflop
-     */
-    public void numCouldDoActionPreFlop(){
-        numCouldDoActionPreFlop++;
-    }
+   
     
-    /**
-     * @return the percentage of times a player raise on preflop
-     */
-    public double getPFR(){
-        return numPFR / (double) numCouldDoActionPreFlop;
-    }
-    
+ 
     
     /**
      * Aggression factor = (NumberBets + NumberRaises)/NumberCalls
@@ -207,11 +253,18 @@ public class Stats {
     
     @Override
     public String toString(){
-        return "VPIP: " + getVPIP() + "\n" + 
+        String toReturn = "VPIP: " + getVPIP() + "\n" + 
                "PFR: " + getPFR() + "\n" + 
                "AF: " + getAF() + "\n" +
                "WTSD: " + getWTSD() + "\n"+
                "W$SD: " + getW$SD() + "\n";
+        for(Position position: Position.values()){
+            toReturn += "VPIP " + position + " " + getVPIP(position) + "\n";
+        }
+        for(Position position: Position.values()){
+            toReturn += "PFR " + position + " " + getPFR(position) + "\n";
+        }
+        return toReturn;
     }
     
 }

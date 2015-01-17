@@ -21,6 +21,7 @@ public class Player {
     private boolean setPreFlopRaise;
     private boolean madePreFlopAction;
     private boolean cardsShown;
+    private int numActivePlayers = 3;
     
     public Player(String name, int stackSize, int seat){
         this.name = name;
@@ -38,6 +39,11 @@ public class Player {
     
     public Stats getStats(){
         return stats;
+    }
+    
+    
+    public void setNumActivePlayers(int numActivePlayers){
+        this.numActivePlayers = numActivePlayers;
     }
    
     
@@ -116,15 +122,15 @@ public class Player {
         }
         if((type == PerformedActionType.CALL || type == PerformedActionType.RAISE || type == PerformedActionType.BET) 
                 && street == Street.PREFLOP && !setVPIP){
-            stats.VPIP();
+            stats.VPIP(getPosition());
             setVPIP = true;
         }
         if(type.isAPlayerAction() && street == Street.PREFLOP && !madePreFlopAction){
-            stats.numCouldDoActionPreFlop();
+            stats.numCouldDoActionPreFlop(getPosition());
             madePreFlopAction = true;
         }
         if(type == PerformedActionType.RAISE && street == Street.PREFLOP && !setPreFlopRaise){
-            stats.PFR();
+            stats.PFR(getPosition());
             setPreFlopRaise = true;
         }
         if(type.isAPlayerAction()){
@@ -155,5 +161,16 @@ public class Player {
     
     public boolean raised(){
         return (lastAction.getType() == PerformedActionType.RAISE) & isActive;
+    }
+    
+    
+    public Position getPosition(){
+        if(seat == 1){
+            return Position.FIRST;
+        } else if(seat == 2 && numActivePlayers == 3){
+            return Position.MIDDLE;
+        }
+        
+        return Position.LAST;
     }
 }

@@ -227,13 +227,15 @@ public class Communicator {
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
                     //NEWGAME yourName opp1Name opp2Name stackSize bb numHands timeBank
                     Map<String,String> parsed = parseNewGame(inputWords);
+                    String botName = parsed.get("yourName");
                     
                     int stackSize = new Integer(parsed.get("stackSize"));
                     Player player1 = new Player(parsed.get("opp1Name"), stackSize,0); // dummy seat values must be updated in NEWHAND
                     Player player2 = new Player(parsed.get("opp2Name"), stackSize,0); // dummy seat values must be updated in NEWHAND
-                    players = Arrays.asList(new Player[]{player1,player2});
+                    Player player3 = new Player(botName,stackSize,0);
+                    players = Arrays.asList(new Player[]{player1,player2,player3});
                     
-                    String botName = parsed.get("yourName");
+                   
                     int numHands = new Integer(parsed.get("numHands"));
                     int bigBlind = new Integer(parsed.get("bb"));
                     double timeBank = new Double(parsed.get("timeBank"));
@@ -271,7 +273,8 @@ public class Communicator {
                                 player.setStreet(Street.PREFLOP);
                                 player.setSeat(i+1);
                                 player.setActive(new Boolean(activePlayers[i]));
-                                player.setStackSize(new Integer(stackSizes[i]));         
+                                player.setStackSize(new Integer(stackSizes[i]));     
+                                player.setNumActivePlayers(numActivePlayers);
                             }
                         }
                         if(name.equals(bot.getName())){
