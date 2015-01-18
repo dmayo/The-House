@@ -32,6 +32,7 @@ public class PatBot {
     private int numActivePlayers;
     private int potSize = 0;
     private BoardCards boardCards;
+    private LegalActionType previousAction = LegalActionType.NONE;
     
     public PatBot(String name, int stackSize, int bigBlind, int numHands, double timeBank, List<Player> otherPlayers){
         this.otherPlayers = new ArrayList<Player>(otherPlayers);
@@ -51,6 +52,7 @@ public class PatBot {
     
     public void setHand(Hand newHand){
         hand = newHand;
+        previousAction = LegalActionType.NONE;
     }
     
     public void setTimeBank(double newTimeBank){
@@ -84,13 +86,21 @@ public class PatBot {
     public String getAction(String legalActionsArray[]){
         Map<LegalActionType, LegalAction> legalActions = determineLegalActions(legalActionsArray);
         double equity =  HandStats.monteCarloEquity(5000, hand, boardCards);
-        equity = numActivePlayers == 3 ? equity*equity : equity;
+        
+        int numFoldPlayers = 0;
+        for(Player player : otherPlayers){
+            if(player.getLastAction().getType() == PerformedActionType.FOLD){
+                numFoldPlayers++;
+            }
+        }
+        
+        equity = (numActivePlayers-numFoldPlayers) == 3 ? equity*equity : equity;
         System.out.println("equity " + equity);
+        System.out.println(numActivePlayers-numFoldPlayers);
         
         if(boardCards.getStreet() == Street.PREFLOP){
             
             ActionProbability actionProb = preFlopStrategy();
-            System.out.println(hand.toString());
             System.out.println("seat: " + getSeat());
             System.out.println("equity squared ranking: " + EquitySquaredRanking.getRank(hand));
             
@@ -106,6 +116,8 @@ public class PatBot {
                 amount = (int) (actionToPerform.getMin() + 0.6*equity*(actionToPerform.getMax() - actionToPerform.getMin()));
             }
             
+            previousAction = actionToPerform.getType();
+            
             if(amount != 0){
                 return actionToPerform.getType().toString() + ":" + amount;
             } else{
@@ -115,7 +127,6 @@ public class PatBot {
             
         else{    
             ActionProbability actionProb = postFlopStrategy(legalActions, equity);
-            System.out.println(hand.toString());
             System.out.println(actionProb.toString());
             LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
             LegalAction actionToPerform = nextBest(legalActions, actionTypeToPerform);
@@ -227,6 +238,34 @@ public class PatBot {
         // we are first to act and everyone is still playing
         // play upto KQ
         int rank = EquitySquaredRanking.getRank(hand);
+        if(previousAction == LegalActionType.RAISE){
+            if(rank <=5){
+                return new ActionProbability(0, .05 , .95, 0, 0);
+            } 
+            if(rank <= 10){
+                return new ActionProbability(0, 0.6, 0.4, 0, 0);
+            }
+            if(rank <= 20){
+                return new ActionProbability(0, 0.8, 0.2, 0, 0);
+            } else{
+                return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
+            }
+        }
+        
+        if(previousAction == LegalActionType.CALL){
+            if(rank <=5){
+                return new ActionProbability(0, .05 , .95, 0, 0);
+            } 
+            if(rank <= 10){
+                return new ActionProbability(0, 0.4, 0.6, 0, 0);
+            }
+            if(rank <= 20){
+                return new ActionProbability(0, 0.8, 0.2, 0, 0);
+            } else{
+                return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
+            }
+        }
+        
         //System.out.println("rank: " + rank);
         //1 is the best ranking
         if(seat == 1){
@@ -234,7 +273,7 @@ public class PatBot {
                 return new ActionProbability(0, .05 , .95, 0, 0);
             }
             //better than AK which is rank 10, equity: 0.43599609
-            if(rank <= 10){
+            if(rank <= 15){
                 return new ActionProbability(0, 0.2, 0.8, 0, 0);
             }
             //better than JT same suit which is rank 30
@@ -370,7 +409,7 @@ public class PatBot {
                 return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
             }
         } else{
-            return new ActionProbability(1.0-(equity*equity), 0, 0, equity*equity, 0);
+            return new ActionProbability(1.0-equity, 0, 0, equity, 0);
         }
         
         

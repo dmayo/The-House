@@ -228,6 +228,8 @@ public class Communicator {
                         System.out.println(player.getStats().values());
                         System.out.println();
                     }
+                    outStream.println("DELETE 123456");
+                    outStream.println("PUT 123456 123456789");
                     outStream.println("FINISH");
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
                     //NEWGAME yourName opp1Name opp2Name stackSize bb numHands timeBank
@@ -240,13 +242,14 @@ public class Communicator {
                     Player player3 = new Player(botName,stackSize,0);
                     players = Arrays.asList(new Player[]{player1,player2,player3});
                     
+                    
                    
                     int numHands = new Integer(parsed.get("numHands"));
                     int bigBlind = new Integer(parsed.get("bb"));
                     double timeBank = new Double(parsed.get("timeBank"));
                     
                     statsCalc.setPlayers(players);
-                    bot = new PatBot(botName, stackSize, bigBlind, numHands, timeBank, players);
+                    bot = new PatBot(botName, stackSize, bigBlind, numHands, timeBank, Arrays.asList(new Player[]{player1,player2}));
                     
                 } else if ("NEWHAND".compareToIgnoreCase(word) == 0) {
                     //NEWHAND handId seat holeCard1 holeCard2 [stackSizes] [playerNames] numActivePlayers [activePlayers] timeBank

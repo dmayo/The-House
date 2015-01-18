@@ -148,7 +148,7 @@ public class Player {
     public PerformedAction getLastAction(){
         return this.lastAction;
     }
-    
+        
     public void setLastAction(PerformedAction action){
         this.lastAction = action;
     }
