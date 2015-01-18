@@ -7,11 +7,7 @@ import actions.*;
 public class Stats {
    
     private final Map<Street, Integer> numStreetsSeen;
-    private final Map<Street, Integer> totalStreets;
     private final Map<PerformedActionType, Integer> numActionsDone  = new HashMap<PerformedActionType, Integer>();
-    private int actionOpportunities = 0;
-    private int potsWon = 0;
-    private int numEligibleMatches = 0;
     private final Map<Position, Integer> numVPIP;
     private final Map<Position, Integer> numPFR;
     private final Map<Position, Integer> numCouldDoActionPreFlop;
@@ -26,7 +22,6 @@ public class Stats {
         initialStreetCounts.put(Street.TURN, 0);
         initialStreetCounts.put(Street.RIVER, 0);
         numStreetsSeen = new HashMap<Street, Integer>(initialStreetCounts);
-        totalStreets = new HashMap<Street, Integer>(initialStreetCounts);
         numActionsDone.put(PerformedActionType.BET, 0);
         numActionsDone.put(PerformedActionType.CALL, 0);
         numActionsDone.put(PerformedActionType.CHECK, 0);
@@ -67,67 +62,6 @@ public class Stats {
         } else{
             numActionsDone.put(action,1);
         }
-    }
-    
-    /**
-     * Increase the number of streets that have occurred in matches where the player was
-     * not eliminated (stack size > 0)
-     */
-    public void incrementStreetCount(Street street){
-        if(totalStreets.containsKey(street)){
-            totalStreets.put(street,totalStreets.get(street)+1);
-        } else{
-            totalStreets.put(street,1);
-        }
-    }
-    
-    
-    /**
-     * 
-     * @param street
-     * @return the percent of times this player saw the street when he was still playing
-     */
-    public double percentStreetSeen(Street street){
-        return numStreetsSeen.get(street) / ((double)totalStreets.get(street));
-    }
-    
-    
-    /**
-     * increments the number of opportunities the player had to make an action (fold, bet, etc.).
-     * call this method on every street that the player is eligible for.
-     */
-    public void incrementActionOpportunities(){
-        actionOpportunities++;
-    }
-    
-    
-    
-    /**
-     * used to calculate the percent of times a player folds, calls, bets, or raises
-     * @param action needs to be fold, call, bet, or raise
-     * @return
-     */
-    public double percentActionDone(PerformedActionType action){
-        return numActionsDone.get(action) / (double) actionOpportunities;
-    }
-    
-    
-    /**
-     * increments the number of eligible matches that the player
-     * has been in
-     */
-    public void incrementEligibleMatches(){
-        numEligibleMatches++;
-    }
-    
-    
-    /**
-     * 
-     * @return the percent of times the player won a pot in
-     * matches where they are still playing
-     */
-    public double percentPotsWon(){
-        return potsWon / ((double) numEligibleMatches);
     }
     
     
@@ -246,7 +180,8 @@ public class Stats {
      * @return aggression factor
      */
     public double getAF(){
-        double AF = (double)(numActionsDone.get(PerformedActionType.BET) + numActionsDone.get(PerformedActionType.RAISE))  / numActionsDone.get(PerformedActionType.CALL);
+        double AF = (double)(numActionsDone.get(PerformedActionType.BET) + numActionsDone.get(PerformedActionType.RAISE)) / 
+                            numActionsDone.get(PerformedActionType.CALL);
         return AF;
     }
     
@@ -265,6 +200,53 @@ public class Stats {
             toReturn += "PFR " + position + " " + getPFR(position) + "\n";
         }
         return toReturn;
+    }
+    
+    
+    public String values(){
+        String numStreetsSeenData = "S";
+        for(Street street : numStreetsSeen.keySet()){
+            numStreetsSeenData +=  " ";
+            numStreetsSeenData += street.toString().substring(0,1);
+            numStreetsSeenData += numStreetsSeen.get(street);
+        }
+        
+        String numActionsDoneData = "A";
+        for(PerformedActionType type : numActionsDone.keySet()){
+            numActionsDoneData += " ";
+            numActionsDoneData += type == PerformedActionType.CHECK ? type.toString().substring(1,2) : type.toString().substring(0,1);
+            numActionsDoneData += numActionsDone.get(type);
+        }
+        
+        String numVPIPData = "V";
+        for(Position position : numVPIP.keySet()){
+            numVPIPData += " ";
+            numVPIPData += position.toString().substring(0,1);
+            numVPIPData += numVPIP.get(position);
+        }
+        
+        String numPFRData = "R";
+        for(Position position : numPFR.keySet()){
+            numPFRData += " ";
+            numPFRData += position.toString().substring(0,1);
+            numPFRData += numPFR.get(position);
+        }
+        
+        
+        String numCouldDoActionPreFlopData = "C";
+        for(Position position : numCouldDoActionPreFlop.keySet()){
+            numCouldDoActionPreFlopData += " ";
+            numCouldDoActionPreFlopData += position.toString().substring(0,1);
+            numCouldDoActionPreFlopData += numCouldDoActionPreFlop.get(position);
+        }
+        
+        
+        String numWTSDData ="D " + numWTSD;
+        String numW$SDData = "$ " + numW$SD;
+        
+        return numStreetsSeenData + " " + numActionsDoneData + " " + numVPIPData + " " + numPFRData
+                           + " " + numCouldDoActionPreFlopData + " " + numWTSDData + " " + numW$SDData;
+        
     }
     
 }

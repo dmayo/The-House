@@ -103,7 +103,7 @@ public class PatBot {
 
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
-                amount = (int) (actionToPerform.getMin() + 0.7*equity*(actionToPerform.getMax() - actionToPerform.getMin()));
+                amount = (int) (actionToPerform.getMin() + 0.6*equity*(actionToPerform.getMax() - actionToPerform.getMin()));
             }
             
             if(amount != 0){
@@ -123,7 +123,7 @@ public class PatBot {
           
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
-                amount = (int) (actionToPerform.getMin() + 0.7*equity*(actionToPerform.getMax() - actionToPerform.getMin()));
+                amount = (int) (actionToPerform.getMin() + 0.6*equity*(actionToPerform.getMax() - actionToPerform.getMin()));
             }
 
             if(amount != 0){
@@ -235,14 +235,14 @@ public class PatBot {
             }
             //better than AK which is rank 10, equity: 0.43599609
             if(rank <= 10){
-                return new ActionProbability(0, 0.3, 0.7, 0, 0);
+                return new ActionProbability(0, 0.2, 0.8, 0, 0);
             }
             //better than JT same suit which is rank 30
-            if(rank <= 30){
-                return new ActionProbability(0, 0.4, 0.6, 0, 0);
+            if(rank <= 20){
+                return new ActionProbability(0, 0.45, 0.65, 0, 0);
             }
             else{
-                return new ActionProbability(0.9, 0, 0.1, 0, 0);
+                return new ActionProbability(0.95, 0, 0.05, 0, 0);
             }
         }
         
@@ -257,9 +257,9 @@ public class PatBot {
                     return new ActionProbability(0, 0.2, 0.8, 0, 0);
                 }
                 else if(rank <= 30){
-                    return new ActionProbability(0, 0.4, 0.6, 0, 0);
+                    return new ActionProbability(0.1, 0.3, 0.6, 0, 0);
                 } else{
-                    return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
+                    return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
                 }
             } else if(potSize ==  initialPot + bigBlind){ // button limped in
                 if(rank <= 5){
@@ -268,12 +268,10 @@ public class PatBot {
                 if(rank <= 10){
                     return new ActionProbability(0, 0.2, 0.8, 0, 0);
                 }
-                else if(rank <= 30){
-                    return new ActionProbability(0, 0.4, 0.6, 0, 0);
-                } else if(rank <= 45){
-                    return new ActionProbability(0.1, 0.7, 0.2, 0, 0);
-                } else{
-                    return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
+                else if(rank <= 25){
+                    return new ActionProbability(0, 0.3, 0.7, 0, 0);
+                }  else{
+                    return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
                 }
             } else{ // button raised
                 if(rank <= 5){
@@ -285,28 +283,38 @@ public class PatBot {
                 else if(rank <= 20){
                     return new ActionProbability(0, 0.4, 0.6, 0, 0);
                 }
-                else if(rank <=  40){
-                    return new ActionProbability(0, 0.8, 0.2, 0, 0);
-                } else{
-                    return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
+                else{
+                    return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
                 }
             }
         }
         
-        // we are the first to act with big blind
+        // we are the last to act with big blind
         else if(seat == 2 && numActivePlayers == 2){
-            if(rank <= 5){
-                return new ActionProbability(0, .05 , .95, 0, 0);
-            }
-            if(rank <= 10){
-                return new ActionProbability(0, 0.2, 0.8, 0, 0);
-            }
-            else if(rank <= 30){
-                return new ActionProbability(0, 0.4, 0.6, 0, 0);
-            } else if(rank <= 45){
-                return new ActionProbability(0.2, 0.4, 0.4, 0, 0);
+            if(otherPlayers.get(0).limped()){
+                if(rank <= 5){
+                    return new ActionProbability(0, .05 , .95, 0, 0);
+                }
+                if(rank <= 10){
+                    return new ActionProbability(0, 0.2, 0.8, 0, 0);
+                }
+                else if(rank <= 35){
+                    return new ActionProbability(0, 0.4, 0.6, 0, 0);
+                }  else{
+                    return new ActionProbability(0, 0, 0.1, 0, 0.9);
+                }
             } else{
-                return new ActionProbability(0.8, 0.1, 0.1, 0, 0);
+                if(rank <= 5){
+                    return new ActionProbability(0, .05 , .95, 0, 0);
+                }
+                if(rank <= 10){
+                    return new ActionProbability(0, 0.2, 0.8, 0, 0);
+                }
+                else if(rank <= 35){
+                    return new ActionProbability(0, 0.4, 0.6, 0, 0);
+                }  else{
+                    return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
+                }
             }
         }
         
@@ -318,60 +326,23 @@ public class PatBot {
                     return new ActionProbability(0, .05 , .95, 0, 0);
                 }
                 else if(rank <= 10){
-                    return new ActionProbability(0, 0, 0.9, 0, 0.1);
+                    return new ActionProbability(0, 0, 0.95, 0, 0.05);
                 }
-                else if(rank <= 30){
+                else if(rank <= 35){
                     return new ActionProbability(0, 0, 0.7, 0, 0.3);
-                } else if(rank <= 45){
-                    return new ActionProbability(0.1, 0, 0.2, 0, 0.7);
-                } else{
-                    return new ActionProbability(0, 0, 0.1, 0, 0.9);
+                }else{
+                    return new ActionProbability(0, 0, 0.05, 0, 0.95);
                 }
             } else{ // someone raised
                 if(rank <= 5){
                     return new ActionProbability(0, .05 , .95, 0, 0);
                 }
-                else if(rank <= 20){
-                    return new ActionProbability(0, 0.4, 0.6, 0, 0);
-                } else if(rank <=  30){
+                else if(rank <= 10){
+                    return new ActionProbability(0, 0.3, 0.7, 0, 0);
+                } else if(rank <=  35){
                     return new ActionProbability(0, 0.8, 0.2, 0, 0);
-                } else if(rank <=  45){
-                    return new ActionProbability(0.4, 0.6, 0, 0, 0);
                 } else{
                     return new ActionProbability(0.9, 0.1, 0, 0, 0);
-                }
-            }
-        }
-        
-        // we are the last to act with big blind
-        else if(seat == 3 && numActivePlayers == 2){
-            
-            if(otherPlayers.get(0).limped() || otherPlayers.get(1).limped()){ // other player limped
-                if(rank <= 5){
-                    return new ActionProbability(0, .05 , .95, 0, 0);
-                }
-                if(rank <= 10){
-                    return new ActionProbability(0, 0, 0.8, 0, 0.2);
-                }
-                else if(rank <= 30){
-                    return new ActionProbability(0, 0, 0.6, 0, 0.4);
-                } else if(rank <= 50){
-                    return new ActionProbability(0.1, 0, 0.3, 0, 0.6);
-                } else{
-                    return new ActionProbability(0.7, 0, 0.15, 0, 0.15);
-                }
-            } else{ // someone raised
-                if(rank <= 5){
-                    return new ActionProbability(0, .05 , .95, 0, 0);
-                }
-                if(rank <= 10){
-                    return new ActionProbability(0, 0.4, 0.6, 0, 0);
-                } else if(rank <=  30){
-                    return new ActionProbability(0, 0.8, 0.2, 0, 0);
-                } else if(rank <=  45){
-                    return new ActionProbability(0.4, 0.6, 0, 0, 0);
-                } else{
-                    return new ActionProbability(0.8, 0.2,0, 0, 0);
                 }
             }
         }
@@ -391,9 +362,9 @@ public class PatBot {
             System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
             //If pot odds are worse, fold
-            if(potOdds*1.6 < equity){
+            if(potOdds*1.5 < equity){
                 //fold, call, raise, bet, check
-                return new ActionProbability(0, 0.8, 0.2, 0, 0);
+                return new ActionProbability(0, 0.9, 0.1, 0, 0);
             }
             else{
                 return new ActionProbability(0.9, 0.05, 0.05, 0, 0);

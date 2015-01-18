@@ -223,6 +223,11 @@ public class Communicator {
                 } else if ("REQUESTKEYVALUES".compareToIgnoreCase(word) == 0) {
                     // At the end, engine will allow bot to send key/value pairs to store.
                     // FINISH indicates no more to store.
+                    for(Player player : players){
+                        System.out.println(player.getName());
+                        System.out.println(player.getStats().values());
+                        System.out.println();
+                    }
                     outStream.println("FINISH");
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
                     //NEWGAME yourName opp1Name opp2Name stackSize bb numHands timeBank
@@ -314,12 +319,14 @@ public class Communicator {
                     }
                     System.out.println("");
                     System.out.println("");
+                    
                 }
             }
         } catch (IOException e) {
             System.out.println("IOException: " + e.getMessage());
         }
-
+        
+        
         System.out.println("Gameover, engine disconnected");
         
         // Once the server disconnects from us, close our streams and sockets.

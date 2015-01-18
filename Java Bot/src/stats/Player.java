@@ -100,9 +100,6 @@ public class Player {
         setPreFlopRaise = false;
         madePreFlopAction = false;
         cardsShown = false;
-        if(isActive){
-            stats.incrementEligibleMatches();
-        }
     }
     
     
@@ -142,6 +139,7 @@ public class Player {
         }
         if((type == PerformedActionType.WIN || type == PerformedActionType.TIE) && cardsShown){
             stats.W$SD();
+            cardsShown = false;
         }
     }
         
@@ -173,4 +171,6 @@ public class Player {
         
         return Position.LAST;
     }
+    
+
 }
