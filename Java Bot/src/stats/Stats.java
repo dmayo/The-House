@@ -2,6 +2,7 @@ package stats;
 import java.util.HashMap;
 import java.util.Map;
 
+import runner.StringEncode;
 import actions.*;
 
 public class Stats {
@@ -281,19 +282,23 @@ public class Stats {
         return toReturn;
     }
     
-    /*
+    
     public String values(){
         //df.format(0.912385);
         String out = "";
-        out+=currentVPIP.get(Position.FIRST)+currentVPIP.get(Position.MIDDLE)+currentVPIP.get(Position.LAST);
-        out+=currentPFR.get(Position.FIRST)+currentPFR.get(Position.MIDDLE)+currentPFR.get(Position.LAST);
-        out+=currentWTSD;
-        out+=currentW$SD;
-        out+=currentOverallVPIP;
-        out+=currentOverallPFR;
+        out+=StringEncode.encodeInt((int)(currentVPIP.get(Position.FIRST)*100));
+        out+=StringEncode.encodeInt((int)(currentVPIP.get(Position.MIDDLE)*100));
+        out+=StringEncode.encodeInt((int)(currentVPIP.get(Position.LAST)*100));
+        out+=StringEncode.encodeInt((int)(currentPFR.get(Position.FIRST)*100));
+        out+=StringEncode.encodeInt((int)(currentPFR.get(Position.MIDDLE)*100));
+        out+=StringEncode.encodeInt((int)(currentPFR.get(Position.LAST)*100));
+        out+=StringEncode.encodeInt((int)(currentWTSD*100));
+        out+=StringEncode.encodeInt((int)(currentW$SD*100));
+        out+=StringEncode.encodeInt((int)(currentOverallVPIP*100));
+        out+=StringEncode.encodeInt((int)(currentOverallPFR*100));
         return out;
     }
-    */
+    
 /*
     public String values(){
         String numStreetsSeenData = "S";

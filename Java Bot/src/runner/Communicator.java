@@ -13,6 +13,8 @@ import cards.BoardCards;
 import cards.Card;
 import cards.Hand;
 import stats.Player;
+import stats.Position;
+import stats.Stats;
 import stats.StatsCalculator;
 import actions.PerformedAction;
 import actions.PerformedActionType;
@@ -32,6 +34,7 @@ public class Communicator {
     
     private final PrintWriter outStream;
     private final BufferedReader inStream;
+    private final Map<String, Stats> keyValues = new HashMap<String, Stats>();
 
     public Communicator(PrintWriter output, BufferedReader input) {
         this.outStream = output;
@@ -223,14 +226,51 @@ public class Communicator {
                 } else if ("REQUESTKEYVALUES".compareToIgnoreCase(word) == 0) {
                     // At the end, engine will allow bot to send key/value pairs to store.
                     // FINISH indicates no more to store.
+                    
                     for(Player player : players){
                         if(!player.getName().equals(bot.getName())){
-                            outStream.println("DELETE "+StringEncode.encodeInt(Integer.valueOf(player.getName())));
-                            outStream.println("PUT "+StringEncode.encodeInt(Integer.valueOf(player.getName()))+" "+player.getStats().values());
+                            String name = player.getName();
+                            System.out.println(name);
+                            if(name.equals("RANDOMBOT1")){
+                                name = "1";
+                            }
+                            else if(name.equals("RANDOMBOT2")){
+                                name = "1";
+                            }
+                            else if(name.equals("YOURBOT")){
+                                name = "3";
+                            }
+                            outStream.println("DELETE "+StringEncode.encodeInt(Integer.valueOf(name)));
+                            outStream.println("PUT "+StringEncode.encodeInt(Integer.valueOf(name))+" "+player.getStats().values());
                         }
                     }
-                    
                     outStream.println("FINISH");
+                    
+                } else if ("KEYVALUE".compareToIgnoreCase(word) == 0) {
+                        // Gets keyvalue pairs
+                        String playerName = Integer.toString(StringEncode.decodeInt(inputWords[2]));
+                        char[] values = inputWords[2].toCharArray();
+                        
+                        int i=values.length;
+                        final Map<Position, Double> currentVPIP = new HashMap<Position, Double>();
+                        currentVPIP.put(Position.FIRST, (double) StringEncode.decodeInt(String.valueOf(values[i--])));
+                        currentVPIP.put(Position.MIDDLE, (double) StringEncode.decodeInt(String.valueOf(values[i--])));
+                        currentVPIP.put(Position.LAST, (double) StringEncode.decodeInt(String.valueOf(values[i--])));
+                        
+                        final Map<Position, Double> currentPFR = new HashMap<Position, Double>();
+                        currentPFR.put(Position.FIRST, (double) StringEncode.decodeInt(String.valueOf(values[i--])));
+                        currentPFR.put(Position.MIDDLE, (double) StringEncode.decodeInt(String.valueOf(values[i--])));
+                        currentPFR.put(Position.LAST, (double) StringEncode.decodeInt(String.valueOf(values[i--])));
+                        
+                        double currentWTSD = (double) StringEncode.decodeInt(String.valueOf(values[i--]));
+                        double currentW$SD = (double) StringEncode.decodeInt(String.valueOf(values[i--]));
+                        double currentOverallVPIP = (double) StringEncode.decodeInt(String.valueOf(values[i--]));
+                        double currentOverallPFR = (double) StringEncode.decodeInt(String.valueOf(values[i--]));
+                        System.out.println("current: "+currentVPIP+" "+currentPFR+" "+currentWTSD+" "+currentW$SD+" "+currentOverallVPIP+" "+currentOverallPFR);
+                        Stats playerStats = new Stats(currentVPIP, currentPFR, currentWTSD, currentW$SD, currentOverallVPIP, currentOverallPFR);
+                        
+                        keyValues.put(playerName, playerStats);
+                        
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
                     //NEWGAME yourName opp1Name opp2Name stackSize bb numHands timeBank
                     Map<String,String> parsed = parseNewGame(inputWords);
