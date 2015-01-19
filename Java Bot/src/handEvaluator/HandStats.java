@@ -199,42 +199,7 @@ public class HandStats {
         
         return (ahead+(tied/2.0)) / (double)(iterations);
     }
-    
-    static public double monteCarloEquity3(int iterations, Hand hand, BoardCards boardCards){
-        int ahead = 0;
-        int tied = 0;
-        
-        List<Card> boardCardsList = boardCards.getCards();
-        Card[] board =  boardCardsList.toArray(new Card[boardCardsList.size()]);
-        
-        Card[] handCards = hand.getCards();
-        long ourHandLong = HandEval.encode(handCards[0]) | HandEval.encode(handCards[1]);
-        long boardLong = HandEval.encode(board);
-        long originalUsed = ourHandLong | boardLong;
-        
-        for(int i=0; i < iterations; i++){
-            long used = originalUsed;
-            long opp1HandLong = addNewRandomCard(2,0,used);
-            used |= opp1HandLong;
-            long opp2HandLong = addNewRandomCard(2,0,used);
-            used |= opp2HandLong;
-            
-            long rollOutBoard = addNewRandomCard(5-board.length, boardLong, used);
-            int ourRank = HandEval.hand7Eval(rollOutBoard | ourHandLong);
-            int opp1Rank = HandEval.hand7Eval(rollOutBoard | opp1HandLong);
-            int opp2Rank = HandEval.hand7Eval(rollOutBoard | opp2HandLong);
-            
-            if (ourRank > opp1Rank && ourRank > opp2Rank){
-                ahead++;
-            }
-            else if(ourRank == opp1Rank && ourRank == opp2Rank){
-                tied++;
-            }
-        }
-        
-        return (ahead+(tied/2.0)) / (double)(iterations);
-    }
-    
+     
     
     
     static private long addNewRandomCard(int num, long addTo, long used){

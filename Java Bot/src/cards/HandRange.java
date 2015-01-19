@@ -355,9 +355,30 @@ public class HandRange {
     }
     
     
-    
+    /**
+     * 
+     * @param percent 0-100
+     * @return the range that corresponds to the given percent
+     */
     public static String getRangeFromPercent(int percent){
         return percentToRange.get(percent);
+    }
+    
+    
+    /**
+     * 
+     * @param hand
+     * @param range
+     * @return true if the given hand is in the given range, false otherwise
+     */
+    public static boolean handIsInRange(Hand hand, String range){
+        List<Hand> handsInRange = getHandsFromRange(range);
+        for(Hand otherHand : handsInRange){
+            if(hand.isEqualIgnoringSuit(otherHand) && (hand.isSuited() == otherHand.isSuited())){
+                return true;
+            }
+        }
+        return false;
     }
     
 }
