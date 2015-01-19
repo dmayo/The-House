@@ -229,6 +229,7 @@ public class Communicator {
                     for(Player player : players){
                         if(!player.getName().equals(bot.getName())){
                             String name = player.getName();
+                            /*
                             System.out.println(name);
                             if(name.equals("RANDOMBOT1")){
                                 name = "1";
@@ -239,15 +240,17 @@ public class Communicator {
                             else if(name.equals("YOURBOT")){
                                 name = "3";
                             }
-                            outStream.println("DELETE "+StringEncode.encodeInt(Integer.valueOf(name)));
-                            outStream.println("PUT "+StringEncode.encodeInt(Integer.valueOf(name))+" "+player.getStats().values());
+                            */
+                            //outStream.println("DELETE "+StringEncode.encodeInt(Integer.valueOf(name)));
+                            outStream.println("DELETE "+name);
+                            outStream.println("PUT "+name+" "+player.getStats().values());
                         }
                     }
                     outStream.println("FINISH");
                     
                 } else if ("KEYVALUE".compareToIgnoreCase(word) == 0) {
                         // Gets keyvalue pairs
-                    
+                    /*
                         String stringVal = "";
                         for(int i=1;i<inputWords.length-1;i++){
                             if(i>1){
@@ -255,8 +258,10 @@ public class Communicator {
                             }
                             stringVal += inputWords[i];
                         }
+                       */ 
+                        //String playerName = Integer.toString(StringEncode.decodeInt(stringVal));
+                        String playerName = inputWords[1];
                         
-                        String playerName = Integer.toString(StringEncode.decodeInt(stringVal));
                         for(Player player : players){
                             if(player.getName().equals(playerName)){
                                 System.out.println("name key: " + playerName);
