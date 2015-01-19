@@ -37,4 +37,13 @@ public class StringEncode {
         int decoded = Integer.parseInt(totalBinNum, 2);
         return decoded;
     }
+    
+    public static char encodeVal(int numToEncode){
+        char charVal = (char)(numToEncode+33);
+        return charVal;
+    }
+    public static int decodeVal(char charToDecode){
+        int intVal = charToDecode-33;
+        return intVal;
+    }
 }

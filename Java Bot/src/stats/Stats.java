@@ -286,16 +286,16 @@ public class Stats {
     public String values(){
         //df.format(0.912385);
         String out = "";
-        out+=StringEncode.encodeInt((int)(currentVPIP.get(Position.FIRST)*100));
-        out+=StringEncode.encodeInt((int)(currentVPIP.get(Position.MIDDLE)*100));
-        out+=StringEncode.encodeInt((int)(currentVPIP.get(Position.LAST)*100));
-        out+=StringEncode.encodeInt((int)(currentPFR.get(Position.FIRST)*100));
-        out+=StringEncode.encodeInt((int)(currentPFR.get(Position.MIDDLE)*100));
-        out+=StringEncode.encodeInt((int)(currentPFR.get(Position.LAST)*100));
-        out+=StringEncode.encodeInt((int)(currentWTSD*100));
-        out+=StringEncode.encodeInt((int)(currentW$SD*100));
-        out+=StringEncode.encodeInt((int)(currentOverallVPIP*100));
-        out+=StringEncode.encodeInt((int)(currentOverallPFR*100));
+        out+=StringEncode.encodeVal((int)(currentVPIP.get(Position.FIRST)*100));
+        out+=StringEncode.encodeVal((int)(currentVPIP.get(Position.MIDDLE)*100));
+        out+=StringEncode.encodeVal((int)(currentVPIP.get(Position.LAST)*100));
+        out+=StringEncode.encodeVal((int)(currentPFR.get(Position.FIRST)*100));
+        out+=StringEncode.encodeVal((int)(currentPFR.get(Position.MIDDLE)*100));
+        out+=StringEncode.encodeVal((int)(currentPFR.get(Position.LAST)*100));
+        out+=StringEncode.encodeVal((int)(currentWTSD*100));
+        out+=StringEncode.encodeVal((int)(currentW$SD*100));
+        out+=StringEncode.encodeVal((int)(currentOverallVPIP*100));
+        out+=StringEncode.encodeVal((int)(currentOverallPFR*100));
         return out;
     }
     

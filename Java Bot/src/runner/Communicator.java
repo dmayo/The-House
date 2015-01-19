@@ -260,19 +260,19 @@ public class Communicator {
                         
                         int i=0;
                         final Map<Position, Double> currentVPIP = new HashMap<Position, Double>();
-                        currentVPIP.put(Position.FIRST, (double) StringEncode.decodeInt(String.valueOf(values[i++]))/100);
-                        currentVPIP.put(Position.MIDDLE, (double) StringEncode.decodeInt(String.valueOf(values[i++]))/100);
-                        currentVPIP.put(Position.LAST, (double) StringEncode.decodeInt(String.valueOf(values[i++]))/100);
+                        currentVPIP.put(Position.FIRST, (double) StringEncode.decodeVal(values[i++])/100);
+                        currentVPIP.put(Position.MIDDLE, (double) StringEncode.decodeVal(values[i++])/100);
+                        currentVPIP.put(Position.LAST, (double) StringEncode.decodeVal(values[i++])/100);
                         
                         final Map<Position, Double> currentPFR = new HashMap<Position, Double>();
-                        currentPFR.put(Position.FIRST, (double) StringEncode.decodeInt(String.valueOf(values[i++]))/100);
-                        currentPFR.put(Position.MIDDLE, (double) StringEncode.decodeInt(String.valueOf(values[i++]))/100);
-                        currentPFR.put(Position.LAST, (double) StringEncode.decodeInt(String.valueOf(values[i++]))/100);
+                        currentPFR.put(Position.FIRST, (double) StringEncode.decodeVal(values[i++])/100);
+                        currentPFR.put(Position.MIDDLE, (double) StringEncode.decodeVal(values[i++])/100);
+                        currentPFR.put(Position.LAST, (double) StringEncode.decodeVal(values[i++])/100);
                         
-                        double currentWTSD = (double) StringEncode.decodeInt(String.valueOf(values[i++]))/100;
-                        double currentW$SD = (double) StringEncode.decodeInt(String.valueOf(values[i++]))/100;
-                        double currentOverallVPIP = (double) StringEncode.decodeInt(String.valueOf(values[i++]))/100;
-                        double currentOverallPFR = (double) StringEncode.decodeInt(String.valueOf(values[i++]))/100;
+                        double currentWTSD = (double) StringEncode.decodeVal(values[i++])/100;
+                        double currentW$SD = (double) StringEncode.decodeVal(values[i++])/100;
+                        double currentOverallVPIP = (double) StringEncode.decodeVal(values[i++])/100;
+                        double currentOverallPFR = (double) StringEncode.decodeVal(values[i++])/100;
                         System.out.println("current: "+currentVPIP+" "+currentPFR+" "+currentWTSD+" "+currentW$SD+" "+currentOverallVPIP+" "+currentOverallPFR);
                         Stats playerStats = new Stats(currentVPIP, currentPFR, currentWTSD, currentW$SD, currentOverallVPIP, currentOverallPFR);
                         
