@@ -248,7 +248,7 @@ public class Communicator {
                     
                 } else if ("KEYVALUE".compareToIgnoreCase(word) == 0) {
                         // Gets keyvalue pairs
-                        String playerName = Integer.toString(StringEncode.decodeInt(inputWords[2]));
+                        String playerName = Integer.toString(StringEncode.decodeInt(inputWords[1]));
                         char[] values = inputWords[2].toCharArray();
                         
                         int i=values.length;
