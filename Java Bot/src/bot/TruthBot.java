@@ -16,7 +16,7 @@ import actions.PerformedActionType;
 import actions.Street;
 import cards.BoardCards;
 import cards.Card;
-import cards.EquitySquaredRanking;
+import cards.HandRange;
 import cards.Hand;
 
 public class TruthBot {
@@ -94,7 +94,7 @@ public class TruthBot {
             System.out.println(hand.toString());
             System.out.println("seat: " + getSeat());
             System.out.println("equity: " + equity);
-            System.out.println("equity squared ranking: " + EquitySquaredRanking.getRank(hand));
+            System.out.println("equity squared ranking: " + HandRange.getRank(hand));
             
             System.out.println(actionProb.toString());
             LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
@@ -228,7 +228,7 @@ public class TruthBot {
         //public ActionProbability(double probFold, double probCall, double probRaise, double probBet, double probCheck)
         // we are first to act and everyone is still playing
         // play upto KQ
-        int rank = EquitySquaredRanking.getRank(hand);
+        int rank = HandRange.getRank(hand);
         //System.out.println("rank: " + rank);
         //1 is the best ranking
         if(seat == 1){

@@ -16,7 +16,7 @@ import actions.PerformedActionType;
 import actions.Street;
 import cards.BoardCards;
 import cards.Card;
-import cards.EquitySquaredRanking;
+import cards.HandRange;
 import cards.Hand;
 
 public class PatBot {
@@ -102,7 +102,7 @@ public class PatBot {
             
             ActionProbability actionProb = preFlopStrategy();
             System.out.println("seat: " + getSeat());
-            System.out.println("equity squared ranking: " + EquitySquaredRanking.getRank(hand));
+            System.out.println("equity squared ranking: " + HandRange.getRank(hand));
             
             System.out.println(actionProb.toString());
             LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
@@ -237,7 +237,7 @@ public class PatBot {
         //public ActionProbability(double probFold, double probCall, double probRaise, double probBet, double probCheck)
         // we are first to act and everyone is still playing
         // play upto KQ
-        int rank = EquitySquaredRanking.getRank(hand);
+        int rank = HandRange.getRank(hand);
         if(previousAction == LegalActionType.RAISE){
             if(rank <=5){
                 return new ActionProbability(0, .05 , .95, 0, 0);

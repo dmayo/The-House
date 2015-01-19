@@ -55,16 +55,13 @@ public class Calculator {
 			if (args.length >= 3) {
 				dead = args[2];
 			}
-		}
+		}	
 		
-		
-		
-		
-		int it = 100;
+		int it = 10;
 		double avg = 0;
 		for(int j = 0; j<it; j++){
 		    double startTime = System.currentTimeMillis();
-		    Results r = calc(args[0], board, dead, 1000);
+		    Results r = calc(args[0], board, dead, 5000);
 		    for (int i = 0; i < r.getSize(); i++) {
 		        System.out.println(r.getHands().get(i) + ":" + r.getEv().get(i));
 		    };

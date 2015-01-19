@@ -22,4 +22,13 @@ public class BoardCards {
         return street;
     }
     
+    @Override
+    public String toString(){
+        String toReturn = "";
+        for(Card card: cards){
+            toReturn += card;
+        }
+        return toReturn;      
+    }
+    
 }
