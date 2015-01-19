@@ -129,7 +129,7 @@ public class StatBot {
                     }
                 } 
             }
-            
+            System.out.println("hands: " + hands);
             Results r = Calculator.calc(hands, boardCards.toString(), "", 5000);
             double equity = new Double(r.getEv().get(0));
             System.out.println("equity preflop: " + equity);
@@ -182,7 +182,7 @@ public class StatBot {
                     }
                 }
             }
-            System.out.println(handsToEvaluate);
+            System.out.println("hands: " + handsToEvaluate);
             Results r = Calculator.calc(handsToEvaluate, boardCards.toString(), "", 5000);
             double equity = new Double(r.getEv().get(0));
             System.out.println("equity " + equity);
@@ -321,7 +321,7 @@ public class StatBot {
             System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
             //If pot odds are worse, fold
-            if(potOdds*1.5 < equity){
+            if(potOdds*1.4 < equity){
                 //fold, call, raise, bet, check
                 return new ActionProbability(0, 0.9, 0.1, 0, 0);
             }
