@@ -249,9 +249,13 @@ public class Communicator {
                 } else if ("KEYVALUE".compareToIgnoreCase(word) == 0) {
                         // Gets keyvalue pairs
                         String playerName = Integer.toString(StringEncode.decodeInt(inputWords[1]));
-                        char[] values = inputWords[2].toCharArray();
+                        String stringVal = "";
+                        for(int i=2;i<inputWords.length;i++){
+                            stringVal += inputWords[i];
+                        }
+                        char[] values = stringVal.toCharArray();
                         
-                        int i=values.length;
+                        int i=values.length-1;
                         final Map<Position, Double> currentVPIP = new HashMap<Position, Double>();
                         currentVPIP.put(Position.FIRST, (double) StringEncode.decodeInt(String.valueOf(values[i--])));
                         currentVPIP.put(Position.MIDDLE, (double) StringEncode.decodeInt(String.valueOf(values[i--])));
