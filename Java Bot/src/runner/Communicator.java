@@ -247,18 +247,21 @@ public class Communicator {
                     
                 } else if ("KEYVALUE".compareToIgnoreCase(word) == 0) {
                         // Gets keyvalue pairs
-                        String playerName = Integer.toString(StringEncode.decodeInt(inputWords[1]));
+                    
+                        String stringVal = "";
+                        for(int i=1;i<inputWords.length-1;i++){
+                            if(i>1){
+                                stringVal += " ";
+                            }
+                            stringVal += inputWords[i];
+                        }
+                        
+                        String playerName = Integer.toString(StringEncode.decodeInt(stringVal));
                         for(Player player : players){
                             if(player.getName().equals(playerName)){
                                 System.out.println("name key: " + playerName);
-                                String stringVal = "";
-                                for(int i=2;i<inputWords.length;i++){
-                                    if(i>2){
-                                        stringVal += " ";
-                                    }
-                                    stringVal += inputWords[i];
-                                }
-                                char[] values = stringVal.toCharArray();
+
+                                char[] values = inputWords[inputWords.length-1].toCharArray();
                                 
                                 int i=0;
                                 final Map<Position, Double> currentVPIP = new HashMap<Position, Double>();
