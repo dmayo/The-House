@@ -281,7 +281,7 @@ public class Stats {
         return toReturn;
     }
     
-    
+    /*
     public String values(){
         //df.format(0.912385);
         String out = "";
@@ -291,7 +291,9 @@ public class Stats {
         out+=currentW$SD;
         out+=currentOverallVPIP;
         out+=currentOverallPFR;
+        return out;
     }
+    */
 /*
     public String values(){
         String numStreetsSeenData = "S";
