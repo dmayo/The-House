@@ -34,7 +34,6 @@ public class Communicator {
     
     private final PrintWriter outStream;
     private final BufferedReader inStream;
-    private final Map<String, Stats> keyValues = new HashMap<String, Stats>();
 
     public Communicator(PrintWriter output, BufferedReader input) {
         this.outStream = output;
@@ -235,7 +234,7 @@ public class Communicator {
                                 name = "1";
                             }
                             else if(name.equals("RANDOMBOT2")){
-                                name = "1";
+                                name = "2";
                             }
                             else if(name.equals("YOURBOT")){
                                 name = "3";
@@ -249,34 +248,39 @@ public class Communicator {
                 } else if ("KEYVALUE".compareToIgnoreCase(word) == 0) {
                         // Gets keyvalue pairs
                         String playerName = Integer.toString(StringEncode.decodeInt(inputWords[1]));
-                        String stringVal = "";
-                        for(int i=2;i<inputWords.length;i++){
-                            if(i>2){
-                                stringVal += " ";
+                        for(Player player : players){
+                            if(player.getName().equals(playerName)){
+                                System.out.println("name key: " + playerName);
+                                String stringVal = "";
+                                for(int i=2;i<inputWords.length;i++){
+                                    if(i>2){
+                                        stringVal += " ";
+                                    }
+                                    stringVal += inputWords[i];
+                                }
+                                char[] values = stringVal.toCharArray();
+                                
+                                int i=0;
+                                final Map<Position, Double> currentVPIP = new HashMap<Position, Double>();
+                                currentVPIP.put(Position.FIRST, (double) StringEncode.decodeVal(values[i++])/100);
+                                currentVPIP.put(Position.MIDDLE, (double) StringEncode.decodeVal(values[i++])/100);
+                                currentVPIP.put(Position.LAST, (double) StringEncode.decodeVal(values[i++])/100);
+                                
+                                final Map<Position, Double> currentPFR = new HashMap<Position, Double>();
+                                currentPFR.put(Position.FIRST, (double) StringEncode.decodeVal(values[i++])/100);
+                                currentPFR.put(Position.MIDDLE, (double) StringEncode.decodeVal(values[i++])/100);
+                                currentPFR.put(Position.LAST, (double) StringEncode.decodeVal(values[i++])/100);
+                                
+                                double currentWTSD = (double) StringEncode.decodeVal(values[i++])/100;
+                                double currentW$SD = (double) StringEncode.decodeVal(values[i++])/100;
+                                double currentOverallVPIP = (double) StringEncode.decodeVal(values[i++])/100;
+                                double currentOverallPFR = (double) StringEncode.decodeVal(values[i++])/100;
+                                System.out.println("current: "+currentVPIP+" "+currentPFR+" "+currentWTSD+" "+currentW$SD+" "+currentOverallVPIP+" "+currentOverallPFR);
+                                player.setStats( new Stats(currentVPIP, currentPFR, currentWTSD, currentW$SD, currentOverallVPIP, currentOverallPFR));
+                                
                             }
-                            stringVal += inputWords[i];
                         }
-                        char[] values = stringVal.toCharArray();
-                        
-                        int i=0;
-                        final Map<Position, Double> currentVPIP = new HashMap<Position, Double>();
-                        currentVPIP.put(Position.FIRST, (double) StringEncode.decodeVal(values[i++])/100);
-                        currentVPIP.put(Position.MIDDLE, (double) StringEncode.decodeVal(values[i++])/100);
-                        currentVPIP.put(Position.LAST, (double) StringEncode.decodeVal(values[i++])/100);
-                        
-                        final Map<Position, Double> currentPFR = new HashMap<Position, Double>();
-                        currentPFR.put(Position.FIRST, (double) StringEncode.decodeVal(values[i++])/100);
-                        currentPFR.put(Position.MIDDLE, (double) StringEncode.decodeVal(values[i++])/100);
-                        currentPFR.put(Position.LAST, (double) StringEncode.decodeVal(values[i++])/100);
-                        
-                        double currentWTSD = (double) StringEncode.decodeVal(values[i++])/100;
-                        double currentW$SD = (double) StringEncode.decodeVal(values[i++])/100;
-                        double currentOverallVPIP = (double) StringEncode.decodeVal(values[i++])/100;
-                        double currentOverallPFR = (double) StringEncode.decodeVal(values[i++])/100;
-                        System.out.println("current: "+currentVPIP+" "+currentPFR+" "+currentWTSD+" "+currentW$SD+" "+currentOverallVPIP+" "+currentOverallPFR);
-                        Stats playerStats = new Stats(currentVPIP, currentPFR, currentWTSD, currentW$SD, currentOverallVPIP, currentOverallPFR);
-                        
-                        keyValues.put(playerName, playerStats);
+                       
                         
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
                     //NEWGAME yourName opp1Name opp2Name stackSize bb numHands timeBank
@@ -288,8 +292,7 @@ public class Communicator {
                     Player player2 = new Player(parsed.get("opp2Name"), stackSize,0); // dummy seat values must be updated in NEWHAND
                     Player player3 = new Player(botName,stackSize,0);
                     players = Arrays.asList(new Player[]{player1,player2,player3});
-                    
-                    
+                     
                    
                     int numHands = new Integer(parsed.get("numHands"));
                     int bigBlind = new Integer(parsed.get("bb"));
@@ -297,6 +300,7 @@ public class Communicator {
                     
                     statsCalc.setPlayers(players);
                     bot = new StatBot(botName, stackSize, bigBlind, numHands, timeBank, Arrays.asList(new Player[]{player1,player2}));
+                    
                     
                 } else if ("NEWHAND".compareToIgnoreCase(word) == 0) {
                     //NEWHAND handId seat holeCard1 holeCard2 [stackSizes] [playerNames] numActivePlayers [activePlayers] timeBank

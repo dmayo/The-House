@@ -11,7 +11,7 @@ import actions.Street;
 public class Player {
     
     private final String name;
-    private final Stats stats;
+    private Stats stats;
     private int stackSize;
     private boolean isActive;
     private int seat;
@@ -25,9 +25,9 @@ public class Player {
     
     public Player(String name, int stackSize, int seat){
         this.name = name;
-        this.stats = new Stats();
         this.stackSize = stackSize;
         this.isActive = true;
+        this.stats = new Stats();
         this.seat = seat;
         this.street = Street.PREFLOP;
         this.lastAction = new PerformedAction(name, PerformedActionType.NONE, 0, new ArrayList<Card>(), Street.PREFLOP);
@@ -41,6 +41,9 @@ public class Player {
         return stats;
     }
     
+    public void setStats(Stats stats){
+        this.stats = stats;
+    }
     
     public void setNumActivePlayers(int numActivePlayers){
         this.numActivePlayers = numActivePlayers;

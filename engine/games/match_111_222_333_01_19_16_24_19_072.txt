@@ -1,0 +1,7553 @@
+6.176 MIT Pokerbots - 111 vs 222 vs 333 (stack=200, bb=2)
+Hand #1, 111 (200), 222 (200), 333 (200)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [3d 5c]
+Dealt to 222 [As Kd]
+Dealt to 333 [Jc Jh]
+111 folds
+222 calls 2
+333 raises to 5
+222 calls 5
+*** FLOP *** (10) [9h 5d 6c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** TURN *** (10) [9h 5d 6c] [8h]
+222 bets 2
+333 raises to 5
+222 folds
+333 wins the pot (17)
+
+Hand #2, 333 (207), 111 (200), 222 (193)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Th 3d]
+Dealt to 111 [9c Kd]
+Dealt to 222 [Qd 5s]
+333 calls 2
+111 calls 2
+222 checks
+*** FLOP *** (6) [Ts 2c 9d]
+111 bets 4
+222 folds
+333 raises to 10
+111 calls 10
+*** TURN *** (26) [Ts 2c 9d] [8h]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+333 checks
+*** RIVER *** (26) [Ts 2c 9d 8h] [6d]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+333 bets 10
+111 folds
+333 wins the pot (36)
+
+Hand #3, 222 (191), 333 (221), 111 (188)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8d Qc]
+Dealt to 333 [9s 9c]
+Dealt to 111 [4d 5d]
+222 folds
+333 calls 2
+111 raises to 4
+333 folds
+111 wins the pot (6)
+
+Hand #4, 111 (190), 222 (191), 333 (219)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [6s Ad]
+Dealt to 222 [Kd Ks]
+Dealt to 333 [2c 7h]
+111 folds
+222 raises to 4
+333 folds
+222 wins the pot (6)
+
+Hand #5, 333 (217), 111 (190), 222 (193)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ac 4s]
+Dealt to 111 [Td 8s]
+Dealt to 222 [7c Jc]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [Qs 3s 5s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** TURN *** (5) [Qs 3s 5s] [Th]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** RIVER *** (5) [Qs 3s 5s Th] [2c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 4
+222 folds
+333 wins the pot (9)
+
+Hand #6, 222 (191), 333 (220), 111 (189)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Qs Td]
+Dealt to 333 [7d Jh]
+Dealt to 111 [9c Ts]
+222 folds
+333 raises to 4
+111 folds
+333 wins the pot (6)
+
+Hand #7, 111 (187), 222 (191), 333 (222)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [5h 9h]
+Dealt to 222 [8c Jc]
+Dealt to 333 [3s 3h]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #8, 333 (223), 111 (187), 222 (190)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [6h 5s]
+Dealt to 111 [Jc Kc]
+Dealt to 222 [Ts 2d]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [9c Td 6c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 3
+222 calls 3
+*** TURN *** (11) [9c Td 6c] [Kh]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** RIVER *** (11) [9c Td 6c Kh] [5d]
+222 bets 4
+333 raises to 16
+222 folds
+333 wins the pot (31)
+
+Hand #9, 222 (181), 333 (233), 111 (186)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3c Jc]
+Dealt to 333 [Ad 6h]
+Dealt to 111 [4h 9c]
+222 folds
+333 calls 2
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** FLOP *** (4) [As 3d Qd]
+333 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [As 3d Qd] [Th]
+333 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [As 3d Qd Th] [4c]
+333 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+333 shows [Ad 6h]
+111 shows [4h 9c]
+333 wins the pot (4)
+
+Hand #10, 111 (184), 222 (181), 333 (235)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [4s 5s]
+Dealt to 222 [Ts 3d]
+Dealt to 333 [Ah 7d]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #11, 333 (236), 111 (184), 222 (180)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Qd 7s]
+Dealt to 111 [Ad 5s]
+Dealt to 222 [7h As]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [Kc 4d 6s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** TURN *** (5) [Kc 4d 6s] [5h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 3
+222 folds
+333 wins the pot (8)
+
+Hand #12, 222 (178), 333 (239), 111 (183)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [5d Qc]
+Dealt to 333 [4d Js]
+Dealt to 111 [2c Ac]
+222 raises to 4
+333 raises to 7
+111 folds
+222 folds
+333 wins the pot (13)
+
+Hand #13, 111 (181), 222 (174), 333 (245)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [2s 5h]
+Dealt to 222 [6s Qs]
+Dealt to 333 [Kh 5d]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #14, 333 (246), 111 (181), 222 (173)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Jd Kc]
+Dealt to 111 [2s Ts]
+Dealt to 222 [Qc 2h]
+333 raises to 5
+111 folds
+222 calls 5
+*** FLOP *** (11) [7c Qs 6s]
+222 bets 4
+333 calls 4
+*** TURN *** (19) [7c Qs 6s] [5d]
+222 bets 6
+333 folds
+222 wins the pot (25)
+
+Hand #15, 222 (183), 333 (237), 111 (180)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ad 2c]
+Dealt to 333 [7d Ah]
+Dealt to 111 [Th 2s]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #16, 111 (181), 222 (183), 333 (236)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Jd 4s]
+Dealt to 222 [5h 2d]
+Dealt to 333 [6h 3s]
+111 raises to 4
+222 folds
+333 folds
+111 wins the pot (7)
+
+Hand #17, 333 (234), 111 (184), 222 (182)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3c 9s]
+Dealt to 111 [Ad Kh]
+Dealt to 222 [5d 9c]
+333 raises to 4
+111 calls 4
+222 folds
+*** FLOP *** (10) [2d 7d 7c]
+111 bets 5
+333 folds
+111 wins the pot (15)
+
+Hand #18, 222 (180), 333 (230), 111 (190)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [2h Ah]
+Dealt to 333 [9d 5s]
+Dealt to 111 [2d Kd]
+222 folds
+333 calls 2
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** FLOP *** (4) [Ac 4s 6s]
+333 bets 3
+111 calls 3
+*** TURN *** (10) [Ac 4s 6s] [4h]
+333 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (10) [Ac 4s 6s 4h] [As]
+333 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+333 shows [9d 5s]
+111 shows [2d Kd]
+111 wins the pot (10)
+
+Hand #19, 111 (195), 222 (180), 333 (225)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [8h 6d]
+Dealt to 222 [Jc Qs]
+Dealt to 333 [9s 4s]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #20, 333 (226), 111 (195), 222 (179)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [7c Js]
+Dealt to 111 [3d Jd]
+Dealt to 222 [Th 6d]
+333 folds
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [6s 9d 7d]
+111 bets 2
+222 calls 2
+*** TURN *** (8) [6s 9d 7d] [Ad]
+111 bets 8
+222 folds
+111 wins the pot (16)
+
+Hand #21, 222 (175), 333 (226), 111 (199)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [7s Tc]
+Dealt to 333 [2s 8d]
+Dealt to 111 [Td 7h]
+222 folds
+333 raises to 5
+111 folds
+333 wins the pot (7)
+
+Hand #22, 111 (197), 222 (175), 333 (228)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Ac 9d]
+Dealt to 222 [4d 2d]
+Dealt to 333 [Qs Kc]
+111 calls 2
+222 folds
+333 checks
+*** FLOP *** (5) [6s Ad 4s]
+333 checks
+111 bets 5
+333 calls 5
+*** TURN *** (15) [6s Ad 4s] [Ah]
+333 checks
+111 bets 15
+333 folds
+111 wins the pot (30)
+
+Hand #23, 333 (221), 111 (205), 222 (174)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3d As]
+Dealt to 111 [7h Td]
+Dealt to 222 [Ac 7s]
+333 raises to 5
+111 folds
+222 folds
+333 wins the pot (8)
+
+Hand #24, 222 (172), 333 (224), 111 (204)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4d 8h]
+Dealt to 333 [8d Js]
+Dealt to 111 [3h 6c]
+222 folds
+333 raises to 5
+111 calls 5
+*** FLOP *** (10) [5h Ks 2s]
+333 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (10) [5h Ks 2s] [Ah]
+333 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (10) [5h Ks 2s Ah] [2c]
+333 bets 4
+111 calls 4
+333 shows [8d Js]
+111 shows [3h 6c]
+333 wins the pot (18)
+
+Hand #25, 111 (195), 222 (172), 333 (233)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [2d Jd]
+Dealt to 222 [Kd 8h]
+Dealt to 333 [7s Qs]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #26, 333 (234), 111 (195), 222 (171)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9h Th]
+Dealt to 111 [Qd 8d]
+Dealt to 222 [Qc Ks]
+333 calls 2
+111 folds
+222 raises to 5
+333 folds
+222 wins the pot (8)
+
+Hand #27, 222 (174), 333 (232), 111 (194)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [7s Ah]
+Dealt to 333 [3c 7c]
+Dealt to 111 [Kh Td]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #28, 111 (195), 222 (174), 333 (231)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [7h 6d]
+Dealt to 222 [9c Tc]
+Dealt to 333 [5c Ah]
+111 calls 2
+222 folds
+333 raises to 6
+111 folds
+333 wins the pot (9)
+
+Hand #29, 333 (234), 111 (193), 222 (173)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [2s 3d]
+Dealt to 111 [6s 9s]
+Dealt to 222 [4c 7d]
+333 folds
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Qc 9h 7h]
+111 bets 2
+222 calls 2
+*** TURN *** (8) [Qc 9h 7h] [4h]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 3
+111 calls 3
+*** RIVER *** (14) [Qc 9h 7h 4h] [4d]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 9
+111 calls 9
+111 shows [6s 9s]
+222 shows [4c 7d]
+222 wins the pot (32)
+
+Hand #30, 222 (189), 333 (234), 111 (177)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8h 7c]
+Dealt to 333 [Ah Qc]
+Dealt to 111 [7s 9h]
+222 folds
+333 calls 2
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** FLOP *** (4) [2h 6h Jd]
+333 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [2h 6h Jd] [6s]
+333 bets 2
+111 folds
+333 wins the pot (6)
+
+Hand #31, 111 (175), 222 (189), 333 (236)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [7h Qd]
+Dealt to 222 [Tc Ks]
+Dealt to 333 [Ah Td]
+111 folds
+222 raises to 4
+333 raises to 11
+222 folds
+333 wins the pot (15)
+
+Hand #32, 333 (240), 111 (175), 222 (185)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Td 9s]
+Dealt to 111 [3d 2h]
+Dealt to 222 [4s 7h]
+333 folds
+111 folds
+222 wins the pot (3)
+
+Hand #33, 222 (186), 333 (240), 111 (174)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [2d Qc]
+Dealt to 333 [3d Ad]
+Dealt to 111 [5h 7s]
+222 raises to 4
+333 raises to 12
+111 folds
+222 folds
+333 wins the pot (18)
+
+Hand #34, 111 (172), 222 (182), 333 (246)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [2h 3h]
+Dealt to 222 [2d 8h]
+Dealt to 333 [5s 3s]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #35, 333 (247), 111 (172), 222 (181)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [8s 8c]
+Dealt to 111 [7s Ad]
+Dealt to 222 [Jc Qd]
+333 folds
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #36, 222 (183), 333 (247), 111 (170)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Tc 2d]
+Dealt to 333 [4c 9c]
+Dealt to 111 [8c 9d]
+222 folds
+333 calls 2
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** FLOP *** (4) [Jc 2c 9s]
+333 bets 3
+111 calls 3
+*** TURN *** (10) [Jc 2c 9s] [5c]
+333 bets 4
+111 calls 4
+*** RIVER *** (18) [Jc 2c 9s 5c] [Qd]
+333 bets 9
+111 folds
+333 wins the pot (27)
+
+Hand #37, 111 (161), 222 (183), 333 (256)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [5h 2h]
+Dealt to 222 [3d 7h]
+Dealt to 333 [Jc Ac]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #38, 333 (257), 111 (161), 222 (182)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [2c 8c]
+Dealt to 111 [9c 6c]
+Dealt to 222 [Kc Ac]
+333 calls 2
+111 folds
+222 raises to 5
+333 folds
+222 wins the pot (8)
+
+Hand #39, 222 (185), 333 (255), 111 (160)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Kd 7c]
+Dealt to 333 [Qh 9d]
+Dealt to 111 [Th 7h]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #40, 111 (161), 222 (185), 333 (254)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [3d Ad]
+Dealt to 222 [7d Ah]
+Dealt to 333 [8h As]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #41, 333 (255), 111 (161), 222 (184)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [2h 5s]
+Dealt to 111 [4d Kc]
+Dealt to 222 [2s 9d]
+333 raises to 4
+111 folds
+222 calls 4
+*** FLOP *** (9) [8d 2d Th]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 5
+222 folds
+333 wins the pot (14)
+
+Hand #42, 222 (180), 333 (260), 111 (160)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9d Jd]
+Dealt to 333 [9h Qh]
+Dealt to 111 [Kd Ks]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #43, 111 (161), 222 (180), 333 (259)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [2c Jc]
+Dealt to 222 [Ts Kc]
+Dealt to 333 [8d Qc]
+111 folds
+222 raises to 4
+333 folds
+222 wins the pot (6)
+
+Hand #44, 333 (257), 111 (161), 222 (182)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9h 5h]
+Dealt to 111 [8c 2h]
+Dealt to 222 [7c Qh]
+333 calls 2
+111 folds
+222 raises to 4
+333 folds
+222 wins the pot (7)
+
+Hand #45, 222 (185), 333 (255), 111 (160)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [6c Qs]
+Dealt to 333 [Jc 3d]
+Dealt to 111 [Ts 6s]
+222 folds
+333 raises to 5
+111 folds
+333 wins the pot (7)
+
+Hand #46, 111 (158), 222 (185), 333 (257)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Tc As]
+Dealt to 222 [9d Th]
+Dealt to 333 [7s 2s]
+111 calls 2
+222 folds
+333 checks
+*** FLOP *** (5) [6c 5c 7c]
+333 bets 3
+111 folds
+333 wins the pot (8)
+
+Hand #47, 333 (260), 111 (156), 222 (184)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [7h 4d]
+Dealt to 111 [9d Tc]
+Dealt to 222 [Th Jc]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [Ah 6h 5h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 2
+222 folds
+333 wins the pot (7)
+
+Hand #48, 222 (182), 333 (263), 111 (155)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Qc 7d]
+Dealt to 333 [Js 3h]
+Dealt to 111 [Ks 2c]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #49, 111 (156), 222 (182), 333 (262)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [4d Ah]
+Dealt to 222 [7c 6h]
+Dealt to 333 [Qs Js]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #50, 333 (263), 111 (156), 222 (181)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [6h 2c]
+Dealt to 111 [Qc 7h]
+Dealt to 222 [7d 5s]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [Td Tc 8h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 4
+222 folds
+333 wins the pot (9)
+
+Hand #51, 222 (179), 333 (266), 111 (155)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [5c 4h]
+Dealt to 333 [2s Kh]
+Dealt to 111 [Kc Ah]
+222 raises to 4
+333 folds
+111 raises to 7
+222 folds
+111 wins the pot (12)
+
+Hand #52, 111 (160), 222 (175), 333 (265)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Jd Jh]
+Dealt to 222 [7s 5d]
+Dealt to 333 [Qs Ah]
+111 raises to 4
+222 folds
+333 raises to 10
+111 raises to 18
+333 raises to 32
+111 calls 32
+*** FLOP *** (65) [Kd 5s 3s]
+333 checks
+111 bets 33
+333 calls 33
+*** TURN *** (131) [Kd 5s 3s] [6d]
+333 bets 58
+111 calls 58
+*** RIVER *** (247) [Kd 5s 3s 6d] [8c]
+333 bets 12
+111 calls 12
+111 shows [Jd Jh]
+333 shows [Qs Ah]
+111 wins the pot (271)
+
+Hand #53, 333 (130), 111 (296), 222 (174)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [2s 3h]
+Dealt to 111 [8c 9s]
+Dealt to 222 [Jd 3s]
+333 calls 2
+111 raises to 4
+222 folds
+333 calls 4
+*** FLOP *** (10) [8h 5c Qh]
+111 bets 6
+333 raises to 21
+111 folds
+333 wins the pot (37)
+
+Hand #54, 222 (172), 333 (142), 111 (286)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3c 5c]
+Dealt to 333 [5s 2s]
+Dealt to 111 [4c 6h]
+222 folds
+333 raises to 4
+111 folds
+333 wins the pot (6)
+
+Hand #55, 111 (284), 222 (172), 333 (144)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [4d 2h]
+Dealt to 222 [2s Js]
+Dealt to 333 [Ad Ts]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #56, 333 (145), 111 (284), 222 (171)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ad 6c]
+Dealt to 111 [Ah 7c]
+Dealt to 222 [3d Qd]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [Td 8h 2d]
+222 bets 2
+333 raises to 6
+222 folds
+333 wins the pot (13)
+
+Hand #57, 222 (167), 333 (150), 111 (283)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8h 7d]
+Dealt to 333 [Kh 5h]
+Dealt to 111 [2s 6h]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #58, 111 (284), 222 (167), 333 (149)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Jc 9d]
+Dealt to 222 [2d Ts]
+Dealt to 333 [4d 8d]
+111 folds
+222 calls 2
+333 checks
+*** FLOP *** (4) [2h 5c Kc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 2
+222 folds
+333 wins the pot (6)
+
+Hand #59, 333 (151), 111 (284), 222 (165)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9s 5c]
+Dealt to 111 [2s Tc]
+Dealt to 222 [2d 7h]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [7d Ks 6d]
+222 bets 2
+333 folds
+222 wins the pot (7)
+
+Hand #60, 222 (168), 333 (149), 111 (283)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3h 6d]
+Dealt to 333 [Ah Qs]
+Dealt to 111 [8d Kd]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #61, 111 (284), 222 (168), 333 (148)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Kd 2c]
+Dealt to 222 [Qc 6c]
+Dealt to 333 [Jh 4c]
+111 raises to 4
+222 folds
+333 raises to 11
+111 folds
+333 wins the pot (16)
+
+Hand #62, 333 (153), 111 (280), 222 (167)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [As Qc]
+Dealt to 111 [6d Jd]
+Dealt to 222 [8h Qd]
+333 folds
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8d Kc 7d]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 2
+111 calls 2
+*** TURN *** (8) [8d Kc 7d] [9d]
+111 bets 8
+222 calls 8
+*** RIVER *** (24) [8d Kc 7d 9d] [5d]
+111 bets 24
+222 calls 24
+111 shows [6d Jd]
+222 shows [8h Qd]
+111 wins the pot (72)
+
+Hand #63, 222 (131), 333 (153), 111 (316)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8s Ac]
+Dealt to 333 [Ks Kc]
+Dealt to 111 [Th 4d]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #64, 111 (317), 222 (131), 333 (152)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [8s Tc]
+Dealt to 222 [6h 4s]
+Dealt to 333 [2h 5c]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #65, 333 (153), 111 (317), 222 (130)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Qd Kh]
+Dealt to 111 [6d Ad]
+Dealt to 222 [7h Jh]
+333 folds
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3c 3d Jd]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** TURN *** (4) [3c 3d Jd] [9c]
+111 bets 2
+222 calls 2
+*** RIVER *** (8) [3c 3d Jd 9c] [4h]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 4
+111 folds
+222 wins the pot (12)
+
+Hand #66, 222 (134), 333 (153), 111 (313)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4c 5d]
+Dealt to 333 [9h 7h]
+Dealt to 111 [3c 9d]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #67, 111 (314), 222 (134), 333 (152)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [4s Ac]
+Dealt to 222 [Qd 5c]
+Dealt to 333 [6h 5h]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #68, 333 (153), 111 (314), 222 (133)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [7d 3s]
+Dealt to 111 [As 2d]
+Dealt to 222 [2c 4c]
+333 folds
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [6c 8h Td]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** TURN *** (4) [6c 8h Td] [Jh]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** RIVER *** (4) [6c 8h Td Jh] [6d]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 shows [As 2d]
+222 shows [2c 4c]
+111 wins the pot (4)
+
+Hand #69, 222 (131), 333 (153), 111 (316)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9s Qs]
+Dealt to 333 [5c 8d]
+Dealt to 111 [3d Kd]
+222 folds
+333 raises to 4
+111 folds
+333 wins the pot (6)
+
+Hand #70, 111 (314), 222 (131), 333 (155)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [7d 6s]
+Dealt to 222 [9h 9c]
+Dealt to 333 [4c Th]
+111 folds
+222 raises to 4
+333 calls 4
+*** FLOP *** (8) [Ac 7h 6d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** TURN *** (8) [Ac 7h 6d] [As]
+222 bets 4
+333 folds
+222 wins the pot (12)
+
+Hand #71, 333 (151), 111 (314), 222 (135)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [7c Qh]
+Dealt to 111 [As Ah]
+Dealt to 222 [7s 8s]
+333 calls 2
+111 raises to 8
+222 folds
+333 folds
+111 wins the pot (12)
+
+Hand #72, 222 (133), 333 (149), 111 (318)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [As 8s]
+Dealt to 333 [4h 5s]
+Dealt to 111 [Ac 3h]
+222 folds
+333 calls 2
+111 raises to 4
+333 raises to 10
+111 folds
+333 wins the pot (14)
+
+Hand #73, 111 (314), 222 (133), 333 (153)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [3s 4d]
+Dealt to 222 [6c Th]
+Dealt to 333 [5c 9c]
+111 raises to 4
+222 calls 4
+333 folds
+*** FLOP *** (10) [3d Ad 9h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (10) [3d Ad 9h] [6s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (10) [3d Ad 9h 6s] [7h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+111 shows [3s 4d]
+222 shows [6c Th]
+222 wins the pot (10)
+
+Hand #74, 333 (151), 111 (310), 222 (139)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9h 7c]
+Dealt to 111 [Ks Jh]
+Dealt to 222 [8s 6c]
+333 folds
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #75, 222 (141), 333 (151), 111 (308)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Kd 2h]
+Dealt to 333 [2d Qc]
+Dealt to 111 [7d 8c]
+222 folds
+333 raises to 5
+111 folds
+333 wins the pot (7)
+
+Hand #76, 111 (306), 222 (141), 333 (153)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Jh Js]
+Dealt to 222 [6d Ts]
+Dealt to 333 [Kh Ad]
+111 calls 2
+222 folds
+333 checks
+*** FLOP *** (5) [8d 7h Qs]
+333 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (5) [8d 7h Qs] [7d]
+333 checks
+111 bets 4
+333 calls 4
+*** RIVER *** (13) [8d 7h Qs 7d] [3h]
+333 bets 11
+111 calls 11
+111 shows [Jh Js]
+333 shows [Kh Ad]
+111 wins the pot (35)
+
+Hand #77, 333 (136), 111 (324), 222 (140)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [7d 4c]
+Dealt to 111 [Jh 4h]
+Dealt to 222 [Ks 8d]
+333 raises to 5
+111 folds
+222 folds
+333 wins the pot (8)
+
+Hand #78, 222 (138), 333 (139), 111 (323)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4h Ad]
+Dealt to 333 [3c 7h]
+Dealt to 111 [8c Qd]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #79, 111 (324), 222 (138), 333 (138)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [8d 2c]
+Dealt to 222 [3c 9c]
+Dealt to 333 [7h Tc]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #80, 333 (139), 111 (324), 222 (137)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Jc Jd]
+Dealt to 111 [8s Qs]
+Dealt to 222 [Kd 5d]
+333 calls 2
+111 raises to 4
+222 folds
+333 raises to 8
+111 folds
+333 wins the pot (14)
+
+Hand #81, 222 (135), 333 (145), 111 (320)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9d 8h]
+Dealt to 333 [Ts 7s]
+Dealt to 111 [3s 5h]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #82, 111 (321), 222 (135), 333 (144)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Jc 9c]
+Dealt to 222 [8h Th]
+Dealt to 333 [Qs As]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #83, 333 (145), 111 (321), 222 (134)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [8c 7h]
+Dealt to 111 [6s 4s]
+Dealt to 222 [6d 7d]
+333 raises to 4
+111 folds
+222 folds
+333 wins the pot (7)
+
+Hand #84, 222 (132), 333 (148), 111 (320)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [7h 6s]
+Dealt to 333 [7s 3h]
+Dealt to 111 [3d Qh]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #85, 111 (321), 222 (132), 333 (147)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Td 9d]
+Dealt to 222 [Jh 2h]
+Dealt to 333 [8c 4d]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #86, 333 (148), 111 (321), 222 (131)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Jh Tc]
+Dealt to 111 [5d 6s]
+Dealt to 222 [9h Ad]
+333 folds
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #87, 222 (133), 333 (148), 111 (319)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Jc Kd]
+Dealt to 333 [Jd 5h]
+Dealt to 111 [Ts 8c]
+222 folds
+333 raises to 5
+111 folds
+333 wins the pot (7)
+
+Hand #88, 111 (317), 222 (133), 333 (150)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [6c 9c]
+Dealt to 222 [7d 7h]
+Dealt to 333 [Ah 8s]
+111 folds
+222 raises to 4
+333 folds
+222 wins the pot (6)
+
+Hand #89, 333 (148), 111 (317), 222 (135)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ts Ad]
+Dealt to 111 [7d 5h]
+Dealt to 222 [5d 2h]
+333 raises to 6
+111 folds
+222 folds
+333 wins the pot (9)
+
+Hand #90, 222 (133), 333 (151), 111 (316)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8c 7d]
+Dealt to 333 [9h 5s]
+Dealt to 111 [Ad 3c]
+222 folds
+333 raises to 4
+111 folds
+333 wins the pot (6)
+
+Hand #91, 111 (314), 222 (133), 333 (153)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Kh Jc]
+Dealt to 222 [9s Jh]
+Dealt to 333 [Qc Kd]
+111 raises to 4
+222 folds
+333 raises to 9
+111 calls 9
+*** FLOP *** (19) [6c 8d 5h]
+333 bets 8
+111 folds
+333 wins the pot (27)
+
+Hand #92, 333 (163), 111 (305), 222 (132)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ac 6d]
+Dealt to 111 [9c 2c]
+Dealt to 222 [8s Jc]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [8h Jh 6h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** TURN *** (5) [8h Jh 6h] [6c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** RIVER *** (5) [8h Jh 6h 6c] [7c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+333 shows [Ac 6d]
+222 shows [8s Jc]
+333 wins the pot (5)
+
+Hand #93, 222 (130), 333 (166), 111 (304)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Qc 7h]
+Dealt to 333 [2c 8h]
+Dealt to 111 [8s 8d]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #94, 111 (305), 222 (130), 333 (165)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [9s Jh]
+Dealt to 222 [2c 7h]
+Dealt to 333 [Kd 4h]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #95, 333 (166), 111 (305), 222 (129)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [8c 4h]
+Dealt to 111 [6h 4c]
+Dealt to 222 [6c 3h]
+333 folds
+111 folds
+222 wins the pot (3)
+
+Hand #96, 222 (130), 333 (166), 111 (304)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3d Kc]
+Dealt to 333 [8c Qd]
+Dealt to 111 [2h Qc]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #97, 111 (305), 222 (130), 333 (165)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Ts 8h]
+Dealt to 222 [4d 6s]
+Dealt to 333 [4c 6d]
+111 raises to 4
+222 folds
+333 folds
+111 wins the pot (7)
+
+Hand #98, 333 (163), 111 (308), 222 (129)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [4h Ks]
+Dealt to 111 [Jd 8c]
+Dealt to 222 [9s Kd]
+333 folds
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #99, 222 (127), 333 (163), 111 (310)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ts 5h]
+Dealt to 333 [8s 7h]
+Dealt to 111 [2h 4h]
+222 folds
+333 raises to 5
+111 folds
+333 wins the pot (7)
+
+Hand #100, 111 (308), 222 (127), 333 (165)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [9c 2s]
+Dealt to 222 [8d Th]
+Dealt to 333 [Jh Td]
+111 folds
+222 raises to 4
+333 calls 4
+*** FLOP *** (8) [5s Kh 8c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 3
+222 calls 3
+*** TURN *** (14) [5s Kh 8c] [3c]
+222 bets 5
+333 folds
+222 wins the pot (19)
+
+Hand #101, 333 (158), 111 (308), 222 (134)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ts 3c]
+Dealt to 111 [Qh 3d]
+Dealt to 222 [Th Kd]
+333 raises to 4
+111 folds
+222 raises to 8
+333 raises to 19
+222 calls 19
+*** FLOP *** (39) [9c Ac Ad]
+222 bets 10
+333 folds
+222 wins the pot (49)
+
+Hand #102, 222 (154), 333 (139), 111 (307)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ad 9c]
+Dealt to 333 [7c 3c]
+Dealt to 111 [Qd 8s]
+222 folds
+333 calls 2
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** FLOP *** (4) [Kh 4d 9s]
+333 bets 3
+111 folds
+333 wins the pot (7)
+
+Hand #103, 111 (305), 222 (154), 333 (141)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [5d 9d]
+Dealt to 222 [9h 6h]
+Dealt to 333 [Th Js]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #104, 333 (142), 111 (305), 222 (153)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [2d 7d]
+Dealt to 111 [Ah 3h]
+Dealt to 222 [Th 6c]
+333 folds
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3d 9h 5d]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** TURN *** (4) [3d 9h 5d] [9d]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** RIVER *** (4) [3d 9h 5d 9d] [2c]
+111 bets 2
+222 folds
+111 wins the pot (6)
+
+Hand #105, 222 (151), 333 (142), 111 (307)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [7h Ac]
+Dealt to 333 [6s 7s]
+Dealt to 111 [As 4s]
+222 folds
+333 raises to 4
+111 calls 4
+*** FLOP *** (8) [Js Qd 7d]
+333 bets 6
+111 folds
+333 wins the pot (14)
+
+Hand #106, 111 (303), 222 (151), 333 (146)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [2d 9h]
+Dealt to 222 [5h 5d]
+Dealt to 333 [Td 3d]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #107, 333 (147), 111 (303), 222 (150)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Kh 5c]
+Dealt to 111 [8s 2s]
+Dealt to 222 [4h 7d]
+333 folds
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Tc 8d Qd]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** TURN *** (4) [Tc 8d Qd] [5s]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** RIVER *** (4) [Tc 8d Qd 5s] [5h]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 shows [8s 2s]
+222 shows [4h 7d]
+111 wins the pot (4)
+
+Hand #108, 222 (148), 333 (147), 111 (305)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [2s Jd]
+Dealt to 333 [Ts Ah]
+Dealt to 111 [9d Th]
+222 folds
+333 raises to 4
+111 calls 4
+*** FLOP *** (8) [8h Jc 8c]
+333 bets 7
+111 folds
+333 wins the pot (15)
+
+Hand #109, 111 (301), 222 (148), 333 (151)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [8c 5d]
+Dealt to 222 [5s 6h]
+Dealt to 333 [7c 4d]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #110, 333 (152), 111 (301), 222 (147)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ac 6s]
+Dealt to 111 [Ts 9d]
+Dealt to 222 [3h Qs]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [2s Js Td]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** TURN *** (5) [2s Js Td] [2h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** RIVER *** (5) [2s Js Td 2h] [Kc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+333 shows [Ac 6s]
+222 shows [3h Qs]
+333 wins the pot (5)
+
+Hand #111, 222 (145), 333 (155), 111 (300)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Th 7d]
+Dealt to 333 [2s 5d]
+Dealt to 111 [Qh 6s]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #112, 111 (301), 222 (145), 333 (154)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Ts 2c]
+Dealt to 222 [6h Qh]
+Dealt to 333 [Jc 8c]
+111 folds
+222 calls 2
+333 raises to 5
+222 folds
+333 wins the pot (7)
+
+Hand #113, 333 (156), 111 (301), 222 (143)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [4s 4d]
+Dealt to 111 [Ah Jc]
+Dealt to 222 [5d 6h]
+333 calls 2
+111 calls 2
+222 checks
+*** FLOP *** (6) [8h Js 9h]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** TURN *** (6) [8h Js 9h] [Kd]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 5
+111 folds
+222 folds
+333 wins the pot (11)
+
+Hand #114, 222 (141), 333 (160), 111 (299)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ks 6d]
+Dealt to 333 [9d Th]
+Dealt to 111 [5c 7s]
+222 folds
+333 calls 2
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** FLOP *** (4) [5h Kc Td]
+333 bets 2
+111 folds
+333 wins the pot (6)
+
+Hand #115, 111 (297), 222 (141), 333 (162)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [9s Jd]
+Dealt to 222 [6d 8c]
+Dealt to 333 [Jc Ad]
+111 folds
+222 calls 2
+333 raises to 4
+222 folds
+333 wins the pot (6)
+
+Hand #116, 333 (164), 111 (297), 222 (139)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Td Ah]
+Dealt to 111 [5h Kd]
+Dealt to 222 [Th Qd]
+333 folds
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Jh Kc 6c]
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #117, 222 (137), 333 (164), 111 (299)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9c 2s]
+Dealt to 333 [5h Ah]
+Dealt to 111 [3s 5d]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #118, 111 (300), 222 (137), 333 (163)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Jc 8h]
+Dealt to 222 [Ks 6h]
+Dealt to 333 [6s Qd]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #119, 333 (164), 111 (300), 222 (136)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [7d 5d]
+Dealt to 111 [2c Qc]
+Dealt to 222 [6h 3d]
+333 folds
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [5h Ac Ts]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** TURN *** (4) [5h Ac Ts] [Kh]
+111 bets 2
+222 folds
+111 wins the pot (6)
+
+Hand #120, 222 (134), 333 (164), 111 (302)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9d As]
+Dealt to 333 [4s 5h]
+Dealt to 111 [4h Jh]
+222 folds
+333 calls 2
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** FLOP *** (4) [Qs 3h Kh]
+333 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Qs 3h Kh] [3s]
+333 bets 3
+111 folds
+333 wins the pot (7)
+
+Hand #121, 111 (300), 222 (134), 333 (166)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [5d 2s]
+Dealt to 222 [Jd 2c]
+Dealt to 333 [8h 3d]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #122, 333 (167), 111 (300), 222 (133)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [7h Jd]
+Dealt to 111 [5d Jc]
+Dealt to 222 [8c Ks]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [8s Ah 9c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 4
+222 folds
+333 wins the pot (9)
+
+Hand #123, 222 (131), 333 (170), 111 (299)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3s Ts]
+Dealt to 333 [Kd 8h]
+Dealt to 111 [2d Ac]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #124, 111 (300), 222 (131), 333 (169)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [9c Ad]
+Dealt to 222 [Ah Qd]
+Dealt to 333 [8s Qc]
+111 raises to 4
+222 raises to 7
+333 raises to 19
+111 folds
+222 calls 19
+*** FLOP *** (42) [2c 7s Kh]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 6
+222 calls 6
+*** TURN *** (54) [2c 7s Kh] [7c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 23
+222 folds
+333 wins the pot (77)
+
+Hand #125, 333 (198), 111 (296), 222 (106)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9h 8c]
+Dealt to 111 [Kd 2s]
+Dealt to 222 [7d As]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [5d Qd Th]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** TURN *** (5) [5d Qd Th] [Ah]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 checks
+*** RIVER *** (5) [5d Qd Th Ah] [Tc]
+222 bets 3
+333 calls 3
+333 shows [9h 8c]
+222 shows [7d As]
+222 wins the pot (11)
+
+Hand #126, 222 (112), 333 (193), 111 (295)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8s 5h]
+Dealt to 333 [9d Ac]
+Dealt to 111 [7s 5d]
+222 folds
+333 calls 2
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** FLOP *** (4) [Kd Qs 7h]
+333 bets 3
+111 folds
+333 wins the pot (7)
+
+Hand #127, 111 (293), 222 (112), 333 (195)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [6h 7d]
+Dealt to 222 [3d 2s]
+Dealt to 333 [7c Qh]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #128, 333 (196), 111 (293), 222 (111)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Qc 7s]
+Dealt to 111 [Ks 9c]
+Dealt to 222 [3c Kh]
+333 calls 2
+111 calls 2
+222 checks
+*** FLOP *** (6) [5d 3h Ah]
+111 bets 2
+222 calls 2
+333 raises to 13
+111 folds
+222 calls 13
+*** TURN *** (34) [5d 3h Ah] [7d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 27
+222 folds
+333 wins the pot (61)
+
+Hand #129, 222 (96), 333 (215), 111 (289)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8c 6h]
+Dealt to 333 [Jc Kc]
+Dealt to 111 [3h Ts]
+222 folds
+333 raises to 5
+111 folds
+333 wins the pot (7)
+
+Hand #130, 111 (287), 222 (96), 333 (217)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Jd Ad]
+Dealt to 222 [3h 6c]
+Dealt to 333 [7d 3d]
+111 calls 2
+222 calls 2
+333 checks
+*** FLOP *** (6) [Qc 3c 5s]
+222 bets 2
+333 folds
+111 calls 2
+*** TURN *** (10) [Qc 3c 5s] [9h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (10) [Qc 3c 5s 9h] [Jc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 9
+222 folds
+111 wins the pot (19)
+
+Hand #131, 333 (215), 111 (293), 222 (92)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [5c 4d]
+Dealt to 111 [4h Qh]
+Dealt to 222 [5s Kh]
+333 calls 2
+111 folds
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (5) [9h 8d Tc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+333 bets 3
+222 folds
+333 wins the pot (8)
+
+Hand #132, 222 (90), 333 (218), 111 (292)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Th 8h]
+Dealt to 333 [Td Jh]
+Dealt to 111 [Qh 9h]
+222 folds
+333 folds
+111 wins the pot (3)
+
+Hand #133, 111 (293), 222 (90), 333 (217)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [8s 7c]
+Dealt to 222 [Qh 8c]
+Dealt to 333 [7d 9d]
+111 folds
+222 folds
+333 wins the pot (3)
+
+Hand #134, 333 (218), 111 (293), 222 (89)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [2s Qc]
+Dealt to 111 [9c 5s]
+Dealt to 222 [Ts Tc]
+333 folds
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #135, 222 (91), 333 (218), 111 (291)
+333 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [6d 2c]
+Dealt to 333 [Kc 2d]
+Dealt to 111 [Js Qh]
+222 folds
+333 calls 2
+111 raises to 4
+333 calls 4
+*** FLOP *** (8) [Td 6s 9h]
+333 checks
+111 bets 4
+333 raises to 12
+111 folds
+333 wins the pot (24)
+
+Hand #136, 111 (283), 222 (91), 333 (226)
+222 posts the blind of 1
+333 posts the blind of 2
+Dealt to 111 [Ah Jh]
+Dealt to 222 [4h 3d]
+Dealt to 333 [6h 7h]
+111 calls 2
+222 folds
+333 raises to 5
+111 calls 5
+*** FLOP *** (11) [5h Kh 9h]
+333 checks
+111 bets 11
+333 raises to 30
+111 calls 30
+*** TURN *** (71) [5h Kh 9h] [6c]
+333 checks
+111 bets 71
+333 folds
+111 wins the pot (142)
+
+Hand #137, 333 (191), 111 (319), 222 (90)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9s 8c]
+Dealt to 111 [Ah Kh]
+Dealt to 222 [8s 3d]
+333 calls 2
+111 calls 2
+222 checks
+*** FLOP *** (6) [5d Ad 4c]
+111 bets 6
+222 folds
+333 raises to 20
+111 raises to 66
+333 calls 66
+*** TURN *** (138) [5d Ad 4c] [4d]
+111 bets 123
+333 calls 123
+*** RIVER *** (384) [5d Ad 4c 4d] [Kd]
+333 shows [9s 8c]
+111 shows [Ah Kh]
+111 wins the pot (384)
+
+Hand #138, 111 (512), 222 (88), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Td Qd]
+Dealt to 333 [Js Ac]
+Dealt to 111 [5d Kd]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #139, 222 (90), 111 (510), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [8d Qh]
+Dealt to 222 [Tc 3c]
+Dealt to 333 [Qc 7s]
+222 folds
+111 wins the pot (3)
+
+Hand #140, 111 (511), 222 (89), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [7s 5d]
+Dealt to 111 [Td 3h]
+Dealt to 222 [Qs Kh]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #141, 222 (91), 111 (509), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4c Ah]
+Dealt to 333 [3s Ac]
+Dealt to 111 [8h Kh]
+222 folds
+111 wins the pot (3)
+
+Hand #142, 111 (510), 222 (90), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Kd 3d]
+Dealt to 222 [7c Tc]
+Dealt to 333 [Th 3c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [7h Kh 6h]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [7h Kh 6h] [4h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (8) [7h Kh 6h 4h] [9h]
+222 bets 3
+111 calls 3
+111 shows [Kd 3d]
+222 shows [7c Tc]
+111 ties for the pot (7)
+222 ties for the pot (7)
+
+Hand #143, 222 (90), 111 (510), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Ts 5h]
+Dealt to 111 [Kc 6s]
+Dealt to 222 [Jc Qc]
+222 folds
+111 wins the pot (3)
+
+Hand #144, 111 (511), 222 (89), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7s 5c]
+Dealt to 333 [5h 4d]
+Dealt to 111 [2d Qh]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Jh 3s 5d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Jh 3s 5d] [Kc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [Jh 3s 5d Kc] [7h]
+222 bets 3
+111 folds
+222 wins the pot (7)
+
+Hand #145, 222 (91), 111 (509), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Kh Jd]
+Dealt to 222 [Tc As]
+Dealt to 333 [Td 2c]
+222 folds
+111 wins the pot (3)
+
+Hand #146, 111 (510), 222 (90), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Jc 5h]
+Dealt to 111 [3h Jd]
+Dealt to 222 [9d 9s]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #147, 222 (92), 111 (508), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8c Ts]
+Dealt to 333 [Th 7s]
+Dealt to 111 [8s Td]
+222 folds
+111 wins the pot (3)
+
+Hand #148, 111 (509), 222 (91), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Kc 4s]
+Dealt to 222 [3s 4d]
+Dealt to 333 [9s Kh]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [7d 7s Jd]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [7d 7s Jd] [Qs]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 folds
+111 wins the pot (6)
+
+Hand #149, 222 (89), 111 (511), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [7c 3h]
+Dealt to 111 [4h 4d]
+Dealt to 222 [8h Js]
+222 folds
+111 wins the pot (3)
+
+Hand #150, 111 (512), 222 (88), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7d 5c]
+Dealt to 333 [Ad Qs]
+Dealt to 111 [Th 3h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8d Kd 6s]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #151, 222 (90), 111 (510), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [8c 5h]
+Dealt to 222 [4c Td]
+Dealt to 333 [3h 6h]
+222 folds
+111 wins the pot (3)
+
+Hand #152, 111 (511), 222 (89), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3h Qh]
+Dealt to 111 [7c Ks]
+Dealt to 222 [6h 7d]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #153, 222 (91), 111 (509), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [7s Qh]
+Dealt to 333 [3d 6s]
+Dealt to 111 [Qs Js]
+222 folds
+111 wins the pot (3)
+
+Hand #154, 111 (510), 222 (90), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [2d 5c]
+Dealt to 222 [Ah Qh]
+Dealt to 333 [3h 2c]
+111 folds
+222 wins the pot (3)
+
+Hand #155, 222 (91), 111 (509), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Ad 6h]
+Dealt to 111 [Ac 3s]
+Dealt to 222 [9s Qh]
+222 folds
+111 wins the pot (3)
+
+Hand #156, 111 (510), 222 (90), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Qs 9h]
+Dealt to 333 [2c 7s]
+Dealt to 111 [Js 7d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [4s 3h 7h]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [4s 3h 7h] [5d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 8
+222 folds
+111 wins the pot (16)
+
+Hand #157, 222 (86), 111 (514), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [5h Js]
+Dealt to 222 [4s Ac]
+Dealt to 333 [6s 5s]
+222 folds
+111 wins the pot (3)
+
+Hand #158, 111 (515), 222 (85), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [8c 4d]
+Dealt to 111 [2h 7d]
+Dealt to 222 [Kd As]
+111 folds
+222 wins the pot (3)
+
+Hand #159, 222 (86), 111 (514), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9c Qs]
+Dealt to 333 [4s 6c]
+Dealt to 111 [9d 5h]
+222 folds
+111 wins the pot (3)
+
+Hand #160, 111 (515), 222 (85), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Tc Kd]
+Dealt to 222 [6h 4d]
+Dealt to 333 [9d 9s]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #161, 222 (83), 111 (517), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [3c 3s]
+Dealt to 111 [Jc Kh]
+Dealt to 222 [2h 2s]
+222 folds
+111 wins the pot (3)
+
+Hand #162, 111 (518), 222 (82), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Kh 5s]
+Dealt to 333 [4s Qh]
+Dealt to 111 [7h Qd]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8h 9h 9d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [8h 9h 9d] [7c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #163, 222 (80), 111 (520), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [9h 5c]
+Dealt to 222 [Ah 9c]
+Dealt to 333 [Qs 6s]
+222 folds
+111 wins the pot (3)
+
+Hand #164, 111 (521), 222 (79), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [5s Tc]
+Dealt to 111 [5d 6c]
+Dealt to 222 [2h Th]
+111 folds
+222 wins the pot (3)
+
+Hand #165, 222 (80), 111 (520), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ks Jh]
+Dealt to 333 [Kh Qs]
+Dealt to 111 [3c Ah]
+222 folds
+111 wins the pot (3)
+
+Hand #166, 111 (521), 222 (79), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [4d 6d]
+Dealt to 222 [Kd Qs]
+Dealt to 333 [Kh Td]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #167, 222 (81), 111 (519), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [6c Tc]
+Dealt to 111 [6h Jc]
+Dealt to 222 [Jd 8h]
+222 folds
+111 wins the pot (3)
+
+Hand #168, 111 (520), 222 (80), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [5d 6s]
+Dealt to 333 [8h 7c]
+Dealt to 111 [9c 7s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [9d Jc 6h]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [9d Jc 6h] [8s]
+222 bets 3
+111 calls 3
+*** RIVER *** (14) [9d Jc 6h 8s] [Jd]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 14
+222 calls 14
+222 shows [5d 6s]
+111 shows [9c 7s]
+111 wins the pot (42)
+
+Hand #169, 222 (59), 111 (541), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Js 3h]
+Dealt to 222 [Ah 5c]
+Dealt to 333 [9s 6d]
+222 folds
+111 wins the pot (3)
+
+Hand #170, 111 (542), 222 (58), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Kh 8s]
+Dealt to 111 [7s 6c]
+Dealt to 222 [Ah Jd]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #171, 222 (60), 111 (540), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Jh Kh]
+Dealt to 333 [8h 7c]
+Dealt to 111 [Js 9d]
+222 calls 2
+111 raises to 4
+222 calls 4
+*** FLOP *** (8) [2c 5s Th]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** TURN *** (8) [2c 5s Th] [Qs]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** RIVER *** (8) [2c 5s Th Qs] [9s]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 5
+111 calls 5
+222 shows [Jh Kh]
+111 shows [Js 9d]
+222 wins the pot (18)
+
+Hand #172, 111 (531), 222 (69), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [6s 5d]
+Dealt to 222 [3h Qc]
+Dealt to 333 [Kd Kc]
+111 folds
+222 wins the pot (3)
+
+Hand #173, 222 (70), 111 (530), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Kh 3c]
+Dealt to 111 [Qh 4s]
+Dealt to 222 [6s 3h]
+222 folds
+111 wins the pot (3)
+
+Hand #174, 111 (531), 222 (69), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [2s 7s]
+Dealt to 333 [8s Kh]
+Dealt to 111 [Qh 4s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [4c 3c Js]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #175, 222 (67), 111 (533), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [2c Qc]
+Dealt to 222 [Ks Ts]
+Dealt to 333 [Ac 3d]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #176, 111 (531), 222 (69), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9s 6d]
+Dealt to 111 [2d 2c]
+Dealt to 222 [8c 4h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Jc Ts Qs]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 folds
+111 wins the pot (6)
+
+Hand #177, 222 (67), 111 (533), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4c 5s]
+Dealt to 333 [Jc 2c]
+Dealt to 111 [5h 6c]
+222 folds
+111 wins the pot (3)
+
+Hand #178, 111 (534), 222 (66), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [2s Ah]
+Dealt to 222 [3c 5d]
+Dealt to 333 [6c Ks]
+111 raises to 4
+222 raises to 7
+111 folds
+222 wins the pot (11)
+
+Hand #179, 222 (70), 111 (530), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Qd 3s]
+Dealt to 111 [Ah 4d]
+Dealt to 222 [Jc 2h]
+222 folds
+111 wins the pot (3)
+
+Hand #180, 111 (531), 222 (69), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [8d 5s]
+Dealt to 333 [4c 6s]
+Dealt to 111 [2h Ah]
+111 calls 2
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [2d 9d 2c]
+222 bets 2
+111 calls 2
+*** TURN *** (12) [2d 9d 2c] [3s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 12
+222 folds
+111 wins the pot (24)
+
+Hand #181, 222 (63), 111 (537), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [6h Ks]
+Dealt to 222 [3h 3c]
+Dealt to 333 [3d Kh]
+222 folds
+111 wins the pot (3)
+
+Hand #182, 111 (538), 222 (62), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [5h Ks]
+Dealt to 111 [3d 7d]
+Dealt to 222 [2d 3s]
+111 folds
+222 wins the pot (3)
+
+Hand #183, 222 (63), 111 (537), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Jc 2s]
+Dealt to 333 [Tc 9h]
+Dealt to 111 [3d 5h]
+222 folds
+111 wins the pot (3)
+
+Hand #184, 111 (538), 222 (62), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [2s Tc]
+Dealt to 222 [8c Qh]
+Dealt to 333 [Js 4c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [As Ks 3s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** TURN *** (8) [As Ks 3s] [4s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (8) [As Ks 3s 4s] [9d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 8
+222 calls 8
+111 shows [2s Tc]
+222 shows [8c Qh]
+111 wins the pot (24)
+
+Hand #185, 222 (50), 111 (550), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [2c 3d]
+Dealt to 111 [8s 4d]
+Dealt to 222 [Kc 7c]
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [6h 5d Jc]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** TURN *** (8) [6h 5d Jc] [As]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 3
+111 folds
+222 wins the pot (11)
+
+Hand #186, 111 (546), 222 (54), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7d 8h]
+Dealt to 333 [6c Ts]
+Dealt to 111 [As 3s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Td Kd 9d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** TURN *** (8) [Td Kd 9d] [Jh]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (8) [Td Kd 9d Jh] [2c]
+222 bets 4
+111 raises to 8
+222 calls 8
+222 shows [7d 8h]
+111 shows [As 3s]
+222 wins the pot (24)
+
+Hand #187, 222 (66), 111 (534), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Tc 9d]
+Dealt to 222 [5s 8c]
+Dealt to 333 [5h 7c]
+222 folds
+111 wins the pot (3)
+
+Hand #188, 111 (535), 222 (65), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [8h Jc]
+Dealt to 111 [Kc 4h]
+Dealt to 222 [4s Jd]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #189, 222 (67), 111 (533), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [6c 2s]
+Dealt to 333 [7h Ks]
+Dealt to 111 [Td 8s]
+222 folds
+111 wins the pot (3)
+
+Hand #190, 111 (534), 222 (66), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ac 9h]
+Dealt to 222 [Qc 8c]
+Dealt to 333 [6h 9c]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #191, 222 (64), 111 (536), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [2c 3s]
+Dealt to 111 [6d 8h]
+Dealt to 222 [Tc 5c]
+222 folds
+111 wins the pot (3)
+
+Hand #192, 111 (537), 222 (63), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Ac Js]
+Dealt to 333 [8h 9c]
+Dealt to 111 [Ah 4d]
+111 raises to 4
+222 raises to 8
+111 folds
+222 wins the pot (12)
+
+Hand #193, 222 (67), 111 (533), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [4s 9c]
+Dealt to 222 [4h 2s]
+Dealt to 333 [7d 2d]
+222 folds
+111 wins the pot (3)
+
+Hand #194, 111 (534), 222 (66), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Kc As]
+Dealt to 111 [9s 2h]
+Dealt to 222 [Qd 8d]
+111 folds
+222 wins the pot (3)
+
+Hand #195, 222 (67), 111 (533), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Qs 3s]
+Dealt to 333 [3d 5s]
+Dealt to 111 [Jc 7c]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #196, 111 (531), 222 (69), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [9c 5h]
+Dealt to 222 [Jd 7c]
+Dealt to 333 [Qs 9s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Kc Kd 2s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 raises to 5
+111 folds
+222 wins the pot (11)
+
+Hand #197, 222 (73), 111 (527), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Tc 7h]
+Dealt to 111 [8c Jc]
+Dealt to 222 [9h 8h]
+222 folds
+111 wins the pot (3)
+
+Hand #198, 111 (528), 222 (72), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7c Tc]
+Dealt to 333 [3h 5c]
+Dealt to 111 [Kd 3d]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #199, 222 (74), 111 (526), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [9d 9s]
+Dealt to 222 [Js 7h]
+Dealt to 333 [Qs 9h]
+222 folds
+111 wins the pot (3)
+
+Hand #200, 111 (527), 222 (73), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [4s Qh]
+Dealt to 111 [3s 6c]
+Dealt to 222 [2c Ad]
+111 folds
+222 wins the pot (3)
+
+Hand #201, 222 (74), 111 (526), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ks 4s]
+Dealt to 333 [6h 9h]
+Dealt to 111 [9d 8d]
+222 folds
+111 wins the pot (3)
+
+Hand #202, 111 (527), 222 (73), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [3h 3s]
+Dealt to 222 [As 6h]
+Dealt to 333 [Tc Jc]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Ts 5h Jh]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [Ts 5h Jh] [Kc]
+222 bets 3
+111 calls 3
+*** RIVER *** (14) [Ts 5h Jh Kc] [9d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+111 shows [3h 3s]
+222 shows [As 6h]
+111 wins the pot (14)
+
+Hand #203, 222 (66), 111 (534), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [8h Jh]
+Dealt to 111 [8c Js]
+Dealt to 222 [Ts 4d]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #204, 111 (532), 222 (68), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [As 2c]
+Dealt to 333 [2d Qs]
+Dealt to 111 [Th 8s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Tc 4s 9s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 raises to 10
+111 calls 10
+*** TURN *** (24) [Tc 4s 9s] [Ad]
+222 bets 13
+111 calls 13
+*** RIVER *** (50) [Tc 4s 9s Ad] [6s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 43
+222 calls 43
+222 shows [As 2c]
+111 shows [Th 8s]
+222 wins the pot (136)
+
+Hand #205, 222 (136), 111 (464), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Qd Qs]
+Dealt to 222 [Ah Th]
+Dealt to 333 [Js 7d]
+222 raises to 4
+111 raises to 9
+222 calls 9
+*** FLOP *** (18) [3c 3h Ac]
+111 bets 12
+222 calls 12
+*** TURN *** (42) [3c 3h Ac] [2h]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 22
+111 calls 22
+*** RIVER *** (86) [3c 3h Ac 2h] [7h]
+111 bets 86
+222 calls 86
+111 shows [Qd Qs]
+222 shows [Ah Th]
+222 wins the pot (258)
+
+Hand #206, 111 (335), 222 (265), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Jh Tc]
+Dealt to 111 [2d 8h]
+Dealt to 222 [Qc Kd]
+111 folds
+222 wins the pot (3)
+
+Hand #207, 222 (266), 111 (334), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4s 6c]
+Dealt to 333 [4h 6s]
+Dealt to 111 [Ac 9h]
+222 folds
+111 wins the pot (3)
+
+Hand #208, 111 (335), 222 (265), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [3c 8c]
+Dealt to 222 [8s Ad]
+Dealt to 333 [Qd Kh]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #209, 222 (263), 111 (337), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [6d Qh]
+Dealt to 111 [Qd Kh]
+Dealt to 222 [7c Ks]
+222 folds
+111 wins the pot (3)
+
+Hand #210, 111 (338), 222 (262), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [4c As]
+Dealt to 333 [Jd 9h]
+Dealt to 111 [Ac 5h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Tc Js Ad]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Tc Js Ad] [Ts]
+222 bets 2
+111 calls 2
+*** RIVER *** (8) [Tc Js Ad Ts] [Jc]
+222 bets 4
+111 calls 4
+222 shows [4c As]
+111 shows [Ac 5h]
+222 ties for the pot (8)
+111 ties for the pot (8)
+
+Hand #211, 222 (262), 111 (338), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [7s Qh]
+Dealt to 222 [As 7h]
+Dealt to 333 [2s 4h]
+222 folds
+111 wins the pot (3)
+
+Hand #212, 111 (339), 222 (261), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Jc Qd]
+Dealt to 111 [Jh 2c]
+Dealt to 222 [8s 8d]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #213, 222 (263), 111 (337), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Kh Qh]
+Dealt to 333 [Tc 2s]
+Dealt to 111 [Kd 2c]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #214, 111 (335), 222 (265), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Jd 7s]
+Dealt to 222 [6s 3s]
+Dealt to 333 [Kc Ks]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Qc 3d 5h]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [Qc 3d 5h] [7h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 8
+222 calls 8
+*** RIVER *** (24) [Qc 3d 5h 7h] [9s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 24
+222 folds
+111 wins the pot (48)
+
+Hand #215, 222 (253), 111 (347), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [3s Ac]
+Dealt to 111 [6c 4c]
+Dealt to 222 [2d 7h]
+222 folds
+111 wins the pot (3)
+
+Hand #216, 111 (348), 222 (252), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [3c 6s]
+Dealt to 333 [Qd 4h]
+Dealt to 111 [Qh 6d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Tc Td Ks]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Tc Td Ks] [4s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [Tc Td Ks 4s] [Kc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #217, 222 (250), 111 (350), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [6s 3d]
+Dealt to 222 [2s Kh]
+Dealt to 333 [Qc Ad]
+222 folds
+111 wins the pot (3)
+
+Hand #218, 111 (351), 222 (249), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Js 3s]
+Dealt to 111 [4s Td]
+Dealt to 222 [6c Qh]
+111 raises to 4
+222 raises to 7
+111 folds
+222 wins the pot (11)
+
+Hand #219, 222 (253), 111 (347), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9h Ah]
+Dealt to 333 [Qh Ts]
+Dealt to 111 [7d 8c]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #220, 111 (345), 222 (255), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Tc 9d]
+Dealt to 222 [2c 6c]
+Dealt to 333 [Kh Kd]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3c 9h 7s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [3c 9h 7s] [3h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [3c 9h 7s 3h] [5h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #221, 222 (253), 111 (347), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Qd Qh]
+Dealt to 111 [2d Td]
+Dealt to 222 [3h 6s]
+222 folds
+111 wins the pot (3)
+
+Hand #222, 111 (348), 222 (252), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Jc 7c]
+Dealt to 333 [As 4c]
+Dealt to 111 [8c Kd]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #223, 222 (254), 111 (346), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [3s Jc]
+Dealt to 222 [8s 4h]
+Dealt to 333 [9h 4d]
+222 folds
+111 wins the pot (3)
+
+Hand #224, 111 (347), 222 (253), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3s 2s]
+Dealt to 111 [5s 3d]
+Dealt to 222 [2h Qh]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #225, 222 (251), 111 (349), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [6d 2d]
+Dealt to 333 [7d Td]
+Dealt to 111 [8c 5c]
+222 folds
+111 wins the pot (3)
+
+Hand #226, 111 (350), 222 (250), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Js Ac]
+Dealt to 222 [3c 9d]
+Dealt to 333 [Td 8h]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #227, 222 (248), 111 (352), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [6s 7d]
+Dealt to 111 [9s 2h]
+Dealt to 222 [8c Jc]
+222 folds
+111 wins the pot (3)
+
+Hand #228, 111 (353), 222 (247), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [8h 7d]
+Dealt to 333 [Qs 2d]
+Dealt to 111 [3c 8d]
+111 folds
+222 wins the pot (3)
+
+Hand #229, 222 (248), 111 (352), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [2c 9s]
+Dealt to 222 [7h Qs]
+Dealt to 333 [2h Ks]
+222 folds
+111 wins the pot (3)
+
+Hand #230, 111 (353), 222 (247), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3h 3s]
+Dealt to 111 [5h 7d]
+Dealt to 222 [4d Ah]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [7c 6c Jh]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [7c 6c Jh] [3c]
+222 bets 3
+111 calls 3
+*** RIVER *** (14) [7c 6c Jh 3c] [9c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+111 shows [5h 7d]
+222 shows [4d Ah]
+111 wins the pot (14)
+
+Hand #231, 222 (240), 111 (360), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [7d 4s]
+Dealt to 333 [2h 3d]
+Dealt to 111 [6h Qs]
+222 folds
+111 wins the pot (3)
+
+Hand #232, 111 (361), 222 (239), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Qh Ad]
+Dealt to 222 [Kc 9s]
+Dealt to 333 [3c Td]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #233, 222 (237), 111 (363), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [4c As]
+Dealt to 111 [9d Th]
+Dealt to 222 [5h 7d]
+222 folds
+111 wins the pot (3)
+
+Hand #234, 111 (364), 222 (236), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Kh Ts]
+Dealt to 333 [3c 7s]
+Dealt to 111 [As 6s]
+111 calls 2
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [Jd Js 5c]
+222 bets 3
+111 calls 3
+*** TURN *** (14) [Jd Js 5c] [2h]
+222 bets 5
+111 calls 5
+*** RIVER *** (24) [Jd Js 5c 2h] [8d]
+222 bets 7
+111 folds
+222 wins the pot (31)
+
+Hand #235, 222 (248), 111 (352), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Ad Kh]
+Dealt to 222 [8s 5c]
+Dealt to 333 [5d 7h]
+222 folds
+111 wins the pot (3)
+
+Hand #236, 111 (353), 222 (247), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Kh 4d]
+Dealt to 111 [3h Qd]
+Dealt to 222 [7s Js]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Ts 5d 2d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 folds
+111 wins the pot (6)
+
+Hand #237, 222 (245), 111 (355), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8c 3s]
+Dealt to 333 [2h 6s]
+Dealt to 111 [2c 8h]
+222 folds
+111 wins the pot (3)
+
+Hand #238, 111 (356), 222 (244), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Js 2h]
+Dealt to 222 [3h 2d]
+Dealt to 333 [Ah As]
+111 raises to 4
+222 raises to 7
+111 folds
+222 wins the pot (11)
+
+Hand #239, 222 (248), 111 (352), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Td Qc]
+Dealt to 111 [Th Ah]
+Dealt to 222 [Js 7s]
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [2s 6s 5h]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 4
+111 calls 4
+*** TURN *** (16) [2s 6s 5h] [7d]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** RIVER *** (16) [2s 6s 5h 7d] [As]
+111 bets 16
+222 raises to 50
+111 calls 50
+111 shows [Th Ah]
+222 shows [Js 7s]
+222 wins the pot (116)
+
+Hand #240, 111 (294), 222 (306), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Js 3d]
+Dealt to 333 [6c 5c]
+Dealt to 111 [Qc Kd]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #241, 222 (304), 111 (296), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Kc 4d]
+Dealt to 222 [5d 8c]
+Dealt to 333 [Ac Ah]
+222 folds
+111 wins the pot (3)
+
+Hand #242, 111 (297), 222 (303), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ad As]
+Dealt to 111 [8d 4d]
+Dealt to 222 [7h 8h]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #243, 222 (301), 111 (299), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [5s Kh]
+Dealt to 333 [3h 7h]
+Dealt to 111 [4d 3s]
+222 folds
+111 wins the pot (3)
+
+Hand #244, 111 (300), 222 (300), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [6c 7c]
+Dealt to 222 [Jd 3d]
+Dealt to 333 [7d 3s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [5h 8d 3c]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [5h 8d 3c] [Js]
+222 bets 5
+111 folds
+222 wins the pot (13)
+
+Hand #245, 222 (304), 111 (296), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [5h 2s]
+Dealt to 111 [2c Jd]
+Dealt to 222 [Qh 4c]
+222 folds
+111 wins the pot (3)
+
+Hand #246, 111 (297), 222 (303), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [9c 3d]
+Dealt to 333 [Kd Th]
+Dealt to 111 [Qh Kh]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #247, 222 (301), 111 (299), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [7c 2s]
+Dealt to 222 [As Jd]
+Dealt to 333 [7s Th]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #248, 111 (297), 222 (303), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Jd 3c]
+Dealt to 111 [2h 2c]
+Dealt to 222 [5s Td]
+111 raises to 4
+222 calls 4
+*** FLOP *** (8) [5d 6d 7d]
+222 bets 4
+111 folds
+222 wins the pot (12)
+
+Hand #249, 222 (307), 111 (293), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [5h 7c]
+Dealt to 333 [3d Js]
+Dealt to 111 [9c Tc]
+222 folds
+111 wins the pot (3)
+
+Hand #250, 111 (294), 222 (306), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ts 8c]
+Dealt to 222 [Ad As]
+Dealt to 333 [2d 2s]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #251, 222 (308), 111 (292), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [2c 5c]
+Dealt to 111 [9d 4s]
+Dealt to 222 [8d Tc]
+222 folds
+111 wins the pot (3)
+
+Hand #252, 111 (293), 222 (307), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [3h Tc]
+Dealt to 333 [Ts 5s]
+Dealt to 111 [8d Qs]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Kh 3d 8c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 calls 4
+*** TURN *** (12) [Kh 3d 8c] [Ks]
+222 bets 5
+111 calls 5
+*** RIVER *** (22) [Kh 3d 8c Ks] [7c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 22
+222 raises to 61
+111 calls 61
+222 shows [3h Tc]
+111 shows [8d Qs]
+111 wins the pot (144)
+
+Hand #253, 222 (235), 111 (365), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [3s Qh]
+Dealt to 222 [Jd Kd]
+Dealt to 333 [9c Ad]
+222 calls 2
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** FLOP *** (4) [Jh 8c Ks]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 3
+111 folds
+222 wins the pot (7)
+
+Hand #254, 111 (363), 222 (237), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [4h 2h]
+Dealt to 111 [9d 6d]
+Dealt to 222 [4c Qs]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [7d Jh Kh]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [7d Jh Kh] [Ah]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [7d Jh Kh Ah] [7h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+111 shows [9d 6d]
+222 shows [4c Qs]
+222 wins the pot (4)
+
+Hand #255, 222 (239), 111 (361), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4h Ts]
+Dealt to 333 [Jd Qh]
+Dealt to 111 [9d Ad]
+222 folds
+111 wins the pot (3)
+
+Hand #256, 111 (362), 222 (238), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ah 7s]
+Dealt to 222 [Jc 6s]
+Dealt to 333 [2s Tc]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #257, 222 (236), 111 (364), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Jh 4c]
+Dealt to 111 [8c 2s]
+Dealt to 222 [Ad 8d]
+222 folds
+111 wins the pot (3)
+
+Hand #258, 111 (365), 222 (235), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7s 8d]
+Dealt to 333 [5c 2s]
+Dealt to 111 [8s Jh]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [5d 4d Ad]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #259, 222 (237), 111 (363), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [6c Jd]
+Dealt to 222 [3c Tc]
+Dealt to 333 [2c 4h]
+222 folds
+111 wins the pot (3)
+
+Hand #260, 111 (364), 222 (236), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3s 5c]
+Dealt to 111 [Kh Qs]
+Dealt to 222 [6c Tc]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [4d 5h 9h]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [4d 5h 9h] [Js]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (8) [4d 5h 9h Js] [2c]
+222 bets 2
+111 calls 2
+111 shows [Kh Qs]
+222 shows [6c Tc]
+111 wins the pot (12)
+
+Hand #261, 222 (230), 111 (370), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [6c Jd]
+Dealt to 333 [5c 4h]
+Dealt to 111 [2d 2h]
+222 folds
+111 wins the pot (3)
+
+Hand #262, 111 (371), 222 (229), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [4s Ac]
+Dealt to 222 [Tc Jh]
+Dealt to 333 [5h Qs]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [2c 3d 3h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [2c 3d 3h] [7d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [2c 3d 3h 7d] [9d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+111 shows [4s Ac]
+222 shows [Tc Jh]
+111 wins the pot (4)
+
+Hand #263, 222 (227), 111 (373), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Jh 6s]
+Dealt to 111 [6c 8c]
+Dealt to 222 [Qs 9d]
+222 folds
+111 wins the pot (3)
+
+Hand #264, 111 (374), 222 (226), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7h As]
+Dealt to 333 [Jh 5h]
+Dealt to 111 [8h 9h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3h 5c Kc]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #265, 222 (228), 111 (372), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Js 6d]
+Dealt to 222 [9d Tc]
+Dealt to 333 [Th 7h]
+222 folds
+111 wins the pot (3)
+
+Hand #266, 111 (373), 222 (227), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ts 6c]
+Dealt to 111 [3h 3d]
+Dealt to 222 [8c 3s]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #267, 222 (225), 111 (375), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ad 5s]
+Dealt to 333 [4s 4d]
+Dealt to 111 [7d Qc]
+222 folds
+111 wins the pot (3)
+
+Hand #268, 111 (376), 222 (224), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [2c Qs]
+Dealt to 222 [9s 6d]
+Dealt to 333 [3h Th]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [6h 4c 4d]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [6h 4c 4d] [3d]
+222 bets 4
+111 folds
+222 wins the pot (12)
+
+Hand #269, 222 (228), 111 (372), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [9d Tc]
+Dealt to 111 [Jc 2h]
+Dealt to 222 [7d Kh]
+222 folds
+111 wins the pot (3)
+
+Hand #270, 111 (373), 222 (227), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [9h Kh]
+Dealt to 333 [Ks 8h]
+Dealt to 111 [3c Jc]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #271, 222 (229), 111 (371), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Th 8d]
+Dealt to 222 [6c Kh]
+Dealt to 333 [7s 3d]
+222 folds
+111 wins the pot (3)
+
+Hand #272, 111 (372), 222 (228), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [2s 9h]
+Dealt to 111 [5h 5s]
+Dealt to 222 [3d 7d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Qs 3c 5d]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [Qs 3c 5d] [Tc]
+222 bets 3
+111 calls 3
+*** RIVER *** (14) [Qs 3c 5d Tc] [4h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 14
+222 calls 14
+111 shows [5h 5s]
+222 shows [3d 7d]
+111 wins the pot (42)
+
+Hand #273, 222 (207), 111 (393), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3s Td]
+Dealt to 333 [7c 8d]
+Dealt to 111 [Tc 4c]
+222 folds
+111 wins the pot (3)
+
+Hand #274, 111 (394), 222 (206), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Tc 8c]
+Dealt to 222 [Ad 8h]
+Dealt to 333 [8d 5h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3d 8s Ts]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [3d 8s Ts] [3c]
+222 bets 4
+111 calls 4
+*** RIVER *** (16) [3d 8s Ts 3c] [Ks]
+222 bets 7
+111 calls 7
+111 shows [Tc 8c]
+222 shows [Ad 8h]
+111 wins the pot (30)
+
+Hand #275, 222 (191), 111 (409), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [5s 8d]
+Dealt to 111 [4d 5h]
+Dealt to 222 [5c 9s]
+222 folds
+111 wins the pot (3)
+
+Hand #276, 111 (410), 222 (190), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Ah 3h]
+Dealt to 333 [Kh Th]
+Dealt to 111 [5d 6d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3d 7h 9c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** TURN *** (8) [3d 7h 9c] [Td]
+222 bets 3
+111 calls 3
+*** RIVER *** (14) [3d 7h 9c Td] [2d]
+222 bets 5
+111 raises to 29
+222 raises to 67
+111 calls 67
+222 shows [Ah 3h]
+111 shows [5d 6d]
+111 wins the pot (148)
+
+Hand #277, 222 (116), 111 (484), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [8s Jh]
+Dealt to 222 [9c 9s]
+Dealt to 333 [Ad 3d]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #278, 111 (482), 222 (118), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [5h 8d]
+Dealt to 111 [3h 5d]
+Dealt to 222 [7h 8h]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #279, 222 (116), 111 (484), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3s Jd]
+Dealt to 333 [As Ts]
+Dealt to 111 [9c 8h]
+222 folds
+111 wins the pot (3)
+
+Hand #280, 111 (485), 222 (115), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [6d 9c]
+Dealt to 222 [Qd 6s]
+Dealt to 333 [Ks 7s]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #281, 222 (113), 111 (487), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [3d 7c]
+Dealt to 111 [4s 6c]
+Dealt to 222 [9d 3c]
+222 folds
+111 wins the pot (3)
+
+Hand #282, 111 (488), 222 (112), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Ts Kh]
+Dealt to 333 [Kc 3d]
+Dealt to 111 [7h 2d]
+111 folds
+222 wins the pot (3)
+
+Hand #283, 222 (113), 111 (487), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [2h Ac]
+Dealt to 222 [Js 7s]
+Dealt to 333 [7h 6c]
+222 folds
+111 wins the pot (3)
+
+Hand #284, 111 (488), 222 (112), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Tc 9h]
+Dealt to 111 [Th 6h]
+Dealt to 222 [As 8c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Js 9s Ah]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [Js 9s Ah] [Qd]
+222 bets 4
+111 calls 4
+*** RIVER *** (16) [Js 9s Ah Qd] [6s]
+222 bets 8
+111 raises to 16
+222 calls 16
+111 shows [Th 6h]
+222 shows [As 8c]
+222 wins the pot (48)
+
+Hand #285, 222 (136), 111 (464), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [6c Td]
+Dealt to 333 [2h 8d]
+Dealt to 111 [Kc Ac]
+222 folds
+111 wins the pot (3)
+
+Hand #286, 111 (465), 222 (135), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [2s 3s]
+Dealt to 222 [6c Ac]
+Dealt to 333 [Jh 3h]
+111 folds
+222 wins the pot (3)
+
+Hand #287, 222 (136), 111 (464), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Qs 3c]
+Dealt to 111 [6h Tc]
+Dealt to 222 [9h 4c]
+222 folds
+111 wins the pot (3)
+
+Hand #288, 111 (465), 222 (135), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [5c Ah]
+Dealt to 333 [2h 6s]
+Dealt to 111 [7d 8d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8s Qh 5h]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [8s Qh 5h] [3c]
+222 bets 4
+111 calls 4
+*** RIVER *** (16) [8s Qh 5h 3c] [As]
+222 bets 10
+111 calls 10
+222 shows [5c Ah]
+111 shows [7d 8d]
+222 wins the pot (36)
+
+Hand #289, 222 (153), 111 (447), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [5c Kc]
+Dealt to 222 [9s 4c]
+Dealt to 333 [Qh 8d]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #290, 111 (445), 222 (155), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [4c Th]
+Dealt to 111 [Qc 5s]
+Dealt to 222 [9h 8s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [2h Qs 2d]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [2h Qs 2d] [7d]
+222 bets 2
+111 calls 2
+*** RIVER *** (12) [2h Qs 2d 7d] [7s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 12
+222 folds
+111 wins the pot (24)
+
+Hand #291, 222 (149), 111 (451), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3d 6d]
+Dealt to 333 [Ts 9s]
+Dealt to 111 [4h Th]
+222 folds
+111 wins the pot (3)
+
+Hand #292, 111 (452), 222 (148), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [4h Jc]
+Dealt to 222 [3s 5s]
+Dealt to 333 [Ac Js]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [5d Ts 9d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [5d Ts 9d] [9c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** RIVER *** (8) [5d Ts 9d 9c] [4s]
+222 bets 4
+111 calls 4
+111 shows [4h Jc]
+222 shows [3s 5s]
+222 wins the pot (16)
+
+Hand #293, 222 (156), 111 (444), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Th 8h]
+Dealt to 111 [Jc 2s]
+Dealt to 222 [9d Jd]
+222 folds
+111 wins the pot (3)
+
+Hand #294, 111 (445), 222 (155), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Jd 6s]
+Dealt to 333 [Qd Kd]
+Dealt to 111 [4s Ts]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Ah Td 3c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #295, 222 (153), 111 (447), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Ac 9s]
+Dealt to 222 [Jd 4d]
+Dealt to 333 [Tc Qh]
+222 folds
+111 wins the pot (3)
+
+Hand #296, 111 (448), 222 (152), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Th 2d]
+Dealt to 111 [Ts Kc]
+Dealt to 222 [6s 4h]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #297, 222 (150), 111 (450), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8h 5d]
+Dealt to 333 [9s 4c]
+Dealt to 111 [3h Kc]
+222 folds
+111 wins the pot (3)
+
+Hand #298, 111 (451), 222 (149), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ad Qc]
+Dealt to 222 [8d 9c]
+Dealt to 333 [4c 7h]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #299, 222 (147), 111 (453), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Ts Tc]
+Dealt to 111 [7d Ad]
+Dealt to 222 [Js 5d]
+222 folds
+111 wins the pot (3)
+
+Hand #300, 111 (454), 222 (146), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Kh 7s]
+Dealt to 333 [5h Th]
+Dealt to 111 [Qd 8s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [2c 3d 7d]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [2c 3d 7d] [Ah]
+222 bets 4
+111 folds
+222 wins the pot (12)
+
+Hand #301, 222 (150), 111 (450), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [5c 3d]
+Dealt to 222 [4h 2d]
+Dealt to 333 [5h Ad]
+222 folds
+111 wins the pot (3)
+
+Hand #302, 111 (451), 222 (149), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9s As]
+Dealt to 111 [5s 7c]
+Dealt to 222 [Jc 5d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [2s 6s Tc]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #303, 222 (151), 111 (449), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8s 3c]
+Dealt to 333 [Js 4h]
+Dealt to 111 [9s 9h]
+222 folds
+111 wins the pot (3)
+
+Hand #304, 111 (450), 222 (150), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [5h 6h]
+Dealt to 222 [Td Tc]
+Dealt to 333 [Kc 3h]
+111 raises to 4
+222 raises to 8
+111 calls 8
+*** FLOP *** (16) [7h 5d 4s]
+222 bets 7
+111 calls 7
+*** TURN *** (30) [7h 5d 4s] [4c]
+222 bets 14
+111 calls 14
+*** RIVER *** (58) [7h 5d 4s 4c] [Th]
+222 bets 35
+111 folds
+222 wins the pot (93)
+
+Hand #305, 222 (179), 111 (421), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Th Jc]
+Dealt to 111 [Ah Qc]
+Dealt to 222 [Ts 9c]
+222 folds
+111 wins the pot (3)
+
+Hand #306, 111 (422), 222 (178), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7h 5c]
+Dealt to 333 [Qs 9h]
+Dealt to 111 [4d 3d]
+111 folds
+222 wins the pot (3)
+
+Hand #307, 222 (179), 111 (421), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [5h 4c]
+Dealt to 222 [Ah Td]
+Dealt to 333 [8c 2h]
+222 folds
+111 wins the pot (3)
+
+Hand #308, 111 (422), 222 (178), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [8d 9d]
+Dealt to 111 [Qh Qs]
+Dealt to 222 [As 8h]
+111 raises to 6
+222 folds
+111 wins the pot (8)
+
+Hand #309, 222 (176), 111 (424), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Kc 3d]
+Dealt to 333 [Jd Qc]
+Dealt to 111 [5h 5c]
+222 folds
+111 wins the pot (3)
+
+Hand #310, 111 (425), 222 (175), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ac Js]
+Dealt to 222 [7h 9d]
+Dealt to 333 [5s 6c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [5h Ts 9s]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [5h Ts 9s] [9h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 7
+222 calls 7
+*** RIVER *** (22) [5h Ts 9s 9h] [3s]
+222 bets 12
+111 calls 12
+111 shows [Ac Js]
+222 shows [7h 9d]
+222 wins the pot (46)
+
+Hand #311, 222 (198), 111 (402), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [2h 5h]
+Dealt to 111 [4d 5d]
+Dealt to 222 [4h 9d]
+222 folds
+111 wins the pot (3)
+
+Hand #312, 111 (403), 222 (197), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Js Qh]
+Dealt to 333 [Kc 9s]
+Dealt to 111 [8s Ad]
+111 raises to 4
+222 calls 4
+*** FLOP *** (8) [6d 5c 4d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (8) [6d 5c 4d] [7h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 8
+222 folds
+111 wins the pot (16)
+
+Hand #313, 222 (193), 111 (407), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Ts Ac]
+Dealt to 222 [Th Kc]
+Dealt to 333 [Kh Jc]
+222 folds
+111 wins the pot (3)
+
+Hand #314, 111 (408), 222 (192), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [7h Ah]
+Dealt to 111 [Kc 9d]
+Dealt to 222 [5s 6c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Jd 6s 8d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Jd 6s 8d] [7c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** RIVER *** (8) [Jd 6s 8d 7c] [8c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 3
+222 calls 3
+111 shows [Kc 9d]
+222 shows [5s 6c]
+222 wins the pot (14)
+
+Hand #315, 222 (199), 111 (401), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ts 2c]
+Dealt to 333 [9h Kh]
+Dealt to 111 [Qh Ks]
+222 folds
+111 wins the pot (3)
+
+Hand #316, 111 (402), 222 (198), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [5h Qd]
+Dealt to 222 [Jc Qh]
+Dealt to 333 [6s 5s]
+111 calls 2
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [3h 3d 5c]
+222 bets 3
+111 calls 3
+*** TURN *** (14) [3h 3d 5c] [4c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (14) [3h 3d 5c 4c] [9h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 6
+222 folds
+111 wins the pot (20)
+
+Hand #317, 222 (191), 111 (409), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Ts 3d]
+Dealt to 111 [As Tc]
+Dealt to 222 [Ks 9d]
+222 folds
+111 wins the pot (3)
+
+Hand #318, 111 (410), 222 (190), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [6s Kc]
+Dealt to 333 [Kd 8s]
+Dealt to 111 [5h 2h]
+111 folds
+222 wins the pot (3)
+
+Hand #319, 222 (191), 111 (409), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [4h Ac]
+Dealt to 222 [8h Js]
+Dealt to 333 [9s Jh]
+222 folds
+111 wins the pot (3)
+
+Hand #320, 111 (410), 222 (190), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3h As]
+Dealt to 111 [Jh Jc]
+Dealt to 222 [6c 9d]
+111 raises to 6
+222 folds
+111 wins the pot (8)
+
+Hand #321, 222 (188), 111 (412), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3d 5d]
+Dealt to 333 [8c 6h]
+Dealt to 111 [3s 6c]
+222 folds
+111 wins the pot (3)
+
+Hand #322, 111 (413), 222 (187), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [7s 6d]
+Dealt to 222 [Td 6s]
+Dealt to 333 [5h 5c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8s 8d As]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** TURN *** (8) [8s 8d As] [4d]
+222 bets 3
+111 folds
+222 wins the pot (11)
+
+Hand #323, 222 (191), 111 (409), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [7h Qs]
+Dealt to 111 [Qh 8d]
+Dealt to 222 [Qc Js]
+222 folds
+111 wins the pot (3)
+
+Hand #324, 111 (410), 222 (190), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [2s 3c]
+Dealt to 333 [5s 5c]
+Dealt to 111 [Ts Kh]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #325, 222 (188), 111 (412), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [4s 6h]
+Dealt to 222 [9h Qs]
+Dealt to 333 [Kd 7d]
+222 folds
+111 wins the pot (3)
+
+Hand #326, 111 (413), 222 (187), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Qh 4s]
+Dealt to 111 [Jd Th]
+Dealt to 222 [6c Td]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3h Ah 7s]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [3h Ah 7s] [4d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (8) [3h Ah 7s 4d] [Jc]
+222 bets 2
+111 calls 2
+111 shows [Jd Th]
+222 shows [6c Td]
+111 wins the pot (12)
+
+Hand #327, 222 (181), 111 (419), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9c 4c]
+Dealt to 333 [6h Ts]
+Dealt to 111 [9h 2s]
+222 folds
+111 wins the pot (3)
+
+Hand #328, 111 (420), 222 (180), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [4d 8d]
+Dealt to 222 [Kc 8s]
+Dealt to 333 [4h 9s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [5s Qs Ac]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [5s Qs Ac] [Tc]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #329, 222 (182), 111 (418), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Qh As]
+Dealt to 111 [3s 6d]
+Dealt to 222 [5d 8d]
+222 folds
+111 wins the pot (3)
+
+Hand #330, 111 (419), 222 (181), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Td 4c]
+Dealt to 333 [2s 5h]
+Dealt to 111 [9s Ts]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [2h Ad 6c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [2h Ad 6c] [Kc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [2h Ad 6c Kc] [Qh]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 folds
+111 wins the pot (6)
+
+Hand #331, 222 (179), 111 (421), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Qd 7c]
+Dealt to 222 [2d 5d]
+Dealt to 333 [Th Ac]
+222 folds
+111 wins the pot (3)
+
+Hand #332, 111 (422), 222 (178), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ac 6c]
+Dealt to 111 [Jd Kd]
+Dealt to 222 [Ah 7c]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #333, 222 (176), 111 (424), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4h 8c]
+Dealt to 333 [4d Kd]
+Dealt to 111 [9h 7h]
+222 folds
+111 wins the pot (3)
+
+Hand #334, 111 (425), 222 (175), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Kh 4c]
+Dealt to 222 [8d 9c]
+Dealt to 333 [8h 5s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [4h Td 3s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 calls 4
+*** TURN *** (12) [4h Td 3s] [Jh]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 12
+222 folds
+111 wins the pot (24)
+
+Hand #335, 222 (169), 111 (431), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Ts 2h]
+Dealt to 111 [Jc 7c]
+Dealt to 222 [Td As]
+222 folds
+111 wins the pot (3)
+
+Hand #336, 111 (432), 222 (168), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [9d 8c]
+Dealt to 333 [7h Jc]
+Dealt to 111 [9h Qs]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #337, 222 (166), 111 (434), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Qh 6d]
+Dealt to 222 [2s 2d]
+Dealt to 333 [2c Jc]
+222 folds
+111 wins the pot (3)
+
+Hand #338, 111 (435), 222 (165), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [6h 9h]
+Dealt to 111 [Jh 8h]
+Dealt to 222 [6d Ad]
+111 raises to 4
+222 raises to 8
+111 folds
+222 wins the pot (12)
+
+Hand #339, 222 (169), 111 (431), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Td 9c]
+Dealt to 333 [3c As]
+Dealt to 111 [2s 7s]
+222 folds
+111 wins the pot (3)
+
+Hand #340, 111 (432), 222 (168), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [3h Ac]
+Dealt to 222 [Jh 3c]
+Dealt to 333 [Td 5s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Ah 2s 4c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Ah 2s 4c] [6h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #341, 222 (166), 111 (434), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [9h Tc]
+Dealt to 111 [Ks 9s]
+Dealt to 222 [6c 2c]
+222 folds
+111 wins the pot (3)
+
+Hand #342, 111 (435), 222 (165), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Ad 7h]
+Dealt to 333 [6h 5d]
+Dealt to 111 [Ks 4h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [9c Kh 8c]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [9c Kh 8c] [Qc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 8
+222 folds
+111 wins the pot (16)
+
+Hand #343, 222 (161), 111 (439), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [8c 3d]
+Dealt to 222 [Kh 9h]
+Dealt to 333 [9s Ad]
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [Jc Ts 5s]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** TURN *** (8) [Jc Ts 5s] [7h]
+111 bets 2
+222 calls 2
+*** RIVER *** (12) [Jc Ts 5s 7h] [Td]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 3
+111 folds
+222 wins the pot (15)
+
+Hand #344, 111 (433), 222 (167), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3d 2s]
+Dealt to 111 [4d 7c]
+Dealt to 222 [9s Qd]
+111 folds
+222 wins the pot (3)
+
+Hand #345, 222 (168), 111 (432), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Kd Jc]
+Dealt to 333 [Kc 6c]
+Dealt to 111 [Qd 3h]
+222 folds
+111 wins the pot (3)
+
+Hand #346, 111 (433), 222 (167), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [2c 5c]
+Dealt to 222 [5h Ad]
+Dealt to 333 [8s 5s]
+111 folds
+222 wins the pot (3)
+
+Hand #347, 222 (168), 111 (432), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Tc As]
+Dealt to 111 [8c 6d]
+Dealt to 222 [Jd 7c]
+222 folds
+111 wins the pot (3)
+
+Hand #348, 111 (433), 222 (167), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [3h Kh]
+Dealt to 333 [5c Jd]
+Dealt to 111 [8s 2d]
+111 folds
+222 wins the pot (3)
+
+Hand #349, 222 (168), 111 (432), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [7c Ts]
+Dealt to 222 [9h As]
+Dealt to 333 [2h 2s]
+222 folds
+111 wins the pot (3)
+
+Hand #350, 111 (433), 222 (167), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Js Qh]
+Dealt to 111 [7h 8s]
+Dealt to 222 [6c 4h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [6s Ah 3s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** TURN *** (8) [6s Ah 3s] [9h]
+222 bets 4
+111 folds
+222 wins the pot (12)
+
+Hand #351, 222 (171), 111 (429), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9c 2c]
+Dealt to 333 [2h 5h]
+Dealt to 111 [Td Kh]
+222 folds
+111 wins the pot (3)
+
+Hand #352, 111 (430), 222 (170), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Kd 4c]
+Dealt to 222 [5d 6d]
+Dealt to 333 [3h Jc]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #353, 222 (168), 111 (432), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [7c 6c]
+Dealt to 111 [8c Tc]
+Dealt to 222 [Qd 4s]
+222 folds
+111 wins the pot (3)
+
+Hand #354, 111 (433), 222 (167), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Td 2s]
+Dealt to 333 [8c 4s]
+Dealt to 111 [9h 3h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Ac 2d 7h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Ac 2d 7h] [Qc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [Ac 2d 7h Qc] [Js]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 shows [Td 2s]
+111 shows [9h 3h]
+222 wins the pot (4)
+
+Hand #355, 222 (169), 111 (431), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Kc Qc]
+Dealt to 222 [5h 9s]
+Dealt to 333 [9h 7d]
+222 folds
+111 wins the pot (3)
+
+Hand #356, 111 (432), 222 (168), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ad Jc]
+Dealt to 111 [4c 9s]
+Dealt to 222 [7c 2d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [4d 9h Qs]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #357, 222 (166), 111 (434), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [6c 4h]
+Dealt to 333 [6s 3d]
+Dealt to 111 [8s Qh]
+222 folds
+111 wins the pot (3)
+
+Hand #358, 111 (435), 222 (165), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ah Kd]
+Dealt to 222 [7h 4s]
+Dealt to 333 [7d Qs]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #359, 222 (163), 111 (437), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Kc 8c]
+Dealt to 111 [5s 7c]
+Dealt to 222 [Ks 5c]
+222 folds
+111 wins the pot (3)
+
+Hand #360, 111 (438), 222 (162), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [6c 2s]
+Dealt to 333 [5c 4c]
+Dealt to 111 [8h 6s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [4d Js 2c]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #361, 222 (164), 111 (436), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [5h 8c]
+Dealt to 222 [2c Td]
+Dealt to 333 [5s Jh]
+222 folds
+111 wins the pot (3)
+
+Hand #362, 111 (437), 222 (163), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Qs Qc]
+Dealt to 111 [6s As]
+Dealt to 222 [Kc Kh]
+111 raises to 4
+222 raises to 8
+111 calls 8
+*** FLOP *** (16) [7s 4h 2c]
+222 bets 8
+111 calls 8
+*** TURN *** (32) [7s 4h 2c] [7d]
+222 bets 17
+111 folds
+222 wins the pot (49)
+
+Hand #363, 222 (179), 111 (421), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9s 5c]
+Dealt to 333 [4s 6c]
+Dealt to 111 [7h As]
+222 folds
+111 wins the pot (3)
+
+Hand #364, 111 (422), 222 (178), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [2d Tc]
+Dealt to 222 [Qs 8c]
+Dealt to 333 [7c Jc]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8d Jd Kc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** TURN *** (8) [8d Jd Kc] [2s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 6
+222 calls 6
+*** RIVER *** (20) [8d Jd Kc 2s] [9h]
+222 bets 7
+111 calls 7
+111 shows [2d Tc]
+222 shows [Qs 8c]
+222 wins the pot (34)
+
+Hand #365, 222 (195), 111 (405), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Kh 5d]
+Dealt to 111 [Jh As]
+Dealt to 222 [7d 6h]
+222 folds
+111 wins the pot (3)
+
+Hand #366, 111 (406), 222 (194), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Td 3c]
+Dealt to 333 [4h 7s]
+Dealt to 111 [Jh Qd]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #367, 222 (196), 111 (404), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [4d Ad]
+Dealt to 222 [Th Jd]
+Dealt to 333 [Kd 9h]
+222 folds
+111 wins the pot (3)
+
+Hand #368, 111 (405), 222 (195), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [5d 9d]
+Dealt to 111 [4c Ac]
+Dealt to 222 [6c 5h]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #369, 222 (193), 111 (407), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [As Td]
+Dealt to 333 [7d 6d]
+Dealt to 111 [Kh Ad]
+222 folds
+111 wins the pot (3)
+
+Hand #370, 111 (408), 222 (192), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ah Ad]
+Dealt to 222 [9c 5h]
+Dealt to 333 [Jh 6d]
+111 raises to 6
+222 folds
+111 wins the pot (8)
+
+Hand #371, 222 (190), 111 (410), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [5d 6s]
+Dealt to 111 [Js 2c]
+Dealt to 222 [9c 8h]
+222 folds
+111 wins the pot (3)
+
+Hand #372, 111 (411), 222 (189), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Qh 3d]
+Dealt to 333 [2h Tc]
+Dealt to 111 [Ad 4c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Ah 5h 6d]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [Ah 5h 6d] [2d]
+222 bets 3
+111 calls 3
+*** RIVER *** (14) [Ah 5h 6d 2d] [Jh]
+222 bets 3
+111 calls 3
+222 shows [Qh 3d]
+111 shows [Ad 4c]
+111 wins the pot (20)
+
+Hand #373, 222 (179), 111 (421), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [4c Ad]
+Dealt to 222 [Kh 5h]
+Dealt to 333 [5s Jc]
+222 folds
+111 wins the pot (3)
+
+Hand #374, 111 (422), 222 (178), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Jc 2c]
+Dealt to 111 [Kd 6s]
+Dealt to 222 [Qh 4d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8h 3c 6d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #375, 222 (176), 111 (424), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8c 8d]
+Dealt to 333 [3c 2d]
+Dealt to 111 [8s 5h]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #376, 111 (422), 222 (178), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [2s Jc]
+Dealt to 222 [Td Ts]
+Dealt to 333 [Kh 8h]
+111 raises to 4
+222 raises to 8
+111 folds
+222 wins the pot (12)
+
+Hand #377, 222 (182), 111 (418), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [7s 9s]
+Dealt to 111 [3h 7d]
+Dealt to 222 [6h 6c]
+222 folds
+111 wins the pot (3)
+
+Hand #378, 111 (419), 222 (181), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Js Qc]
+Dealt to 333 [7h 3h]
+Dealt to 111 [Qh Tc]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #379, 222 (183), 111 (417), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Ad 2s]
+Dealt to 222 [8d 9d]
+Dealt to 333 [Ts 6s]
+222 folds
+111 wins the pot (3)
+
+Hand #380, 111 (418), 222 (182), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Th 7c]
+Dealt to 111 [7s Qd]
+Dealt to 222 [8c 9c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3c As Kd]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [3c As Kd] [8h]
+222 bets 2
+111 calls 2
+*** RIVER *** (8) [3c As Kd 8h] [Kh]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+111 shows [7s Qd]
+222 shows [8c 9c]
+222 wins the pot (8)
+
+Hand #381, 222 (186), 111 (414), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9h Jc]
+Dealt to 333 [5s Kd]
+Dealt to 111 [Kh Qh]
+222 folds
+111 wins the pot (3)
+
+Hand #382, 111 (415), 222 (185), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [2s 8d]
+Dealt to 222 [3d 4s]
+Dealt to 333 [8s 4d]
+111 folds
+222 wins the pot (3)
+
+Hand #383, 222 (186), 111 (414), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Jh 6h]
+Dealt to 111 [6c 5h]
+Dealt to 222 [Kd Jc]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #384, 111 (412), 222 (188), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [2d 5c]
+Dealt to 333 [Kd 7h]
+Dealt to 111 [6c Ad]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8d As Tc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #385, 222 (186), 111 (414), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [2h 8d]
+Dealt to 222 [4d 5h]
+Dealt to 333 [8h 9h]
+222 folds
+111 wins the pot (3)
+
+Hand #386, 111 (415), 222 (185), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Td Qh]
+Dealt to 111 [4h 9d]
+Dealt to 222 [Kh 6s]
+111 folds
+222 wins the pot (3)
+
+Hand #387, 222 (186), 111 (414), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Qd As]
+Dealt to 333 [Qc Td]
+Dealt to 111 [6h Kd]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #388, 111 (412), 222 (188), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [3d Jc]
+Dealt to 222 [Tc 6c]
+Dealt to 333 [2d 4h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [As 5c 6h]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #389, 222 (190), 111 (410), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [8c 5c]
+Dealt to 111 [Jh 4c]
+Dealt to 222 [Ts Jc]
+222 folds
+111 wins the pot (3)
+
+Hand #390, 111 (411), 222 (189), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Qh 8c]
+Dealt to 333 [Ac 9h]
+Dealt to 111 [Kh 3s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3h 4s 2h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #391, 222 (187), 111 (413), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [3h Qh]
+Dealt to 222 [Kc 7h]
+Dealt to 333 [Ac 5d]
+222 folds
+111 wins the pot (3)
+
+Hand #392, 111 (414), 222 (186), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3d 7d]
+Dealt to 111 [Ah 9h]
+Dealt to 222 [Jh 7h]
+111 raises to 4
+222 raises to 7
+111 calls 7
+*** FLOP *** (14) [Ad 3c 9d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 14
+222 folds
+111 wins the pot (28)
+
+Hand #393, 222 (179), 111 (421), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Qc 9c]
+Dealt to 333 [4h Jd]
+Dealt to 111 [2d 8d]
+222 folds
+111 wins the pot (3)
+
+Hand #394, 111 (422), 222 (178), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Kh 2d]
+Dealt to 222 [8c Td]
+Dealt to 333 [9d 2c]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #395, 222 (180), 111 (420), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [6s 4c]
+Dealt to 111 [4h Js]
+Dealt to 222 [Ks Td]
+222 folds
+111 wins the pot (3)
+
+Hand #396, 111 (421), 222 (179), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Ks 7s]
+Dealt to 333 [3c 8s]
+Dealt to 111 [7h 6d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Qs 9d 9h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Qs 9d 9h] [Td]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [Qs 9d 9h Td] [Ac]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 shows [Ks 7s]
+111 shows [7h 6d]
+222 wins the pot (4)
+
+Hand #397, 222 (181), 111 (419), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [7c 8s]
+Dealt to 222 [As Qd]
+Dealt to 333 [Th 9c]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #398, 111 (417), 222 (183), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3c Ah]
+Dealt to 111 [9d 4h]
+Dealt to 222 [7c Tc]
+111 folds
+222 wins the pot (3)
+
+Hand #399, 222 (184), 111 (416), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ad Tc]
+Dealt to 333 [8c Qd]
+Dealt to 111 [Js Kh]
+222 folds
+111 wins the pot (3)
+
+Hand #400, 111 (417), 222 (183), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [7h 7c]
+Dealt to 222 [Ts Kh]
+Dealt to 333 [Ad 5d]
+111 raises to 4
+222 raises to 8
+111 calls 8
+*** FLOP *** (16) [Jd 4c Tc]
+222 bets 7
+111 calls 7
+*** TURN *** (30) [Jd 4c Tc] [8c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 17
+222 raises to 50
+111 calls 50
+*** RIVER *** (130) [Jd 4c Tc 8c] [3d]
+222 bets 49
+111 calls 49
+111 shows [7h 7c]
+222 shows [Ts Kh]
+222 wins the pot (228)
+
+Hand #401, 222 (297), 111 (303), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [5c Qc]
+Dealt to 111 [5s 6c]
+Dealt to 222 [Js Tc]
+222 folds
+111 wins the pot (3)
+
+Hand #402, 111 (304), 222 (296), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [5c Ks]
+Dealt to 333 [6h Jc]
+Dealt to 111 [9d Qh]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Js 3c Qs]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [Js 3c Qs] [Jd]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 8
+222 folds
+111 wins the pot (16)
+
+Hand #403, 222 (292), 111 (308), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Ks Ts]
+Dealt to 222 [8s 8c]
+Dealt to 333 [Tc 5d]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #404, 111 (306), 222 (294), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Qc 9d]
+Dealt to 111 [7c 3h]
+Dealt to 222 [9s Th]
+111 folds
+222 wins the pot (3)
+
+Hand #405, 222 (295), 111 (305), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8h 5c]
+Dealt to 333 [7s 4d]
+Dealt to 111 [Th 6c]
+222 folds
+111 wins the pot (3)
+
+Hand #406, 111 (306), 222 (294), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Qd Ad]
+Dealt to 222 [Js 4h]
+Dealt to 333 [6h 5c]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #407, 222 (292), 111 (308), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [9c 7d]
+Dealt to 111 [3c 8c]
+Dealt to 222 [Kh Ah]
+222 calls 2
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** FLOP *** (4) [9h Jc 6d]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #408, 111 (306), 222 (294), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Tc 3d]
+Dealt to 333 [9h Th]
+Dealt to 111 [5h Ks]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [7h 6d Jc]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [7h 6d Jc] [8d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 3
+222 folds
+111 wins the pot (11)
+
+Hand #409, 222 (290), 111 (310), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Qs Tc]
+Dealt to 222 [Ts 8h]
+Dealt to 333 [3h 2d]
+222 folds
+111 wins the pot (3)
+
+Hand #410, 111 (311), 222 (289), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [3c Jh]
+Dealt to 111 [Ks Td]
+Dealt to 222 [6s 2h]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #411, 222 (287), 111 (313), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8s Js]
+Dealt to 333 [Jh 8d]
+Dealt to 111 [9d 8h]
+222 folds
+111 wins the pot (3)
+
+Hand #412, 111 (314), 222 (286), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [6c Js]
+Dealt to 222 [9d Ad]
+Dealt to 333 [4c Th]
+111 raises to 4
+222 calls 4
+*** FLOP *** (8) [7c 6s 8c]
+222 bets 3
+111 calls 3
+*** TURN *** (14) [7c 6s 8c] [3c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 14
+222 folds
+111 wins the pot (28)
+
+Hand #413, 222 (279), 111 (321), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [4s Qd]
+Dealt to 111 [Td 8d]
+Dealt to 222 [Ks 4h]
+222 folds
+111 wins the pot (3)
+
+Hand #414, 111 (322), 222 (278), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [2d Qc]
+Dealt to 333 [9s 7c]
+Dealt to 111 [Tc 7h]
+111 raises to 4
+222 calls 4
+*** FLOP *** (8) [7s 8c Th]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 8
+222 folds
+111 wins the pot (16)
+
+Hand #415, 222 (274), 111 (326), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Js Jh]
+Dealt to 222 [9c 4s]
+Dealt to 333 [3d 2c]
+222 folds
+111 wins the pot (3)
+
+Hand #416, 111 (327), 222 (273), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [5c 8s]
+Dealt to 111 [Kh 6s]
+Dealt to 222 [Kc 3s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Ac 6c Ks]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [Ac 6c Ks] [8d]
+222 bets 4
+111 calls 4
+*** RIVER *** (16) [Ac 6c Ks 8d] [4d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 16
+222 calls 16
+111 shows [Kh 6s]
+222 shows [Kc 3s]
+111 wins the pot (48)
+
+Hand #417, 222 (249), 111 (351), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ad 9c]
+Dealt to 333 [Kh 5h]
+Dealt to 111 [2s Tc]
+222 folds
+111 wins the pot (3)
+
+Hand #418, 111 (352), 222 (248), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [4h 3h]
+Dealt to 222 [3s 6s]
+Dealt to 333 [2c 3d]
+111 folds
+222 wins the pot (3)
+
+Hand #419, 222 (249), 111 (351), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [8h Ad]
+Dealt to 111 [Kc Jc]
+Dealt to 222 [4d 6s]
+222 folds
+111 wins the pot (3)
+
+Hand #420, 111 (352), 222 (248), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [3h 5c]
+Dealt to 333 [4c Js]
+Dealt to 111 [Qc 5h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Jh 8c Kc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Jh 8c Kc] [As]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 folds
+111 wins the pot (6)
+
+Hand #421, 222 (246), 111 (354), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [2c 6c]
+Dealt to 222 [As 2s]
+Dealt to 333 [7c 5h]
+222 folds
+111 wins the pot (3)
+
+Hand #422, 111 (355), 222 (245), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [7h 8d]
+Dealt to 111 [2c 3c]
+Dealt to 222 [Ks 3d]
+111 folds
+222 wins the pot (3)
+
+Hand #423, 222 (246), 111 (354), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [7d 2c]
+Dealt to 333 [Tc Ks]
+Dealt to 111 [8h Qs]
+222 folds
+111 wins the pot (3)
+
+Hand #424, 111 (355), 222 (245), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [6c 6d]
+Dealt to 222 [Kc 7d]
+Dealt to 333 [3c 2d]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #425, 222 (243), 111 (357), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Qs 5c]
+Dealt to 111 [5h Jd]
+Dealt to 222 [5s Th]
+222 folds
+111 wins the pot (3)
+
+Hand #426, 111 (358), 222 (242), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Qs 5c]
+Dealt to 333 [2s 6d]
+Dealt to 111 [Kh 7h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [As Ks 3d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [As Ks 3d] [Jd]
+222 bets 2
+111 calls 2
+*** RIVER *** (8) [As Ks 3d Jd] [Jc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 8
+222 folds
+111 wins the pot (16)
+
+Hand #427, 222 (238), 111 (362), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [3h 5s]
+Dealt to 222 [7c 4c]
+Dealt to 333 [9c 5d]
+222 folds
+111 wins the pot (3)
+
+Hand #428, 111 (363), 222 (237), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Qh Ah]
+Dealt to 111 [Kd 6c]
+Dealt to 222 [3c Jh]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Tc 8s 5s]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [Tc 8s 5s] [7d]
+222 bets 2
+111 raises to 4
+222 folds
+111 wins the pot (14)
+
+Hand #429, 222 (231), 111 (369), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [As 5c]
+Dealt to 333 [7c 2c]
+Dealt to 111 [2h 6c]
+222 folds
+111 wins the pot (3)
+
+Hand #430, 111 (370), 222 (230), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [3d Ts]
+Dealt to 222 [3h 3s]
+Dealt to 333 [9s 5h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Qh Ad Qs]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Qh Ad Qs] [7d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [Qh Ad Qs 7d] [Jc]
+222 bets 2
+111 calls 2
+111 shows [3d Ts]
+222 shows [3h 3s]
+222 wins the pot (8)
+
+Hand #431, 222 (234), 111 (366), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [3h 2s]
+Dealt to 111 [Qc Tc]
+Dealt to 222 [Qd 4c]
+222 folds
+111 wins the pot (3)
+
+Hand #432, 111 (367), 222 (233), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Th Kh]
+Dealt to 333 [5h 5c]
+Dealt to 111 [7c 4s]
+111 folds
+222 wins the pot (3)
+
+Hand #433, 222 (234), 111 (366), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [4h Kh]
+Dealt to 222 [8s 7s]
+Dealt to 333 [Qc 7h]
+222 folds
+111 wins the pot (3)
+
+Hand #434, 111 (367), 222 (233), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [2c 5s]
+Dealt to 111 [5c 4s]
+Dealt to 222 [4c 8c]
+111 folds
+222 wins the pot (3)
+
+Hand #435, 222 (234), 111 (366), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3h Ts]
+Dealt to 333 [Kd 5s]
+Dealt to 111 [6c 2s]
+222 folds
+111 wins the pot (3)
+
+Hand #436, 111 (367), 222 (233), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [4h 7c]
+Dealt to 222 [Qd 3d]
+Dealt to 333 [Kh 7s]
+111 folds
+222 wins the pot (3)
+
+Hand #437, 222 (234), 111 (366), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Kc 8d]
+Dealt to 111 [Ks 8c]
+Dealt to 222 [9h 5s]
+222 folds
+111 wins the pot (3)
+
+Hand #438, 111 (367), 222 (233), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Jh 5h]
+Dealt to 333 [8h 7h]
+Dealt to 111 [Jc Kd]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #439, 222 (231), 111 (369), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [5c 9s]
+Dealt to 222 [As Ts]
+Dealt to 333 [Kh Qd]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #440, 111 (367), 222 (233), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Kd Jd]
+Dealt to 111 [3d 8s]
+Dealt to 222 [6s 8d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [6d 2c Qc]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #441, 222 (235), 111 (365), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [6d 3d]
+Dealt to 333 [2c 7d]
+Dealt to 111 [Ks 9s]
+222 folds
+111 wins the pot (3)
+
+Hand #442, 111 (366), 222 (234), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [2s 8c]
+Dealt to 222 [2d Qd]
+Dealt to 333 [3d Ac]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3s 4s Th]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [3s 4s Th] [Qs]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #443, 222 (236), 111 (364), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Ac Qh]
+Dealt to 111 [7s 8s]
+Dealt to 222 [3h 3d]
+222 folds
+111 wins the pot (3)
+
+Hand #444, 111 (365), 222 (235), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [5d Kh]
+Dealt to 333 [Qs Ad]
+Dealt to 111 [4c 5h]
+111 folds
+222 wins the pot (3)
+
+Hand #445, 222 (236), 111 (364), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Ac 9s]
+Dealt to 222 [Th Ks]
+Dealt to 333 [Ah 3h]
+222 folds
+111 wins the pot (3)
+
+Hand #446, 111 (365), 222 (235), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9s As]
+Dealt to 111 [7d Jd]
+Dealt to 222 [Ts 7c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Qd Tc Kh]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 calls 4
+*** TURN *** (12) [Qd Tc Kh] [6c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 6
+222 calls 6
+*** RIVER *** (24) [Qd Tc Kh 6c] [Kd]
+222 bets 11
+111 calls 11
+111 shows [7d Jd]
+222 shows [Ts 7c]
+222 wins the pot (46)
+
+Hand #447, 222 (258), 111 (342), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [5d 4s]
+Dealt to 333 [2s 3s]
+Dealt to 111 [6d Ts]
+222 folds
+111 wins the pot (3)
+
+Hand #448, 111 (343), 222 (257), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ts Kc]
+Dealt to 222 [3s Jd]
+Dealt to 333 [3d Qs]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [9s Ks 4h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #449, 222 (255), 111 (345), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [As Ad]
+Dealt to 111 [2s 3d]
+Dealt to 222 [Th Qh]
+222 folds
+111 wins the pot (3)
+
+Hand #450, 111 (346), 222 (254), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7d Jd]
+Dealt to 333 [4c 7h]
+Dealt to 111 [Ac Kd]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #451, 222 (252), 111 (348), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [2c 3h]
+Dealt to 222 [Ks Jd]
+Dealt to 333 [4c Ts]
+222 folds
+111 wins the pot (3)
+
+Hand #452, 111 (349), 222 (251), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Qh Kc]
+Dealt to 111 [4d 8h]
+Dealt to 222 [8c 4c]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #453, 222 (249), 111 (351), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Qd Ts]
+Dealt to 333 [Ks 6d]
+Dealt to 111 [Ac Kd]
+222 folds
+111 wins the pot (3)
+
+Hand #454, 111 (352), 222 (248), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [5d Ts]
+Dealt to 222 [7c 6h]
+Dealt to 333 [Jh 8s]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #455, 222 (246), 111 (354), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Ad Qh]
+Dealt to 111 [6s 8s]
+Dealt to 222 [3h 2s]
+222 folds
+111 wins the pot (3)
+
+Hand #456, 111 (355), 222 (245), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [9d 4c]
+Dealt to 333 [Jc 3s]
+Dealt to 111 [5d 4d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Qh 2d Qd]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 folds
+111 wins the pot (6)
+
+Hand #457, 222 (243), 111 (357), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [4d 8d]
+Dealt to 222 [Qs Ad]
+Dealt to 333 [Th Jd]
+222 raises to 4
+111 raises to 6
+222 calls 6
+*** FLOP *** (12) [4h 9s 6d]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 4
+111 calls 4
+*** TURN *** (20) [4h 9s 6d] [Tc]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** RIVER *** (20) [4h 9s 6d Tc] [8c]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 shows [4d 8d]
+222 shows [Qs Ad]
+111 wins the pot (20)
+
+Hand #458, 111 (367), 222 (233), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [5c Qd]
+Dealt to 111 [Th 8c]
+Dealt to 222 [8s 5s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Ac Qc 3d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Ac Qc 3d] [Tc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #459, 222 (231), 111 (369), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ks 5s]
+Dealt to 333 [Qc Ts]
+Dealt to 111 [3c 4h]
+222 folds
+111 wins the pot (3)
+
+Hand #460, 111 (370), 222 (230), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Kd 5d]
+Dealt to 222 [Ac 8h]
+Dealt to 333 [Qd 3s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8d 3c Ts]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [8d 3c Ts] [3d]
+222 bets 2
+111 calls 2
+*** RIVER *** (8) [8d 3c Ts 3d] [8s]
+222 bets 5
+111 calls 5
+111 shows [Kd 5d]
+222 shows [Ac 8h]
+222 wins the pot (18)
+
+Hand #461, 222 (239), 111 (361), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Ah 3s]
+Dealt to 111 [5c 6d]
+Dealt to 222 [3c Kh]
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [Qh Ad 4d]
+111 bets 2
+222 calls 2
+*** TURN *** (12) [Qh Ad 4d] [6c]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** RIVER *** (12) [Qh Ad 4d 6c] [9d]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 3
+111 folds
+222 wins the pot (15)
+
+Hand #462, 111 (355), 222 (245), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [5s 2h]
+Dealt to 333 [7s Ts]
+Dealt to 111 [Kh 2d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Th Ad 4d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [Th Ad 4d] [8s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [Th Ad 4d 8s] [Tc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 shows [5s 2h]
+111 shows [Kh 2d]
+111 wins the pot (4)
+
+Hand #463, 222 (243), 111 (357), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [2s Jd]
+Dealt to 222 [Th Jh]
+Dealt to 333 [Qh 6s]
+222 folds
+111 wins the pot (3)
+
+Hand #464, 111 (358), 222 (242), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [6h 2h]
+Dealt to 111 [4c 6c]
+Dealt to 222 [3d Qc]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Kd 2d Ah]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #465, 222 (244), 111 (356), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Qc 6d]
+Dealt to 333 [9c 3s]
+Dealt to 111 [Qh 3d]
+222 folds
+111 wins the pot (3)
+
+Hand #466, 111 (357), 222 (243), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Kh 8s]
+Dealt to 222 [2d 3c]
+Dealt to 333 [5h 4s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3s 4d Ad]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [3s 4d Ad] [9h]
+222 bets 3
+111 raises to 6
+222 calls 6
+*** RIVER *** (20) [3s 4d Ad 9h] [Qh]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+111 shows [Kh 8s]
+222 shows [2d 3c]
+222 wins the pot (20)
+
+Hand #467, 222 (253), 111 (347), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [9d 6s]
+Dealt to 111 [4h 4s]
+Dealt to 222 [4d Td]
+222 folds
+111 wins the pot (3)
+
+Hand #468, 111 (348), 222 (252), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [6s Jd]
+Dealt to 333 [4c Qd]
+Dealt to 111 [2s 3h]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #469, 222 (254), 111 (346), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [3s 8s]
+Dealt to 222 [Tc 5s]
+Dealt to 333 [6c 8d]
+222 folds
+111 wins the pot (3)
+
+Hand #470, 111 (347), 222 (253), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9d Jd]
+Dealt to 111 [Kh 9c]
+Dealt to 222 [Tc 6c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3d 6d Qc]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [3d 6d Qc] [4s]
+222 bets 4
+111 folds
+222 wins the pot (12)
+
+Hand #471, 222 (257), 111 (343), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [5s 4s]
+Dealt to 333 [5c 6s]
+Dealt to 111 [9s 9d]
+222 folds
+111 wins the pot (3)
+
+Hand #472, 111 (344), 222 (256), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Jd As]
+Dealt to 222 [Qc Tc]
+Dealt to 333 [Ks 4h]
+111 calls 2
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [9d 6h 5s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (8) [9d 6h 5s] [2s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (8) [9d 6h 5s 2s] [5h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+111 shows [Jd As]
+222 shows [Qc Tc]
+111 wins the pot (8)
+
+Hand #473, 222 (252), 111 (348), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [2h Ac]
+Dealt to 111 [7d 6d]
+Dealt to 222 [4c Qs]
+222 folds
+111 wins the pot (3)
+
+Hand #474, 111 (349), 222 (251), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [5d 8d]
+Dealt to 333 [7s 3s]
+Dealt to 111 [4d 7d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8c Kh 6s]
+222 bets 2
+111 folds
+222 wins the pot (6)
+
+Hand #475, 222 (253), 111 (347), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [9s 5s]
+Dealt to 222 [6s Kc]
+Dealt to 333 [Ad 9d]
+222 folds
+111 wins the pot (3)
+
+Hand #476, 111 (348), 222 (252), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [6d Jc]
+Dealt to 111 [Kd Ks]
+Dealt to 222 [Td 6s]
+111 raises to 6
+222 folds
+111 wins the pot (8)
+
+Hand #477, 222 (250), 111 (350), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4h Qs]
+Dealt to 333 [2h Ts]
+Dealt to 111 [6s 5d]
+222 folds
+111 wins the pot (3)
+
+Hand #478, 111 (351), 222 (249), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Jd 3h]
+Dealt to 222 [Jh Ad]
+Dealt to 333 [9h 3d]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #479, 222 (251), 111 (349), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [2d 6c]
+Dealt to 111 [9c 2s]
+Dealt to 222 [5d 3h]
+222 folds
+111 wins the pot (3)
+
+Hand #480, 111 (350), 222 (250), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7s 6h]
+Dealt to 333 [7d Ks]
+Dealt to 111 [9d 8d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3h 6d 4c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** TURN *** (8) [3h 6d 4c] [2d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 3
+222 calls 3
+*** RIVER *** (14) [3h 6d 4c 2d] [Td]
+222 bets 5
+111 calls 5
+222 shows [7s 6h]
+111 shows [9d 8d]
+111 wins the pot (24)
+
+Hand #481, 222 (238), 111 (362), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Js Jh]
+Dealt to 222 [Ac Jd]
+Dealt to 333 [7d Kc]
+222 raises to 4
+111 raises to 7
+222 raises to 14
+111 calls 14
+*** FLOP *** (28) [2s 5s 7c]
+111 bets 28
+222 folds
+111 wins the pot (56)
+
+Hand #482, 111 (376), 222 (224), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [As 2h]
+Dealt to 111 [6s 2c]
+Dealt to 222 [6d 3c]
+111 folds
+222 wins the pot (3)
+
+Hand #483, 222 (225), 111 (375), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Qh Qd]
+Dealt to 333 [Ts 2c]
+Dealt to 111 [Kh 9h]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #484, 111 (373), 222 (227), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [5d 9s]
+Dealt to 222 [Qs 9h]
+Dealt to 333 [Kc Th]
+111 raises to 4
+222 calls 4
+*** FLOP *** (8) [2h Ac Jc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** TURN *** (12) [2h Ac Jc] [7h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** RIVER *** (16) [2h Ac Jc 7h] [9c]
+222 bets 7
+111 calls 7
+111 shows [5d 9s]
+222 shows [Qs 9h]
+222 wins the pot (30)
+
+Hand #485, 222 (242), 111 (358), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Kh 5d]
+Dealt to 111 [4c 7h]
+Dealt to 222 [6d 3c]
+222 folds
+111 wins the pot (3)
+
+Hand #486, 111 (359), 222 (241), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [5c 6d]
+Dealt to 333 [7c 5h]
+Dealt to 111 [3c Kd]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [4h 4c Qs]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 3
+222 folds
+111 wins the pot (7)
+
+Hand #487, 222 (239), 111 (361), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [5d 7c]
+Dealt to 222 [4c 9s]
+Dealt to 333 [9h Qh]
+222 folds
+111 wins the pot (3)
+
+Hand #488, 111 (362), 222 (238), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Js Ts]
+Dealt to 111 [As 7c]
+Dealt to 222 [Qs Qc]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #489, 222 (240), 111 (360), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9d 7h]
+Dealt to 333 [As 8s]
+Dealt to 111 [2h 4d]
+222 folds
+111 wins the pot (3)
+
+Hand #490, 111 (361), 222 (239), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [3s 6s]
+Dealt to 222 [Ad 8s]
+Dealt to 333 [Kh 2c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [4h Ts 7s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [4h Ts 7s] [5s]
+222 bets 2
+111 calls 2
+*** RIVER *** (8) [4h Ts 7s 5s] [8h]
+222 bets 4
+111 calls 4
+111 shows [3s 6s]
+222 shows [Ad 8s]
+111 wins the pot (16)
+
+Hand #491, 222 (231), 111 (369), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Kd 6c]
+Dealt to 111 [8c 4s]
+Dealt to 222 [4d Ks]
+222 folds
+111 wins the pot (3)
+
+Hand #492, 111 (370), 222 (230), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [5h Th]
+Dealt to 333 [9c 4h]
+Dealt to 111 [3c Td]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [8h Tc Ad]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [8h Tc Ad] [7d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (8) [8h Tc Ad 7d] [Kc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 shows [5h Th]
+111 shows [3c Td]
+222 ties for the pot (4)
+111 ties for the pot (4)
+
+Hand #493, 222 (230), 111 (370), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Jh 7s]
+Dealt to 222 [Ah Ac]
+Dealt to 333 [4s 7d]
+222 raises to 5
+111 folds
+222 wins the pot (7)
+
+Hand #494, 111 (368), 222 (232), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ad 5c]
+Dealt to 111 [Jc Th]
+Dealt to 222 [4s 3c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Tc Ac 2d]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [Tc Ac 2d] [Js]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 8
+222 folds
+111 wins the pot (16)
+
+Hand #495, 222 (228), 111 (372), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [5h Td]
+Dealt to 333 [Jh 9c]
+Dealt to 111 [Th 6h]
+222 folds
+111 wins the pot (3)
+
+Hand #496, 111 (373), 222 (227), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ah 9s]
+Dealt to 222 [9h Ts]
+Dealt to 333 [7s 5c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [4d As 2c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #497, 222 (225), 111 (375), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [2h 9c]
+Dealt to 111 [Js 4s]
+Dealt to 222 [Ad 4d]
+222 folds
+111 wins the pot (3)
+
+Hand #498, 111 (376), 222 (224), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [4s 4d]
+Dealt to 333 [Kh 6h]
+Dealt to 111 [Qd 9c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [5h Ks 9s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #499, 222 (222), 111 (378), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [9d Tc]
+Dealt to 222 [4h 8d]
+Dealt to 333 [Qd 3d]
+222 folds
+111 wins the pot (3)
+
+Hand #500, 111 (379), 222 (221), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9s Td]
+Dealt to 111 [5s 6h]
+Dealt to 222 [Jh 3c]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #501, 222 (219), 111 (381), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8d Kd]
+Dealt to 333 [5h Tc]
+Dealt to 111 [As 9d]
+222 folds
+111 wins the pot (3)
+
+Hand #502, 111 (382), 222 (218), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [9d Jd]
+Dealt to 222 [6d 9s]
+Dealt to 333 [3c Ac]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [As Ks Tc]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [As Ks Tc] [3s]
+222 bets 3
+111 calls 3
+*** RIVER *** (14) [As Ks Tc 3s] [5h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+111 shows [9d Jd]
+222 shows [6d 9s]
+111 wins the pot (14)
+
+Hand #503, 222 (211), 111 (389), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [2s Kd]
+Dealt to 111 [3d 7s]
+Dealt to 222 [6d Qh]
+222 folds
+111 wins the pot (3)
+
+Hand #504, 111 (390), 222 (210), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7c As]
+Dealt to 333 [7h 2c]
+Dealt to 111 [5s 7s]
+111 raises to 4
+222 calls 4
+*** FLOP *** (8) [Jh 2d 5c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (8) [Jh 2d 5c] [Jc]
+222 bets 3
+111 calls 3
+*** RIVER *** (14) [Jh 2d 5c Jc] [Kh]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 shows [7c As]
+111 shows [5s 7s]
+111 wins the pot (14)
+
+Hand #505, 222 (203), 111 (397), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [4d Qs]
+Dealt to 222 [4h Tc]
+Dealt to 333 [7d 5s]
+222 folds
+111 wins the pot (3)
+
+Hand #506, 111 (398), 222 (202), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [5s 8s]
+Dealt to 111 [As Ad]
+Dealt to 222 [8h 4s]
+111 raises to 6
+222 folds
+111 wins the pot (8)
+
+Hand #507, 222 (200), 111 (400), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3d 7h]
+Dealt to 333 [Td 9s]
+Dealt to 111 [Kd 2c]
+222 folds
+111 wins the pot (3)
+
+Hand #508, 111 (401), 222 (199), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [As 2s]
+Dealt to 222 [9s 9c]
+Dealt to 333 [Jd 6h]
+111 calls 2
+222 raises to 4
+111 raises to 6
+222 calls 6
+*** FLOP *** (12) [8d Qs Jh]
+222 bets 6
+111 folds
+222 wins the pot (18)
+
+Hand #509, 222 (205), 111 (395), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [7d Kh]
+Dealt to 111 [8h Kc]
+Dealt to 222 [7s Js]
+222 folds
+111 wins the pot (3)
+
+Hand #510, 111 (396), 222 (204), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [6s 5s]
+Dealt to 333 [3h Ac]
+Dealt to 111 [8s 8c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Kh 8d Ad]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #511, 222 (202), 111 (398), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [6h 8s]
+Dealt to 222 [4h Tc]
+Dealt to 333 [Kc Kh]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #512, 111 (396), 222 (204), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [9h 2h]
+Dealt to 111 [5h 8c]
+Dealt to 222 [As 2d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Kd 8h Kc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 calls 4
+*** TURN *** (12) [Kd 8h Kc] [Qc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 12
+222 calls 12
+*** RIVER *** (36) [Kd 8h Kc Qc] [2s]
+222 bets 15
+111 raises to 81
+222 calls 81
+111 shows [5h 8c]
+222 shows [As 2d]
+111 wins the pot (198)
+
+Hand #513, 222 (105), 111 (495), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Jc 9h]
+Dealt to 333 [3s 6d]
+Dealt to 111 [6c 3d]
+222 folds
+111 wins the pot (3)
+
+Hand #514, 111 (496), 222 (104), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [4c 6h]
+Dealt to 222 [Qh 4d]
+Dealt to 333 [5c 2h]
+111 folds
+222 wins the pot (3)
+
+Hand #515, 222 (105), 111 (495), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [4s Kh]
+Dealt to 111 [7d Td]
+Dealt to 222 [4h 9s]
+222 folds
+111 wins the pot (3)
+
+Hand #516, 111 (496), 222 (104), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [6c 9h]
+Dealt to 333 [Qh 5d]
+Dealt to 111 [9d Ac]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [2h 9s 9c]
+222 bets 3
+111 raises to 13
+222 calls 13
+*** TURN *** (30) [2h 9s 9c] [4h]
+222 bets 17
+111 calls 17
+*** RIVER *** (64) [2h 9s 9c 4h] [Qc]
+222 bets 37
+111 calls 37
+222 shows [6c 9h]
+111 shows [9d Ac]
+111 wins the pot (138)
+
+Hand #517, 222 (35), 111 (565), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [8s Qh]
+Dealt to 222 [2c 9h]
+Dealt to 333 [6d 7d]
+222 folds
+111 wins the pot (3)
+
+Hand #518, 111 (566), 222 (34), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Kh 5s]
+Dealt to 111 [9c Js]
+Dealt to 222 [Tc Kd]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #519, 222 (36), 111 (564), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4h As]
+Dealt to 333 [4c 6d]
+Dealt to 111 [Kd 5s]
+222 folds
+111 wins the pot (3)
+
+Hand #520, 111 (565), 222 (35), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Jc Ad]
+Dealt to 222 [8d 8c]
+Dealt to 333 [5s Qs]
+111 calls 2
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [6c 3h 9h]
+222 bets 4
+111 calls 4
+*** TURN *** (16) [6c 3h 9h] [7h]
+222 bets 6
+111 folds
+222 wins the pot (22)
+
+Hand #521, 222 (43), 111 (557), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [9d Qh]
+Dealt to 111 [Ks Td]
+Dealt to 222 [8c Jd]
+222 folds
+111 wins the pot (3)
+
+Hand #522, 111 (558), 222 (42), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [5s Qd]
+Dealt to 333 [9h Ks]
+Dealt to 111 [4d 3c]
+111 folds
+222 wins the pot (3)
+
+Hand #523, 222 (43), 111 (557), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [7s 8d]
+Dealt to 222 [Qd Qc]
+Dealt to 333 [2s 9d]
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #524, 111 (555), 222 (45), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [6c 4h]
+Dealt to 111 [2d 9s]
+Dealt to 222 [6s 5h]
+111 folds
+222 wins the pot (3)
+
+Hand #525, 222 (46), 111 (554), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8s 9d]
+Dealt to 333 [3d Qc]
+Dealt to 111 [Qs 7c]
+222 folds
+111 wins the pot (3)
+
+Hand #526, 111 (555), 222 (45), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [4d Th]
+Dealt to 222 [8d Kh]
+Dealt to 333 [9h Jh]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [4h Qd 6c]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 folds
+111 wins the pot (8)
+
+Hand #527, 222 (43), 111 (557), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [8s 9d]
+Dealt to 111 [Kc 5c]
+Dealt to 222 [3s Kh]
+222 folds
+111 wins the pot (3)
+
+Hand #528, 111 (558), 222 (42), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [3c Ah]
+Dealt to 333 [Ac 5s]
+Dealt to 111 [Qd 9h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [5h 4s 3d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [5h 4s 3d] [Qs]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [5h 4s 3d Qs] [4d]
+222 bets 2
+111 raises to 10
+222 folds
+111 wins the pot (16)
+
+Hand #529, 222 (38), 111 (562), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Qc Qd]
+Dealt to 222 [Ts 6c]
+Dealt to 333 [2h 2c]
+222 folds
+111 wins the pot (3)
+
+Hand #530, 111 (563), 222 (37), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [5d 9d]
+Dealt to 111 [2h 2d]
+Dealt to 222 [2c 9h]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [9c 6c 3d]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [9c 6c 3d] [8h]
+222 bets 4
+111 calls 4
+*** RIVER *** (16) [9c 6c 3d 8h] [Jh]
+222 bets 7
+111 raises to 14
+222 calls 14
+111 shows [2h 2d]
+222 shows [2c 9h]
+222 wins the pot (44)
+
+Hand #531, 222 (59), 111 (541), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [6s 7d]
+Dealt to 333 [Jh 8h]
+Dealt to 111 [Ah 3c]
+222 folds
+111 wins the pot (3)
+
+Hand #532, 111 (542), 222 (58), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ks 6s]
+Dealt to 222 [8s 3d]
+Dealt to 333 [7d 6c]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #533, 222 (56), 111 (544), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Qh 7d]
+Dealt to 111 [Js As]
+Dealt to 222 [7h 3c]
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [Kd 8h Jh]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 2
+111 calls 2
+*** TURN *** (12) [Kd 8h Jh] [8c]
+111 bets 8
+222 folds
+111 wins the pot (20)
+
+Hand #534, 111 (550), 222 (50), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [8h Qc]
+Dealt to 333 [Js 8s]
+Dealt to 111 [Jc Th]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [Ad Qs 5s]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [Ad Qs 5s] [Qd]
+222 bets 5
+111 calls 5
+*** RIVER *** (18) [Ad Qs 5s Qd] [9c]
+222 bets 11
+111 calls 11
+222 shows [8h Qc]
+111 shows [Jc Th]
+222 wins the pot (40)
+
+Hand #535, 222 (70), 111 (530), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Tc 4c]
+Dealt to 222 [3c Ac]
+Dealt to 333 [3d 6s]
+222 folds
+111 wins the pot (3)
+
+Hand #536, 111 (531), 222 (69), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Qh 6c]
+Dealt to 111 [4h Kd]
+Dealt to 222 [6h 9c]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [9h Kc 2d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 4
+222 calls 4
+*** TURN *** (12) [9h Kc 2d] [Th]
+222 bets 5
+111 calls 5
+*** RIVER *** (22) [9h Kc 2d Th] [Ts]
+222 bets 10
+111 calls 10
+111 shows [4h Kd]
+222 shows [6h 9c]
+111 wins the pot (42)
+
+Hand #537, 222 (48), 111 (552), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [9s Jh]
+Dealt to 333 [6s 7d]
+Dealt to 111 [5s Ac]
+222 folds
+111 wins the pot (3)
+
+Hand #538, 111 (553), 222 (47), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Tc 8h]
+Dealt to 222 [Kh 7h]
+Dealt to 333 [4c 7d]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [6d 3h Ks]
+222 bets 3
+111 folds
+222 wins the pot (7)
+
+Hand #539, 222 (49), 111 (551), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [9s 2d]
+Dealt to 111 [5d 5c]
+Dealt to 222 [Ad 2h]
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [Ac 3c 9d]
+111 bets 2
+222 calls 2
+*** TURN *** (12) [Ac 3c 9d] [Qh]
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+222 bets 7
+111 folds
+222 wins the pot (19)
+
+Hand #540, 111 (545), 222 (55), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7c 8s]
+Dealt to 333 [5d 5c]
+Dealt to 111 [3s 8c]
+111 folds
+222 wins the pot (3)
+
+Hand #541, 222 (56), 111 (544), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [2s Jh]
+Dealt to 222 [Kc 9h]
+Dealt to 333 [2h 2d]
+222 folds
+111 wins the pot (3)
+
+Hand #542, 111 (545), 222 (55), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [5c Qh]
+Dealt to 111 [3d Ks]
+Dealt to 222 [7c Td]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [5d Ts 2d]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [5d Ts 2d] [Th]
+222 bets 5
+111 calls 5
+*** RIVER *** (18) [5d Ts 2d Th] [Kh]
+222 bets 11
+111 calls 11
+111 shows [3d Ks]
+222 shows [7c Td]
+222 wins the pot (40)
+
+Hand #543, 222 (75), 111 (525), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [3c Td]
+Dealt to 333 [4s 7d]
+Dealt to 111 [Ah Jc]
+222 folds
+111 wins the pot (3)
+
+Hand #544, 111 (526), 222 (74), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [3h 5s]
+Dealt to 222 [Jh As]
+Dealt to 333 [Tc Ts]
+111 folds
+222 wins the pot (3)
+
+Hand #545, 222 (75), 111 (525), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Kd 8d]
+Dealt to 111 [Qc Ad]
+Dealt to 222 [7s Th]
+222 folds
+111 wins the pot (3)
+
+Hand #546, 111 (526), 222 (74), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [8s 9c]
+Dealt to 333 [8d 4s]
+Dealt to 111 [Ad 5s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [3s 8h 9d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 2
+222 calls 2
+*** TURN *** (8) [3s 8h 9d] [Ks]
+222 bets 5
+111 calls 5
+*** RIVER *** (18) [3s 8h 9d Ks] [Qh]
+222 bets 10
+111 folds
+222 wins the pot (28)
+
+Hand #547, 222 (83), 111 (517), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [4h As]
+Dealt to 222 [6h Jh]
+Dealt to 333 [Ac 7h]
+222 folds
+111 wins the pot (3)
+
+Hand #548, 111 (518), 222 (82), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Jd Ad]
+Dealt to 111 [4c Ks]
+Dealt to 222 [Ah 6h]
+111 calls 2
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [5h 2d Kc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 8
+222 calls 8
+*** TURN *** (24) [5h 2d Kc] [8h]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 24
+222 calls 24
+*** RIVER *** (72) [5h 2d Kc 8h] [Tc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 46
+222 folds
+111 wins the pot (118)
+
+Hand #549, 222 (46), 111 (554), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [4c 9c]
+Dealt to 333 [Ah 2s]
+Dealt to 111 [4s 8h]
+222 folds
+111 wins the pot (3)
+
+Hand #550, 111 (555), 222 (45), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Qs Qc]
+Dealt to 222 [2d Ks]
+Dealt to 333 [8d 5d]
+111 raises to 6
+222 folds
+111 wins the pot (8)
+
+Hand #551, 222 (43), 111 (557), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [8s Jd]
+Dealt to 111 [Qd Ac]
+Dealt to 222 [4s 8h]
+222 folds
+111 wins the pot (3)
+
+Hand #552, 111 (558), 222 (42), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [6h Qc]
+Dealt to 333 [7h Kd]
+Dealt to 111 [Ac 9s]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #553, 222 (40), 111 (560), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Jc 3s]
+Dealt to 222 [Kc 7s]
+Dealt to 333 [5h 6h]
+222 folds
+111 wins the pot (3)
+
+Hand #554, 111 (561), 222 (39), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [4c Th]
+Dealt to 111 [6s 7s]
+Dealt to 222 [4d Qs]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [9c Kc 2s]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** TURN *** (4) [9c Kc 2s] [2d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+*** RIVER *** (4) [9c Kc 2s 2d] [Jc]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+### ILLEGAL ACTION: Fold [player=111]
+111 checks
+111 shows [6s 7s]
+222 shows [4d Qs]
+222 wins the pot (4)
+
+Hand #555, 222 (41), 111 (559), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [8d As]
+Dealt to 333 [3h 6c]
+Dealt to 111 [8h 9s]
+222 folds
+111 wins the pot (3)
+
+Hand #556, 111 (560), 222 (40), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [5s Ts]
+Dealt to 222 [6c 6s]
+Dealt to 333 [Jc Qc]
+111 calls 2
+222 raises to 4
+111 folds
+222 wins the pot (6)
+
+Hand #557, 222 (42), 111 (558), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [Jh 9c]
+Dealt to 111 [Td 5d]
+Dealt to 222 [7c Qs]
+222 folds
+111 wins the pot (3)
+
+Hand #558, 111 (559), 222 (41), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [Js 9d]
+Dealt to 333 [6d Ks]
+Dealt to 111 [2c 5c]
+111 folds
+222 wins the pot (3)
+
+Hand #559, 222 (42), 111 (558), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [4c 3d]
+Dealt to 222 [9h 7c]
+Dealt to 333 [Kc 4h]
+222 folds
+111 wins the pot (3)
+
+Hand #560, 111 (559), 222 (41), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Jd Qd]
+Dealt to 111 [3d 3s]
+Dealt to 222 [Kh 2s]
+111 calls 2
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+*** FLOP *** (4) [7h Qs Ts]
+222 bets 2
+111 calls 2
+*** TURN *** (8) [7h Qs Ts] [7c]
+222 bets 3
+111 calls 3
+*** RIVER *** (14) [7h Qs Ts 7c] [6d]
+### ILLEGAL ACTION: Fold [player=222]
+222 checks
+111 bets 11
+222 raises to 24
+111 calls 24
+111 shows [3d 3s]
+222 shows [Kh 2s]
+111 wins the pot (62)
+
+Hand #561, 222 (10), 111 (590), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [2d Qc]
+Dealt to 333 [8d Td]
+Dealt to 111 [9c Qs]
+222 folds
+111 wins the pot (3)
+
+Hand #562, 111 (591), 222 (9), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 111 [Ad 6s]
+Dealt to 222 [3s Th]
+Dealt to 333 [Kh Qc]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #563, 222 (7), 111 (593), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 333 [5s 5d]
+Dealt to 111 [Tc 8d]
+Dealt to 222 [Ts 4h]
+222 folds
+111 wins the pot (3)
+
+Hand #564, 111 (594), 222 (6), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 222 [7s Kd]
+Dealt to 333 [3d Qc]
+Dealt to 111 [9s As]
+111 raises to 4
+222 folds
+111 wins the pot (6)
+
+Hand #565, 222 (4), 111 (596), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 111 [Qc Jc]
+Dealt to 222 [Qh 6s]
+Dealt to 333 [3s Th]
+222 folds
+111 wins the pot (3)
+
+Hand #566, 111 (597), 222 (3), 333 (0)
+111 posts the blind of 1
+222 posts the blind of 2
+Dealt to 333 [Ah 4s]
+Dealt to 111 [Qh Jc]
+Dealt to 222 [As Jd]
+111 raises to 3
+222 calls 3
+*** FLOP *** (6) [9c Kd 2d]
+*** TURN *** (6) [9c Kd 2d] [Kh]
+*** RIVER *** (6) [9c Kd 2d Kh] [8h]
+111 shows [Qh Jc]
+222 shows [As Jd]
+222 wins the pot (6)
+
+Hand #567, 222 (6), 111 (594), 333 (0)
+222 posts the blind of 1
+111 posts the blind of 2
+Dealt to 222 [Ac Qh]
+Dealt to 333 [As Ts]
+Dealt to 111 [6s 6d]
+222 raises to 4
+111 calls 4
+*** FLOP *** (8) [Th 4d 5c]
+111 bets 2
+222 calls 2
+*** TURN *** (12) [Th 4d 5c] [7c]
+*** RIVER *** (12) [Th 4d 5c 7c] [9c]
+222 shows [Ac Qh]
+111 shows [6s 6d]
+111 wins the pot (12)
+
