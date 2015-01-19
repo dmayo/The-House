@@ -224,12 +224,12 @@ public class Communicator {
                     // At the end, engine will allow bot to send key/value pairs to store.
                     // FINISH indicates no more to store.
                     for(Player player : players){
-                        System.out.println(player.getName());
-                        System.out.println(player.getStats().values());
-                        System.out.println();
+                        if(!player.getName().equals(bot.getName())){
+                            outStream.println("DELETE "+StringEncode.encodeInt(Integer.valueOf(player.getName())));
+                            outStream.println("PUT "+StringEncode.encodeInt(Integer.valueOf(player.getName()))+" "+player.getStats().values());
+                        }
                     }
-                    outStream.println("DELETE 123456");
-                    outStream.println("PUT 123456 123456789");
+                    
                     outStream.println("FINISH");
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
                     //NEWGAME yourName opp1Name opp2Name stackSize bb numHands timeBank

@@ -283,6 +283,17 @@ public class Stats {
     
     
     public String values(){
+        //df.format(0.912385);
+        String out = "";
+        out+=currentVPIP.get(Position.FIRST)+currentVPIP.get(Position.MIDDLE)+currentVPIP.get(Position.LAST);
+        out+=currentPFR.get(Position.FIRST)+currentPFR.get(Position.MIDDLE)+currentPFR.get(Position.LAST);
+        out+=currentWTSD;
+        out+=currentW$SD;
+        out+=currentOverallVPIP;
+        out+=currentOverallPFR;
+    }
+/*
+    public String values(){
         String numStreetsSeenData = "S";
         for(Street street : numStreetsSeen.keySet()){
             numStreetsSeenData +=  " ";
@@ -327,5 +338,5 @@ public class Stats {
                            + " " + numCouldDoActionPreFlopData + " " + numWTSDData + " " + numW$SDData;
         
     }
-    
+    */
 }
