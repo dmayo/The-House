@@ -251,7 +251,10 @@ public class Communicator {
                         String playerName = Integer.toString(StringEncode.decodeInt(inputWords[1]));
                         String stringVal = "";
                         for(int i=2;i<inputWords.length;i++){
-                            stringVal += " " + inputWords[i];
+                            if(i>2){
+                                stringVal += " ";
+                            }
+                            stringVal += inputWords[i];
                         }
                         char[] values = stringVal.toCharArray();
                         
