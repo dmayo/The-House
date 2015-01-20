@@ -1,0 +1,4889 @@
+6.176 MIT Pokerbots - RANDOM6 vs PATBOT6 vs STATBOT6 (stack=200, bb=2)
+Hand #1, RANDOM6 (200), PATBOT6 (200), STATBOT6 (200)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [9d 3c]
+Dealt to PATBOT6 [Qd 5s]
+Dealt to STATBOT6 [8d 6h]
+RANDOM6 calls 2
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 folds
+STATBOT6 wins the pot (7)
+
+Hand #2, STATBOT6 (203), RANDOM6 (198), PATBOT6 (199)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ac Ah]
+Dealt to RANDOM6 [Qh 8c]
+Dealt to PATBOT6 [Ad 5h]
+STATBOT6 calls 2
+RANDOM6 folds
+PATBOT6 raises to 4
+STATBOT6 raises to 13
+PATBOT6 raises to 22
+STATBOT6 calls 22
+*** FLOP *** (45) [7c 6s Td]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+STATBOT6 bets 45
+PATBOT6 folds
+STATBOT6 wins the pot (90)
+
+Hand #3, PATBOT6 (177), STATBOT6 (226), RANDOM6 (197)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [7s Kd]
+Dealt to STATBOT6 [Ad 9d]
+Dealt to RANDOM6 [6d 3c]
+PATBOT6 folds
+STATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [8s 6c 6s]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** TURN *** (4) [8s 6c 6s] [6h]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** RIVER *** (4) [8s 6c 6s 6h] [9s]
+STATBOT6 bets 4
+RANDOM6 calls 4
+STATBOT6 shows [Ad 9d]
+RANDOM6 shows [6d 3c]
+RANDOM6 wins the pot (12)
+
+Hand #4, RANDOM6 (203), PATBOT6 (177), STATBOT6 (220)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [9s As]
+Dealt to PATBOT6 [5d 6c]
+Dealt to STATBOT6 [Jd 5c]
+RANDOM6 folds
+PATBOT6 folds
+STATBOT6 wins the pot (3)
+
+Hand #5, STATBOT6 (221), RANDOM6 (203), PATBOT6 (176)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ac Tc]
+Dealt to RANDOM6 [4d 8h]
+Dealt to PATBOT6 [6c 5d]
+STATBOT6 folds
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [Ts 8c Qs]
+RANDOM6 bets 3
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #6, PATBOT6 (174), STATBOT6 (221), RANDOM6 (205)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [7d Qh]
+Dealt to STATBOT6 [3d 7s]
+Dealt to RANDOM6 [Ks Kd]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #7, RANDOM6 (206), PATBOT6 (174), STATBOT6 (220)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Ad Js]
+Dealt to PATBOT6 [Qh 4c]
+Dealt to STATBOT6 [2s Ah]
+RANDOM6 raises to 5
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (8)
+
+Hand #8, STATBOT6 (218), RANDOM6 (209), PATBOT6 (173)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [3s Ts]
+Dealt to RANDOM6 [4d Kd]
+Dealt to PATBOT6 [Td 7h]
+STATBOT6 folds
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #9, PATBOT6 (171), STATBOT6 (218), RANDOM6 (211)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [9d 2s]
+Dealt to STATBOT6 [Qc 2d]
+Dealt to RANDOM6 [9c Qh]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #10, RANDOM6 (212), PATBOT6 (171), STATBOT6 (217)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [6h Jh]
+Dealt to PATBOT6 [6s Kd]
+Dealt to STATBOT6 [Ac 6c]
+RANDOM6 folds
+PATBOT6 raises to 4
+STATBOT6 folds
+PATBOT6 wins the pot (6)
+
+Hand #11, STATBOT6 (215), RANDOM6 (212), PATBOT6 (173)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [4d Jd]
+Dealt to RANDOM6 [8d Th]
+Dealt to PATBOT6 [8h As]
+STATBOT6 folds
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #12, PATBOT6 (174), STATBOT6 (215), RANDOM6 (211)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qh 6s]
+Dealt to STATBOT6 [Jh 3c]
+Dealt to RANDOM6 [8d Js]
+PATBOT6 calls 2
+STATBOT6 folds
+RANDOM6 checks
+*** FLOP *** (5) [Kd Ks 2d]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** TURN *** (5) [Kd Ks 2d] [8c]
+RANDOM6 checks
+PATBOT6 bets 2
+RANDOM6 folds
+PATBOT6 wins the pot (7)
+
+Hand #13, RANDOM6 (209), PATBOT6 (177), STATBOT6 (214)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Kc Jc]
+Dealt to PATBOT6 [As Qs]
+Dealt to STATBOT6 [Js 8c]
+RANDOM6 folds
+PATBOT6 calls 2
+STATBOT6 raises to 4
+PATBOT6 raises to 6
+STATBOT6 folds
+PATBOT6 wins the pot (10)
+
+Hand #14, STATBOT6 (210), RANDOM6 (209), PATBOT6 (181)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Kc Jh]
+Dealt to RANDOM6 [2s 2h]
+Dealt to PATBOT6 [Qc 3h]
+STATBOT6 folds
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #15, PATBOT6 (182), STATBOT6 (210), RANDOM6 (208)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [7s Ks]
+Dealt to STATBOT6 [Qd Th]
+Dealt to RANDOM6 [4c 4h]
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 folds
+STATBOT6 wins the pot (6)
+
+Hand #16, RANDOM6 (206), PATBOT6 (182), STATBOT6 (212)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [4s Td]
+Dealt to PATBOT6 [5s 7d]
+Dealt to STATBOT6 [Ad Ah]
+RANDOM6 folds
+PATBOT6 folds
+STATBOT6 wins the pot (3)
+
+Hand #17, STATBOT6 (213), RANDOM6 (206), PATBOT6 (181)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [5d Ad]
+Dealt to RANDOM6 [4s 7d]
+Dealt to PATBOT6 [Kd Qh]
+STATBOT6 folds
+RANDOM6 raises to 4
+PATBOT6 calls 4
+*** FLOP *** (8) [As Ac Jc]
+RANDOM6 bets 7
+PATBOT6 folds
+RANDOM6 wins the pot (15)
+
+Hand #18, PATBOT6 (177), STATBOT6 (213), RANDOM6 (210)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Ad 5s]
+Dealt to STATBOT6 [Kd 7d]
+Dealt to RANDOM6 [Kc Tc]
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 raises to 8
+STATBOT6 folds
+RANDOM6 wins the pot (12)
+
+Hand #19, RANDOM6 (214), PATBOT6 (177), STATBOT6 (209)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Kh 5c]
+Dealt to PATBOT6 [3s Kd]
+Dealt to STATBOT6 [6h Qs]
+RANDOM6 calls 2
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (9) [Ts Tc 4d]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** TURN *** (9) [Ts Tc 4d] [Jc]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 bets 3
+STATBOT6 folds
+RANDOM6 wins the pot (12)
+
+Hand #20, STATBOT6 (205), RANDOM6 (219), PATBOT6 (176)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ah Qd]
+Dealt to RANDOM6 [7d Tc]
+Dealt to PATBOT6 [Ad 8d]
+STATBOT6 folds
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #21, PATBOT6 (174), STATBOT6 (205), RANDOM6 (221)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [7h 7c]
+Dealt to STATBOT6 [Ks 6h]
+Dealt to RANDOM6 [6s 6c]
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [5d 8c Td]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 bets 6
+STATBOT6 calls 6
+*** TURN *** (20) [5d 8c Td] [3s]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** RIVER *** (20) [5d 8c Td 3s] [9h]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 bets 15
+STATBOT6 folds
+RANDOM6 wins the pot (35)
+
+Hand #22, RANDOM6 (231), PATBOT6 (174), STATBOT6 (195)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [7h 8h]
+Dealt to PATBOT6 [3s 6s]
+Dealt to STATBOT6 [9s 6d]
+RANDOM6 raises to 4
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #23, STATBOT6 (193), RANDOM6 (234), PATBOT6 (173)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ks Qc]
+Dealt to RANDOM6 [8s Th]
+Dealt to PATBOT6 [7d 8d]
+STATBOT6 folds
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #24, PATBOT6 (171), STATBOT6 (193), RANDOM6 (236)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [9d 2c]
+Dealt to STATBOT6 [9h 7h]
+Dealt to RANDOM6 [Td 3s]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #25, RANDOM6 (237), PATBOT6 (171), STATBOT6 (192)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Jh 4s]
+Dealt to PATBOT6 [Kh 2d]
+Dealt to STATBOT6 [Jd 7s]
+RANDOM6 calls 2
+PATBOT6 folds
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+*** FLOP *** (5) [3s Td Th]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** TURN *** (5) [3s Td Th] [8h]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 bets 4
+STATBOT6 folds
+RANDOM6 wins the pot (9)
+
+Hand #26, STATBOT6 (190), RANDOM6 (240), PATBOT6 (170)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [4h 5c]
+Dealt to RANDOM6 [Kd Qc]
+Dealt to PATBOT6 [8c Ks]
+STATBOT6 folds
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 10
+PATBOT6 calls 10
+*** FLOP *** (20) [5s 2d 2c]
+RANDOM6 checks
+PATBOT6 bets 4
+RANDOM6 folds
+PATBOT6 wins the pot (24)
+
+Hand #27, PATBOT6 (180), STATBOT6 (190), RANDOM6 (230)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Kc 5h]
+Dealt to STATBOT6 [Ah 9d]
+Dealt to RANDOM6 [Ts Jc]
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 folds
+STATBOT6 wins the pot (6)
+
+Hand #28, RANDOM6 (228), PATBOT6 (180), STATBOT6 (192)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [5h 2d]
+Dealt to PATBOT6 [Ad Qs]
+Dealt to STATBOT6 [7c Ah]
+RANDOM6 folds
+PATBOT6 raises to 4
+STATBOT6 folds
+PATBOT6 wins the pot (6)
+
+Hand #29, STATBOT6 (190), RANDOM6 (228), PATBOT6 (182)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Qc Kc]
+Dealt to RANDOM6 [5s Kh]
+Dealt to PATBOT6 [3d 4c]
+STATBOT6 folds
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #30, PATBOT6 (183), STATBOT6 (190), RANDOM6 (227)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [3s 2c]
+Dealt to STATBOT6 [Jc 4s]
+Dealt to RANDOM6 [Kh 5c]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #31, RANDOM6 (228), PATBOT6 (183), STATBOT6 (189)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [2d Th]
+Dealt to PATBOT6 [Qs 4h]
+Dealt to STATBOT6 [Tc 3h]
+RANDOM6 calls 2
+PATBOT6 folds
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+*** FLOP *** (5) [Ac 5d 5h]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 bets 3
+STATBOT6 folds
+RANDOM6 wins the pot (8)
+
+Hand #32, STATBOT6 (187), RANDOM6 (231), PATBOT6 (182)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [8c 7d]
+Dealt to RANDOM6 [7s 9h]
+Dealt to PATBOT6 [4d Js]
+STATBOT6 folds
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #33, PATBOT6 (183), STATBOT6 (187), RANDOM6 (230)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [9c 7c]
+Dealt to STATBOT6 [7h Qh]
+Dealt to RANDOM6 [7s 5c]
+PATBOT6 folds
+STATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [Jd 8h 6s]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** TURN *** (4) [Jd 8h 6s] [3s]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** RIVER *** (4) [Jd 8h 6s 3s] [Ad]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+STATBOT6 shows [7h Qh]
+RANDOM6 shows [7s 5c]
+STATBOT6 wins the pot (4)
+
+Hand #34, RANDOM6 (228), PATBOT6 (183), STATBOT6 (189)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Ac 3h]
+Dealt to PATBOT6 [Qh 7d]
+Dealt to STATBOT6 [Kd 8h]
+RANDOM6 folds
+PATBOT6 raises to 4
+STATBOT6 folds
+PATBOT6 wins the pot (6)
+
+Hand #35, STATBOT6 (187), RANDOM6 (228), PATBOT6 (185)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [4c Ah]
+Dealt to RANDOM6 [Ts 6h]
+Dealt to PATBOT6 [Ks 6s]
+STATBOT6 folds
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #36, PATBOT6 (186), STATBOT6 (187), RANDOM6 (227)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [2h 6s]
+Dealt to STATBOT6 [Ks 9h]
+Dealt to RANDOM6 [7c 8s]
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 raises to 8
+STATBOT6 raises to 12
+RANDOM6 folds
+STATBOT6 wins the pot (20)
+
+Hand #37, RANDOM6 (219), PATBOT6 (186), STATBOT6 (195)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Qc 8c]
+Dealt to PATBOT6 [Tc 9c]
+Dealt to STATBOT6 [5h 9h]
+RANDOM6 raises to 4
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #38, STATBOT6 (193), RANDOM6 (222), PATBOT6 (185)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ad 8h]
+Dealt to RANDOM6 [Ts As]
+Dealt to PATBOT6 [5c 6c]
+STATBOT6 folds
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #39, PATBOT6 (186), STATBOT6 (193), RANDOM6 (221)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qh Js]
+Dealt to STATBOT6 [3d 2s]
+Dealt to RANDOM6 [4d 7c]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #40, RANDOM6 (222), PATBOT6 (186), STATBOT6 (192)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Ks Td]
+Dealt to PATBOT6 [Qd 7s]
+Dealt to STATBOT6 [Qs Qh]
+RANDOM6 calls 2
+PATBOT6 folds
+STATBOT6 raises to 7
+RANDOM6 calls 7
+*** FLOP *** (15) [As 8s 3c]
+STATBOT6 bets 13
+RANDOM6 folds
+STATBOT6 wins the pot (28)
+
+Hand #41, STATBOT6 (200), RANDOM6 (215), PATBOT6 (185)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [2s Js]
+Dealt to RANDOM6 [Ac 9h]
+Dealt to PATBOT6 [Jc Qc]
+STATBOT6 folds
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #42, PATBOT6 (183), STATBOT6 (200), RANDOM6 (217)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [5d 4d]
+Dealt to STATBOT6 [5c Jh]
+Dealt to RANDOM6 [8s Qd]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #43, RANDOM6 (218), PATBOT6 (183), STATBOT6 (199)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [7h Js]
+Dealt to PATBOT6 [9c 3s]
+Dealt to STATBOT6 [5d 7c]
+RANDOM6 folds
+PATBOT6 folds
+STATBOT6 wins the pot (3)
+
+Hand #44, STATBOT6 (200), RANDOM6 (218), PATBOT6 (182)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Js 4d]
+Dealt to RANDOM6 [5s Ad]
+Dealt to PATBOT6 [7c Qd]
+STATBOT6 folds
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #45, PATBOT6 (183), STATBOT6 (200), RANDOM6 (217)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Js 7d]
+Dealt to STATBOT6 [Qd Kc]
+Dealt to RANDOM6 [8h 7h]
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 raises to 8
+STATBOT6 folds
+RANDOM6 wins the pot (12)
+
+Hand #46, RANDOM6 (221), PATBOT6 (183), STATBOT6 (196)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [5d 7c]
+Dealt to PATBOT6 [4s Td]
+Dealt to STATBOT6 [2c Jc]
+RANDOM6 folds
+PATBOT6 folds
+STATBOT6 wins the pot (3)
+
+Hand #47, STATBOT6 (197), RANDOM6 (221), PATBOT6 (182)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [3s 6s]
+Dealt to RANDOM6 [Js Tc]
+Dealt to PATBOT6 [3c 8c]
+STATBOT6 folds
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [4s Ac Jc]
+RANDOM6 bets 3
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #48, PATBOT6 (180), STATBOT6 (197), RANDOM6 (223)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [5h 4c]
+Dealt to STATBOT6 [6c 8c]
+Dealt to RANDOM6 [Ts 3c]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #49, RANDOM6 (224), PATBOT6 (180), STATBOT6 (196)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [8h 4s]
+Dealt to PATBOT6 [8c 5c]
+Dealt to STATBOT6 [4d 3d]
+RANDOM6 raises to 6
+PATBOT6 raises to 10
+STATBOT6 folds
+RANDOM6 calls 10
+*** FLOP *** (22) [Kd 8s Ah]
+PATBOT6 bets 4
+RANDOM6 raises to 27
+PATBOT6 folds
+RANDOM6 wins the pot (53)
+
+Hand #50, STATBOT6 (194), RANDOM6 (240), PATBOT6 (166)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Tc 6d]
+Dealt to RANDOM6 [7d Ts]
+Dealt to PATBOT6 [4s 5d]
+STATBOT6 folds
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #51, PATBOT6 (164), STATBOT6 (194), RANDOM6 (242)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [7d 9h]
+Dealt to STATBOT6 [Kh 5s]
+Dealt to RANDOM6 [8s 3s]
+PATBOT6 folds
+STATBOT6 calls 2
+RANDOM6 raises to 4
+STATBOT6 calls 4
+*** FLOP *** (8) [As Qc 8c]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** TURN *** (8) [As Qc 8c] [3h]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 bets 5
+STATBOT6 folds
+RANDOM6 wins the pot (13)
+
+Hand #52, RANDOM6 (246), PATBOT6 (164), STATBOT6 (190)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Th Ah]
+Dealt to PATBOT6 [3d 5h]
+Dealt to STATBOT6 [7h 5s]
+RANDOM6 calls 2
+PATBOT6 folds
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+*** FLOP *** (5) [5d 4d Ad]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 bets 3
+STATBOT6 folds
+RANDOM6 wins the pot (8)
+
+Hand #53, STATBOT6 (188), RANDOM6 (249), PATBOT6 (163)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Qd Jh]
+Dealt to RANDOM6 [Ah 5h]
+Dealt to PATBOT6 [Kd 5s]
+STATBOT6 folds
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #54, PATBOT6 (161), STATBOT6 (188), RANDOM6 (251)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qs 8h]
+Dealt to STATBOT6 [Qc 3d]
+Dealt to RANDOM6 [Td 7h]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #55, RANDOM6 (252), PATBOT6 (161), STATBOT6 (187)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Kh Js]
+Dealt to PATBOT6 [2d 7c]
+Dealt to STATBOT6 [Th 8d]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+STATBOT6 folds
+RANDOM6 raises to 11
+PATBOT6 folds
+RANDOM6 wins the pot (17)
+
+Hand #56, STATBOT6 (185), RANDOM6 (258), PATBOT6 (157)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Kh 4d]
+Dealt to RANDOM6 [Qs 2d]
+Dealt to PATBOT6 [8h Ac]
+STATBOT6 folds
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [As Td 5d]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** TURN *** (8) [As Td 5d] [4s]
+RANDOM6 checks
+PATBOT6 bets 7
+RANDOM6 raises to 25
+PATBOT6 calls 25
+*** RIVER *** (58) [As Td 5d 4s] [Kc]
+RANDOM6 bets 16
+PATBOT6 calls 16
+RANDOM6 shows [Qs 2d]
+PATBOT6 shows [8h Ac]
+PATBOT6 wins the pot (90)
+
+Hand #57, PATBOT6 (202), STATBOT6 (185), RANDOM6 (213)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [5c 9c]
+Dealt to STATBOT6 [8h 7h]
+Dealt to RANDOM6 [2c Qc]
+PATBOT6 raises to 4
+STATBOT6 folds
+RANDOM6 calls 4
+*** FLOP *** (9) [Tc 4h 3d]
+RANDOM6 bets 7
+PATBOT6 folds
+RANDOM6 wins the pot (16)
+
+Hand #58, RANDOM6 (218), PATBOT6 (198), STATBOT6 (184)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [2d 6s]
+Dealt to PATBOT6 [Ts 5s]
+Dealt to STATBOT6 [4h 9c]
+RANDOM6 calls 2
+PATBOT6 folds
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+*** FLOP *** (5) [Th 5h Js]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 bets 3
+STATBOT6 folds
+RANDOM6 wins the pot (8)
+
+Hand #59, STATBOT6 (182), RANDOM6 (221), PATBOT6 (197)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [3c 7s]
+Dealt to RANDOM6 [4d 4s]
+Dealt to PATBOT6 [Ks Qh]
+STATBOT6 calls 2
+RANDOM6 folds
+PATBOT6 raises to 4
+STATBOT6 folds
+PATBOT6 wins the pot (7)
+
+Hand #60, PATBOT6 (200), STATBOT6 (180), RANDOM6 (220)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [4s 7h]
+Dealt to STATBOT6 [Ad 6c]
+Dealt to RANDOM6 [5h Qs]
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 raises to 7
+STATBOT6 folds
+RANDOM6 wins the pot (11)
+
+Hand #61, RANDOM6 (224), PATBOT6 (200), STATBOT6 (176)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [5c Js]
+Dealt to PATBOT6 [5h 2d]
+Dealt to STATBOT6 [2s 5d]
+RANDOM6 folds
+PATBOT6 calls 2
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+*** FLOP *** (4) [Jh 7h Qd]
+PATBOT6 bets 2
+STATBOT6 folds
+PATBOT6 wins the pot (6)
+
+Hand #62, STATBOT6 (174), RANDOM6 (224), PATBOT6 (202)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [8s Jc]
+Dealt to RANDOM6 [2h Ac]
+Dealt to PATBOT6 [3d 3h]
+STATBOT6 folds
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #63, PATBOT6 (200), STATBOT6 (174), RANDOM6 (226)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [5s Th]
+Dealt to STATBOT6 [Js 5d]
+Dealt to RANDOM6 [8d 4d]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #64, RANDOM6 (227), PATBOT6 (200), STATBOT6 (173)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [4c Ac]
+Dealt to PATBOT6 [Kd 4s]
+Dealt to STATBOT6 [9h 6d]
+RANDOM6 raises to 5
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (8)
+
+Hand #65, STATBOT6 (171), RANDOM6 (230), PATBOT6 (199)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [9h 5c]
+Dealt to RANDOM6 [Td 7d]
+Dealt to PATBOT6 [2d 6h]
+STATBOT6 calls 2
+RANDOM6 folds
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (5) [8h 2h Jc]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+*** TURN *** (5) [8h 2h Jc] [Kd]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+*** RIVER *** (5) [8h 2h Jc Kd] [Th]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+STATBOT6 shows [9h 5c]
+PATBOT6 shows [2d 6h]
+PATBOT6 wins the pot (5)
+
+Hand #66, PATBOT6 (202), STATBOT6 (169), RANDOM6 (229)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [7s 9d]
+Dealt to STATBOT6 [2s Kh]
+Dealt to RANDOM6 [Qd Kd]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #67, RANDOM6 (230), PATBOT6 (202), STATBOT6 (168)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [4h 4c]
+Dealt to PATBOT6 [6h 3c]
+Dealt to STATBOT6 [Qs Kh]
+RANDOM6 raises to 5
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (8)
+
+Hand #68, STATBOT6 (166), RANDOM6 (233), PATBOT6 (201)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [2h 4s]
+Dealt to RANDOM6 [7d Td]
+Dealt to PATBOT6 [Kc 8h]
+STATBOT6 folds
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #69, PATBOT6 (199), STATBOT6 (166), RANDOM6 (235)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Ah Jc]
+Dealt to STATBOT6 [Qs 7c]
+Dealt to RANDOM6 [Js 6c]
+PATBOT6 folds
+STATBOT6 calls 2
+RANDOM6 raises to 4
+STATBOT6 raises to 6
+RANDOM6 calls 6
+*** FLOP *** (12) [Tc 9d 6h]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 bets 6
+STATBOT6 folds
+RANDOM6 wins the pot (18)
+
+Hand #70, RANDOM6 (241), PATBOT6 (199), STATBOT6 (160)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [6s 3s]
+Dealt to PATBOT6 [Jd Ts]
+Dealt to STATBOT6 [6d 4d]
+RANDOM6 raises to 6
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (9)
+
+Hand #71, STATBOT6 (158), RANDOM6 (244), PATBOT6 (198)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ks Th]
+Dealt to RANDOM6 [Jh Qh]
+Dealt to PATBOT6 [9d Jc]
+STATBOT6 folds
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [3s 9h 6c]
+RANDOM6 bets 4
+PATBOT6 calls 4
+*** TURN *** (16) [3s 9h 6c] [8h]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** RIVER *** (16) [3s 9h 6c 8h] [Ac]
+RANDOM6 checks
+PATBOT6 bets 2
+RANDOM6 raises to 12
+PATBOT6 folds
+RANDOM6 wins the pot (30)
+
+Hand #72, PATBOT6 (188), STATBOT6 (158), RANDOM6 (254)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Ks 2d]
+Dealt to STATBOT6 [3c 3d]
+Dealt to RANDOM6 [As 3h]
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 folds
+STATBOT6 wins the pot (6)
+
+Hand #73, RANDOM6 (252), PATBOT6 (188), STATBOT6 (160)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Kc 2h]
+Dealt to PATBOT6 [3c 6s]
+Dealt to STATBOT6 [8c Jd]
+RANDOM6 calls 2
+PATBOT6 folds
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+*** FLOP *** (5) [Js 5d 6c]
+STATBOT6 bets 5
+RANDOM6 folds
+STATBOT6 wins the pot (10)
+
+Hand #74, STATBOT6 (163), RANDOM6 (250), PATBOT6 (187)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ah 7s]
+Dealt to RANDOM6 [Td 4d]
+Dealt to PATBOT6 [9c 6d]
+STATBOT6 folds
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #75, PATBOT6 (188), STATBOT6 (163), RANDOM6 (249)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [6c Tc]
+Dealt to STATBOT6 [3s 7h]
+Dealt to RANDOM6 [Jd 2h]
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #76, RANDOM6 (250), PATBOT6 (188), STATBOT6 (162)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [8h 8c]
+Dealt to PATBOT6 [7s Ac]
+Dealt to STATBOT6 [Ah 3h]
+RANDOM6 raises to 5
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (8)
+
+Hand #77, STATBOT6 (160), RANDOM6 (253), PATBOT6 (187)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [4s 7d]
+Dealt to RANDOM6 [Qs 7s]
+Dealt to PATBOT6 [Ad 6s]
+STATBOT6 folds
+RANDOM6 raises to 5
+PATBOT6 raises to 8
+RANDOM6 calls 8
+*** FLOP *** (16) [2h Qd 6c]
+RANDOM6 checks
+PATBOT6 bets 10
+RANDOM6 folds
+PATBOT6 wins the pot (26)
+
+Hand #78, PATBOT6 (195), STATBOT6 (160), RANDOM6 (245)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Ac 2s]
+Dealt to STATBOT6 [8d Kc]
+Dealt to RANDOM6 [8h Qh]
+PATBOT6 folds
+STATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [Tc 7c 9c]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** TURN *** (4) [Tc 7c 9c] [2h]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** RIVER *** (4) [Tc 7c 9c 2h] [Js]
+STATBOT6 bets 4
+RANDOM6 raises to 10
+STATBOT6 calls 10
+STATBOT6 shows [8d Kc]
+RANDOM6 shows [8h Qh]
+RANDOM6 wins the pot (24)
+
+Hand #79, RANDOM6 (257), PATBOT6 (195), STATBOT6 (148)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Td Qc]
+Dealt to PATBOT6 [3c 3d]
+Dealt to STATBOT6 [9h Qh]
+RANDOM6 raises to 4
+PATBOT6 folds
+STATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #80, STATBOT6 (146), RANDOM6 (260), PATBOT6 (194)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [7h 8s]
+Dealt to RANDOM6 [5s 9c]
+Dealt to PATBOT6 [Jd 3c]
+STATBOT6 folds
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [Th 7s 2h]
+RANDOM6 bets 2
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #81, PATBOT6 (192), STATBOT6 (146), RANDOM6 (262)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [5d 6h]
+Dealt to STATBOT6 [Ah Ad]
+Dealt to RANDOM6 [Qs 3d]
+PATBOT6 folds
+STATBOT6 calls 2
+RANDOM6 raises to 4
+STATBOT6 calls 4
+*** FLOP *** (8) [3h 3c Ts]
+STATBOT6 bets 8
+RANDOM6 calls 8
+*** TURN *** (24) [3h 3c Ts] [4d]
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+RANDOM6 checks
+*** RIVER *** (24) [3h 3c Ts 4d] [8s]
+STATBOT6 bets 24
+RANDOM6 raises to 84
+STATBOT6 calls 84
+STATBOT6 shows [Ah Ad]
+RANDOM6 shows [Qs 3d]
+RANDOM6 wins the pot (192)
+
+Hand #82, RANDOM6 (358), PATBOT6 (192), STATBOT6 (50)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [5c 5s]
+Dealt to PATBOT6 [Ks 8c]
+Dealt to STATBOT6 [3c Td]
+RANDOM6 folds
+PATBOT6 calls 2
+### ILLEGAL ACTION: Fold [player=STATBOT6]
+STATBOT6 checks
+*** FLOP *** (4) [9s Kh 4d]
+PATBOT6 bets 4
+STATBOT6 folds
+PATBOT6 wins the pot (8)
+
+Hand #83, STATBOT6 (48), RANDOM6 (358), PATBOT6 (194)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Qd Qs]
+Dealt to RANDOM6 [Td 6s]
+Dealt to PATBOT6 [Jd 7d]
+STATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 folds
+STATBOT6 wins the pot (7)
+
+Hand #84, PATBOT6 (192), STATBOT6 (51), RANDOM6 (357)
+STATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qh Qd]
+Dealt to STATBOT6 [2h Td]
+Dealt to RANDOM6 [2d Js]
+PATBOT6 calls 2
+STATBOT6 folds
+RANDOM6 raises to 4
+PATBOT6 raises to 10
+RANDOM6 folds
+PATBOT6 wins the pot (15)
+
+Hand #85, RANDOM6 (353), PATBOT6 (197), STATBOT6 (50)
+PATBOT6 posts the blind of 1
+STATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Kc 9c]
+Dealt to PATBOT6 [7h 9h]
+Dealt to STATBOT6 [Qh 8c]
+RANDOM6 calls 2
+PATBOT6 folds
+STATBOT6 raises to 4
+RANDOM6 raises to 6
+STATBOT6 calls 6
+*** FLOP *** (13) [Kd Kh Qd]
+STATBOT6 bets 8
+RANDOM6 raises to 32
+STATBOT6 raises to 44
+RANDOM6 calls 44
+*** TURN *** (101) [Kd Kh Qd] [Tc]
+*** RIVER *** (101) [Kd Kh Qd Tc] [4s]
+RANDOM6 shows [Kc 9c]
+STATBOT6 shows [Qh 8c]
+RANDOM6 wins the pot (101)
+
+Hand #86, PATBOT6 (196), RANDOM6 (404), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Ts Th]
+Dealt to RANDOM6 [8d Ks]
+Dealt to PATBOT6 [9h 9d]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 raises to 8
+RANDOM6 calls 8
+*** FLOP *** (16) [4s As 2s]
+RANDOM6 bets 7
+PATBOT6 calls 7
+*** TURN *** (30) [4s As 2s] [2h]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** RIVER *** (30) [4s As 2s 2h] [6d]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 shows [8d Ks]
+PATBOT6 shows [9h 9d]
+PATBOT6 wins the pot (30)
+
+Hand #87, RANDOM6 (389), PATBOT6 (211), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [7d Qs]
+Dealt to STATBOT6 [4h 9c]
+Dealt to RANDOM6 [5h 6h]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #88, PATBOT6 (212), RANDOM6 (388), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Jd 5d]
+Dealt to PATBOT6 [6c 8h]
+Dealt to STATBOT6 [3s Kh]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #89, RANDOM6 (390), PATBOT6 (210), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ah Qs]
+Dealt to RANDOM6 [Td 9c]
+Dealt to PATBOT6 [3d 5c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #90, PATBOT6 (211), RANDOM6 (389), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Kc 4c]
+Dealt to STATBOT6 [3s 8s]
+Dealt to RANDOM6 [Ad 2d]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #91, RANDOM6 (387), PATBOT6 (213), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Ts 6h]
+Dealt to PATBOT6 [3h 3d]
+Dealt to STATBOT6 [Jh Qc]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 6
+PATBOT6 folds
+RANDOM6 wins the pot (10)
+
+Hand #92, PATBOT6 (209), RANDOM6 (391), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [As 9d]
+Dealt to RANDOM6 [9c 3c]
+Dealt to PATBOT6 [2d Qs]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #93, RANDOM6 (392), PATBOT6 (208), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Ac Kc]
+Dealt to STATBOT6 [5h 4s]
+Dealt to RANDOM6 [Td 9h]
+RANDOM6 calls 2
+PATBOT6 raises to 5
+RANDOM6 raises to 12
+PATBOT6 calls 12
+*** FLOP *** (24) [3d Jh As]
+PATBOT6 bets 24
+RANDOM6 folds
+PATBOT6 wins the pot (48)
+
+Hand #94, PATBOT6 (220), RANDOM6 (380), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [8h 9c]
+Dealt to PATBOT6 [5h Jc]
+Dealt to STATBOT6 [3s 8s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #95, RANDOM6 (381), PATBOT6 (219), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Qc 5d]
+Dealt to RANDOM6 [Tc 4h]
+Dealt to PATBOT6 [4s Ac]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #96, PATBOT6 (217), RANDOM6 (383), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [7d 8h]
+Dealt to STATBOT6 [Jh 9h]
+Dealt to RANDOM6 [3d 4s]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 calls 5
+*** FLOP *** (10) [4h 5c 3c]
+RANDOM6 bets 7
+PATBOT6 folds
+RANDOM6 wins the pot (17)
+
+Hand #97, RANDOM6 (388), PATBOT6 (212), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Jh 2s]
+Dealt to PATBOT6 [Jc 7s]
+Dealt to STATBOT6 [4s Kh]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [3d 3s Ts]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 3
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #98, PATBOT6 (210), RANDOM6 (390), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [3d Ts]
+Dealt to RANDOM6 [Td Ah]
+Dealt to PATBOT6 [4h Qd]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #99, RANDOM6 (391), PATBOT6 (209), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [3c Qd]
+Dealt to STATBOT6 [Js 5s]
+Dealt to RANDOM6 [6d 9c]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [9h Ah Td]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 6
+PATBOT6 folds
+RANDOM6 wins the pot (14)
+
+Hand #100, PATBOT6 (205), RANDOM6 (395), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [2c 4c]
+Dealt to PATBOT6 [Jh Qc]
+Dealt to STATBOT6 [6c Ac]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [5c 6s 9s]
+RANDOM6 bets 4
+PATBOT6 calls 4
+*** TURN *** (16) [5c 6s 9s] [3s]
+RANDOM6 checks
+PATBOT6 bets 2
+RANDOM6 raises to 21
+PATBOT6 folds
+RANDOM6 wins the pot (39)
+
+Hand #101, RANDOM6 (405), PATBOT6 (195), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ah 2s]
+Dealt to RANDOM6 [3c Td]
+Dealt to PATBOT6 [6d Kd]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 11
+PATBOT6 folds
+RANDOM6 wins the pot (15)
+
+Hand #102, PATBOT6 (191), RANDOM6 (409), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qh Jh]
+Dealt to STATBOT6 [4c 8h]
+Dealt to RANDOM6 [9c Th]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #103, RANDOM6 (407), PATBOT6 (193), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Tc 5d]
+Dealt to PATBOT6 [Jc Qd]
+Dealt to STATBOT6 [5s Qh]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Ad 2h Qc]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 5
+PATBOT6 raises to 22
+RANDOM6 folds
+PATBOT6 wins the pot (35)
+
+Hand #104, PATBOT6 (202), RANDOM6 (398), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Qd 2h]
+Dealt to RANDOM6 [4s Ts]
+Dealt to PATBOT6 [5h 4d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #105, RANDOM6 (399), PATBOT6 (201), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [3s 5d]
+Dealt to STATBOT6 [7s 8d]
+Dealt to RANDOM6 [3c 8h]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #106, PATBOT6 (202), RANDOM6 (398), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Ad Js]
+Dealt to PATBOT6 [2h 5d]
+Dealt to STATBOT6 [4h Kd]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #107, RANDOM6 (399), PATBOT6 (201), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [2h 5c]
+Dealt to RANDOM6 [7d Ah]
+Dealt to PATBOT6 [Ks Jh]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Th 9h 4c]
+PATBOT6 bets 7
+RANDOM6 folds
+PATBOT6 wins the pot (15)
+
+Hand #108, PATBOT6 (205), RANDOM6 (395), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [4s Jd]
+Dealt to STATBOT6 [2c Td]
+Dealt to RANDOM6 [Ac 4d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #109, RANDOM6 (396), PATBOT6 (204), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Td Kc]
+Dealt to PATBOT6 [9h 4c]
+Dealt to STATBOT6 [3d 6d]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [5d 4h 9c]
+PATBOT6 bets 4
+RANDOM6 calls 4
+*** TURN *** (12) [5d 4h 9c] [8c]
+PATBOT6 bets 12
+RANDOM6 folds
+PATBOT6 wins the pot (24)
+
+Hand #110, PATBOT6 (210), RANDOM6 (390), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [8d Qh]
+Dealt to RANDOM6 [4s 5s]
+Dealt to PATBOT6 [7s 6c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #111, RANDOM6 (391), PATBOT6 (209), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [7s 9d]
+Dealt to STATBOT6 [7d Qs]
+Dealt to RANDOM6 [2c 5s]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #112, PATBOT6 (207), RANDOM6 (393), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [9h 7d]
+Dealt to PATBOT6 [3c Ts]
+Dealt to STATBOT6 [Qd 8s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #113, RANDOM6 (394), PATBOT6 (206), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Jd 6d]
+Dealt to RANDOM6 [Ah Qs]
+Dealt to PATBOT6 [2h Jc]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #114, PATBOT6 (204), RANDOM6 (396), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [6h Qs]
+Dealt to STATBOT6 [Qd 3s]
+Dealt to RANDOM6 [3d 7h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #115, RANDOM6 (397), PATBOT6 (203), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Qs 8s]
+Dealt to PATBOT6 [3d 3h]
+Dealt to STATBOT6 [Qh 4c]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #116, PATBOT6 (201), RANDOM6 (399), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [9c Qh]
+Dealt to RANDOM6 [Td 7d]
+Dealt to PATBOT6 [4d 4c]
+PATBOT6 raises to 4
+RANDOM6 raises to 9
+PATBOT6 folds
+RANDOM6 wins the pot (13)
+
+Hand #117, RANDOM6 (403), PATBOT6 (197), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [7d 4d]
+Dealt to STATBOT6 [Ks Ah]
+Dealt to RANDOM6 [8h Qh]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #118, PATBOT6 (198), RANDOM6 (402), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [8d 9s]
+Dealt to PATBOT6 [Td 4s]
+Dealt to STATBOT6 [6s Jc]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #119, RANDOM6 (400), PATBOT6 (200), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ah Ad]
+Dealt to RANDOM6 [3c Td]
+Dealt to PATBOT6 [7c 7d]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #120, PATBOT6 (201), RANDOM6 (399), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [2c Ks]
+Dealt to STATBOT6 [Qh 2s]
+Dealt to RANDOM6 [4h Kc]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #121, RANDOM6 (400), PATBOT6 (200), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [6d Th]
+Dealt to PATBOT6 [7d 5d]
+Dealt to STATBOT6 [5c Kh]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #122, PATBOT6 (201), RANDOM6 (399), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [5d Ah]
+Dealt to RANDOM6 [Qc 4d]
+Dealt to PATBOT6 [Qd 6c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #123, RANDOM6 (400), PATBOT6 (200), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [9s Qs]
+Dealt to STATBOT6 [3c Kh]
+Dealt to RANDOM6 [3d Qc]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 7
+PATBOT6 folds
+RANDOM6 wins the pot (11)
+
+Hand #124, PATBOT6 (196), RANDOM6 (404), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [9s 7h]
+Dealt to PATBOT6 [9d 6d]
+Dealt to STATBOT6 [4d 3c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #125, RANDOM6 (405), PATBOT6 (195), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [2s 3d]
+Dealt to RANDOM6 [6c 3h]
+Dealt to PATBOT6 [9h Kd]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #126, PATBOT6 (196), RANDOM6 (404), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [8h Kh]
+Dealt to STATBOT6 [Qh 2d]
+Dealt to RANDOM6 [Ah 6h]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Th 8d 8s]
+RANDOM6 checks
+PATBOT6 bets 8
+RANDOM6 calls 8
+*** TURN *** (24) [Th 8d 8s] [5c]
+RANDOM6 bets 21
+PATBOT6 calls 21
+*** RIVER *** (66) [Th 8d 8s 5c] [Td]
+RANDOM6 bets 44
+PATBOT6 calls 44
+PATBOT6 shows [8h Kh]
+RANDOM6 shows [Ah 6h]
+PATBOT6 wins the pot (154)
+
+Hand #127, RANDOM6 (327), PATBOT6 (273), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Td 2h]
+Dealt to PATBOT6 [Qd 6s]
+Dealt to STATBOT6 [Qs Ts]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #128, PATBOT6 (274), RANDOM6 (326), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [9d 5s]
+Dealt to RANDOM6 [Jc Kh]
+Dealt to PATBOT6 [5d 4d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #129, RANDOM6 (327), PATBOT6 (273), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [4h 2c]
+Dealt to STATBOT6 [Ts 2s]
+Dealt to RANDOM6 [Jh 3h]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [Kd 5h 6h]
+PATBOT6 bets 2
+RANDOM6 calls 2
+*** TURN *** (8) [Kd 5h 6h] [8s]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 7
+PATBOT6 folds
+RANDOM6 wins the pot (15)
+
+Hand #130, PATBOT6 (269), RANDOM6 (331), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Tc 2d]
+Dealt to PATBOT6 [9s 2c]
+Dealt to STATBOT6 [Jh 9d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #131, RANDOM6 (332), PATBOT6 (268), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [2s 7d]
+Dealt to RANDOM6 [2h Qc]
+Dealt to PATBOT6 [5h 5s]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 6
+PATBOT6 calls 6
+*** FLOP *** (12) [9s Ac Kc]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 10
+PATBOT6 folds
+RANDOM6 wins the pot (22)
+
+Hand #132, PATBOT6 (262), RANDOM6 (338), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Kh Td]
+Dealt to STATBOT6 [6s 7d]
+Dealt to RANDOM6 [5h 8d]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #133, RANDOM6 (336), PATBOT6 (264), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [8d 9h]
+Dealt to PATBOT6 [6h Qh]
+Dealt to STATBOT6 [3c 9s]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #134, PATBOT6 (265), RANDOM6 (335), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Ks Jc]
+Dealt to RANDOM6 [4h 8d]
+Dealt to PATBOT6 [Th 9c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #135, RANDOM6 (336), PATBOT6 (264), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Tc 8h]
+Dealt to STATBOT6 [8d Ts]
+Dealt to RANDOM6 [Qs 2s]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #136, PATBOT6 (265), RANDOM6 (335), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [6h 7s]
+Dealt to PATBOT6 [Jd 6d]
+Dealt to STATBOT6 [6c 9d]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [5s 7h 2c]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** TURN *** (8) [5s 7h 2c] [2s]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** RIVER *** (8) [5s 7h 2c 2s] [3h]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 shows [6h 7s]
+PATBOT6 shows [Jd 6d]
+RANDOM6 wins the pot (8)
+
+Hand #137, RANDOM6 (339), PATBOT6 (261), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Th 3d]
+Dealt to RANDOM6 [9c Ac]
+Dealt to PATBOT6 [7s Jd]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [Ad 4h 8c]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 2
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #138, PATBOT6 (259), RANDOM6 (341), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Jd Qd]
+Dealt to STATBOT6 [9d Tc]
+Dealt to RANDOM6 [5h Ts]
+PATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [6h 7s 8c]
+RANDOM6 bets 2
+PATBOT6 raises to 4
+RANDOM6 raises to 14
+PATBOT6 folds
+RANDOM6 wins the pot (22)
+
+Hand #139, RANDOM6 (347), PATBOT6 (253), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [9c 3h]
+Dealt to PATBOT6 [Ah Kc]
+Dealt to STATBOT6 [3s 7h]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #140, PATBOT6 (254), RANDOM6 (346), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Jc 2c]
+Dealt to RANDOM6 [Tc 2d]
+Dealt to PATBOT6 [Ad Js]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [5s 6c 8h]
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** TURN *** (12) [5s 6c 8h] [3s]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** RIVER *** (12) [5s 6c 8h 3s] [3d]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 shows [Tc 2d]
+PATBOT6 shows [Ad Js]
+PATBOT6 wins the pot (12)
+
+Hand #141, RANDOM6 (340), PATBOT6 (260), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [3s 6h]
+Dealt to STATBOT6 [9c Th]
+Dealt to RANDOM6 [8d 5h]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #142, PATBOT6 (258), RANDOM6 (342), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Tc 7c]
+Dealt to PATBOT6 [Ks Jd]
+Dealt to STATBOT6 [2d Qh]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #143, RANDOM6 (340), PATBOT6 (260), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Td Ks]
+Dealt to RANDOM6 [2c Ah]
+Dealt to PATBOT6 [4c Th]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [Ts 3c 5s]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** TURN *** (8) [Ts 3c 5s] [8c]
+PATBOT6 bets 8
+RANDOM6 calls 8
+*** RIVER *** (24) [Ts 3c 5s 8c] [8h]
+PATBOT6 bets 24
+RANDOM6 calls 24
+RANDOM6 shows [2c Ah]
+PATBOT6 shows [4c Th]
+PATBOT6 wins the pot (72)
+
+Hand #144, PATBOT6 (296), RANDOM6 (304), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [9d 3h]
+Dealt to STATBOT6 [9s 9h]
+Dealt to RANDOM6 [5h 4h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #145, RANDOM6 (305), PATBOT6 (295), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [2c 6h]
+Dealt to PATBOT6 [Tc Ks]
+Dealt to STATBOT6 [8s Kc]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #146, PATBOT6 (293), RANDOM6 (307), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [9c 7h]
+Dealt to RANDOM6 [Td 9h]
+Dealt to PATBOT6 [3c 2c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #147, RANDOM6 (308), PATBOT6 (292), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [5d 4s]
+Dealt to STATBOT6 [Ts 4c]
+Dealt to RANDOM6 [Ad 3c]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #148, PATBOT6 (290), RANDOM6 (310), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [9s Js]
+Dealt to PATBOT6 [7h Jd]
+Dealt to STATBOT6 [2d 3d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #149, RANDOM6 (311), PATBOT6 (289), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Kc 9c]
+Dealt to RANDOM6 [8s 5c]
+Dealt to PATBOT6 [5h 7c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #150, PATBOT6 (290), RANDOM6 (310), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [8d 3c]
+Dealt to STATBOT6 [Td 5d]
+Dealt to RANDOM6 [Ad Qh]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #151, RANDOM6 (311), PATBOT6 (289), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [6h Qc]
+Dealt to PATBOT6 [8c Qh]
+Dealt to STATBOT6 [4s Jd]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Kh 9d 6s]
+PATBOT6 bets 2
+RANDOM6 raises to 8
+PATBOT6 folds
+RANDOM6 wins the pot (18)
+
+Hand #152, PATBOT6 (283), RANDOM6 (317), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [9s Ac]
+Dealt to RANDOM6 [5h Th]
+Dealt to PATBOT6 [Td 8d]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #153, RANDOM6 (315), PATBOT6 (285), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Ad 9c]
+Dealt to STATBOT6 [Jc 6h]
+Dealt to RANDOM6 [4c 4h]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #154, PATBOT6 (287), RANDOM6 (313), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [8h 7h]
+Dealt to PATBOT6 [9h Td]
+Dealt to STATBOT6 [Kc 7s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #155, RANDOM6 (314), PATBOT6 (286), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Th 2h]
+Dealt to RANDOM6 [As 3s]
+Dealt to PATBOT6 [Qc 3d]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 10
+PATBOT6 raises to 16
+RANDOM6 calls 16
+*** FLOP *** (32) [4h 2c 5c]
+PATBOT6 bets 19
+RANDOM6 folds
+PATBOT6 wins the pot (51)
+
+Hand #156, PATBOT6 (302), RANDOM6 (298), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [8h 4h]
+Dealt to STATBOT6 [Qd 7c]
+Dealt to RANDOM6 [2s 9h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #157, RANDOM6 (299), PATBOT6 (301), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [9c 7s]
+Dealt to PATBOT6 [Qs Ts]
+Dealt to STATBOT6 [8s Kc]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Ac Th 5c]
+PATBOT6 bets 8
+RANDOM6 calls 8
+*** TURN *** (24) [Ac Th 5c] [Qd]
+PATBOT6 bets 24
+RANDOM6 folds
+PATBOT6 wins the pot (48)
+
+Hand #158, PATBOT6 (313), RANDOM6 (287), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [5h 8h]
+Dealt to RANDOM6 [Js 6h]
+Dealt to PATBOT6 [4d 9c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #159, RANDOM6 (288), PATBOT6 (312), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Tc 2s]
+Dealt to STATBOT6 [Jh 9h]
+Dealt to RANDOM6 [7s 8c]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [Kc 7h Qh]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** TURN *** (4) [Kc 7h Qh] [6s]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** RIVER *** (4) [Kc 7h Qh 6s] [5h]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 3
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #160, PATBOT6 (310), RANDOM6 (290), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [3s 6c]
+Dealt to PATBOT6 [Td 9h]
+Dealt to STATBOT6 [6s 5s]
+PATBOT6 calls 2
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #161, RANDOM6 (292), PATBOT6 (308), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [9s 3c]
+Dealt to RANDOM6 [7h 9c]
+Dealt to PATBOT6 [9h 2s]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [6h 5s Ts]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** TURN *** (4) [6h 5s Ts] [Tc]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** RIVER *** (4) [6h 5s Ts Tc] [7c]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+RANDOM6 shows [7h 9c]
+PATBOT6 shows [9h 2s]
+RANDOM6 wins the pot (4)
+
+Hand #162, PATBOT6 (306), RANDOM6 (294), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [9s 2d]
+Dealt to STATBOT6 [Tc Ks]
+Dealt to RANDOM6 [4s 3h]
+PATBOT6 raises to 4
+RANDOM6 raises to 11
+PATBOT6 folds
+RANDOM6 wins the pot (15)
+
+Hand #163, RANDOM6 (298), PATBOT6 (302), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Ts Th]
+Dealt to PATBOT6 [As 6c]
+Dealt to STATBOT6 [Qs Jd]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 8
+PATBOT6 folds
+RANDOM6 wins the pot (12)
+
+Hand #164, PATBOT6 (298), RANDOM6 (302), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [5c 4s]
+Dealt to RANDOM6 [Kd Qc]
+Dealt to PATBOT6 [Qd As]
+PATBOT6 calls 2
+RANDOM6 raises to 4
+PATBOT6 calls 4
+*** FLOP *** (8) [5h 9c 8d]
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** TURN *** (12) [5h 9c 8d] [Jd]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** RIVER *** (12) [5h 9c 8d Jd] [3s]
+RANDOM6 bets 3
+PATBOT6 folds
+RANDOM6 wins the pot (15)
+
+Hand #165, RANDOM6 (308), PATBOT6 (292), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Qh Qc]
+Dealt to STATBOT6 [7d 4s]
+Dealt to RANDOM6 [8s 2c]
+RANDOM6 raises to 4
+PATBOT6 calls 4
+*** FLOP *** (8) [6d Kh Tc]
+PATBOT6 bets 8
+RANDOM6 calls 8
+*** TURN *** (24) [6d Kh Tc] [8c]
+PATBOT6 bets 23
+RANDOM6 calls 23
+*** RIVER *** (70) [6d Kh Tc 8c] [4h]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 54
+PATBOT6 calls 54
+PATBOT6 shows [Qh Qc]
+RANDOM6 shows [8s 2c]
+PATBOT6 wins the pot (178)
+
+Hand #166, PATBOT6 (381), RANDOM6 (219), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Kc 7d]
+Dealt to PATBOT6 [Th Jc]
+Dealt to STATBOT6 [Qd Qs]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Qc 5h 2h]
+RANDOM6 bets 4
+PATBOT6 calls 4
+*** TURN *** (16) [Qc 5h 2h] [2d]
+RANDOM6 bets 6
+PATBOT6 folds
+RANDOM6 wins the pot (22)
+
+Hand #167, RANDOM6 (227), PATBOT6 (373), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Qd Jc]
+Dealt to RANDOM6 [8c 6s]
+Dealt to PATBOT6 [Th Jh]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #168, PATBOT6 (371), RANDOM6 (229), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Js 4c]
+Dealt to STATBOT6 [7c 4d]
+Dealt to RANDOM6 [2c 6c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #169, RANDOM6 (230), PATBOT6 (370), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [2c 7d]
+Dealt to PATBOT6 [Kh Qh]
+Dealt to STATBOT6 [Ks Ad]
+RANDOM6 raises to 4
+PATBOT6 raises to 6
+RANDOM6 raises to 15
+PATBOT6 folds
+RANDOM6 wins the pot (21)
+
+Hand #170, PATBOT6 (364), RANDOM6 (236), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Qs 3h]
+Dealt to RANDOM6 [Ts 5s]
+Dealt to PATBOT6 [Kd Qc]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #171, RANDOM6 (234), PATBOT6 (366), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [4s 3s]
+Dealt to STATBOT6 [Ah 9c]
+Dealt to RANDOM6 [6d 4d]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #172, PATBOT6 (364), RANDOM6 (236), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [9d Tc]
+Dealt to PATBOT6 [Th 8d]
+Dealt to STATBOT6 [Kd 3h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #173, RANDOM6 (237), PATBOT6 (363), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Qd 7s]
+Dealt to RANDOM6 [Tc Kc]
+Dealt to PATBOT6 [Js 9d]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #174, PATBOT6 (364), RANDOM6 (236), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qc Kd]
+Dealt to STATBOT6 [5d Js]
+Dealt to RANDOM6 [2h 2d]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Kc 5h 7d]
+RANDOM6 bets 4
+PATBOT6 calls 4
+*** TURN *** (16) [Kc 5h 7d] [As]
+RANDOM6 bets 14
+PATBOT6 raises to 33
+RANDOM6 calls 33
+*** RIVER *** (82) [Kc 5h 7d As] [5c]
+RANDOM6 bets 33
+PATBOT6 raises to 67
+RANDOM6 calls 67
+PATBOT6 shows [Qc Kd]
+RANDOM6 shows [2h 2d]
+PATBOT6 wins the pot (216)
+
+Hand #175, RANDOM6 (128), PATBOT6 (472), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [8h Jc]
+Dealt to PATBOT6 [6c Qs]
+Dealt to STATBOT6 [Ks Ac]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #176, PATBOT6 (470), RANDOM6 (130), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Jc 8d]
+Dealt to RANDOM6 [Th Kd]
+Dealt to PATBOT6 [Kc 3c]
+PATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [6c Qh 9d]
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** TURN *** (8) [6c Qh 9d] [Kh]
+RANDOM6 bets 4
+PATBOT6 calls 4
+*** RIVER *** (16) [6c Qh 9d Kh] [8c]
+RANDOM6 checks
+PATBOT6 bets 16
+RANDOM6 raises to 63
+PATBOT6 calls 63
+RANDOM6 shows [Th Kd]
+PATBOT6 shows [Kc 3c]
+RANDOM6 wins the pot (142)
+
+Hand #177, RANDOM6 (201), PATBOT6 (399), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Ad 3s]
+Dealt to STATBOT6 [7d 8c]
+Dealt to RANDOM6 [Ac 2h]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #178, PATBOT6 (400), RANDOM6 (200), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Ad 6h]
+Dealt to PATBOT6 [8s 3s]
+Dealt to STATBOT6 [6c 9h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #179, RANDOM6 (201), PATBOT6 (399), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Jc 2c]
+Dealt to RANDOM6 [Th 3d]
+Dealt to PATBOT6 [9h Kd]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #180, PATBOT6 (397), RANDOM6 (203), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [5s 6d]
+Dealt to STATBOT6 [Jc Qc]
+Dealt to RANDOM6 [3d 8c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #181, RANDOM6 (204), PATBOT6 (396), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [5c 6h]
+Dealt to PATBOT6 [3h 4d]
+Dealt to STATBOT6 [Kd Qc]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #182, PATBOT6 (394), RANDOM6 (206), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Ts As]
+Dealt to RANDOM6 [8d Td]
+Dealt to PATBOT6 [2c 2s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #183, RANDOM6 (207), PATBOT6 (393), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Ad 5h]
+Dealt to STATBOT6 [9c Qh]
+Dealt to RANDOM6 [Jc Js]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #184, PATBOT6 (391), RANDOM6 (209), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Th 5d]
+Dealt to PATBOT6 [4h 5c]
+Dealt to STATBOT6 [6h Kh]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #185, RANDOM6 (211), PATBOT6 (389), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [2d 8d]
+Dealt to RANDOM6 [9s 2c]
+Dealt to PATBOT6 [7h As]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #186, PATBOT6 (390), RANDOM6 (210), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Jd 5d]
+Dealt to STATBOT6 [Kc Qd]
+Dealt to RANDOM6 [8s 6s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #187, RANDOM6 (211), PATBOT6 (389), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [2s Ac]
+Dealt to PATBOT6 [8c 4h]
+Dealt to STATBOT6 [5c 3c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #188, PATBOT6 (390), RANDOM6 (210), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [As 2s]
+Dealt to RANDOM6 [7c 8s]
+Dealt to PATBOT6 [9h 3h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #189, RANDOM6 (211), PATBOT6 (389), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [2s As]
+Dealt to STATBOT6 [Qd Kd]
+Dealt to RANDOM6 [8s 3d]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 7
+PATBOT6 folds
+RANDOM6 wins the pot (11)
+
+Hand #190, PATBOT6 (385), RANDOM6 (215), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Th 3s]
+Dealt to PATBOT6 [2h 5c]
+Dealt to STATBOT6 [Ah 5s]
+PATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [4h 9c Qc]
+RANDOM6 bets 3
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #191, RANDOM6 (217), PATBOT6 (383), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [4d Kc]
+Dealt to RANDOM6 [8s 5c]
+Dealt to PATBOT6 [Jd Td]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #192, PATBOT6 (381), RANDOM6 (219), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [3h 8s]
+Dealt to STATBOT6 [As 5d]
+Dealt to RANDOM6 [Ad 9d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #193, RANDOM6 (220), PATBOT6 (380), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Kh 9s]
+Dealt to PATBOT6 [Td Jh]
+Dealt to STATBOT6 [Ah Ts]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #194, PATBOT6 (381), RANDOM6 (219), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Qh Qs]
+Dealt to RANDOM6 [Qd Jh]
+Dealt to PATBOT6 [As 3c]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Jc 9d 3s]
+RANDOM6 bets 4
+PATBOT6 calls 4
+*** TURN *** (16) [Jc 9d 3s] [7c]
+RANDOM6 bets 8
+PATBOT6 calls 8
+*** RIVER *** (32) [Jc 9d 3s 7c] [2s]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 shows [Qd Jh]
+PATBOT6 shows [As 3c]
+RANDOM6 wins the pot (32)
+
+Hand #195, RANDOM6 (235), PATBOT6 (365), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [2s 8c]
+Dealt to STATBOT6 [Jc 4d]
+Dealt to RANDOM6 [Qd Qs]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #196, PATBOT6 (366), RANDOM6 (234), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Td Jc]
+Dealt to PATBOT6 [2c 9c]
+Dealt to STATBOT6 [4s Jh]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #197, RANDOM6 (235), PATBOT6 (365), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [4s 9d]
+Dealt to RANDOM6 [Qd Th]
+Dealt to PATBOT6 [Ad 2c]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [6s Qs Jc]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** TURN *** (16) [6s Qs Jc] [4h]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** RIVER *** (16) [6s Qs Jc 4h] [5s]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+RANDOM6 shows [Qd Th]
+PATBOT6 shows [Ad 2c]
+RANDOM6 wins the pot (16)
+
+Hand #198, PATBOT6 (357), RANDOM6 (243), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [5h 5d]
+Dealt to STATBOT6 [Qd Jc]
+Dealt to RANDOM6 [As Kc]
+PATBOT6 raises to 4
+RANDOM6 raises to 7
+PATBOT6 folds
+RANDOM6 wins the pot (11)
+
+Hand #199, RANDOM6 (247), PATBOT6 (353), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [2d 5h]
+Dealt to PATBOT6 [4c 8h]
+Dealt to STATBOT6 [9h As]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [7h 4d 5d]
+PATBOT6 bets 4
+RANDOM6 folds
+PATBOT6 wins the pot (8)
+
+Hand #200, PATBOT6 (355), RANDOM6 (245), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Kc 3c]
+Dealt to RANDOM6 [7h 6c]
+Dealt to PATBOT6 [8h 5c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #201, RANDOM6 (246), PATBOT6 (354), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [2s 6d]
+Dealt to STATBOT6 [5d Th]
+Dealt to RANDOM6 [7c Ac]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #202, PATBOT6 (352), RANDOM6 (248), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [6c 5d]
+Dealt to PATBOT6 [3h 2d]
+Dealt to STATBOT6 [4d As]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #203, RANDOM6 (249), PATBOT6 (351), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [2s 5h]
+Dealt to RANDOM6 [4d 4c]
+Dealt to PATBOT6 [Qh 4h]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 10
+PATBOT6 folds
+RANDOM6 wins the pot (14)
+
+Hand #204, PATBOT6 (347), RANDOM6 (253), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [9s As]
+Dealt to STATBOT6 [Ac 8c]
+Dealt to RANDOM6 [5d Tc]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Kh 4s 8h]
+RANDOM6 checks
+PATBOT6 bets 6
+RANDOM6 raises to 23
+PATBOT6 calls 23
+*** TURN *** (54) [Kh 4s 8h] [Jc]
+RANDOM6 checks
+PATBOT6 bets 16
+RANDOM6 raises to 72
+PATBOT6 folds
+RANDOM6 wins the pot (142)
+
+Hand #205, RANDOM6 (296), PATBOT6 (304), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [6d 2d]
+Dealt to PATBOT6 [8d Ts]
+Dealt to STATBOT6 [5d 4h]
+RANDOM6 raises to 4
+PATBOT6 calls 4
+*** FLOP *** (8) [Ad Qs 3c]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 4
+PATBOT6 folds
+RANDOM6 wins the pot (12)
+
+Hand #206, PATBOT6 (300), RANDOM6 (300), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [2h 4h]
+Dealt to RANDOM6 [Jc 9d]
+Dealt to PATBOT6 [8s As]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #207, RANDOM6 (302), PATBOT6 (298), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Qc 9s]
+Dealt to STATBOT6 [Jc 2d]
+Dealt to RANDOM6 [4d 9h]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [2h 6s 8d]
+PATBOT6 bets 3
+RANDOM6 folds
+PATBOT6 wins the pot (11)
+
+Hand #208, PATBOT6 (302), RANDOM6 (298), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [6d 3s]
+Dealt to PATBOT6 [5d Kc]
+Dealt to STATBOT6 [8s Tc]
+PATBOT6 raises to 4
+RANDOM6 raises to 11
+PATBOT6 raises to 18
+RANDOM6 raises to 51
+PATBOT6 folds
+RANDOM6 wins the pot (69)
+
+Hand #209, RANDOM6 (316), PATBOT6 (284), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [7c Js]
+Dealt to RANDOM6 [5c Ac]
+Dealt to PATBOT6 [Qs Jd]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [5d Jh Qd]
+PATBOT6 bets 8
+RANDOM6 folds
+PATBOT6 wins the pot (16)
+
+Hand #210, PATBOT6 (288), RANDOM6 (312), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [3d Kd]
+Dealt to STATBOT6 [4d 9s]
+Dealt to RANDOM6 [6s 3h]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Kh Ac 2c]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** TURN *** (8) [Kh Ac 2c] [6c]
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** RIVER *** (12) [Kh Ac 2c 6c] [Td]
+RANDOM6 bets 4
+PATBOT6 calls 4
+PATBOT6 shows [3d Kd]
+RANDOM6 shows [6s 3h]
+PATBOT6 wins the pot (20)
+
+Hand #211, RANDOM6 (302), PATBOT6 (298), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Qd Tc]
+Dealt to PATBOT6 [6s 7d]
+Dealt to STATBOT6 [2d Kh]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #212, PATBOT6 (299), RANDOM6 (301), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [5c 6s]
+Dealt to RANDOM6 [5d 6d]
+Dealt to PATBOT6 [2s Ad]
+PATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [9h 3c Ah]
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** TURN *** (8) [9h 3c Ah] [Kc]
+RANDOM6 checks
+PATBOT6 bets 8
+RANDOM6 folds
+PATBOT6 wins the pot (16)
+
+Hand #213, RANDOM6 (297), PATBOT6 (303), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Tc 3s]
+Dealt to STATBOT6 [7s 8s]
+Dealt to RANDOM6 [As 3h]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #214, PATBOT6 (304), RANDOM6 (296), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [4h Tc]
+Dealt to PATBOT6 [Qc 2c]
+Dealt to STATBOT6 [Kh 6s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #215, RANDOM6 (297), PATBOT6 (303), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Kh Th]
+Dealt to RANDOM6 [3h 8d]
+Dealt to PATBOT6 [4h Ts]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #216, PATBOT6 (301), RANDOM6 (299), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Jh Jc]
+Dealt to STATBOT6 [Qc 9s]
+Dealt to RANDOM6 [3c 5s]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 raises to 9
+RANDOM6 calls 9
+*** FLOP *** (18) [8c 5h Qh]
+RANDOM6 bets 14
+PATBOT6 calls 14
+*** TURN *** (46) [8c 5h Qh] [9h]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** RIVER *** (46) [8c 5h Qh 9h] [8s]
+RANDOM6 bets 11
+PATBOT6 calls 11
+PATBOT6 shows [Jh Jc]
+RANDOM6 shows [3c 5s]
+PATBOT6 wins the pot (68)
+
+Hand #217, RANDOM6 (265), PATBOT6 (335), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [9s 4s]
+Dealt to PATBOT6 [Th 8h]
+Dealt to STATBOT6 [9h 3s]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #218, PATBOT6 (333), RANDOM6 (267), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Qh Qs]
+Dealt to RANDOM6 [3d 2s]
+Dealt to PATBOT6 [2c 2d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #219, RANDOM6 (268), PATBOT6 (332), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Ts Qh]
+Dealt to STATBOT6 [3h 6d]
+Dealt to RANDOM6 [9c Ad]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #220, PATBOT6 (333), RANDOM6 (267), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [As 8c]
+Dealt to PATBOT6 [2s 7h]
+Dealt to STATBOT6 [7d 6h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #221, RANDOM6 (268), PATBOT6 (332), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [4s Ts]
+Dealt to RANDOM6 [5c Jh]
+Dealt to PATBOT6 [Ah Kc]
+RANDOM6 calls 2
+PATBOT6 raises to 5
+RANDOM6 raises to 8
+PATBOT6 calls 8
+*** FLOP *** (16) [Qc Th Kh]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** TURN *** (16) [Qc Th Kh] [7c]
+PATBOT6 bets 16
+RANDOM6 calls 16
+*** RIVER *** (48) [Qc Th Kh 7c] [3c]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+RANDOM6 shows [5c Jh]
+PATBOT6 shows [Ah Kc]
+PATBOT6 wins the pot (48)
+
+Hand #222, PATBOT6 (356), RANDOM6 (244), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [As Kc]
+Dealt to STATBOT6 [Jd 6h]
+Dealt to RANDOM6 [2s 3s]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [9d Jc 4c]
+RANDOM6 checks
+PATBOT6 bets 6
+RANDOM6 raises to 12
+PATBOT6 calls 12
+*** TURN *** (32) [9d Jc 4c] [5d]
+RANDOM6 checks
+PATBOT6 bets 23
+RANDOM6 calls 23
+*** RIVER *** (78) [9d Jc 4c 5d] [7s]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+PATBOT6 shows [As Kc]
+RANDOM6 shows [2s 3s]
+PATBOT6 wins the pot (78)
+
+Hand #223, RANDOM6 (205), PATBOT6 (395), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [4s 6s]
+Dealt to PATBOT6 [Tc 5h]
+Dealt to STATBOT6 [As Ks]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #224, PATBOT6 (393), RANDOM6 (207), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [8d Jh]
+Dealt to RANDOM6 [Ad 7h]
+Dealt to PATBOT6 [8h 4d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #225, RANDOM6 (208), PATBOT6 (392), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [4s Td]
+Dealt to STATBOT6 [4d 2c]
+Dealt to RANDOM6 [7c Ah]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #226, PATBOT6 (393), RANDOM6 (207), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [7s 9s]
+Dealt to PATBOT6 [Kd Td]
+Dealt to STATBOT6 [8c Qs]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #227, RANDOM6 (205), PATBOT6 (395), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ah 3h]
+Dealt to RANDOM6 [8c 8s]
+Dealt to PATBOT6 [2h Ks]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #228, PATBOT6 (393), RANDOM6 (207), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [6h Jh]
+Dealt to STATBOT6 [8s 3c]
+Dealt to RANDOM6 [8h 5s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #229, RANDOM6 (208), PATBOT6 (392), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Qs 4s]
+Dealt to PATBOT6 [Ad Ah]
+Dealt to STATBOT6 [As Ac]
+RANDOM6 raises to 4
+PATBOT6 calls 4
+*** FLOP *** (8) [3s Qd 8c]
+PATBOT6 bets 8
+RANDOM6 folds
+PATBOT6 wins the pot (16)
+
+Hand #230, PATBOT6 (396), RANDOM6 (204), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Qc 2s]
+Dealt to RANDOM6 [9h Ks]
+Dealt to PATBOT6 [9d Ac]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Th 6h Td]
+RANDOM6 bets 7
+PATBOT6 calls 7
+*** TURN *** (22) [Th 6h Td] [Kh]
+RANDOM6 bets 5
+PATBOT6 raises to 10
+RANDOM6 folds
+PATBOT6 wins the pot (37)
+
+Hand #231, RANDOM6 (188), PATBOT6 (412), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Kh Qc]
+Dealt to STATBOT6 [6d 2s]
+Dealt to RANDOM6 [Ad 2d]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #232, PATBOT6 (413), RANDOM6 (187), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [5d 7h]
+Dealt to PATBOT6 [2h 4s]
+Dealt to STATBOT6 [5h Jd]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #233, RANDOM6 (188), PATBOT6 (412), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [8s As]
+Dealt to RANDOM6 [4s 6h]
+Dealt to PATBOT6 [Ac 5c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #234, PATBOT6 (413), RANDOM6 (187), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [8c 8s]
+Dealt to STATBOT6 [Kh Ts]
+Dealt to RANDOM6 [Js 9c]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 raises to 8
+RANDOM6 folds
+PATBOT6 wins the pot (13)
+
+Hand #235, RANDOM6 (182), PATBOT6 (418), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [8s 7h]
+Dealt to PATBOT6 [9d 9h]
+Dealt to STATBOT6 [7s Ac]
+RANDOM6 raises to 5
+PATBOT6 raises to 8
+RANDOM6 raises to 21
+PATBOT6 calls 21
+*** FLOP *** (42) [Tc As Ts]
+PATBOT6 bets 18
+RANDOM6 raises to 67
+PATBOT6 folds
+RANDOM6 wins the pot (127)
+
+Hand #236, PATBOT6 (379), RANDOM6 (221), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Td 7d]
+Dealt to RANDOM6 [Kh Qh]
+Dealt to PATBOT6 [9d 2c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #237, RANDOM6 (222), PATBOT6 (378), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [2c 5h]
+Dealt to STATBOT6 [3d Jc]
+Dealt to RANDOM6 [Kc 7c]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [Ks 9h 4c]
+PATBOT6 bets 2
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #238, PATBOT6 (380), RANDOM6 (220), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [7d 6s]
+Dealt to PATBOT6 [3s Ts]
+Dealt to STATBOT6 [2c Js]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #239, RANDOM6 (221), PATBOT6 (379), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Jd Ts]
+Dealt to RANDOM6 [3d 2d]
+Dealt to PATBOT6 [9d Js]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #240, PATBOT6 (380), RANDOM6 (220), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [4d Kc]
+Dealt to STATBOT6 [8s 7d]
+Dealt to RANDOM6 [8c 7h]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Kd 9d Qs]
+RANDOM6 checks
+PATBOT6 bets 8
+RANDOM6 calls 8
+*** TURN *** (24) [Kd 9d Qs] [5c]
+RANDOM6 checks
+PATBOT6 bets 24
+RANDOM6 raises to 77
+PATBOT6 calls 77
+*** RIVER *** (178) [Kd 9d Qs 5c] [As]
+RANDOM6 checks
+PATBOT6 bets 50
+RANDOM6 calls 50
+PATBOT6 shows [4d Kc]
+RANDOM6 shows [8c 7h]
+PATBOT6 wins the pot (278)
+
+Hand #241, RANDOM6 (81), PATBOT6 (519), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [9s Jc]
+Dealt to PATBOT6 [7c 6d]
+Dealt to STATBOT6 [As 6s]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #242, PATBOT6 (520), RANDOM6 (80), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [5h Td]
+Dealt to RANDOM6 [Jc Kh]
+Dealt to PATBOT6 [9s 8h]
+PATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [3d Ad Kc]
+RANDOM6 checks
+PATBOT6 bets 2
+RANDOM6 calls 2
+*** TURN *** (8) [3d Ad Kc] [4h]
+RANDOM6 bets 4
+PATBOT6 calls 4
+*** RIVER *** (16) [3d Ad Kc 4h] [Jd]
+RANDOM6 bets 4
+PATBOT6 folds
+RANDOM6 wins the pot (20)
+
+Hand #243, RANDOM6 (88), PATBOT6 (512), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [2c 7d]
+Dealt to STATBOT6 [6c 3h]
+Dealt to RANDOM6 [5c 3s]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [5d 4d 7c]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** TURN *** (8) [5d 4d 7c] [9c]
+PATBOT6 bets 8
+RANDOM6 raises to 29
+PATBOT6 calls 29
+*** RIVER *** (66) [5d 4d 7c 9c] [6d]
+PATBOT6 bets 55
+RANDOM6 folds
+PATBOT6 wins the pot (121)
+
+Hand #244, PATBOT6 (545), RANDOM6 (55), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [6h 9c]
+Dealt to PATBOT6 [Ks Ac]
+Dealt to STATBOT6 [Jd 7c]
+PATBOT6 raises to 4
+RANDOM6 raises to 8
+PATBOT6 calls 8
+*** FLOP *** (16) [Ad 6c Qs]
+RANDOM6 checks
+PATBOT6 bets 16
+RANDOM6 folds
+PATBOT6 wins the pot (32)
+
+Hand #245, RANDOM6 (47), PATBOT6 (553), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [8s Ac]
+Dealt to RANDOM6 [As Qs]
+Dealt to PATBOT6 [4h 5c]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [7h Qh 8d]
+PATBOT6 bets 2
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #246, PATBOT6 (555), RANDOM6 (45), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qc 6d]
+Dealt to STATBOT6 [Ts 3d]
+Dealt to RANDOM6 [As 9h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #247, RANDOM6 (46), PATBOT6 (554), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [6h Jh]
+Dealt to PATBOT6 [3c 3h]
+Dealt to STATBOT6 [9d Ks]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #248, PATBOT6 (552), RANDOM6 (48), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [6d 7h]
+Dealt to RANDOM6 [Qc 7s]
+Dealt to PATBOT6 [9d 3h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #249, RANDOM6 (49), PATBOT6 (551), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [6s Jd]
+Dealt to STATBOT6 [8d Td]
+Dealt to RANDOM6 [7h 7s]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #250, PATBOT6 (552), RANDOM6 (48), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [7d Qs]
+Dealt to PATBOT6 [Qh 4c]
+Dealt to STATBOT6 [5h Td]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #251, RANDOM6 (49), PATBOT6 (551), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [2c 9s]
+Dealt to RANDOM6 [8c 5h]
+Dealt to PATBOT6 [Kd 7h]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 8
+PATBOT6 folds
+RANDOM6 wins the pot (12)
+
+Hand #252, PATBOT6 (547), RANDOM6 (53), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qs 4s]
+Dealt to STATBOT6 [Kc 3s]
+Dealt to RANDOM6 [6c Js]
+PATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [8c Qh 3c]
+RANDOM6 bets 3
+PATBOT6 calls 3
+*** TURN *** (10) [8c Qh 3c] [Kh]
+RANDOM6 bets 6
+PATBOT6 calls 6
+*** RIVER *** (22) [8c Qh 3c Kh] [6h]
+RANDOM6 checks
+PATBOT6 bets 22
+RANDOM6 folds
+PATBOT6 wins the pot (44)
+
+Hand #253, RANDOM6 (42), PATBOT6 (558), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [6s 7c]
+Dealt to PATBOT6 [Ks Jd]
+Dealt to STATBOT6 [8c 6c]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 11
+PATBOT6 folds
+RANDOM6 wins the pot (15)
+
+Hand #254, PATBOT6 (554), RANDOM6 (46), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [3c 8h]
+Dealt to RANDOM6 [Qh Kc]
+Dealt to PATBOT6 [Ks 7s]
+PATBOT6 raises to 4
+RANDOM6 raises to 11
+PATBOT6 folds
+RANDOM6 wins the pot (15)
+
+Hand #255, RANDOM6 (50), PATBOT6 (550), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [6d 6c]
+Dealt to STATBOT6 [Jd 5h]
+Dealt to RANDOM6 [8h 5c]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #256, PATBOT6 (552), RANDOM6 (48), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Jc 6d]
+Dealt to PATBOT6 [4d 2d]
+Dealt to STATBOT6 [5s Td]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #257, RANDOM6 (49), PATBOT6 (551), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Th 5c]
+Dealt to RANDOM6 [8d 8h]
+Dealt to PATBOT6 [8s Ah]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Tc 4s Qh]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** TURN *** (8) [Tc 4s Qh] [Jc]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** RIVER *** (8) [Tc 4s Qh Jc] [2h]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 2
+PATBOT6 raises to 4
+RANDOM6 raises to 8
+PATBOT6 folds
+RANDOM6 wins the pot (20)
+
+Hand #258, PATBOT6 (543), RANDOM6 (57), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Kd Qs]
+Dealt to STATBOT6 [Ks 9c]
+Dealt to RANDOM6 [6s Qc]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [6c 5c 9s]
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** TURN *** (12) [6c 5c 9s] [3c]
+RANDOM6 bets 11
+PATBOT6 folds
+RANDOM6 wins the pot (23)
+
+Hand #259, RANDOM6 (63), PATBOT6 (537), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [6s 6h]
+Dealt to PATBOT6 [6d Qh]
+Dealt to STATBOT6 [Ts 2c]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 8
+PATBOT6 folds
+RANDOM6 wins the pot (12)
+
+Hand #260, PATBOT6 (533), RANDOM6 (67), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [7c Jc]
+Dealt to RANDOM6 [9s 4c]
+Dealt to PATBOT6 [5h Th]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #261, RANDOM6 (68), PATBOT6 (532), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [3s 9h]
+Dealt to STATBOT6 [5s 2c]
+Dealt to RANDOM6 [5c 7c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #262, PATBOT6 (533), RANDOM6 (67), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Qd Jc]
+Dealt to PATBOT6 [9d Ac]
+Dealt to STATBOT6 [Kh 4h]
+PATBOT6 calls 2
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #263, RANDOM6 (69), PATBOT6 (531), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Td 8c]
+Dealt to RANDOM6 [4s Ks]
+Dealt to PATBOT6 [3h 7h]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #264, PATBOT6 (529), RANDOM6 (71), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Kh 3s]
+Dealt to STATBOT6 [4h 4c]
+Dealt to RANDOM6 [Tc 8c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #265, RANDOM6 (72), PATBOT6 (528), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Qs Td]
+Dealt to PATBOT6 [Qh 7h]
+Dealt to STATBOT6 [8d 9s]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #266, PATBOT6 (526), RANDOM6 (74), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [9d 3c]
+Dealt to RANDOM6 [Ts 7s]
+Dealt to PATBOT6 [Qc 2c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #267, RANDOM6 (75), PATBOT6 (525), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [7c 3h]
+Dealt to STATBOT6 [Jd Td]
+Dealt to RANDOM6 [Qs Ac]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #268, PATBOT6 (526), RANDOM6 (74), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [5h 5d]
+Dealt to PATBOT6 [6h 3c]
+Dealt to STATBOT6 [6s 4s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #269, RANDOM6 (75), PATBOT6 (525), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [5s Ac]
+Dealt to RANDOM6 [Kd 9c]
+Dealt to PATBOT6 [6h 2h]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #270, PATBOT6 (523), RANDOM6 (77), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Jc As]
+Dealt to STATBOT6 [Jd 9d]
+Dealt to RANDOM6 [4h 6s]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 raises to 8
+RANDOM6 calls 8
+*** FLOP *** (16) [8s 6d 8h]
+RANDOM6 checks
+PATBOT6 bets 15
+RANDOM6 folds
+PATBOT6 wins the pot (31)
+
+Hand #271, RANDOM6 (69), PATBOT6 (531), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [4h Js]
+Dealt to PATBOT6 [Qh Jc]
+Dealt to STATBOT6 [Qs 3s]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #272, PATBOT6 (529), RANDOM6 (71), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Ts 2c]
+Dealt to RANDOM6 [4h Qs]
+Dealt to PATBOT6 [Qd 3d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #273, RANDOM6 (72), PATBOT6 (528), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Ts Ks]
+Dealt to STATBOT6 [3s 3d]
+Dealt to RANDOM6 [Ad 8c]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #274, PATBOT6 (530), RANDOM6 (70), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [7d 6c]
+Dealt to PATBOT6 [Kh 9h]
+Dealt to STATBOT6 [4c 5h]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [7c 2h 4h]
+RANDOM6 bets 4
+PATBOT6 calls 4
+*** TURN *** (16) [7c 2h 4h] [Qd]
+RANDOM6 bets 7
+PATBOT6 calls 7
+*** RIVER *** (30) [7c 2h 4h Qd] [7s]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 shows [7d 6c]
+PATBOT6 shows [Kh 9h]
+RANDOM6 wins the pot (30)
+
+Hand #275, RANDOM6 (85), PATBOT6 (515), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [3h Qc]
+Dealt to RANDOM6 [8d 9d]
+Dealt to PATBOT6 [8h 3c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #276, PATBOT6 (516), RANDOM6 (84), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [6h 3c]
+Dealt to STATBOT6 [Js Jd]
+Dealt to RANDOM6 [4s 6s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #277, RANDOM6 (85), PATBOT6 (515), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Qd As]
+Dealt to PATBOT6 [Kh 5s]
+Dealt to STATBOT6 [7s 2c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #278, PATBOT6 (516), RANDOM6 (84), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Qh 7s]
+Dealt to RANDOM6 [2h 4s]
+Dealt to PATBOT6 [5d 3h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #279, RANDOM6 (85), PATBOT6 (515), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Ah Kd]
+Dealt to STATBOT6 [8d Td]
+Dealt to RANDOM6 [Th 2s]
+RANDOM6 calls 2
+PATBOT6 raises to 5
+RANDOM6 folds
+PATBOT6 wins the pot (7)
+
+Hand #280, PATBOT6 (517), RANDOM6 (83), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [3c 6d]
+Dealt to PATBOT6 [2d 4c]
+Dealt to STATBOT6 [Kc 2s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #281, RANDOM6 (84), PATBOT6 (516), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ts 7d]
+Dealt to RANDOM6 [7c 2d]
+Dealt to PATBOT6 [As 8d]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #282, PATBOT6 (518), RANDOM6 (82), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [9c Th]
+Dealt to STATBOT6 [2c 6s]
+Dealt to RANDOM6 [Qc Qh]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #283, RANDOM6 (83), PATBOT6 (517), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [5d Kd]
+Dealt to PATBOT6 [Ad Th]
+Dealt to STATBOT6 [4d 8d]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #284, PATBOT6 (519), RANDOM6 (81), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [4s Qh]
+Dealt to RANDOM6 [Ts Jh]
+Dealt to PATBOT6 [2s Qc]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #285, RANDOM6 (82), PATBOT6 (518), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [5h 3c]
+Dealt to STATBOT6 [Qs 2s]
+Dealt to RANDOM6 [4s Qd]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [2c Kh Ah]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** TURN *** (4) [2c Kh Ah] [6s]
+PATBOT6 bets 2
+RANDOM6 calls 2
+*** RIVER *** (8) [2c Kh Ah 6s] [Ks]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+PATBOT6 shows [5h 3c]
+RANDOM6 shows [4s Qd]
+RANDOM6 wins the pot (8)
+
+Hand #286, PATBOT6 (514), RANDOM6 (86), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [2s 5d]
+Dealt to PATBOT6 [Ad Th]
+Dealt to STATBOT6 [Jh 4h]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #287, RANDOM6 (84), PATBOT6 (516), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ks Ts]
+Dealt to RANDOM6 [Qs 9d]
+Dealt to PATBOT6 [5s 8h]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #288, PATBOT6 (517), RANDOM6 (83), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Kh 8s]
+Dealt to STATBOT6 [Th 3d]
+Dealt to RANDOM6 [3h Ks]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #289, RANDOM6 (85), PATBOT6 (515), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [5s 7h]
+Dealt to PATBOT6 [6c 2d]
+Dealt to STATBOT6 [Jh 8c]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [6h As 8h]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 3
+PATBOT6 calls 3
+*** TURN *** (10) [6h As 8h] [Th]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** RIVER *** (10) [6h As 8h Th] [2s]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+RANDOM6 shows [5s 7h]
+PATBOT6 shows [6c 2d]
+PATBOT6 wins the pot (10)
+
+Hand #290, PATBOT6 (520), RANDOM6 (80), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Kd Qc]
+Dealt to RANDOM6 [4h Qs]
+Dealt to PATBOT6 [9h Qd]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #291, RANDOM6 (82), PATBOT6 (518), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Ah 8d]
+Dealt to STATBOT6 [Qc 2c]
+Dealt to RANDOM6 [6d 8c]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #292, PATBOT6 (516), RANDOM6 (84), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Th Kh]
+Dealt to PATBOT6 [8h 2h]
+Dealt to STATBOT6 [7h 3c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #293, RANDOM6 (85), PATBOT6 (515), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Td 8h]
+Dealt to RANDOM6 [Kc 3c]
+Dealt to PATBOT6 [Qc 6s]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #294, PATBOT6 (516), RANDOM6 (84), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qs Kh]
+Dealt to STATBOT6 [9d Qh]
+Dealt to RANDOM6 [6c Ac]
+PATBOT6 raises to 4
+RANDOM6 raises to 10
+PATBOT6 folds
+RANDOM6 wins the pot (14)
+
+Hand #295, RANDOM6 (88), PATBOT6 (512), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [8s Qh]
+Dealt to PATBOT6 [6h 2c]
+Dealt to STATBOT6 [2s 3s]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #296, PATBOT6 (513), RANDOM6 (87), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Jd Qc]
+Dealt to RANDOM6 [5c 3h]
+Dealt to PATBOT6 [8s 2c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #297, RANDOM6 (88), PATBOT6 (512), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Kh 7h]
+Dealt to STATBOT6 [As 2s]
+Dealt to RANDOM6 [Js Th]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #298, PATBOT6 (513), RANDOM6 (87), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Jc 4c]
+Dealt to PATBOT6 [Kc 6d]
+Dealt to STATBOT6 [Qh Ac]
+PATBOT6 raises to 4
+RANDOM6 raises to 11
+PATBOT6 folds
+RANDOM6 wins the pot (15)
+
+Hand #299, RANDOM6 (91), PATBOT6 (509), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ts Kd]
+Dealt to RANDOM6 [4s Jc]
+Dealt to PATBOT6 [9d Jh]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #300, PATBOT6 (507), RANDOM6 (93), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qc Jd]
+Dealt to STATBOT6 [6c 8d]
+Dealt to RANDOM6 [3d 2c]
+PATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [8s Ks 5h]
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** TURN *** (8) [8s Ks 5h] [3c]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** RIVER *** (8) [8s Ks 5h 3c] [Td]
+RANDOM6 bets 2
+PATBOT6 folds
+RANDOM6 wins the pot (10)
+
+Hand #301, RANDOM6 (97), PATBOT6 (503), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Ac 8d]
+Dealt to PATBOT6 [Ad 6s]
+Dealt to STATBOT6 [Jc Js]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [Qh 3d 3h]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** TURN *** (8) [Qh 3d 3h] [3s]
+PATBOT6 bets 4
+RANDOM6 folds
+PATBOT6 wins the pot (12)
+
+Hand #302, PATBOT6 (507), RANDOM6 (93), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Qs Tc]
+Dealt to RANDOM6 [9s 4c]
+Dealt to PATBOT6 [Kh Td]
+PATBOT6 calls 2
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #303, RANDOM6 (95), PATBOT6 (505), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [2s 8h]
+Dealt to STATBOT6 [6s 6d]
+Dealt to RANDOM6 [Jc Js]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [As 9d 9s]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** TURN *** (4) [As 9d 9s] [4c]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 3
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #304, PATBOT6 (503), RANDOM6 (97), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [9h 2s]
+Dealt to PATBOT6 [7h Jd]
+Dealt to STATBOT6 [Kc 8c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #305, RANDOM6 (98), PATBOT6 (502), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [6s Ad]
+Dealt to RANDOM6 [8h Kh]
+Dealt to PATBOT6 [8c Qh]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #306, PATBOT6 (503), RANDOM6 (97), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [7h Qc]
+Dealt to STATBOT6 [4h 3s]
+Dealt to RANDOM6 [3c 2d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #307, RANDOM6 (98), PATBOT6 (502), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [8h 5c]
+Dealt to PATBOT6 [2s 5d]
+Dealt to STATBOT6 [7c Kh]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #308, PATBOT6 (500), RANDOM6 (100), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Ad 4c]
+Dealt to RANDOM6 [Qd Ts]
+Dealt to PATBOT6 [5c 7d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #309, RANDOM6 (101), PATBOT6 (499), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Kc 6d]
+Dealt to STATBOT6 [9s 7h]
+Dealt to RANDOM6 [Qh 8d]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #310, PATBOT6 (500), RANDOM6 (100), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Jd Kc]
+Dealt to PATBOT6 [2h 8c]
+Dealt to STATBOT6 [7s 2s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #311, RANDOM6 (101), PATBOT6 (499), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ad Kc]
+Dealt to RANDOM6 [Th Tc]
+Dealt to PATBOT6 [Ts 5s]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #312, PATBOT6 (497), RANDOM6 (103), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [4d 2s]
+Dealt to STATBOT6 [Ks Kh]
+Dealt to RANDOM6 [Ac 2d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #313, RANDOM6 (104), PATBOT6 (496), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [7h Qs]
+Dealt to PATBOT6 [8h 6h]
+Dealt to STATBOT6 [6d 5c]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #314, PATBOT6 (494), RANDOM6 (106), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [2s 6h]
+Dealt to RANDOM6 [Qc Ad]
+Dealt to PATBOT6 [9d Tc]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #315, RANDOM6 (107), PATBOT6 (493), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [6s 4s]
+Dealt to STATBOT6 [Qd Ac]
+Dealt to RANDOM6 [8s 8h]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [9s 7s 6c]
+PATBOT6 bets 4
+RANDOM6 calls 4
+*** TURN *** (12) [9s 7s 6c] [4d]
+PATBOT6 bets 12
+RANDOM6 folds
+PATBOT6 wins the pot (24)
+
+Hand #316, PATBOT6 (499), RANDOM6 (101), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Jd Ac]
+Dealt to PATBOT6 [Qh 9h]
+Dealt to STATBOT6 [6c Kd]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [5c 5d Jh]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** TURN *** (8) [5c 5d Jh] [9c]
+RANDOM6 bets 6
+PATBOT6 calls 6
+*** RIVER *** (20) [5c 5d Jh 9c] [Ah]
+RANDOM6 bets 18
+PATBOT6 folds
+RANDOM6 wins the pot (38)
+
+Hand #317, RANDOM6 (111), PATBOT6 (489), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Qh Ad]
+Dealt to RANDOM6 [5s 9s]
+Dealt to PATBOT6 [Th 4c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #318, PATBOT6 (490), RANDOM6 (110), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [7c 8d]
+Dealt to STATBOT6 [9h Ac]
+Dealt to RANDOM6 [3h Ah]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #319, RANDOM6 (111), PATBOT6 (489), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [9s 3s]
+Dealt to PATBOT6 [6s 2s]
+Dealt to STATBOT6 [Ks 8h]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #320, PATBOT6 (487), RANDOM6 (113), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [7h 9d]
+Dealt to RANDOM6 [4d 7d]
+Dealt to PATBOT6 [Ks 8s]
+PATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [Kd 8d Kc]
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** TURN *** (8) [Kd 8d Kc] [7c]
+RANDOM6 checks
+PATBOT6 bets 8
+RANDOM6 folds
+PATBOT6 wins the pot (16)
+
+Hand #321, RANDOM6 (109), PATBOT6 (491), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [4c 6c]
+Dealt to STATBOT6 [3d Td]
+Dealt to RANDOM6 [Jc 8s]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 9
+PATBOT6 folds
+RANDOM6 wins the pot (13)
+
+Hand #322, PATBOT6 (487), RANDOM6 (113), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [6c 9d]
+Dealt to PATBOT6 [6h Jd]
+Dealt to STATBOT6 [7d 7h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #323, RANDOM6 (114), PATBOT6 (486), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [4s 5c]
+Dealt to RANDOM6 [4c 3c]
+Dealt to PATBOT6 [8d As]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #324, PATBOT6 (487), RANDOM6 (113), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qh Ad]
+Dealt to STATBOT6 [6s 6h]
+Dealt to RANDOM6 [8s Jh]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #325, RANDOM6 (111), PATBOT6 (489), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [8d Qc]
+Dealt to PATBOT6 [2d Jh]
+Dealt to STATBOT6 [7c 4s]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [2h 6d 3c]
+PATBOT6 bets 4
+RANDOM6 calls 4
+*** TURN *** (12) [2h 6d 3c] [2c]
+PATBOT6 bets 12
+RANDOM6 folds
+PATBOT6 wins the pot (24)
+
+Hand #326, PATBOT6 (495), RANDOM6 (105), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Jd Kd]
+Dealt to RANDOM6 [As 6c]
+Dealt to PATBOT6 [4d 6s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #327, RANDOM6 (106), PATBOT6 (494), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [4h 4s]
+Dealt to STATBOT6 [3s 4d]
+Dealt to RANDOM6 [5c 2d]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #328, PATBOT6 (492), RANDOM6 (108), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [2d 2c]
+Dealt to PATBOT6 [Ks Tc]
+Dealt to STATBOT6 [8h Ac]
+PATBOT6 raises to 4
+RANDOM6 raises to 7
+PATBOT6 folds
+RANDOM6 wins the pot (11)
+
+Hand #329, RANDOM6 (112), PATBOT6 (488), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Ks Ac]
+Dealt to RANDOM6 [4h 2s]
+Dealt to PATBOT6 [4d 9d]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [6c 5c 7c]
+PATBOT6 bets 2
+RANDOM6 calls 2
+*** TURN *** (8) [6c 5c 7c] [As]
+PATBOT6 bets 2
+RANDOM6 calls 2
+*** RIVER *** (12) [6c 5c 7c As] [8d]
+PATBOT6 bets 12
+RANDOM6 calls 12
+RANDOM6 shows [4h 2s]
+PATBOT6 shows [4d 9d]
+PATBOT6 wins the pot (36)
+
+Hand #330, PATBOT6 (506), RANDOM6 (94), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qh Kh]
+Dealt to STATBOT6 [Kd 3h]
+Dealt to RANDOM6 [4c 4h]
+PATBOT6 raises to 4
+RANDOM6 raises to 10
+PATBOT6 folds
+RANDOM6 wins the pot (14)
+
+Hand #331, RANDOM6 (98), PATBOT6 (502), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [9s 7h]
+Dealt to PATBOT6 [Ac 8s]
+Dealt to STATBOT6 [Td 2h]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #332, PATBOT6 (503), RANDOM6 (97), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [7h Kd]
+Dealt to RANDOM6 [8s Qd]
+Dealt to PATBOT6 [6h 5c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #333, RANDOM6 (98), PATBOT6 (502), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Js Kc]
+Dealt to STATBOT6 [9c Qd]
+Dealt to RANDOM6 [3d 8c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #334, PATBOT6 (503), RANDOM6 (97), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Qs 5h]
+Dealt to PATBOT6 [9c Td]
+Dealt to STATBOT6 [Qc Jh]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #335, RANDOM6 (98), PATBOT6 (502), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [9s Th]
+Dealt to RANDOM6 [2h 7h]
+Dealt to PATBOT6 [9h 6d]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [2s As 9d]
+PATBOT6 bets 4
+RANDOM6 calls 4
+*** TURN *** (12) [2s As 9d] [Ks]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 4
+PATBOT6 folds
+RANDOM6 wins the pot (16)
+
+Hand #336, PATBOT6 (496), RANDOM6 (104), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Td Ad]
+Dealt to STATBOT6 [6c 3d]
+Dealt to RANDOM6 [4d Tc]
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #337, RANDOM6 (102), PATBOT6 (498), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [6s Qd]
+Dealt to PATBOT6 [Ts Qs]
+Dealt to STATBOT6 [Ks Js]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #338, PATBOT6 (496), RANDOM6 (104), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Ad Td]
+Dealt to RANDOM6 [7d 2c]
+Dealt to PATBOT6 [Ac Th]
+PATBOT6 raises to 4
+RANDOM6 raises to 11
+PATBOT6 calls 11
+*** FLOP *** (22) [Kd 8s 9h]
+RANDOM6 checks
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** TURN *** (22) [Kd 8s 9h] [7s]
+RANDOM6 bets 5
+PATBOT6 calls 5
+*** RIVER *** (32) [Kd 8s 9h 7s] [Ks]
+RANDOM6 bets 3
+PATBOT6 raises to 6
+RANDOM6 folds
+PATBOT6 wins the pot (41)
+
+Hand #339, RANDOM6 (85), PATBOT6 (515), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Td 3c]
+Dealt to STATBOT6 [4d 3d]
+Dealt to RANDOM6 [6h 9d]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #340, PATBOT6 (516), RANDOM6 (84), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Ah 3d]
+Dealt to PATBOT6 [4h Ts]
+Dealt to STATBOT6 [5h 3h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #341, RANDOM6 (85), PATBOT6 (515), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Qd Kd]
+Dealt to RANDOM6 [Kc Td]
+Dealt to PATBOT6 [6c 9h]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [4c 7d 4s]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** TURN *** (4) [4c 7d 4s] [2h]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 3
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #342, PATBOT6 (513), RANDOM6 (87), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [5h Td]
+Dealt to STATBOT6 [6d 7h]
+Dealt to RANDOM6 [9d Ac]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #343, RANDOM6 (88), PATBOT6 (512), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [9s 9d]
+Dealt to PATBOT6 [5h Jd]
+Dealt to STATBOT6 [Qc 5s]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [4d Tc 8s]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 3
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #344, PATBOT6 (510), RANDOM6 (90), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Ac 5h]
+Dealt to RANDOM6 [2h 7c]
+Dealt to PATBOT6 [Jd 3c]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #345, RANDOM6 (92), PATBOT6 (508), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Jd Js]
+Dealt to STATBOT6 [Ad Tc]
+Dealt to RANDOM6 [Ah 6s]
+RANDOM6 raises to 5
+PATBOT6 raises to 10
+RANDOM6 folds
+PATBOT6 wins the pot (15)
+
+Hand #346, PATBOT6 (513), RANDOM6 (87), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Jc 9s]
+Dealt to PATBOT6 [8h 5c]
+Dealt to STATBOT6 [2h 3h]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #347, RANDOM6 (88), PATBOT6 (512), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [Td 2h]
+Dealt to RANDOM6 [3s 6c]
+Dealt to PATBOT6 [5c 2c]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [Qh Jh Qs]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** TURN *** (4) [Qh Jh Qs] [5h]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 2
+PATBOT6 calls 2
+*** RIVER *** (8) [Qh Jh Qs 5h] [6d]
+PATBOT6 bets 5
+RANDOM6 folds
+PATBOT6 wins the pot (13)
+
+Hand #348, PATBOT6 (516), RANDOM6 (84), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [As 2s]
+Dealt to STATBOT6 [Js Kh]
+Dealt to RANDOM6 [Ac Ad]
+PATBOT6 calls 2
+RANDOM6 checks
+*** FLOP *** (4) [2d Ts 2c]
+RANDOM6 checks
+PATBOT6 bets 4
+RANDOM6 raises to 12
+PATBOT6 calls 12
+*** TURN *** (28) [2d Ts 2c] [2h]
+RANDOM6 checks
+PATBOT6 bets 28
+RANDOM6 folds
+PATBOT6 wins the pot (56)
+
+Hand #349, RANDOM6 (70), PATBOT6 (530), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Ac 5s]
+Dealt to PATBOT6 [6c Jh]
+Dealt to STATBOT6 [3h 9h]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #350, PATBOT6 (528), RANDOM6 (72), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Ks Td]
+Dealt to RANDOM6 [8h 3d]
+Dealt to PATBOT6 [2c 6d]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #351, RANDOM6 (73), PATBOT6 (527), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [4d 4h]
+Dealt to STATBOT6 [Ac Td]
+Dealt to RANDOM6 [3c 4c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #352, PATBOT6 (528), RANDOM6 (72), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [5c 5d]
+Dealt to PATBOT6 [5h Jc]
+Dealt to STATBOT6 [Kc Jh]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #353, RANDOM6 (73), PATBOT6 (527), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [7h 5h]
+Dealt to RANDOM6 [Kd 9h]
+Dealt to PATBOT6 [6d 2c]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #354, PATBOT6 (525), RANDOM6 (75), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [Qd 5d]
+Dealt to STATBOT6 [8c Kh]
+Dealt to RANDOM6 [2h Jc]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #355, RANDOM6 (77), PATBOT6 (523), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [2s As]
+Dealt to PATBOT6 [3c 3d]
+Dealt to STATBOT6 [6d 6s]
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #356, PATBOT6 (521), RANDOM6 (79), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [7c 6c]
+Dealt to RANDOM6 [Qd 6s]
+Dealt to PATBOT6 [5h Jc]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #357, RANDOM6 (80), PATBOT6 (520), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [7h 8c]
+Dealt to STATBOT6 [Jh Qs]
+Dealt to RANDOM6 [Ah 6s]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #358, PATBOT6 (521), RANDOM6 (79), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [6s 5d]
+Dealt to PATBOT6 [2h 2s]
+Dealt to STATBOT6 [Jh Qs]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #359, RANDOM6 (80), PATBOT6 (520), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [7d 4d]
+Dealt to RANDOM6 [9s Qs]
+Dealt to PATBOT6 [Td 3c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #360, PATBOT6 (521), RANDOM6 (79), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [2h 3h]
+Dealt to STATBOT6 [Ks Ah]
+Dealt to RANDOM6 [Qc 8s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #361, RANDOM6 (80), PATBOT6 (520), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [5h Th]
+Dealt to PATBOT6 [Js 9h]
+Dealt to STATBOT6 [5c 3c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #362, PATBOT6 (521), RANDOM6 (79), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Kh 3d]
+Dealt to RANDOM6 [Ac 9s]
+Dealt to PATBOT6 [Ks 7d]
+PATBOT6 calls 2
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #363, RANDOM6 (81), PATBOT6 (519), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [9d 2h]
+Dealt to STATBOT6 [6d 6c]
+Dealt to RANDOM6 [Kh 5c]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #364, PATBOT6 (520), RANDOM6 (80), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Kd Qs]
+Dealt to PATBOT6 [6s 4d]
+Dealt to STATBOT6 [Th 2c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #365, RANDOM6 (81), PATBOT6 (519), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [6h 4s]
+Dealt to RANDOM6 [Kc 9s]
+Dealt to PATBOT6 [6d 2c]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #366, PATBOT6 (517), RANDOM6 (83), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [4h 5d]
+Dealt to STATBOT6 [As Ah]
+Dealt to RANDOM6 [9d 3c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #367, RANDOM6 (84), PATBOT6 (516), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Ac 2h]
+Dealt to PATBOT6 [Td 5d]
+Dealt to STATBOT6 [9s Qh]
+RANDOM6 calls 2
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+*** FLOP *** (4) [7d 3s 9h]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 3
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #368, PATBOT6 (514), RANDOM6 (86), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [2s 6c]
+Dealt to RANDOM6 [Jc Qh]
+Dealt to PATBOT6 [Jh 5d]
+PATBOT6 raises to 4
+RANDOM6 raises to 9
+PATBOT6 folds
+RANDOM6 wins the pot (13)
+
+Hand #369, RANDOM6 (90), PATBOT6 (510), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [7c Qc]
+Dealt to STATBOT6 [4h 3c]
+Dealt to RANDOM6 [8c 7s]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #370, PATBOT6 (511), RANDOM6 (89), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [2c 5c]
+Dealt to PATBOT6 [4c 4d]
+Dealt to STATBOT6 [Th Jd]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 raises to 8
+RANDOM6 folds
+PATBOT6 wins the pot (13)
+
+Hand #371, RANDOM6 (84), PATBOT6 (516), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [5d 6c]
+Dealt to RANDOM6 [9c Th]
+Dealt to PATBOT6 [Ad 8d]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #372, PATBOT6 (517), RANDOM6 (83), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [2s 6h]
+Dealt to STATBOT6 [Qd 2h]
+Dealt to RANDOM6 [Jc 7c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #373, RANDOM6 (84), PATBOT6 (516), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [3s Tc]
+Dealt to PATBOT6 [9d 4s]
+Dealt to STATBOT6 [5c Td]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #374, PATBOT6 (517), RANDOM6 (83), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [7s 6c]
+Dealt to RANDOM6 [5h 4s]
+Dealt to PATBOT6 [Jc 3c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #375, RANDOM6 (84), PATBOT6 (516), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [9h 4s]
+Dealt to STATBOT6 [4c 4d]
+Dealt to RANDOM6 [Kc 2h]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #376, PATBOT6 (518), RANDOM6 (82), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Tc 3d]
+Dealt to PATBOT6 [4c Kc]
+Dealt to STATBOT6 [As 6c]
+PATBOT6 calls 2
+RANDOM6 raises to 4
+PATBOT6 raises to 6
+RANDOM6 folds
+PATBOT6 wins the pot (10)
+
+Hand #377, RANDOM6 (78), PATBOT6 (522), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [3c 5s]
+Dealt to RANDOM6 [7c 4d]
+Dealt to PATBOT6 [9d 8h]
+RANDOM6 raises to 5
+PATBOT6 calls 5
+*** FLOP *** (10) [6c 7s As]
+PATBOT6 bets 4
+RANDOM6 raises to 8
+PATBOT6 raises to 12
+RANDOM6 raises to 41
+PATBOT6 calls 41
+*** TURN *** (92) [6c 7s As] [3h]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 21
+PATBOT6 calls 21
+*** RIVER *** (134) [6c 7s As 3h] [Jc]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+RANDOM6 shows [7c 4d]
+PATBOT6 shows [9d 8h]
+RANDOM6 wins the pot (134)
+
+Hand #378, PATBOT6 (455), RANDOM6 (145), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [8h 4d]
+Dealt to STATBOT6 [Kh Qc]
+Dealt to RANDOM6 [9s 5c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #379, RANDOM6 (146), PATBOT6 (454), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Jh 5c]
+Dealt to PATBOT6 [9c 8c]
+Dealt to STATBOT6 [Jc 3s]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #380, PATBOT6 (456), RANDOM6 (144), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Qh 6d]
+Dealt to RANDOM6 [5d 2d]
+Dealt to PATBOT6 [8c 6c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #381, RANDOM6 (145), PATBOT6 (455), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [Ac 7s]
+Dealt to STATBOT6 [9s Js]
+Dealt to RANDOM6 [5s 6d]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 folds
+PATBOT6 wins the pot (6)
+
+Hand #382, PATBOT6 (457), RANDOM6 (143), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Kd 6c]
+Dealt to PATBOT6 [Ad 3s]
+Dealt to STATBOT6 [Kc Jc]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [8h Ah 7h]
+RANDOM6 checks
+PATBOT6 bets 8
+RANDOM6 calls 8
+*** TURN *** (24) [8h Ah 7h] [9c]
+RANDOM6 bets 16
+PATBOT6 calls 16
+*** RIVER *** (56) [8h Ah 7h 9c] [Tc]
+RANDOM6 bets 29
+PATBOT6 calls 29
+RANDOM6 shows [Kd 6c]
+PATBOT6 shows [Ad 3s]
+RANDOM6 wins the pot (114)
+
+Hand #383, RANDOM6 (200), PATBOT6 (400), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [6c 3d]
+Dealt to RANDOM6 [9h Td]
+Dealt to PATBOT6 [3h 7s]
+RANDOM6 folds
+PATBOT6 wins the pot (3)
+
+Hand #384, PATBOT6 (401), RANDOM6 (199), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [4s 7s]
+Dealt to STATBOT6 [5h 2d]
+Dealt to RANDOM6 [Kd Ah]
+PATBOT6 calls 2
+RANDOM6 raises to 5
+PATBOT6 folds
+RANDOM6 wins the pot (7)
+
+Hand #385, RANDOM6 (201), PATBOT6 (399), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Qc Kc]
+Dealt to PATBOT6 [Qh Jd]
+Dealt to STATBOT6 [Td 4h]
+RANDOM6 calls 2
+PATBOT6 raises to 4
+RANDOM6 raises to 8
+PATBOT6 folds
+RANDOM6 wins the pot (12)
+
+Hand #386, PATBOT6 (395), RANDOM6 (205), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [2c 2s]
+Dealt to RANDOM6 [7s 6h]
+Dealt to PATBOT6 [Td 5s]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #387, RANDOM6 (206), PATBOT6 (394), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [9s 9c]
+Dealt to STATBOT6 [5d 3s]
+Dealt to RANDOM6 [6d 4h]
+RANDOM6 raises to 5
+PATBOT6 raises to 8
+RANDOM6 calls 8
+*** FLOP *** (16) [5c Qc 5s]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 checks
+*** TURN *** (16) [5c Qc 5s] [Ks]
+### ILLEGAL ACTION: Fold [player=PATBOT6]
+PATBOT6 checks
+RANDOM6 bets 8
+PATBOT6 calls 8
+*** RIVER *** (32) [5c Qc 5s Ks] [8c]
+PATBOT6 bets 18
+RANDOM6 folds
+PATBOT6 wins the pot (50)
+
+Hand #388, PATBOT6 (410), RANDOM6 (190), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to RANDOM6 [Td 4s]
+Dealt to PATBOT6 [3c 8d]
+Dealt to STATBOT6 [7h Th]
+PATBOT6 raises to 4
+RANDOM6 calls 4
+*** FLOP *** (8) [4d Jd Qc]
+RANDOM6 bets 2
+PATBOT6 folds
+RANDOM6 wins the pot (10)
+
+Hand #389, RANDOM6 (194), PATBOT6 (406), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to STATBOT6 [5c 8h]
+Dealt to RANDOM6 [As Th]
+Dealt to PATBOT6 [Jh 6c]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #390, PATBOT6 (404), RANDOM6 (196), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to PATBOT6 [3d 4d]
+Dealt to STATBOT6 [3c As]
+Dealt to RANDOM6 [Ah 4c]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #391, RANDOM6 (197), PATBOT6 (403), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to RANDOM6 [Ks As]
+Dealt to PATBOT6 [9d 6d]
+Dealt to STATBOT6 [7d 2c]
+RANDOM6 raises to 4
+PATBOT6 folds
+RANDOM6 wins the pot (6)
+
+Hand #392, PATBOT6 (401), RANDOM6 (199), STATBOT6 (0)
+PATBOT6 posts the blind of 1
+RANDOM6 posts the blind of 2
+Dealt to STATBOT6 [Jh Ad]
+Dealt to RANDOM6 [5h 7d]
+Dealt to PATBOT6 [3h Ks]
+PATBOT6 folds
+RANDOM6 wins the pot (3)
+
+Hand #393, RANDOM6 (200), PATBOT6 (400), STATBOT6 (0)
+RANDOM6 posts the blind of 1
+PATBOT6 posts the blind of 2
+Dealt to PATBOT6 [8s Qh]
+Dealt to STATBOT6 [Ah 6c]
+Dealt to RANDOM6 [5c 8d]
+RANDOM6 raises to 4
+PATBOT6 raises to 6
+RANDOM6 calls 6
+*** FLOP *** (12) [4d Qc Qs]
+PATBOT6 bets 12
+RANDOM6 calls 12
+*** TURN *** (36) [4d Qc Qs] [9s]
+PATBOT6 bets 36
+RANDOM6 raises to 107
+PATBOT6 calls 107
+*** RIVER *** (250) [4d Qc Qs 9s] [3s]
+PATBOT6 bets 75
+RANDOM6 calls 75
+PATBOT6 shows [8s Qh]
+RANDOM6 shows [5c 8d]
+PATBOT6 wins the pot (400)
+
