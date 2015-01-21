@@ -174,12 +174,7 @@ public class StatBot {
                                 String range = HandRange.getRangeFromPercent(percentRange);      
                                 preflopRangeMap.put(player.getName(), range);
                                 preflopRangePercentMap.put(player.getName(), percentRange);
-                            } else{
-                                int percentRange = (int)(90);
-                                String range = HandRange.getRangeFromPercent(percentRange);      
-                                preflopRangeMap.put(player.getName(), range);
-                                preflopRangePercentMap.put(player.getName(), percentRange);
-                            }
+                            } 
                         } 
                     }
                 }
@@ -222,7 +217,7 @@ public class StatBot {
           
             int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
             if(actionToPerform.getMax() != 0){
-                double amountToRaiseOrBet = 0.8*equity*potSize / (1-equity);
+                double amountToRaiseOrBet = 0.7*equity*potSize / (1-equity);
                 amount = (int) clamp(amountToRaiseOrBet, actionToPerform.getMin(), actionToPerform.getMax());
             }
 
@@ -327,60 +322,17 @@ public class StatBot {
     
     
     private ActionProbability preFlopStrategy(Map<LegalActionType, LegalAction> legalActions, double equity){
-        int callAmount = 0;
-        if(legalActions.containsKey(LegalActionType.CALL)){
-            callAmount=legalActions.get(LegalActionType.CALL).getAmount();
-            double potOdds = callAmount/(double)(callAmount+potSize); //pot odds = call/(call+pot)
-            System.out.println("potOdds preflop: " + potOdds);
-            //If pot odds are better than your pot equity, call or raise
-            //If pot odds are worse, fold
-            if(potOdds*1.3 < equity){
-                if(previousActions.contains(LegalActionType.RAISE)){
-                    //fold, call, raise, bet, check
-                    return new ActionProbability(0, 0.85, 0.15, 0, 0);
-                } else{
-                    return new ActionProbability(0, 0.3, 0.7, 0, 0); 
-                }
-            }
-            else{
-                return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
-            }
-        } else{
-            if(previousActions.contains(LegalActionType.RAISE)){
-                if(equity > 0.9){
-                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
-                }else if(equity > 0.8){
-                    return new ActionProbability(0, 0.8, 0.2, 0, 0);
-                } else if(equity > 0.6){
-                    return new ActionProbability(0, 0.9, 0.1, 0, 0); 
-                }else if(equity > 0.5){
-                    return new ActionProbability(0.2, 0.8, 0, 0, 0);
-                } else{
-                    return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
-                }
-            } else{
-                if(equity > 0.8){
-                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
-                } else if(equity > 0.6){
-                    return new ActionProbability(0, 0.3, 0.7, 0, 0); 
-                }else if(equity > 0.4){
-                    return new ActionProbability(0, 0.8, 0.2, 0, 0);
-                } else{
-                    return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
-                }
-            }
-        }
-        /*
+
         if(previousActions.contains(LegalActionType.RAISE)){
             if(equity > 0.9){
                 return new ActionProbability(0, 0.1, 0.9, 0, 0);
             }
-            else if(equity > 0.8){
-                return new ActionProbability(0, 0.8, 0.2, 0, 0);
+            else if(equity > 0.7){
+                return new ActionProbability(0, 0.6, 0.4, 0, 0);
             } else if(equity > 0.6){
-                return new ActionProbability(0, 0.9, 0.1, 0, 0); 
-            }else if(equity > 0.5){
-                return new ActionProbability(0.2, 0.8, 0, 0, 0);
+                return new ActionProbability(0, 0.7, 0.3, 0, 0); 
+            }else if(equity > 0.45){
+                return new ActionProbability(0.05, 0.95, 0, 0, 0);
             } else{
                 return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
             }
@@ -395,7 +347,7 @@ public class StatBot {
                 return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
             }
         }
-     */
+     
     }
 
     private ActionProbability postFlopStrategy(Map<LegalActionType, LegalAction> legalActions, double equity){
@@ -409,7 +361,7 @@ public class StatBot {
             //If pot odds are worse, fold
             if(potOdds*1.3 < equity){
                 //fold, call, raise, bet, check
-                return new ActionProbability(0, 0.85, 0.15, 0, 0);
+                return new ActionProbability(0, 0.9, 0.1, 0, 0);
             }
             else{
                 return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
