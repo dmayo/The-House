@@ -21,7 +21,9 @@ public class Player {
     private boolean setPreFlopRaise;
     private boolean madePreFlopAction;
     private boolean cardsShown;
+    private boolean preFlopR3B;
     private int numActivePlayers = 3;
+    
     
     public Player(String name, int stackSize, int seat){
         this.name = name;
@@ -35,6 +37,7 @@ public class Player {
         setPreFlopRaise = false;
         madePreFlopAction = false;
         cardsShown = false;
+        preFlopR3B = false;
     }
     
     public Stats getStats(){
@@ -83,6 +86,18 @@ public class Player {
     }
     
     
+    public boolean didVPIP(){
+        return setVPIP;
+    }
+    
+    public boolean didPFR(){
+        return setPreFlopRaise;
+    }
+    
+    public boolean didPFR3B(){
+        return preFlopR3B;
+    }
+    
     /**
      * Whether or not the player is playing the current hand
      * @return true if playing, false otherwise
@@ -103,6 +118,7 @@ public class Player {
         setPreFlopRaise = false;
         madePreFlopAction = false;
         cardsShown = false;
+        preFlopR3B = false;
     }
     
     
@@ -111,7 +127,7 @@ public class Player {
      * @param action
      */
     public void processAction(PerformedAction action){
-        this.lastAction = action;
+        
         PerformedActionType type = action.getType();
         
         if(type == PerformedActionType.DEAL){
@@ -129,6 +145,10 @@ public class Player {
             stats.numCouldDoActionPreFlop(getPosition());
             madePreFlopAction = true;
         }
+        if(lastAction.getType() == PerformedActionType.RAISE && street == Street.PREFLOP && type.isAPlayerAction()){
+            stats.couldR3B();
+            System.out.println(name + " -------------Could R3B------------");
+        }
         if(type == PerformedActionType.RAISE && street == Street.PREFLOP && !setPreFlopRaise){
             stats.PFR(getPosition());
             setPreFlopRaise = true;
@@ -143,7 +163,14 @@ public class Player {
         if((type == PerformedActionType.WIN || type == PerformedActionType.TIE) && cardsShown){
             stats.W$SD();
             cardsShown = false;
+        }   
+        if(type == PerformedActionType.RAISE && lastAction.getType() == PerformedActionType.RAISE &&
+                street == Street.PREFLOP){
+            stats.R3B();
+            preFlopR3B = true;
+            System.out.println(name + " -------------did R3B------------");
         }
+        this.lastAction = action;
     }
         
 

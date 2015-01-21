@@ -112,13 +112,15 @@ public class StatBot {
             for(Player player : otherPlayers){
                 if(player.isActive() && player.getLastAction().getType() != PerformedActionType.FOLD && 
                         player.getLastAction().getType() != PerformedActionType.NONE){ // player has acted
-                    if(player.getLastAction().getType() == PerformedActionType.RAISE){ // player raised so use PFR
-                        int percentRange = (int)(100*player.getStats().getPFR(player.getPosition()));
+                    if(player.didPFR()){ // player raised so use PFR
+                        double precentRangeDouble = player.getStats().getPFR(player.getPosition());
+                        precentRangeDouble *= player.didPFR3B() ? player.getStats().getR3B() : 1;
+                        int percentRange = (int)(100*precentRangeDouble);
                         String range = HandRange.getRangeFromPercent(percentRange);      
                         preflopRangeMap.put(player.getName(), range);
                         preflopRangePercentMap.put(player.getName(), percentRange);
                         hands += ":" + range;
-                    } else if(player.getLastAction().getType() == PerformedActionType.CALL){ // player called so use VPIP
+                    } else if(player.didVPIP()){ // player called so use VPIP
                         int percentRange = (int)(100*player.getStats().getVPIP(player.getPosition()));
                         String range = HandRange.getRangeFromPercent(percentRange);      
                         preflopRangeMap.put(player.getName(), range);
@@ -162,19 +164,20 @@ public class StatBot {
             
             if(boardCards.getStreet() == Street.FLOP){
                 for(Player player : otherPlayers){
-                    if(player.getLastAction().getType() != PerformedActionType.FOLD && player.isActive()){
-                        if(!preflopRangePercentMap.containsKey(player.getName())){
-                            if(player.getLastAction().getType() == PerformedActionType.RAISE){ // player raised so use PFR
-                                int percentRange = (int)(100*player.getStats().getPFR(player.getPosition()));
-                                String range = HandRange.getRangeFromPercent(percentRange);      
-                                preflopRangeMap.put(player.getName(), range);
-                                preflopRangePercentMap.put(player.getName(), percentRange);
-                            } else if(player.getLastAction().getType() == PerformedActionType.CALL){ // player called so use VPIP
-                                int percentRange = (int)(100*player.getStats().getVPIP(player.getPosition()));
-                                String range = HandRange.getRangeFromPercent(percentRange);      
-                                preflopRangeMap.put(player.getName(), range);
-                                preflopRangePercentMap.put(player.getName(), percentRange);
-                            } 
+                    if(player.getLastAction().getType() != PerformedActionType.FOLD && player.isActive() &&
+                            !preflopRangePercentMap.containsKey(player.getName())){
+                        if(player.didPFR()){ // player raised so use PFR
+                            double precentRangeDouble = player.getStats().getPFR(player.getPosition());
+                            precentRangeDouble *= player.didPFR3B() ? player.getStats().getR3B() : 1;
+                            int percentRange = (int)(100*precentRangeDouble);
+                            String range = HandRange.getRangeFromPercent(percentRange);      
+                            preflopRangeMap.put(player.getName(), range);
+                            preflopRangePercentMap.put(player.getName(), percentRange);
+                        } else if(player.didVPIP()){ // player called so use VPIP
+                            int percentRange = (int)(100*player.getStats().getVPIP(player.getPosition()));
+                            String range = HandRange.getRangeFromPercent(percentRange);      
+                            preflopRangeMap.put(player.getName(), range);
+                            preflopRangePercentMap.put(player.getName(), percentRange);
                         } 
                     }
                 }

@@ -14,6 +14,9 @@ public class Stats {
     private final Map<Position, Integer> numCouldDoActionPreFlop;
     private int numWTSD = 0;
     private int numW$SD = 0;
+    private int numCouldR3B = 0;
+    private int numDidR3B = 0;
+    
     
     private final Map<Position, Double> currentVPIP;
     private final Map<Position, Double> currentPFR;
@@ -21,10 +24,11 @@ public class Stats {
     private double currentW$SD;
     private double currentOverallVPIP;
     private double currentOverallPFR;
+    private double currentR3B;
     private final double a = 0.02;
     
     public Stats(Map<Position, Double> initialVPIP, Map<Position, Double> initialPFR, double initialWTSD, double initialW$SD,
-            double initialOverallVPIP, double initialOverallPFR){
+            double initialOverallVPIP, double initialOverallPFR, double initialR3B){
     
         Map<Street, Integer> initialStreetCounts = new HashMap<Street,Integer>();
         initialStreetCounts.put(Street.PREFLOP, 0);
@@ -52,6 +56,7 @@ public class Stats {
         currentW$SD = initialW$SD;     
         currentOverallVPIP = initialOverallVPIP;
         currentOverallPFR = initialOverallPFR;
+        currentR3B = initialR3B;
     }
     
     
@@ -90,6 +95,7 @@ public class Stats {
         currentW$SD = 0.5;     
         currentOverallVPIP = 0.22;
         currentOverallPFR = 0.16;
+        currentR3B = 0.0275;
     }
     
     
@@ -204,6 +210,32 @@ public class Stats {
     
     
     /**
+     * Call whenever a player raises 3-Bet
+     */
+    public void R3B(){
+        numDidR3B++;
+        double newR3B = numDidR3B / (double) numCouldR3B;
+        if (newR3B != Double.NaN && Double.isFinite(newR3B)){
+            currentR3B = a*newR3B + (1-a)*currentR3B;
+        }
+    }
+    
+    
+    /**
+     * Call whenever a player could raise 3-Bet
+     */
+    public void couldR3B(){
+        numCouldR3B++;
+    }
+    
+    
+    public double getR3B(){
+        return currentR3B;
+    }
+    
+    
+    
+    /**
      * Call whenever a player has the opportunity to do an action preflop from given position
      */
     public void numCouldDoActionPreFlop(Position position){
@@ -272,7 +304,8 @@ public class Stats {
                "PFR: " + getPFR() + "\n" + 
                "AF: " + getAF() + "\n" +
                "WTSD: " + getWTSD() + "\n"+
-               "W$SD: " + getW$SD() + "\n";
+               "W$SD: " + getW$SD() + "\n" +
+               "R3B: " + getR3B() + "\n";
         for(Position position: Position.values()){
             toReturn += "VPIP " + position + " " + getVPIP(position) + "\n";
         }
@@ -296,6 +329,7 @@ public class Stats {
         out+=StringEncode.encodeVal((int)(currentW$SD*100));
         out+=StringEncode.encodeVal((int)(currentOverallVPIP*100));
         out+=StringEncode.encodeVal((int)(currentOverallPFR*100));
+        out+=StringEncode.encodeVal((int)(currentR3B*100));
         return out;
     }
     
