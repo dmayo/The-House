@@ -12,7 +12,7 @@ public class HandRange {
     static List<String> percentToRange = new ArrayList<String>();
 
     static{
-        percentToRange.add(0,"");
+        percentToRange.add(0,"KK+");
         percentToRange.add(1,"KK+");
         percentToRange.add(2,"JJ+");
         percentToRange.add(3,"88+");

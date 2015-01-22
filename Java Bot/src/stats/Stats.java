@@ -95,9 +95,9 @@ public class Stats {
         currentW$SD = 0.5;     
         currentOverallVPIP = 0.22;
         currentOverallPFR = 0.16;
-        currentR3B = 0.0275;
+        currentR3B = 0.12;
     }
-    
+   
     
     
     /**
@@ -213,10 +213,11 @@ public class Stats {
      * Call whenever a player raises 3-Bet
      */
     public void R3B(){
+        final double alphaR3B = 0.06;
         numDidR3B++;
         double newR3B = numDidR3B / (double) numCouldR3B;
         if (newR3B != Double.NaN && Double.isFinite(newR3B)){
-            currentR3B = a*newR3B + (1-a)*currentR3B;
+            currentR3B = alphaR3B*newR3B + (1-alphaR3B)*currentR3B;
         }
     }
     
