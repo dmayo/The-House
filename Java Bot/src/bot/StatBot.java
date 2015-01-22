@@ -183,33 +183,35 @@ public class StatBot {
                 }
             }
             
+            
+            double minWTSD = 100;
+            
             for(Player player : otherPlayers){
                 if(player.getLastAction().getType() != PerformedActionType.FOLD && player.isActive()){
                     if(preflopRangePercentMap.containsKey(player.getName())){
-                        if(boardCards.getStreet() == Street.FLOP){
-                            handsToEvaluate += ":" + preflopRangeMap.get(player.getName());
-                        }
-                        else if(boardCards.getStreet() == Street.TURN){
-                           int percent = Math.min(100, (int)(preflopRangePercentMap.get(player.getName())*1.6*player.getStats().getWTSD()));
-                           String range = HandRange.getRangeFromPercent(percent);
-                           handsToEvaluate += ":"+range;
-                           
-                        }
-                        else if(boardCards.getStreet() == Street.RIVER){
-                            int percent = Math.min(100, (int)(preflopRangePercentMap.get(player.getName())*1.3*player.getStats().getWTSD()));
-                            String range = HandRange.getRangeFromPercent(percent);
-                            handsToEvaluate += ":"+range;
-                        }
+                        handsToEvaluate += ":" + preflopRangeMap.get(player.getName());      
+                        minWTSD = Math.min(minWTSD, player.getStats().getWTSD());
                     } 
                     else{
                         handsToEvaluate += ":xx";
                     }
                 }
             }
+            
             System.out.println("hands: " + handsToEvaluate);
             Results r = Calculator.calc(handsToEvaluate, boardCards.toString(), "", 5000);
             double equity = new Double(r.getEv().get(0));
-            System.out.println("equity " + equity);
+            System.out.println("equity " + equity);      
+            
+            if(boardCards.getStreet() == Street.TURN){
+               //equity *= minWTSD * (1/0.35);
+               
+            }
+            else if(boardCards.getStreet() == Street.RIVER){
+               // equity *= minWTSD * (1/0.3);
+            }
+            
+            System.out.println("adjusted equity " + equity);
             
   
             ActionProbability actionProb = postFlopStrategy(legalActions, equity);
@@ -325,7 +327,33 @@ public class StatBot {
     
     
     private ActionProbability preFlopStrategy(Map<LegalActionType, LegalAction> legalActions, double equity){
-
+        if(numActivePlayers == 2 && seat == 1){
+            if(previousActions.contains(LegalActionType.RAISE)){
+                if(equity > 0.9){
+                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                }
+                else if(equity > 0.7){
+                    return new ActionProbability(0, 0.6, 0.4, 0, 0);
+                } else if(equity > 0.6){
+                    return new ActionProbability(0, 0.7, 0.3, 0, 0); 
+                }else if(equity > 0.45){
+                    return new ActionProbability(0.05, 0.95, 0, 0, 0);
+                } else{
+                    return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
+                }
+            } else{
+                if(equity > 0.8){
+                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                } else if(equity > 0.6){
+                    return new ActionProbability(0, 0.2, 0.8, 0, 0); 
+                }else if(equity > 0.4){
+                    return new ActionProbability(0, 0.3, 0.7, 0, 0);
+                } else{
+                      return new ActionProbability(0.6, 0.05, 0.35, 0, 0);               
+                }
+            }
+        }
+        
         if(previousActions.contains(LegalActionType.RAISE)){
             if(equity > 0.9){
                 return new ActionProbability(0, 0.1, 0.9, 0, 0);
@@ -347,7 +375,7 @@ public class StatBot {
             }else if(equity > 0.4){
                 return new ActionProbability(0, 0.8, 0.2, 0, 0);
             } else{
-                return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
+                  return new ActionProbability(0.9, 0.05, 0.05, 0, 0);               
             }
         }
      

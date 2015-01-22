@@ -22,6 +22,8 @@ public class Player {
     private boolean madePreFlopAction;
     private boolean cardsShown;
     private boolean preFlopR3B;
+    private boolean flopCBet;
+    private boolean countedFlopCbetOppurtunity;
     private int numActivePlayers = 3;
     
     
@@ -38,6 +40,8 @@ public class Player {
         madePreFlopAction = false;
         cardsShown = false;
         preFlopR3B = false;
+        flopCBet = false;
+        countedFlopCbetOppurtunity = false;
     }
     
     public Stats getStats(){
@@ -98,6 +102,10 @@ public class Player {
         return preFlopR3B;
     }
     
+    public boolean didFlopCBet(){
+        return flopCBet;
+    }
+    
     /**
      * Whether or not the player is playing the current hand
      * @return true if playing, false otherwise
@@ -119,6 +127,8 @@ public class Player {
         madePreFlopAction = false;
         cardsShown = false;
         preFlopR3B = false;
+        flopCBet = false;
+        countedFlopCbetOppurtunity = false;
     }
     
     
@@ -147,7 +157,6 @@ public class Player {
         }
         if(lastAction.getType() == PerformedActionType.RAISE && street == Street.PREFLOP && type.isAPlayerAction()){
             stats.couldR3B();
-            System.out.println(name + " -------------Could R3B------------");
         }
         if(type == PerformedActionType.RAISE && street == Street.PREFLOP && !setPreFlopRaise){
             stats.PFR(getPosition());
@@ -168,7 +177,14 @@ public class Player {
                 street == Street.PREFLOP){
             stats.R3B();
             preFlopR3B = true;
-            System.out.println(name + " -------------did R3B------------");
+        }
+        if(type.isAPlayerAction() && street == Street.FLOP && setPreFlopRaise && !countedFlopCbetOppurtunity){
+            stats.couldCBet();
+            countedFlopCbetOppurtunity = true;
+        }
+        if((type == PerformedActionType.BET || type == PerformedActionType.RAISE) && street == Street.FLOP && setPreFlopRaise && !flopCBet){
+            stats.CBet();
+            flopCBet = true;
         }
         this.lastAction = action;
     }

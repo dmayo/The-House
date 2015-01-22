@@ -16,6 +16,8 @@ public class Stats {
     private int numW$SD = 0;
     private int numCouldR3B = 0;
     private int numDidR3B = 0;
+    private int numDidCBet = 0;
+    private int numCouldCBet = 0;
     
     
     private final Map<Position, Double> currentVPIP;
@@ -25,10 +27,11 @@ public class Stats {
     private double currentOverallVPIP;
     private double currentOverallPFR;
     private double currentR3B;
+    private double currentCBet;
     private final double a = 0.02;
     
     public Stats(Map<Position, Double> initialVPIP, Map<Position, Double> initialPFR, double initialWTSD, double initialW$SD,
-            double initialOverallVPIP, double initialOverallPFR, double initialR3B){
+            double initialOverallVPIP, double initialOverallPFR, double initialR3B, double initialCBet){
     
         Map<Street, Integer> initialStreetCounts = new HashMap<Street,Integer>();
         initialStreetCounts.put(Street.PREFLOP, 0);
@@ -57,6 +60,7 @@ public class Stats {
         currentOverallVPIP = initialOverallVPIP;
         currentOverallPFR = initialOverallPFR;
         currentR3B = initialR3B;
+        currentCBet = initialCBet;
     }
     
     
@@ -96,6 +100,7 @@ public class Stats {
         currentOverallVPIP = 0.22;
         currentOverallPFR = 0.16;
         currentR3B = 0.12;
+        currentCBet = 0.5;
     }
    
     
@@ -235,6 +240,31 @@ public class Stats {
     }
     
     
+    /**
+     * Call whenever a player continuation bets on the flop
+     */
+    public void CBet(){
+        numDidCBet++;
+        double newCBet = numDidCBet / (double) numCouldCBet;
+        if (newCBet != Double.NaN && Double.isFinite(newCBet)){
+            currentCBet = a*newCBet + (1-a)*currentCBet;
+        }
+    }
+    
+    
+    /**
+     * Call whenever a player could continuation bet on the flop
+     */
+    public void couldCBet(){
+        numCouldCBet++;
+    }
+    
+    
+    public double getCBet(){
+        return currentCBet;
+    }
+    
+    
     
     /**
      * Call whenever a player has the opportunity to do an action preflop from given position
@@ -306,7 +336,8 @@ public class Stats {
                "AF: " + getAF() + "\n" +
                "WTSD: " + getWTSD() + "\n"+
                "W$SD: " + getW$SD() + "\n" +
-               "R3B: " + getR3B() + "\n";
+               "R3B: " + getR3B() + "\n" +
+               "CBet: " + getCBet() + "\n";
         for(Position position: Position.values()){
             toReturn += "VPIP " + position + " " + getVPIP(position) + "\n";
         }
@@ -331,6 +362,7 @@ public class Stats {
         out+=StringEncode.encodeVal((int)(currentOverallVPIP*100));
         out+=StringEncode.encodeVal((int)(currentOverallPFR*100));
         out+=StringEncode.encodeVal((int)(currentR3B*100));
+        out+=StringEncode.encodeVal((int)(currentCBet*100));
         return out;
     }
     

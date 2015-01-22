@@ -284,10 +284,11 @@ public class Communicator {
                                 double currentOverallVPIP = (double) StringEncode.decodeVal(values[i++])/100;
                                 double currentOverallPFR = (double) StringEncode.decodeVal(values[i++])/100;
                                 double currentR3B = (double) StringEncode.decodeVal(values[i++])/100;
+                                double currentCBet = (double) StringEncode.decodeVal(values[i++])/100;
                                 System.out.println("current: "+currentVPIP+" "+currentPFR+" "+currentWTSD+" "+currentW$SD+" "+
-                                                        currentOverallVPIP+" "+currentOverallPFR+" "+currentR3B);;
+                                                        currentOverallVPIP+" "+currentOverallPFR+" "+currentR3B+ " "+currentCBet);
                                 player.setStats( new Stats(currentVPIP, currentPFR, currentWTSD, 
-                                                    currentW$SD, currentOverallVPIP, currentOverallPFR, currentR3B));
+                                                    currentW$SD, currentOverallVPIP, currentOverallPFR, currentR3B, currentCBet));
                                 
                             }
                         }
