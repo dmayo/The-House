@@ -107,130 +107,11 @@ public class StatBot {
            
         
         if(boardCards.getStreet() == Street.PREFLOP){
-            String hands = hand.toString();
-
-            for(Player player : otherPlayers){
-                if(player.isActive() && player.getLastAction().getType() != PerformedActionType.FOLD && 
-                        player.getLastAction().getType() != PerformedActionType.NONE){ // player has acted
-                    if(player.didPFR()){ // player raised so use PFR
-                        double precentRangeDouble = player.getStats().getPFR(player.getPosition());
-                        precentRangeDouble *= player.didPFR3B() ? player.getStats().getR3B() : 1;
-                        int percentRange = (int)(100*precentRangeDouble);
-                        String range = HandRange.getRangeFromPercent(percentRange);      
-                        preflopRangeMap.put(player.getName(), range);
-                        preflopRangePercentMap.put(player.getName(), percentRange);
-                        hands += ":" + range;
-                    } else if(player.didVPIP()){ // player called so use VPIP
-                        int percentRange = (int)(100*player.getStats().getVPIP(player.getPosition()));
-                        String range = HandRange.getRangeFromPercent(percentRange);      
-                        preflopRangeMap.put(player.getName(), range);
-                        preflopRangePercentMap.put(player.getName(), percentRange);
-                        hands += ":" + range;
-                    } else{ 
-                        preflopRangeMap.put(player.getName(), "xx");
-                        hands += ":xx";
-                    }
-                } 
-            }
-            System.out.println("hands: " + hands);
-            Results r = Calculator.calc(hands, boardCards.toString(), "", 5000);
-            double equity = new Double(r.getEv().get(0));
-            System.out.println("equity preflop: " + equity);
-              
-            ActionProbability actionProb = preFlopStrategy(legalActions,equity);
-            System.out.println("seat: " + getSeat());
-            
-            System.out.println(actionProb.toString());
-            LegalAction actionToPerform = nextBest(legalActions, actionProb.randomlyChooseAction());
-            System.out.println("action to perform: " + actionToPerform.getType());
-
-            int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
-            if(actionToPerform.getMax() != 0){
-                double amountToRaise = 0.7*equity*potSize / (1-equity);
-                amount = (int) clamp(amountToRaise, actionToPerform.getMin(), actionToPerform.getMax());
-            }
-            
-            previousActions.add(actionToPerform.getType());
-            
-            if(amount != 0){
-                return actionToPerform.getType().toString() + ":" + amount;
-            } else{
-                return actionToPerform.getType().toString();
-            }
+           return preFlopStrategy(legalActions);
         }
             
         else{    
-            String handsToEvaluate = hand.toString();
-            
-            if(boardCards.getStreet() == Street.FLOP){
-                for(Player player : otherPlayers){
-                    if(player.getLastAction().getType() != PerformedActionType.FOLD && player.isActive() &&
-                            !preflopRangePercentMap.containsKey(player.getName())){
-                        if(player.didPFR()){ // player raised so use PFR
-                            double precentRangeDouble = player.getStats().getPFR(player.getPosition());
-                            precentRangeDouble *= player.didPFR3B() ? player.getStats().getR3B() : 1;
-                            int percentRange = (int)(100*precentRangeDouble);
-                            String range = HandRange.getRangeFromPercent(percentRange);      
-                            preflopRangeMap.put(player.getName(), range);
-                            preflopRangePercentMap.put(player.getName(), percentRange);
-                        } else if(player.didVPIP()){ // player called so use VPIP
-                            int percentRange = (int)(100*player.getStats().getVPIP(player.getPosition()));
-                            String range = HandRange.getRangeFromPercent(percentRange);      
-                            preflopRangeMap.put(player.getName(), range);
-                            preflopRangePercentMap.put(player.getName(), percentRange);
-                        } 
-                    }
-                }
-            }
-            
-            
-            double minWTSD = 100;
-            
-            for(Player player : otherPlayers){
-                if(player.getLastAction().getType() != PerformedActionType.FOLD && player.isActive()){
-                    if(preflopRangePercentMap.containsKey(player.getName())){
-                        handsToEvaluate += ":" + preflopRangeMap.get(player.getName());      
-                        minWTSD = Math.min(minWTSD, player.getStats().getWTSD());
-                    } 
-                    else{
-                        handsToEvaluate += ":xx";
-                    }
-                }
-            }
-            
-            System.out.println("hands: " + handsToEvaluate);
-            Results r = Calculator.calc(handsToEvaluate, boardCards.toString(), "", 5000);
-            double equity = new Double(r.getEv().get(0));
-            System.out.println("equity " + equity);      
-            
-            if(boardCards.getStreet() == Street.TURN){
-               //equity *= minWTSD * (1/0.35);
-               
-            }
-            else if(boardCards.getStreet() == Street.RIVER){
-               // equity *= minWTSD * (1/0.3);
-            }
-            
-            System.out.println("adjusted equity " + equity);
-            
-  
-            ActionProbability actionProb = postFlopStrategy(legalActions, equity);
-            System.out.println(actionProb.toString());
-            LegalActionType actionTypeToPerform = actionProb.randomlyChooseAction();
-            LegalAction actionToPerform = nextBest(legalActions, actionTypeToPerform);
-            System.out.println("action to perform: " + actionToPerform.getType());
-          
-            int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
-            if(actionToPerform.getMax() != 0){
-                double amountToRaiseOrBet = 0.7*equity*potSize / (1-equity);
-                amount = (int) clamp(amountToRaiseOrBet, actionToPerform.getMin(), actionToPerform.getMax());
-            }
-
-            if(amount != 0){
-                return actionToPerform.getType().toString() + ":" + amount;
-            } else{
-                return actionToPerform.getType().toString();
-            }
+            return postFlopStrategy(legalActions);
         }
         
     }
@@ -326,62 +207,154 @@ public class StatBot {
     }
     
     
-    private ActionProbability preFlopStrategy(Map<LegalActionType, LegalAction> legalActions, double equity){
+    
+    
+    private String preFlopStrategy(Map<LegalActionType, LegalAction> legalActions){
+        String hands = hand.toString();
+
+        for(Player player : otherPlayers){
+            if(player.isActive() && player.getLastAction().getType() != PerformedActionType.FOLD && 
+                    player.getLastAction().getType() != PerformedActionType.NONE){ // player has acted
+                if(player.didPFR()){ // player raised so use PFR
+                    double precentRangeDouble = player.getStats().getPFR(player.getPosition());
+                    precentRangeDouble *= player.didPFR3B() ? player.getStats().getR3B() : 1;
+                    int percentRange = (int)(100*precentRangeDouble);
+                    String range = HandRange.getRangeFromPercent(percentRange);      
+                    preflopRangeMap.put(player.getName(), range);
+                    preflopRangePercentMap.put(player.getName(), percentRange);
+                    hands += ":" + range;
+                } else if(player.didVPIP()){ // player called so use VPIP
+                    int percentRange = (int)(100*player.getStats().getVPIP(player.getPosition()));
+                    String range = HandRange.getRangeFromPercent(percentRange);      
+                    preflopRangeMap.put(player.getName(), range);
+                    preflopRangePercentMap.put(player.getName(), percentRange);
+                    hands += ":" + range;
+                } else{ 
+                    preflopRangeMap.put(player.getName(), "xx");
+                    hands += ":xx";
+                }
+            } 
+        }
+        
+        System.out.println("hands: " + hands);
+        Results r = Calculator.calc(hands, boardCards.toString(), "", 5000);
+        double equity = new Double(r.getEv().get(0));
+        System.out.println("equity preflop: " + equity);        
+        System.out.println("seat: " + getSeat());
+        
+        ActionProbability actionProb;
+        
+        /*
         if(numActivePlayers == 2 && seat == 1){
             if(previousActions.contains(LegalActionType.RAISE)){
                 if(equity > 0.9){
-                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                    actionProb =  new ActionProbability(0, 0.1, 0.9, 0, 0);
                 }
                 else if(equity > 0.7){
-                    return new ActionProbability(0, 0.6, 0.4, 0, 0);
+                    actionProb = new ActionProbability(0, 0.6, 0.4, 0, 0);
                 } else if(equity > 0.6){
-                    return new ActionProbability(0, 0.7, 0.3, 0, 0); 
+                    actionProb = new ActionProbability(0, 0.7, 0.3, 0, 0); 
                 }else if(equity > 0.45){
-                    return new ActionProbability(0.05, 0.95, 0, 0, 0);
+                    actionProb = new ActionProbability(0.05, 0.95, 0, 0, 0);
                 } else{
-                    return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
+                    actionProb = new ActionProbability(0.9, 0.05, 0.05, 0, 0);
                 }
             } else{
                 if(equity > 0.8){
-                    return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                    actionProb = new ActionProbability(0, 0.1, 0.9, 0, 0);
                 } else if(equity > 0.6){
-                    return new ActionProbability(0, 0.2, 0.8, 0, 0); 
+                    actionProb = new ActionProbability(0, 0.2, 0.8, 0, 0); 
                 }else if(equity > 0.4){
-                    return new ActionProbability(0, 0.3, 0.7, 0, 0);
+                    actionProb = new ActionProbability(0, 0.3, 0.7, 0, 0);
                 } else{
-                      return new ActionProbability(0.6, 0.05, 0.35, 0, 0);               
+                    actionProb = new ActionProbability(0.6, 0.05, 0.35, 0, 0);               
                 }
             }
-        }
-        
+        }        
+        */
         if(previousActions.contains(LegalActionType.RAISE)){
             if(equity > 0.9){
-                return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                actionProb = new ActionProbability(0, 0.1, 0.9, 0, 0);
             }
             else if(equity > 0.7){
-                return new ActionProbability(0, 0.6, 0.4, 0, 0);
+                actionProb = new ActionProbability(0, 0.6, 0.4, 0, 0);
             } else if(equity > 0.6){
-                return new ActionProbability(0, 0.7, 0.3, 0, 0); 
+                actionProb = new ActionProbability(0, 0.7, 0.3, 0, 0); 
             }else if(equity > 0.45){
-                return new ActionProbability(0.05, 0.95, 0, 0, 0);
+                actionProb = new ActionProbability(0.05, 0.95, 0, 0, 0);
             } else{
-                return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
+                actionProb = new ActionProbability(0.9, 0.05, 0.05, 0, 0);
             }
         } else{
             if(equity > 0.8){
-                return new ActionProbability(0, 0.1, 0.9, 0, 0);
+                actionProb = new ActionProbability(0, 0.1, 0.9, 0, 0);
             } else if(equity > 0.6){
-                return new ActionProbability(0, 0.3, 0.7, 0, 0); 
+                actionProb = new ActionProbability(0, 0.3, 0.7, 0, 0); 
             }else if(equity > 0.4){
-                return new ActionProbability(0, 0.8, 0.2, 0, 0);
+                actionProb = new ActionProbability(0, 0.8, 0.2, 0, 0);
             } else{
-                  return new ActionProbability(0.9, 0.05, 0.05, 0, 0);               
+                actionProb = new ActionProbability(0.9, 0.05, 0.05, 0, 0);               
             }
+        }
+        
+    
+        System.out.println("seat: " + getSeat());
+        System.out.println(actionProb.toString());
+        LegalAction actionToPerform = nextBest(legalActions, actionProb.randomlyChooseAction());
+        System.out.println("action to perform: " + actionToPerform.getType());
+
+        int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
+        if(actionToPerform.getMax() != 0){
+            double amountToRaise = 0.75*potSize;
+            amount = (int) clamp(amountToRaise, actionToPerform.getMin(), actionToPerform.getMax());
+        }
+        
+        previousActions.add(actionToPerform.getType());
+        
+        if(amount != 0){
+            return actionToPerform.getType().toString() + ":" + amount;
+        } else{
+            return actionToPerform.getType().toString();
         }
      
     }
 
-    private ActionProbability postFlopStrategy(Map<LegalActionType, LegalAction> legalActions, double equity){
+    
+    
+    
+    private String postFlopStrategy(Map<LegalActionType, LegalAction> legalActions){
+        String handsToEvaluate = hand.toString();
+
+        for(Player player : otherPlayers){
+            if(player.getLastAction().getType() != PerformedActionType.FOLD && player.isActive()){
+                if(preflopRangePercentMap.containsKey(player.getName())){
+                    if(boardCards.getStreet() == Street.FLOP){
+                        handsToEvaluate += ":" + preflopRangeMap.get(player.getName());
+                    }
+                    else if(boardCards.getStreet() == Street.TURN){
+                       int percent = Math.min(100, (int)(preflopRangePercentMap.get(player.getName())*1.6*player.getStats().getWTSD()));
+                       String range = HandRange.getRangeFromPercent(percent);
+                       handsToEvaluate += ":"+range;
+                       
+                    }
+                    else if(boardCards.getStreet() == Street.RIVER){
+                        int percent = Math.min(100, (int)(preflopRangePercentMap.get(player.getName())*1.3*player.getStats().getWTSD()));
+                        String range = HandRange.getRangeFromPercent(percent);
+                        handsToEvaluate += ":"+range;
+                    }
+                } 
+                else{
+                    handsToEvaluate += ":xx";
+                }
+            }
+        }
+       
+        System.out.println("hands: " + handsToEvaluate);
+        Results r = Calculator.calc(handsToEvaluate, boardCards.toString(), "", 5000);
+        double equity = new Double(r.getEv().get(0));
+        System.out.println("equity " + equity);      
+          
+        ActionProbability actionProb;
         //get the call amount, call amount is 0 if call is not a legal action
         int callAmount = 0;
         if(legalActions.containsKey(LegalActionType.CALL)){
@@ -390,19 +363,38 @@ public class StatBot {
             System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
             //If pot odds are worse, fold
-            if(potOdds*1.3 < equity){
+            if(potOdds*1.4 < equity){
                 //fold, call, raise, bet, check
-                return new ActionProbability(0, 0.9, 0.1, 0, 0);
+                actionProb = new ActionProbability(0, 0.9, 0.1, 0, 0);
             }
             else{
-                return new ActionProbability(0.9, 0.05, 0.05, 0, 0);
+               actionProb = new ActionProbability(1, 0, 0, 0, 0);
             }
-        } else{
-            return new ActionProbability(1.0-equity, 0, 0, equity, 0);
+        } else{ // we are first to act or those before us checked
+            if(equity > 0.6){
+                actionProb = new ActionProbability(0, 0, 0, 1, 0);
+            } else{
+                actionProb = new ActionProbability(1, 0, 0, 0, 0);
+            }
+        }        
+        
+        System.out.println(actionProb.toString());
+        LegalAction actionToPerform = nextBest(legalActions, actionProb.randomlyChooseAction());
+        System.out.println("action to perform: " + actionToPerform.getType());
+      
+        int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
+        if(actionToPerform.getMax() != 0){
+            double amountToRaiseOrBet = 0.75*potSize;
+            amount = (int) clamp(amountToRaiseOrBet, actionToPerform.getMin(), actionToPerform.getMax());
         }
-        
-        
-        
+
+        if(amount != 0){
+            return actionToPerform.getType().toString() + ":" + amount;
+        } else{
+            return actionToPerform.getType().toString();
+        }
+            
     }
+
 
 }

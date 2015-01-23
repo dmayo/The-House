@@ -15,8 +15,6 @@ sleep 2
 for j in 0 1 2 3 4 5
 do
 echo "$i , $j"
-say "match $i"
-say "triplicate $j"
 sh "$bot1" $1 &
 sleep 2
 sh "$bot2" $(($1+1))
