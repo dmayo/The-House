@@ -254,7 +254,7 @@ public class StatBot {
             System.out.println("e: " + e);
             if(e < (4/11.0)){
                 double foldPercentage = (4.0 - 11.0*e) / (7.0 - 11.0*e);
-                double playerFoldPercentage = player.getStats().getFoldPreFlop(Position.LAST);
+                double playerFoldPercentage = player.getStats().getFoldToPreFlopRaise(Position.LAST);
                 System.out.println("fold percentage: " + foldPercentage);
                 System.out.println("player fold percentage: " + playerFoldPercentage);
                 if(playerFoldPercentage > foldPercentage){
