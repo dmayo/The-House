@@ -116,7 +116,7 @@ public class Stats {
         currentOverallPFR = 0.16;
         currentR3B = 0.12;
         currentCBet = 0.5;
-        currentW$WSF = 0.5;
+        currentW$WSF = 0.44;
     }
    
     

@@ -1,5 +1,5 @@
 max=$2
-bot1="pokerbot.sh"
+bot1="../StatBotTour/pokerbot.sh"
 
 
 function pause(){

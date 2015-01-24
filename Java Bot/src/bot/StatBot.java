@@ -318,10 +318,11 @@ public class StatBot {
      
     }
 
-    
-    
-    
+
+
+
     private String postFlopStrategy(Map<LegalActionType, LegalAction> legalActions){
+        // --- equity calculation based on preflop range
         String handsToEvaluate = hand.toString();
 
         for(Player player : otherPlayers){
@@ -334,17 +335,17 @@ public class StatBot {
                 }
             }
         }
-       
+
         System.out.println("hands: " + handsToEvaluate);
         Results r = Calculator.calc(handsToEvaluate, boardCards.toString(), "", 5000);
         double equity = new Double(r.getEv().get(0));
-        System.out.println("equity " + equity);      
-          
+        System.out.println("equity " + equity);  
+        // ---------------------------------------------------    
+
         ActionProbability actionProb;
-        //get the call amount, call amount is 0 if call is not a legal action
-        int callAmount = 0;
+
         if(legalActions.containsKey(LegalActionType.CALL)){
-            callAmount=legalActions.get(LegalActionType.CALL).getAmount();
+            int callAmount=legalActions.get(LegalActionType.CALL).getAmount();
             double potOdds = callAmount/(double)(callAmount+potSize); //pot odds = call/(call+pot)
             System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
@@ -381,6 +382,69 @@ public class StatBot {
         }
             
     }
+    
+    
+    
+    private String flopStrategy(Map<LegalActionType, LegalAction> legalActions){
+        // --- equity calculation based on preflop range
+        String handsToEvaluate = hand.toString();
 
+        for(Player player : otherPlayers){
+            if(player.getLastAction().getType() != PerformedActionType.FOLD && player.isActive()){
+                if(preflopRangePercentMap.containsKey(player.getName())){
+                    handsToEvaluate += ":" + preflopRangeMap.get(player.getName());
+                } 
+                else{
+                    handsToEvaluate += ":xx";
+                }
+            }
+        }
+
+        System.out.println("hands: " + handsToEvaluate);
+        Results r = Calculator.calc(handsToEvaluate, boardCards.toString(), "", 5000);
+        double equity = new Double(r.getEv().get(0));
+        System.out.println("equity " + equity);  
+        // ---------------------------------------------------
+        
+        ActionProbability actionProb;
+        
+        if(legalActions.containsKey(LegalActionType.CALL)){
+            int callAmount=legalActions.get(LegalActionType.CALL).getAmount();
+            double potOdds = callAmount/(double)(callAmount+potSize); //pot odds = call/(call+pot)
+            System.out.println("potOdds: " + potOdds);
+            //If pot odds are better than your pot equity, call or raise
+            //If pot odds are worse, fold
+            if(potOdds*1.3 < equity){
+                //fold, call, raise, bet, check
+                actionProb = new ActionProbability(0, 1-equity, equity, 0, 0);       
+            }
+            else{
+               actionProb = new ActionProbability(0.95, 0, 0.05, 0, 0);
+            }
+        } else{ // we are first to act or those before us checked
+            if(equity > 0.65){
+                actionProb = new ActionProbability(0, 0, 0, 1, 0);
+            } else{
+                actionProb = new ActionProbability(0.95, 0,0, 0.05, 0);
+            }
+        }        
+        
+        System.out.println(actionProb.toString());
+        LegalAction actionToPerform = nextBest(legalActions, actionProb.randomlyChooseAction());
+        System.out.println("action to perform: " + actionToPerform.getType());
+      
+        int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
+        if(actionToPerform.getMax() != 0){
+            double amountToRaiseOrBet = 0.75*potSize;
+            amount = (int) clamp(amountToRaiseOrBet, actionToPerform.getMin(), actionToPerform.getMax());
+        }
+
+        if(amount != 0){
+            return actionToPerform.getType().toString() + ":" + amount;
+        } else{
+            return actionToPerform.getType().toString();
+        }
+
+    }
 
 }
