@@ -11,6 +11,7 @@ public class Stats {
     private final Map<PerformedActionType, Integer> numActionsDone  = new HashMap<PerformedActionType, Integer>();
     private final Map<Position, Integer> numVPIP;
     private final Map<Position, Integer> numPFR;
+    private final Map<Position, Integer> numFoldPreFlop;
     private final Map<Position, Integer> numCouldDoActionPreFlop;
     private int numWTSD = 0;
     private int numW$SD = 0;
@@ -18,10 +19,12 @@ public class Stats {
     private int numDidR3B = 0;
     private int numDidCBet = 0;
     private int numCouldCBet = 0;
+   
     
     
     private final Map<Position, Double> currentVPIP;
     private final Map<Position, Double> currentPFR;
+    private final Map<Position, Double> currentFoldPreFlop;
     private double currentWTSD;
     private double currentW$SD;
     private double currentOverallVPIP;
@@ -30,8 +33,9 @@ public class Stats {
     private double currentCBet;
     private final double a = 0.02;
     
-    public Stats(Map<Position, Double> initialVPIP, Map<Position, Double> initialPFR, double initialWTSD, double initialW$SD,
-            double initialOverallVPIP, double initialOverallPFR, double initialR3B, double initialCBet){
+    public Stats(Map<Position, Double> initialVPIP, Map<Position, Double> initialPFR, Map<Position, Double> initialFoldPreFlop, 
+            double initialWTSD, double initialW$SD, double initialOverallVPIP, double initialOverallPFR, 
+            double initialR3B, double initialCBet){
     
         Map<Street, Integer> initialStreetCounts = new HashMap<Street,Integer>();
         initialStreetCounts.put(Street.PREFLOP, 0);
@@ -52,9 +56,11 @@ public class Stats {
         numVPIP = new HashMap<Position, Integer>(initialStats);
         numPFR = new HashMap<Position, Integer>(initialStats);
         numCouldDoActionPreFlop = new HashMap<Position, Integer>(initialStats);
+        numFoldPreFlop = new HashMap<Position, Integer>(initialStats);
         
         currentVPIP = new HashMap<Position, Double>(initialVPIP);
         currentPFR = new HashMap<Position, Double>(initialPFR);
+        currentFoldPreFlop = new HashMap<Position, Double>(initialFoldPreFlop);
         currentWTSD = initialWTSD;
         currentW$SD = initialW$SD;     
         currentOverallVPIP = initialOverallVPIP;
@@ -84,6 +90,7 @@ public class Stats {
         numVPIP = new HashMap<Position, Integer>(initialStats);
         numPFR = new HashMap<Position, Integer>(initialStats);
         numCouldDoActionPreFlop = new HashMap<Position, Integer>(initialStats);
+        numFoldPreFlop = new HashMap<Position, Integer>(initialStats);
         
         currentVPIP = new HashMap<Position, Double>();
         currentVPIP.put(Position.FIRST, 0.22);
@@ -94,6 +101,11 @@ public class Stats {
         currentPFR.put(Position.FIRST, 0.16);
         currentPFR.put(Position.MIDDLE, 0.16);
         currentPFR.put(Position.LAST, 0.16);
+        
+        currentFoldPreFlop = new HashMap<Position, Double>();
+        currentFoldPreFlop.put(Position.FIRST, 0.7);
+        currentFoldPreFlop.put(Position.MIDDLE, 0.6);
+        currentFoldPreFlop.put(Position.LAST, 0.5);
         
         currentWTSD = 0.3;
         currentW$SD = 0.5;     
@@ -266,6 +278,29 @@ public class Stats {
     
     
     
+
+    /**
+     * Call whenever the player fold preflop in the given position
+     */
+    public void foldPreFlop(Position position){
+        numFoldPreFlop.put(position, numFoldPreFlop.get(position)+1);
+        double newFoldPreFlop = numFoldPreFlop.get(position) / (double) numCouldDoActionPreFlop.get(position);
+        if (newFoldPreFlop != Double.NaN && Double.isFinite(newFoldPreFlop)){
+            currentFoldPreFlop.put(position, a*newFoldPreFlop + (1-a)*currentFoldPreFlop.get(position));
+        }
+        
+    }
+    
+    
+    /**
+     * @return the percentage of hands the player folded in the given position preflop
+     */
+    public double getFoldPreFlop(Position position){
+        return currentFoldPreFlop.get(position);
+    }
+    
+    
+    
     /**
      * Call whenever a player has the opportunity to do an action preflop from given position
      */
@@ -344,6 +379,9 @@ public class Stats {
         for(Position position: Position.values()){
             toReturn += "PFR " + position + " " + getPFR(position) + "\n";
         }
+        for(Position position: Position.values()){
+            toReturn += "Fold " + position + " " + getFoldPreFlop(position) + "\n";
+        }
         return toReturn;
     }
     
@@ -363,6 +401,9 @@ public class Stats {
         out+=StringEncode.encodeVal((int)(currentOverallPFR*100));
         out+=StringEncode.encodeVal((int)(currentR3B*100));
         out+=StringEncode.encodeVal((int)(currentCBet*100));
+        out+=StringEncode.encodeVal((int)(currentFoldPreFlop.get(Position.FIRST)*100));
+        out+=StringEncode.encodeVal((int)(currentFoldPreFlop.get(Position.MIDDLE)*100));
+        out+=StringEncode.encodeVal((int)(currentFoldPreFlop.get(Position.LAST)*100));
         return out;
     }
     

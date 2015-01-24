@@ -285,11 +285,15 @@ public class Communicator {
                                 double currentOverallPFR = (double) StringEncode.decodeVal(values[i++])/100;
                                 double currentR3B = (double) StringEncode.decodeVal(values[i++])/100;
                                 double currentCBet = (double) StringEncode.decodeVal(values[i++])/100;
+                                final Map<Position, Double> currentFoldPreFlop = new HashMap<Position, Double>();
+                                currentFoldPreFlop.put(Position.FIRST, (double) StringEncode.decodeVal(values[i++])/100);
+                                currentFoldPreFlop.put(Position.MIDDLE, (double) StringEncode.decodeVal(values[i++])/100);
+                                currentFoldPreFlop.put(Position.LAST, (double) StringEncode.decodeVal(values[i++])/100);
                                 System.out.println("current: "+currentVPIP+" "+currentPFR+" "+currentWTSD+" "+currentW$SD+" "+
-                                                        currentOverallVPIP+" "+currentOverallPFR+" "+currentR3B+ " "+currentCBet);
-                                player.setStats( new Stats(currentVPIP, currentPFR, currentWTSD, 
-                                                    currentW$SD, currentOverallVPIP, currentOverallPFR, currentR3B, currentCBet));
-                                
+                                                        currentOverallVPIP+" "+currentOverallPFR+" "+currentR3B+ " "+currentCBet+" "+
+                                        currentFoldPreFlop);
+                                player.setStats( new Stats(currentVPIP, currentPFR, currentFoldPreFlop, currentWTSD, 
+                                                    currentW$SD, currentOverallVPIP, currentOverallPFR, currentR3B, currentCBet)); 
                             }
                         }
                        

@@ -162,6 +162,9 @@ public class Player {
             stats.PFR(getPosition());
             setPreFlopRaise = true;
         }
+        if(type == PerformedActionType.FOLD && street == Street.PREFLOP){
+            stats.foldPreFlop(getPosition());
+        }
         if(type.isAPlayerAction()){
             stats.preformedAction(type);
         }

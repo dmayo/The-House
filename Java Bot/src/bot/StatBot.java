@@ -243,36 +243,35 @@ public class StatBot {
         System.out.println("seat: " + getSeat());
         
         ActionProbability actionProb;
+        double fractionOfPot = 0.75;
         
-        /*
-        if(numActivePlayers == 2 && seat == 1){
-            if(previousActions.contains(LegalActionType.RAISE)){
-                if(equity > 0.9){
-                    actionProb =  new ActionProbability(0, 0.1, 0.9, 0, 0);
-                }
-                else if(equity > 0.7){
-                    actionProb = new ActionProbability(0, 0.6, 0.4, 0, 0);
-                } else if(equity > 0.6){
-                    actionProb = new ActionProbability(0, 0.7, 0.3, 0, 0); 
-                }else if(equity > 0.45){
-                    actionProb = new ActionProbability(0.05, 0.95, 0, 0, 0);
+        if(numActivePlayers == 2 && seat == 1  && previousActions.size()==0){
+            Player player = otherPlayers.get(1);
+            int percentRange = (int)(100*player.getStats().getVPIP(player.getPosition()));
+            String range = HandRange.getRangeFromPercent(percentRange); 
+            Results results = Calculator.calc(hand.toString()+":"+range, boardCards.toString(), "", 5000);
+            double e = new Double(results.getEv().get(0));
+            System.out.println("e: " + e);
+            if(e < (4/11.0)){
+                double foldPercentage = (4.0 - 11.0*e) / (7.0 - 11.0*e);
+                double playerFoldPercentage = player.getStats().getFoldPreFlop(Position.LAST);
+                System.out.println("fold percentage: " + foldPercentage);
+                System.out.println("player fold percentage: " + playerFoldPercentage);
+                if(playerFoldPercentage > foldPercentage){
+                    actionProb = new ActionProbability(0, 0, 1, 0, 0);
                 } else{
-                    actionProb = new ActionProbability(0.9, 0.05, 0.05, 0, 0);
+                    actionProb = new ActionProbability(1, 0, 0, 0, 0);
                 }
-            } else{
-                if(equity > 0.8){
-                    actionProb = new ActionProbability(0, 0.1, 0.9, 0, 0);
-                } else if(equity > 0.6){
-                    actionProb = new ActionProbability(0, 0.2, 0.8, 0, 0); 
-                }else if(equity > 0.4){
-                    actionProb = new ActionProbability(0, 0.3, 0.7, 0, 0);
-                } else{
-                    actionProb = new ActionProbability(0.6, 0.05, 0.35, 0, 0);               
-                }
+            } 
+            else if(equity > 0.4){
+                actionProb = new ActionProbability(0, 0.1, 0.9, 0, 0);
             }
-        }        
-        */
-        if(previousActions.contains(LegalActionType.RAISE)){
+            else{
+                actionProb = new ActionProbability(0.9, 0.05, 0.05, 0, 0);               
+            }
+            fractionOfPot = 1;
+        }
+        else if(previousActions.contains(LegalActionType.RAISE)){
             if(equity > 0.9){
                 actionProb = new ActionProbability(0, 0.1, 0.9, 0, 0);
             }
@@ -291,21 +290,21 @@ public class StatBot {
             } else if(equity > 0.6){
                 actionProb = new ActionProbability(0, 0.3, 0.7, 0, 0); 
             }else if(equity > 0.4){
-                actionProb = new ActionProbability(0, 0.8, 0.2, 0, 0);
+                actionProb = new ActionProbability(0, 0.5, 0.5, 0, 0);
             } else{
                 actionProb = new ActionProbability(0.9, 0.05, 0.05, 0, 0);               
             }
         }
         
     
-        System.out.println("seat: " + getSeat());
         System.out.println(actionProb.toString());
         LegalAction actionToPerform = nextBest(legalActions, actionProb.randomlyChooseAction());
         System.out.println("action to perform: " + actionToPerform.getType());
 
         int amount = Math.max(actionToPerform.getAmount(), actionToPerform.getMax());
+        
         if(actionToPerform.getMax() != 0){
-            double amountToRaise = 0.75*potSize;
+            double amountToRaise = fractionOfPot*potSize;
             amount = (int) clamp(amountToRaise, actionToPerform.getMin(), actionToPerform.getMax());
         }
         
@@ -328,20 +327,7 @@ public class StatBot {
         for(Player player : otherPlayers){
             if(player.getLastAction().getType() != PerformedActionType.FOLD && player.isActive()){
                 if(preflopRangePercentMap.containsKey(player.getName())){
-                    if(boardCards.getStreet() == Street.FLOP){
-                        handsToEvaluate += ":" + preflopRangeMap.get(player.getName());
-                    }
-                    else if(boardCards.getStreet() == Street.TURN){
-                       int percent = Math.min(100, (int)(preflopRangePercentMap.get(player.getName())*1.6*player.getStats().getWTSD()));
-                       String range = HandRange.getRangeFromPercent(percent);
-                       handsToEvaluate += ":"+range;
-                       
-                    }
-                    else if(boardCards.getStreet() == Street.RIVER){
-                        int percent = Math.min(100, (int)(preflopRangePercentMap.get(player.getName())*1.3*player.getStats().getWTSD()));
-                        String range = HandRange.getRangeFromPercent(percent);
-                        handsToEvaluate += ":"+range;
-                    }
+                    handsToEvaluate += ":" + preflopRangeMap.get(player.getName());
                 } 
                 else{
                     handsToEvaluate += ":xx";
@@ -363,18 +349,18 @@ public class StatBot {
             System.out.println("potOdds: " + potOdds);
             //If pot odds are better than your pot equity, call or raise
             //If pot odds are worse, fold
-            if(potOdds*1.4 < equity){
+            if(potOdds*1.3 < equity){
                 //fold, call, raise, bet, check
-                actionProb = new ActionProbability(0, 0.9, 0.1, 0, 0);
+                actionProb = new ActionProbability(0, 1-equity, equity, 0, 0);       
             }
             else{
-               actionProb = new ActionProbability(1, 0, 0, 0, 0);
+               actionProb = new ActionProbability(0.95, 0, 0.05, 0, 0);
             }
         } else{ // we are first to act or those before us checked
-            if(equity > 0.6){
+            if(equity > 0.65){
                 actionProb = new ActionProbability(0, 0, 0, 1, 0);
             } else{
-                actionProb = new ActionProbability(1, 0, 0, 0, 0);
+                actionProb = new ActionProbability(0.95, 0,0, 0.05, 0);
             }
         }        
         
