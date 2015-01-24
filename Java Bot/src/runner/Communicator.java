@@ -229,19 +229,6 @@ public class Communicator {
                     for(Player player : players){
                         if(!player.getName().equals(bot.getName())){
                             String name = player.getName();
-                            /*
-                            System.out.println(name);
-                            if(name.equals("RANDOMBOT1")){
-                                name = "1";
-                            }
-                            else if(name.equals("RANDOMBOT2")){
-                                name = "2";
-                            }
-                            else if(name.equals("YOURBOT")){
-                                name = "3";
-                            }
-                            */
-                            //outStream.println("DELETE "+StringEncode.encodeInt(Integer.valueOf(name)));
                             outStream.println("DELETE "+name);
                             outStream.println("PUT "+name+" "+player.getStats().values());
                         }
@@ -249,17 +236,6 @@ public class Communicator {
                     outStream.println("FINISH");
                     
                 } else if ("KEYVALUE".compareToIgnoreCase(word) == 0) {
-                        // Gets keyvalue pairs
-                    /*
-                        String stringVal = "";
-                        for(int i=1;i<inputWords.length-1;i++){
-                            if(i>1){
-                                stringVal += " ";
-                            }
-                            stringVal += inputWords[i];
-                        }
-                       */ 
-                        //String playerName = Integer.toString(StringEncode.decodeInt(stringVal));
                         String playerName = inputWords[1];
                         
                         for(Player player : players){
@@ -289,11 +265,12 @@ public class Communicator {
                                 currentFoldPreFlop.put(Position.FIRST, (double) StringEncode.decodeVal(values[i++])/100);
                                 currentFoldPreFlop.put(Position.MIDDLE, (double) StringEncode.decodeVal(values[i++])/100);
                                 currentFoldPreFlop.put(Position.LAST, (double) StringEncode.decodeVal(values[i++])/100);
-                                System.out.println("current: "+currentVPIP+" "+currentPFR+" "+currentWTSD+" "+currentW$SD+" "+
-                                                        currentOverallVPIP+" "+currentOverallPFR+" "+currentR3B+ " "+currentCBet+" "+
-                                        currentFoldPreFlop);
+                                double currentW$WSF = (double) StringEncode.decodeVal(values[i++])/100;
+                                //System.out.println("current: "+currentVPIP+" "+currentPFR+" "+currentWTSD+" "+currentW$SD+" "+
+                                //                        currentOverallVPIP+" "+currentOverallPFR+" "+currentR3B+ " "+currentCBet+" "+
+                                //        currentFoldPreFlop+" "+currentW$WSF);
                                 player.setStats( new Stats(currentVPIP, currentPFR, currentFoldPreFlop, currentWTSD, 
-                                                    currentW$SD, currentOverallVPIP, currentOverallPFR, currentR3B, currentCBet)); 
+                                                    currentW$SD, currentOverallVPIP, currentOverallPFR, currentR3B, currentCBet, currentW$WSF)); 
                             }
                         }
                        

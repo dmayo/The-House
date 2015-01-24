@@ -172,6 +172,9 @@ public class Player {
             stats.WTSD();
             cardsShown = true;
         }
+        if((type == PerformedActionType.WIN || type == PerformedActionType.TIE) && street != Street.PREFLOP){
+            stats.W$WSF();
+        }  
         if((type == PerformedActionType.WIN || type == PerformedActionType.TIE) && cardsShown){
             stats.W$SD();
             cardsShown = false;
