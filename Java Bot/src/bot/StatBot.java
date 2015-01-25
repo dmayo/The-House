@@ -346,12 +346,14 @@ public class StatBot {
         ActionProbability actionProb;
 
         if(legalActions.containsKey(LegalActionType.CALL)){
+            final double EQUITY_FACTOR = 1.3;
             int callAmount=legalActions.get(LegalActionType.CALL).getAmount();
+            
             double potOdds = callAmount/(double)(callAmount+potSize); //pot odds = call/(call+pot)
             System.out.println("potOdds: " + potOdds);
-            //If pot odds are better than your pot equity, call or raise
-            //If pot odds are worse, fold
-            if(potOdds*1.3 < equity){
+            //If pot odds are less than your pot equity, call or raise
+            //If pot odds are geater, fold
+            if(potOdds*EQUITY_FACTOR < equity){
                 //fold, call, raise, bet, check
                 actionProb = new ActionProbability(0, 1-equity, equity, 0, 0);       
             }
