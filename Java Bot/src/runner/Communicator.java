@@ -266,11 +266,14 @@ public class Communicator {
                                 currentFoldPreFlop.put(Position.MIDDLE, (double) StringEncode.decodeVal(values[i++])/100);
                                 currentFoldPreFlop.put(Position.LAST, (double) StringEncode.decodeVal(values[i++])/100);
                                 double currentW$WSF = (double) StringEncode.decodeVal(values[i++])/100;
+                                double currentW$WST = (double) StringEncode.decodeVal(values[i++])/100;
+                                double currentW$WSR = (double) StringEncode.decodeVal(values[i++])/100;
                                 //System.out.println("current: "+currentVPIP+" "+currentPFR+" "+currentWTSD+" "+currentW$SD+" "+
                                 //                        currentOverallVPIP+" "+currentOverallPFR+" "+currentR3B+ " "+currentCBet+" "+
                                 //        currentFoldPreFlop+" "+currentW$WSF);
                                 player.setStats( new Stats(currentVPIP, currentPFR, currentFoldPreFlop, currentWTSD, 
-                                                    currentW$SD, currentOverallVPIP, currentOverallPFR, currentR3B, currentCBet, currentW$WSF)); 
+                                                    currentW$SD, currentOverallVPIP, currentOverallPFR, currentR3B, currentCBet, currentW$WSF,
+                                                    currentW$WST,  currentW$WSR)); 
                             }
                         }
                        
@@ -278,22 +281,23 @@ public class Communicator {
                 } else if ("NEWGAME".compareToIgnoreCase(word) == 0) {
                     //NEWGAME yourName opp1Name opp2Name stackSize bb numHands timeBank
                     Map<String,String> parsed = parseNewGame(inputWords);
-                    String botName = parsed.get("yourName");
-                    
+                    String botName = parsed.get("yourName").substring(0,parsed.get("yourName").length()-1);
+                    String name1 = parsed.get("opp1Name").substring(0,parsed.get("opp1Name").length()-1);
+                    String name2 = parsed.get("opp2Name").substring(0,parsed.get("opp2Name").length()-1);
                     int stackSize = new Integer(parsed.get("stackSize"));
-                    Player player1 = new Player(parsed.get("opp1Name"), stackSize,0); // dummy seat values must be updated in NEWHAND
-                    Player player2 = new Player(parsed.get("opp2Name"), stackSize,0); // dummy seat values must be updated in NEWHAND
+                    Player player1 = new Player(name1, stackSize,0); // dummy seat values must be updated in NEWHAND
+                    Player player2 = new Player(name2, stackSize,0); // dummy seat values must be updated in NEWHAND
                     Player player3 = new Player(botName,stackSize,0);
                     
                     if(players.size() > 0){
                         for(Player player: players){
-                            if(player.getName().equals(parsed.get("opp1Name"))){
+                            if(player.getName().equals(name1)){
                                 player1 = player;
                             }
-                            if(player.getName().equals(parsed.get("opp2Name"))){
+                            if(player.getName().equals(name2)){
                                 player2 = player;
                             }
-                            if(player.getName().equals(bot.getName())){
+                            if(player.getName().equals(botName)){
                                 player3 = player;
                             }
                         }
@@ -303,8 +307,10 @@ public class Communicator {
                     }
                     
                     players = Arrays.asList(new Player[]{player1,player2,player3});
-                     
-                   
+                    player1.setOtherPlayers(Arrays.asList(new Player[]{player2,player3}));
+                    player2.setOtherPlayers(Arrays.asList(new Player[]{player1,player3}));
+                    player3.setOtherPlayers(Arrays.asList(new Player[]{player1,player2}));
+                    
                     int numHands = new Integer(parsed.get("numHands"));
                     int bigBlind = new Integer(parsed.get("bb"));
                     double timeBank = new Double(parsed.get("timeBank"));
@@ -336,7 +342,7 @@ public class Communicator {
                     String[] activePlayers = parsed.get("activePlayers").split(" ");
                     
                     for(int i=0; i < playerNames.length; i++){
-                        String name = playerNames[i];
+                        String name = playerNames[i].substring(0,playerNames[i].length()-1);
                         for(Player player : players){
                             if(name.equals(player.getName())){
                                 player.setLastAction(new PerformedAction(player.getName(), PerformedActionType.NONE, 0, new ArrayList<Card>(), Street.PREFLOP));
