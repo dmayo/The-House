@@ -284,6 +284,24 @@ public class Communicator {
                     Player player1 = new Player(parsed.get("opp1Name"), stackSize,0); // dummy seat values must be updated in NEWHAND
                     Player player2 = new Player(parsed.get("opp2Name"), stackSize,0); // dummy seat values must be updated in NEWHAND
                     Player player3 = new Player(botName,stackSize,0);
+                    
+                    if(players.size() > 0){
+                        for(Player player: players){
+                            if(player.getName().equals(parsed.get("opp1Name"))){
+                                player1 = player;
+                            }
+                            if(player.getName().equals(parsed.get("opp2Name"))){
+                                player2 = player;
+                            }
+                            if(player.getName().equals(bot.getName())){
+                                player3 = player;
+                            }
+                        }
+                        player1.setStackSize(stackSize);
+                        player2.setStackSize(stackSize);
+                        player3.setStackSize(stackSize);
+                    }
+                    
                     players = Arrays.asList(new Player[]{player1,player2,player3});
                      
                    
