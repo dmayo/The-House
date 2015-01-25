@@ -210,6 +210,7 @@ public class StatBot {
     
     
     private String preFlopStrategy(Map<LegalActionType, LegalAction> legalActions){
+        //pbots equity calculator
         String hands = hand.toString();
 
         for(Player player : otherPlayers){
