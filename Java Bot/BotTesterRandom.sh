@@ -1,6 +1,6 @@
 max=$2
 bot1="pokerbot.sh"
-bot2="../StatBotDay8/pokerbot.sh"
+bot2="../PatBot/pokerbot.sh"
 
 
 function pause(){
