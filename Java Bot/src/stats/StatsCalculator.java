@@ -44,19 +44,19 @@ public class StatsCalculator {
                action.contains(PerformedActionType.WIN.toString())){
                 final String actionSplit[] = action.split(":");
                 final int amount = new Integer(actionSplit[1]);
-                final String actor = actionSplit[2];
+                final String actor = actionSplit[2].substring(0,actionSplit[2].length()-1);
                 performedActions.add(new PerformedAction(actor, PerformedActionType.valueOf(actionSplit[0]), amount, new ArrayList<Card>(), Street.NONE));
             }
             else if(action.contains(PerformedActionType.CHECK.toString()) || action.contains(PerformedActionType.FOLD.toString())){
                 final String actionSplit[] = action.split(":");
-                final String actor = actionSplit[1];
+                final String actor = actionSplit[1].substring(0,actionSplit[1].length()-1);
                 performedActions.add(new PerformedAction(actor, PerformedActionType.valueOf(actionSplit[0]), 0, new ArrayList<Card>(), Street.NONE));
             }
             else if(action.contains(PerformedActionType.SHOW.toString())){
                 final String actionSplit[] = action.split(":");
                 final Card card1 = new Card(actionSplit[1]);
                 final Card card2 = new Card(actionSplit[2]);
-                final String actor = actionSplit[3];             
+                final String actor = actionSplit[3].substring(0,actionSplit[3].length()-1);           
                 performedActions.add(new PerformedAction(actor, PerformedActionType.SHOW, 0, Arrays.asList(new Card[]{card1,card2}), Street.NONE));
             }
             else if(action.contains(PerformedActionType.DEAL.toString())){

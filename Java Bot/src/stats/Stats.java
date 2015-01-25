@@ -13,6 +13,7 @@ public class Stats {
     private final Map<Position, Integer> numPFR;
     private final Map<Position, Integer> numFoldToPreFlopRaise;
     private final Map<Position, Integer> numCouldDoActionPreFlop;
+    private final Map<Position, Integer> numCouldFoldToPreFlopRaise;
     private int numWTSD = 0;
     private int numW$SD = 0;
     private int numCouldR3B = 0;
@@ -20,8 +21,9 @@ public class Stats {
     private int numDidCBet = 0;
     private int numCouldCBet = 0;
     private int numW$WSF = 0;
-   
-    
+    private int numW$WST = 0;
+    private int numW$WSR = 0;
+       
     
     private final Map<Position, Double> currentVPIP;
     private final Map<Position, Double> currentPFR;
@@ -32,12 +34,15 @@ public class Stats {
     private double currentOverallPFR;
     private double currentR3B;
     private double currentCBet;
-    private double currentW$WSF = 0;
-    private final double a = 0.02;
+    private double currentW$WSF;
+    private double currentW$WST;
+    private double currentW$WSR;
+    private final double a = 0.03;
+    private final double alpha_win$ = 0.03;
     
     public Stats(Map<Position, Double> initialVPIP, Map<Position, Double> initialPFR, Map<Position, Double> initialFoldPreFlop, 
             double initialWTSD, double initialW$SD, double initialOverallVPIP, double initialOverallPFR, 
-            double initialR3B, double initialCBet, double initialW$WSF){
+            double initialR3B, double initialCBet, double initialW$WSF, double initialW$WST, double initialW$WSR){
     
         Map<Street, Integer> initialStreetCounts = new HashMap<Street,Integer>();
         initialStreetCounts.put(Street.PREFLOP, 0);
@@ -59,6 +64,7 @@ public class Stats {
         numPFR = new HashMap<Position, Integer>(initialStats);
         numCouldDoActionPreFlop = new HashMap<Position, Integer>(initialStats);
         numFoldToPreFlopRaise = new HashMap<Position, Integer>(initialStats);
+        numCouldFoldToPreFlopRaise = new HashMap<Position, Integer>(initialStats);
         
         currentVPIP = new HashMap<Position, Double>(initialVPIP);
         currentPFR = new HashMap<Position, Double>(initialPFR);
@@ -70,6 +76,8 @@ public class Stats {
         currentR3B = initialR3B;
         currentCBet = initialCBet;
         currentW$WSF = initialW$WSF;
+        currentW$WST = initialW$WST;
+        currentW$WSR = initialW$WSR;
     }
     
     
@@ -94,6 +102,7 @@ public class Stats {
         numPFR = new HashMap<Position, Integer>(initialStats);
         numCouldDoActionPreFlop = new HashMap<Position, Integer>(initialStats);
         numFoldToPreFlopRaise = new HashMap<Position, Integer>(initialStats);
+        numCouldFoldToPreFlopRaise = new HashMap<Position, Integer>(initialStats);
         
         currentVPIP = new HashMap<Position, Double>();
         currentVPIP.put(Position.FIRST, 0.22);
@@ -106,8 +115,8 @@ public class Stats {
         currentPFR.put(Position.LAST, 0.16);
         
         currentFoldToPreFlopRaise = new HashMap<Position, Double>();
-        currentFoldToPreFlopRaise.put(Position.FIRST, 0.7);
-        currentFoldToPreFlopRaise.put(Position.MIDDLE, 0.6);
+        currentFoldToPreFlopRaise.put(Position.FIRST, 0.6);
+        currentFoldToPreFlopRaise.put(Position.MIDDLE, 0.5);
         currentFoldToPreFlopRaise.put(Position.LAST, 0.5);
         
         currentWTSD = 0.3;
@@ -116,7 +125,9 @@ public class Stats {
         currentOverallPFR = 0.16;
         currentR3B = 0.12;
         currentCBet = 0.5;
-        currentW$WSF = 0.44;
+        currentW$WSF = 0.40;
+        currentW$WST = 0.40;
+        currentW$WSR = 0.40;
     }
    
     
@@ -130,6 +141,16 @@ public class Stats {
             numStreetsSeen.put(street,numStreetsSeen.get(street)+1);
         } else{
             numStreetsSeen.put(street,1);
+        }
+        
+        if(street == Street.FLOP){
+            WTSD();
+            W$SD();
+            W$WSF();    
+        } else if(street == Street.TURN){
+            W$WST();
+        } else if(street == Street.RIVER){
+            W$WSR();
         }
     }
    
@@ -146,14 +167,8 @@ public class Stats {
         }
     }
     
-    
-    
-    /**
-     * Call whenever the player voluntarily puts money in the pot on the preflop. 
-     * (i.e. blinds do not count) So call when the player bets, calls, or raises preflop.
-     */
-    public void VPIP(Position position){
-        numVPIP.put(position, numVPIP.get(position)+1);
+     
+    private void VPIP(Position position){        
         double newVPIP = numVPIP.get(position) / (double) numCouldDoActionPreFlop.get(position);
         if (newVPIP != Double.NaN && Double.isFinite(newVPIP)){
             currentVPIP.put(position, a*newVPIP + (1-a)*currentVPIP.get(position));
@@ -174,6 +189,15 @@ public class Stats {
     
     
     /**
+     * Call whenever the player voluntarily puts money in the pot on the preflop. 
+     * (i.e. blinds do not count) So call when the player bets, calls, or raises preflop.
+     */
+    public void didVPIP(Position position){
+        numVPIP.put(position, numVPIP.get(position)+1);
+        VPIP(position);
+    }
+    
+    /**
      * @return the percentage of preflops the player voluntarily put money in the pot from given position
      */
     public double getVPIP(Position position){
@@ -189,11 +213,8 @@ public class Stats {
     }
     
     
-    /**
-     * Call whenever a player raises on preflop
-     */
-    public void PFR(Position position){
-        numPFR.put(position, numPFR.get(position)+1);
+    
+    private void PFR(Position position){  
         double newPFR = numPFR.get(position) / (double) numCouldDoActionPreFlop.get(position);
         if (newPFR != Double.NaN && Double.isFinite(newPFR)){
             currentPFR.put(position, a*newPFR + (1-a)*currentPFR.get(position));
@@ -214,6 +235,15 @@ public class Stats {
     
     
     /**
+     * Call whenever a player raises on preflop
+     */
+    public void didPFR(Position position){
+        numPFR.put(position, numPFR.get(position)+1);
+        PFR(position);
+    }
+    
+    
+    /**
      * @return the percentage of times a player raise on preflop from given position
      * @param position the position of the player
      */
@@ -230,16 +260,21 @@ public class Stats {
     }
     
     
-    /**
-     * Call whenever a player raises 3-Bet
-     */
-    public void R3B(){
+    
+    private void R3B(){
         final double alphaR3B = 0.06;
-        numDidR3B++;
         double newR3B = numDidR3B / (double) numCouldR3B;
         if (newR3B != Double.NaN && Double.isFinite(newR3B)){
             currentR3B = alphaR3B*newR3B + (1-alphaR3B)*currentR3B;
         }
+    }
+    
+    /**
+     * Call whenever a player raises 3-Bet
+     */
+    public void didR3B(){
+        numDidR3B++;
+        R3B();
     }
     
     
@@ -248,6 +283,7 @@ public class Stats {
      */
     public void couldR3B(){
         numCouldR3B++;
+        R3B();
     }
     
     
@@ -256,11 +292,8 @@ public class Stats {
     }
     
     
-    /**
-     * Call whenever a player continuation bets on the flop
-     */
-    public void CBet(){
-        numDidCBet++;
+    
+    private void CBet(){
         double newCBet = numDidCBet / (double) numCouldCBet;
         if (newCBet != Double.NaN && Double.isFinite(newCBet)){
             currentCBet = a*newCBet + (1-a)*currentCBet;
@@ -269,10 +302,19 @@ public class Stats {
     
     
     /**
+     * Call whenever a player continuation bets on the flop
+     */
+    public void didCBet(){
+        numDidCBet++;
+        CBet();
+    }
+    
+    /**
      * Call whenever a player could continuation bet on the flop
      */
     public void couldCBet(){
         numCouldCBet++;
+        CBet();
     }
     
     
@@ -286,15 +328,24 @@ public class Stats {
     /**
      * Call whenever the player fold preflop in the given position
      */
-    public void foldToPreFlopRaise(Position position){
+    public void didFoldToPreFlopRaise(Position position){
         numFoldToPreFlopRaise.put(position, numFoldToPreFlopRaise.get(position)+1);
-        double newFoldPreFlop = numFoldToPreFlopRaise.get(position) / (double) numCouldDoActionPreFlop.get(position);
+        double newFoldPreFlop = numFoldToPreFlopRaise.get(position) / (double) numCouldFoldToPreFlopRaise.get(position);
         if (newFoldPreFlop != Double.NaN && Double.isFinite(newFoldPreFlop)){
             currentFoldToPreFlopRaise.put(position, a*newFoldPreFlop + (1-a)*currentFoldToPreFlopRaise.get(position));
         }
         
     }
     
+    
+    public void couldFoldToPreFlopRaise(Position position){
+        System.out.println("could fold");
+       numCouldFoldToPreFlopRaise.put(position, numCouldFoldToPreFlopRaise.get(position)+1);
+       double newFoldPreFlop = numFoldToPreFlopRaise.get(position) / (double) numCouldFoldToPreFlopRaise.get(position);
+       if (newFoldPreFlop != Double.NaN && Double.isFinite(newFoldPreFlop)){
+           currentFoldToPreFlopRaise.put(position, a*newFoldPreFlop + (1-a)*currentFoldToPreFlopRaise.get(position));
+       }
+    }
     
     /**
      * @return the percentage of hands the player folded in the given position preflop
@@ -310,19 +361,28 @@ public class Stats {
      */
     public void numCouldDoActionPreFlop(Position position){
         numCouldDoActionPreFlop.put(position, numCouldDoActionPreFlop.get(position)+1);
+        VPIP(position);
+        PFR(position);
+        
     }
     
+    
+    
+    
+    private void WTSD(){
+        double newWTSD = numWTSD / (double) numStreetsSeen.get(Street.FLOP);
+        if (newWTSD != Double.NaN && Double.isFinite(newWTSD)){
+            currentWTSD = a*newWTSD + (1-a)*currentWTSD;
+        }
+    }
     
     
     /**
      * Call whenever a player goes to showdown
      */
-    public void WTSD(){
+    public void didWTSD(){
         numWTSD++;
-        double newWTSD = numWTSD / (double) numStreetsSeen.get(Street.FLOP);
-        if (newWTSD != Double.NaN && Double.isFinite(newWTSD)){
-            currentWTSD = a*newWTSD + (1-a)*currentWTSD;
-        }
+        WTSD();
     }
     
     
@@ -334,15 +394,21 @@ public class Stats {
     }
     
     
+   
+    private void W$SD(){
+        double newW$SD = numW$SD / (double) numStreetsSeen.get(Street.FLOP);
+        if (newW$SD != Double.NaN && Double.isFinite(newW$SD)){
+            currentW$SD = alpha_win$*newW$SD + (1-alpha_win$)*currentW$SD;
+        }
+    }
+    
+    
     /**
      * Call whenever a player wins money at a showdown
      */
-    public void W$SD(){
+    public void didW$SD(){
         numW$SD++;
-        double newW$SD = numW$SD / (double) numStreetsSeen.get(Street.FLOP);
-        if (newW$SD != Double.NaN && Double.isFinite(newW$SD)){
-            currentW$SD = a*newW$SD + (1-a)*currentW$SD;
-        }
+        W$SD();
     }
     
     
@@ -353,16 +419,21 @@ public class Stats {
         return currentW$SD;
     }
     
+        
+    private void W$WSF(){
+        double newW$WSF = numW$WSF / (double) numStreetsSeen.get(Street.FLOP);
+        if (newW$WSF != Double.NaN && Double.isFinite(newW$WSF)){
+            currentW$WSF = alpha_win$*newW$WSF + (1-alpha_win$)*currentW$WSF;
+        }
+    }
+    
     
     /**
      * Call whenever a player wins money after seeing the flop
      */
-    public void W$WSF(){
+    public void didW$WSF(){
         numW$WSF++;
-        double newW$WSF = numW$WSF / (double) numStreetsSeen.get(Street.FLOP);
-        if (newW$WSF != Double.NaN && Double.isFinite(newW$WSF)){
-            currentW$WSF = a*newW$WSF + (1-a)*currentW$WSF;
-        }
+        W$WSF();
     }
     
     
@@ -373,7 +444,55 @@ public class Stats {
         return currentW$WSF;
     }
     
- 
+    
+    private void W$WST(){
+        double newW$WST = numW$WST / (double) numStreetsSeen.get(Street.TURN);
+        if (newW$WST != Double.NaN && Double.isFinite(newW$WST)){
+            currentW$WST = alpha_win$*newW$WST + (1-alpha_win$)*currentW$WST;
+        }
+    }
+    
+    
+    /**
+     * Call whenever a player wins money after seeing the turn
+     */
+    public void didW$WST(){
+        numW$WST++;
+        W$WST();
+    }
+    
+    
+    /**
+     * @return the percentage of hands a player wins money after seeing the turn
+     */
+    public double getW$WST(){
+        return currentW$WST;
+    }
+       
+    
+    private void W$WSR(){
+        double newW$WSR = numW$WSR / (double) numStreetsSeen.get(Street.RIVER);
+        if (newW$WSR != Double.NaN && Double.isFinite(newW$WSR)){
+            currentW$WSR = alpha_win$*newW$WSR + (1-alpha_win$)*currentW$WSR;
+        }
+    }
+    
+    
+    /**
+     * Call whenever a player wins money after seeing the river
+     */
+    public void didW$WSR(){
+        numW$WSR++;
+        W$WSR();
+    }
+    
+    /**
+     * @return the percentage of hands a player wins money after seeing the river
+     */
+    public double getW$WSR(){
+        return currentW$WSR;
+    }
+    
     
     /**
      * Aggression factor = (NumberBets + NumberRaises)/NumberCalls
@@ -397,7 +516,9 @@ public class Stats {
                "W$SD: " + getW$SD() + "\n" +
                "R3B: " + getR3B() + "\n" +
                "CBet: " + getCBet() + "\n" +
-               "W$WSF: " + getW$WSF() + "\n";
+               "W$WSF: " + getW$WSF() + "\n" +
+               "W$WST: " + getW$WST() + "\n" +
+               "W$WSR: " + getW$WSR() + "\n";
         for(Position position: Position.values()){
             toReturn += "VPIP " + position + " " + getVPIP(position) + "\n";
         }
@@ -430,6 +551,8 @@ public class Stats {
         out+=StringEncode.encodeVal((int)(currentFoldToPreFlopRaise.get(Position.MIDDLE)*100));
         out+=StringEncode.encodeVal((int)(currentFoldToPreFlopRaise.get(Position.LAST)*100));
         out+=StringEncode.encodeVal((int)(currentW$WSF*100));
+        out+=StringEncode.encodeVal((int)(currentW$WST*100));
+        out+=StringEncode.encodeVal((int)(currentW$WSR*100));
         return out;
     }
     

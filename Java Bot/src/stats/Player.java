@@ -1,6 +1,7 @@
 package stats;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import cards.BoardCards;
 import cards.Card;
@@ -25,7 +26,7 @@ public class Player {
     private boolean flopCBet;
     private boolean countedFlopCbetOppurtunity;
     private int numActivePlayers = 3;
-    
+    private List<Player> otherPlayers = new ArrayList<Player>();
     
     public Player(String name, int stackSize, int seat){
         this.name = name;
@@ -42,6 +43,10 @@ public class Player {
         preFlopR3B = false;
         flopCBet = false;
         countedFlopCbetOppurtunity = false;
+    }
+    
+    public void setOtherPlayers(List<Player> otherPlayers){
+        this.otherPlayers  = otherPlayers;
     }
     
     public Stats getStats(){
@@ -148,7 +153,7 @@ public class Player {
         }
         if((type == PerformedActionType.CALL || type == PerformedActionType.RAISE || type == PerformedActionType.BET) 
                 && street == Street.PREFLOP && !setVPIP){
-            stats.VPIP(getPosition());
+            stats.didVPIP(getPosition());
             setVPIP = true;
         }
         if(type.isAPlayerAction() && street == Street.PREFLOP && !madePreFlopAction){
@@ -159,29 +164,41 @@ public class Player {
             stats.couldR3B();
         }
         if(type == PerformedActionType.RAISE && street == Street.PREFLOP && !setPreFlopRaise){
-            stats.PFR(getPosition());
+            stats.didPFR(getPosition());
             setPreFlopRaise = true;
         }
-        if(type == PerformedActionType.FOLD && street == Street.PREFLOP && lastAction.getType() == PerformedActionType.NONE){
-            stats.foldToPreFlopRaise(getPosition());
+        if(type.isAPlayerAction() && street == Street.PREFLOP && (lastAction.getType() == PerformedActionType.NONE ||lastAction.getType() == PerformedActionType.POST) &&
+                (otherPlayers.get(0).getLastAction().getType() == PerformedActionType.RAISE || otherPlayers.get(1).getLastAction().getType() == PerformedActionType.RAISE)){
+             stats.couldFoldToPreFlopRaise(getPosition());
+         }
+        if(type == PerformedActionType.FOLD && street == Street.PREFLOP && (lastAction.getType() == PerformedActionType.NONE ||lastAction.getType() == PerformedActionType.POST) &&
+               (otherPlayers.get(0).getLastAction().getType() == PerformedActionType.RAISE || otherPlayers.get(1).getLastAction().getType() == PerformedActionType.RAISE)){
+            stats.didFoldToPreFlopRaise(getPosition());
         }
         if(type.isAPlayerAction()){
             stats.preformedAction(type);
         }
         if(type == PerformedActionType.SHOW){
-            stats.WTSD();
+            stats.didWTSD();
             cardsShown = true;
         }
         if((type == PerformedActionType.WIN || type == PerformedActionType.TIE) && street != Street.PREFLOP){
-            stats.W$WSF();
+            stats.didW$WSF();
+        }  
+        if((type == PerformedActionType.WIN || type == PerformedActionType.TIE) && (street == Street.TURN ||
+                street == Street.RIVER)){
+            stats.didW$WST();
+        }  
+        if((type == PerformedActionType.WIN || type == PerformedActionType.TIE) && street == Street.RIVER){
+            stats.didW$WSR();
         }  
         if((type == PerformedActionType.WIN || type == PerformedActionType.TIE) && cardsShown){
-            stats.W$SD();
+            stats.didW$SD();
             cardsShown = false;
         }   
         if(type == PerformedActionType.RAISE && lastAction.getType() == PerformedActionType.RAISE &&
                 street == Street.PREFLOP){
-            stats.R3B();
+            stats.didR3B();
             preFlopR3B = true;
         }
         if(type.isAPlayerAction() && street == Street.FLOP && setPreFlopRaise && !countedFlopCbetOppurtunity){
@@ -189,7 +206,7 @@ public class Player {
             countedFlopCbetOppurtunity = true;
         }
         if((type == PerformedActionType.BET || type == PerformedActionType.RAISE) && street == Street.FLOP && setPreFlopRaise && !flopCBet){
-            stats.CBet();
+            stats.didCBet();
             flopCBet = true;
         }
         this.lastAction = action;
